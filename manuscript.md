@@ -112,7 +112,7 @@ header-includes: '<!--
 
   <meta name="citation_author" content="Alexander Peltzer" />
 
-  <meta name="citation_author_institution" content="Translational Medicine &amp; Clinical Pharmacology" />
+  <meta name="citation_author_institution" content="Translational Medicine &amp; Clinical Pharmacology, Boehringer Ingelheim Pharma GmbH &amp; CO KG, Biberach an der Riss" />
 
   <meta name="citation_author_orcid" content="0000-0002-6503-2180" />
 
@@ -130,11 +130,11 @@ header-includes: '<!--
 
   <link rel="alternate" type="application/pdf" href="https://apeltzer.github.io/eager2-paper/manuscript.pdf" />
 
-  <link rel="alternate" type="text/html" href="https://apeltzer.github.io/eager2-paper/v/a39c26d4e2e96670dc5963a0aa1ccc84338d3b60/" />
+  <link rel="alternate" type="text/html" href="https://apeltzer.github.io/eager2-paper/v/affc8b3d1343ef503ac7aabd47648e4ad508cf1a/" />
 
-  <meta name="manubot_html_url_versioned" content="https://apeltzer.github.io/eager2-paper/v/a39c26d4e2e96670dc5963a0aa1ccc84338d3b60/" />
+  <meta name="manubot_html_url_versioned" content="https://apeltzer.github.io/eager2-paper/v/affc8b3d1343ef503ac7aabd47648e4ad508cf1a/" />
 
-  <meta name="manubot_pdf_url_versioned" content="https://apeltzer.github.io/eager2-paper/v/a39c26d4e2e96670dc5963a0aa1ccc84338d3b60/manuscript.pdf" />
+  <meta name="manubot_pdf_url_versioned" content="https://apeltzer.github.io/eager2-paper/v/affc8b3d1343ef503ac7aabd47648e4ad508cf1a/manuscript.pdf" />
 
   <meta property="og:type" content="article" />
 
@@ -167,9 +167,9 @@ title: Reproducible, portable, and efficient ancient genome reconstruction with 
 
 <small><em>
 This manuscript
-([permalink](https://apeltzer.github.io/eager2-paper/v/a39c26d4e2e96670dc5963a0aa1ccc84338d3b60/))
+([permalink](https://apeltzer.github.io/eager2-paper/v/affc8b3d1343ef503ac7aabd47648e4ad508cf1a/))
 was automatically generated
-from [apeltzer/eager2-paper@a39c26d](https://github.com/apeltzer/eager2-paper/tree/a39c26d4e2e96670dc5963a0aa1ccc84338d3b60)
+from [apeltzer/eager2-paper@affc8b3](https://github.com/apeltzer/eager2-paper/tree/affc8b3d1343ef503ac7aabd47648e4ad508cf1a)
 on April 5, 2020.
 </em></small>
 
@@ -281,18 +281,19 @@ on April 5, 2020.
     · ![Twitter icon](images/twitter.svg){.inline_icon}
     [alex_peltzer](https://twitter.com/alex_peltzer)<br>
   <small>
-     Translational Medicine & Clinical Pharmacology
+     Translational Medicine & Clinical Pharmacology, Boehringer Ingelheim Pharma GmbH & CO KG, Biberach an der Riss
   </small>
 
 
 
 ## Abstract {.page_break_before}
 
-This is going to be a basic abstract of the paper.
+The increasing utilization of ancient DNA (aDNA) to address anthropological, palaeontologican and biological questions is resulting in a rising diversity in the size of laboratories and scale of analyses being performed. In the context of this heterogenous landscape, we present [nf-core/eager](https://github.com/nf-core/eager), an advanced and entirely redesigned pipeline for the analysis of ancient DNA molecular data. nf-core/eager builds on existing ideas and concepts introduced in the original EAGER pipeline@doi:10.1186/s13059-016-0918-z, and improves various aspects of the analysis procedure by building on computational frameworks such as Nextflow @doi:10.1038/nbt.3820 and nf-core @doi:10.1038/s41587-020-0439-x. The pipeline aims to address three main points: adaptability to different project sizes, reproducibility to ensure robust standards, and extensibility to ensure that new standard analyses (including metagenomic screening) are accessible to research groups of all sizes. The new version of EAGER has been developed within the nf-core intiative, to ensure high quality software development and mantainence support - which will contribute to a long-term lifecycle for the pipeline. nf-core/eager will assist in ensuring that the power of Next Generation Sequencing (NGS) ancient DNA analysis expand to many different applications in the field of ancient DNA research.
+
 
 ## Introduction
 
-This is a simple test with a doi citation for eagerv1 @doi:10.1186/s13059-016-0918-z.
+This is a simple test with a doi citation for EAGER v1@doi:10.1186/s13059-016-0918-z.
 
 ## References {.page_break_before}
 
