@@ -1,14 +1,15 @@
 ---
-title: "Manuscript Title"
+title: "nf-core/eager: EAGER2.0 - ancient DNA analysis pipeline"
 keywords:
-  - markdown
-  - publishing
-  - manubot
+  - nf-core
+  - nextflow
+  - ancientDNA
+  - aDNA
 lang: en-US
 authors:
   -
-    github: johndoe
-    name: John Doe
+    github: jfy133
+    name: James
     initials: JD
     orcid: XXXX-XXXX-XXXX-XXXX
     twitter: johndoe
@@ -17,11 +18,10 @@ authors:
       - Department of Something, University of Whatever
     funders: Grant XXXXXXXX
   -
-    github: janeroe
-    name: Jane Roe
-    initials: JR
+    github: apeltzer
+    name: Alexander Peltzer
+    initials: 
     orcid: XXXX-XXXX-XXXX-XXXX
-    email: jane.roe@whatever.edu
+    email: alexander.peltzer@boehringer-ingelheim.com
     affiliations:
-      - Department of Something, University of Whatever
-      - Department of Whatever, University of Something
+      - Translational Medicine & Clinical Pharmacology
