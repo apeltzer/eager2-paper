@@ -1,5 +1,5 @@
 ---
-title: "nf-core/eager: EAGER2.0 - ancient DNA analysis pipeline"
+title: "Reproducible, portable, and efficient ancient genome reconstruction with nf-core/eager"
 keywords:
   - nf-core
   - nextflow
@@ -9,11 +9,81 @@ lang: en-US
 authors:
   -
     github: jfy133
-    name: James
-    initials: JD
+    name: James A. Fellows Yates
+    initials: 
     orcid: XXXX-XXXX-XXXX-XXXX
-    twitter: johndoe
-    email: john.doe@something.com
+    twitter: jfy133
+    email: fellows@shh.mpg.de
+    affiliations:
+      - Department of Something, University of Whatever
+    funders: Grant XXXXXXXX
+  - 
+    github: thi
+    name: Thiseas
+    initials: 
+    orcid: XXXX-XXXX-XXXX-XXXX
+    twitter: placeholder
+    email: itsme@shh.mpg.de
+    affiliations:
+      - Department of Something, University of Whatever
+    funders: Grant XXXXXXXX
+  - 
+    github: placeholder
+    name: Maxime Borry
+    initials: 
+    orcid: XXXX-XXXX-XXXX-XXXX
+    twitter: placeholder
+    email: itsme@shh.mpg.de
+    affiliations:
+      - Department of Something, University of Whatever
+    funders: Grant XXXXXXXX
+  - 
+    github: placeholder
+    name: Aida 
+    initials: 
+    orcid: XXXX-XXXX-XXXX-XXXX
+    twitter: placeholder
+    email: itsme@shh.mpg.de
+    affiliations:
+      - Department of Something, University of Whatever
+    funders: Grant XXXXXXXX
+  - 
+    github: placeholder
+    name: Zandra
+    initials: 
+    orcid: XXXX-XXXX-XXXX-XXXX
+    twitter: placeholder
+    email: itsme@shh.mpg.de
+    affiliations:
+      - Department of Something, University of Whatever
+    funders: Grant XXXXXXXX
+  - 
+    github: placeholder
+    name: Stephen
+    initials: 
+    orcid: XXXX-XXXX-XXXX-XXXX
+    twitter: placeholder
+    email: itsme@shh.mpg.de
+    affiliations:
+      - Department of Something, University of Whatever
+    funders: Grant XXXXXXXX
+  - 
+    github: placeholder
+    name: Maxime Garcia
+    initials: 
+    orcid: XXXX-XXXX-XXXX-XXXX
+    twitter: placeholder
+    email: itsme@shh.mpg.de
+    affiliations:
+      - Department of Something, University of Whatever
+    funders: Grant XXXXXXXX
+  - 
+    github: placeholder
+    name: Judith
+    initials: 
+    orcid: XXXX-XXXX-XXXX-XXXX
+    twitter: placeholder
+    email: itsme@uzh
     affiliations:
       - Department of Something, University of Whatever
     funders: Grant XXXXXXXX
@@ -21,7 +91,8 @@ authors:
     github: apeltzer
     name: Alexander Peltzer
     initials: 
-    orcid: XXXX-XXXX-XXXX-XXXX
+    twitter: alex_peltzer
+    orcid: 0000-0002-6503-2180
     email: alexander.peltzer@boehringer-ingelheim.com
     affiliations:
       - Translational Medicine & Clinical Pharmacology
