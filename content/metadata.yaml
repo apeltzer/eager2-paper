@@ -5,12 +5,15 @@ keywords:
   - nextflow
   - ancientDNA
   - aDNA
-lang: en-US
+  - palaeogenetics
+  - archaeogenetics
+  - bioinformatics
+lang: en-GB
 authors:
   -
     github: jfy133
     name: James A. Fellows Yates
-    initials: 
+    initials: J.A.F.Y.
     orcid: 0000-0001-5585-6277
     twitter: jfy133
     email: fellows@shh.mpg.de
@@ -18,7 +21,7 @@ authors:
       - Department of Archaeogenetics, Max-Planck-Institute for the Science of Human History
     funders: Grant XXXXXXXX
   - 
-    github: thi
+    github: TCLamnidis
     name: Thiseas
     initials: 
     orcid: XXXX-XXXX-XXXX-XXXX
