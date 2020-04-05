@@ -130,11 +130,11 @@ header-includes: '<!--
 
   <link rel="alternate" type="application/pdf" href="https://apeltzer.github.io/eager2-paper/manuscript.pdf" />
 
-  <link rel="alternate" type="text/html" href="https://apeltzer.github.io/eager2-paper/v/1cd1c661f26fc27a73f84be367566e1a0599ae59/" />
+  <link rel="alternate" type="text/html" href="https://apeltzer.github.io/eager2-paper/v/a39c26d4e2e96670dc5963a0aa1ccc84338d3b60/" />
 
-  <meta name="manubot_html_url_versioned" content="https://apeltzer.github.io/eager2-paper/v/1cd1c661f26fc27a73f84be367566e1a0599ae59/" />
+  <meta name="manubot_html_url_versioned" content="https://apeltzer.github.io/eager2-paper/v/a39c26d4e2e96670dc5963a0aa1ccc84338d3b60/" />
 
-  <meta name="manubot_pdf_url_versioned" content="https://apeltzer.github.io/eager2-paper/v/1cd1c661f26fc27a73f84be367566e1a0599ae59/manuscript.pdf" />
+  <meta name="manubot_pdf_url_versioned" content="https://apeltzer.github.io/eager2-paper/v/a39c26d4e2e96670dc5963a0aa1ccc84338d3b60/manuscript.pdf" />
 
   <meta property="og:type" content="article" />
 
@@ -167,9 +167,9 @@ title: Reproducible, portable, and efficient ancient genome reconstruction with 
 
 <small><em>
 This manuscript
-([permalink](https://apeltzer.github.io/eager2-paper/v/1cd1c661f26fc27a73f84be367566e1a0599ae59/))
+([permalink](https://apeltzer.github.io/eager2-paper/v/a39c26d4e2e96670dc5963a0aa1ccc84338d3b60/))
 was automatically generated
-from [apeltzer/eager2-paper@1cd1c66](https://github.com/apeltzer/eager2-paper/tree/1cd1c661f26fc27a73f84be367566e1a0599ae59)
+from [apeltzer/eager2-paper@a39c26d](https://github.com/apeltzer/eager2-paper/tree/a39c26d4e2e96670dc5963a0aa1ccc84338d3b60)
 on April 5, 2020.
 </em></small>
 
@@ -288,8 +288,11 @@ on April 5, 2020.
 
 ## Abstract {.page_break_before}
 
+This is going to be a basic abstract of the paper.
 
+## Introduction
 
+This is a simple test with a doi citation for eagerv1 @doi:10.1186/s13059-016-0918-z.
 
 ## References {.page_break_before}
 
