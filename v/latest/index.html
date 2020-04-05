@@ -4,11 +4,18 @@
   <meta charset="utf-8" />
   <meta name="generator" content="pandoc" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
-  <meta name="author" content="James" />
+  <meta name="author" content="James A. Fellows Yates" />
+  <meta name="author" content="Thiseas" />
+  <meta name="author" content="Maxime Borry" />
+  <meta name="author" content="Aida" />
+  <meta name="author" content="Zandra" />
+  <meta name="author" content="Stephen" />
+  <meta name="author" content="Maxime Garcia" />
+  <meta name="author" content="Judith" />
   <meta name="author" content="Alexander Peltzer" />
   <meta name="dcterms.date" content="2020-04-05" />
   <meta name="keywords" content="nf-core, nextflow, ancientDNA, aDNA" />
-  <title>nf-core/eager: EAGER2.0 - ancient DNA analysis pipeline</title>
+  <title>Reproducible, portable, and efficient ancient genome reconstruction with nf-core/eager</title>
   <style>
     code{white-space: pre-wrap;}
     span.smallcaps{font-variant: small-caps;}
@@ -25,10 +32,10 @@
   Suggest improvements at https://github.com/manubot/manubot/blob/master/manubot/process/header-includes-template.html
   -->
   <meta name="dc.format" content="text/html" />
-  <meta name="dc.title" content="nf-core/eager: EAGER2.0 - ancient DNA analysis pipeline" />
-  <meta name="citation_title" content="nf-core/eager: EAGER2.0 - ancient DNA analysis pipeline" />
-  <meta property="og:title" content="nf-core/eager: EAGER2.0 - ancient DNA analysis pipeline" />
-  <meta property="twitter:title" content="nf-core/eager: EAGER2.0 - ancient DNA analysis pipeline" />
+  <meta name="dc.title" content="Reproducible, portable, and efficient ancient genome reconstruction with nf-core/eager" />
+  <meta name="citation_title" content="Reproducible, portable, and efficient ancient genome reconstruction with nf-core/eager" />
+  <meta property="og:title" content="Reproducible, portable, and efficient ancient genome reconstruction with nf-core/eager" />
+  <meta property="twitter:title" content="Reproducible, portable, and efficient ancient genome reconstruction with nf-core/eager" />
   <meta name="dc.date" content="2020-04-05" />
   <meta name="citation_publication_date" content="2020-04-05" />
   <meta name="dc.language" content="en-US" />
@@ -37,22 +44,51 @@
   <meta name="dc.publisher" content="Manubot" />
   <meta name="citation_journal_title" content="Manubot" />
   <meta name="citation_technical_report_institution" content="Manubot" />
-  <meta name="citation_author" content="James" />
+  <meta name="citation_author" content="James A. Fellows Yates" />
+  <meta name="citation_author_institution" content="Department of Archaeogenetics, Max-Planck-Institute for the Science of Human History" />
+  <meta name="citation_author_orcid" content="0000-0001-5585-6277" />
+  <meta name="twitter:creator" content="@jfy133" />
+  <meta name="citation_author" content="Thiseas" />
   <meta name="citation_author_institution" content="Department of Something, University of Whatever" />
   <meta name="citation_author_orcid" content="XXXX-XXXX-XXXX-XXXX" />
-  <meta name="twitter:creator" content="@johndoe" />
+  <meta name="twitter:creator" content="@placeholder" />
+  <meta name="citation_author" content="Maxime Borry" />
+  <meta name="citation_author_institution" content="Department of Something, University of Whatever" />
+  <meta name="citation_author_orcid" content="XXXX-XXXX-XXXX-XXXX" />
+  <meta name="twitter:creator" content="@placeholder" />
+  <meta name="citation_author" content="Aida" />
+  <meta name="citation_author_institution" content="Department of Something, University of Whatever" />
+  <meta name="citation_author_orcid" content="XXXX-XXXX-XXXX-XXXX" />
+  <meta name="twitter:creator" content="@placeholder" />
+  <meta name="citation_author" content="Zandra" />
+  <meta name="citation_author_institution" content="Department of Something, University of Whatever" />
+  <meta name="citation_author_orcid" content="XXXX-XXXX-XXXX-XXXX" />
+  <meta name="twitter:creator" content="@placeholder" />
+  <meta name="citation_author" content="Stephen" />
+  <meta name="citation_author_institution" content="Department of Something, University of Whatever" />
+  <meta name="citation_author_orcid" content="XXXX-XXXX-XXXX-XXXX" />
+  <meta name="twitter:creator" content="@placeholder" />
+  <meta name="citation_author" content="Maxime Garcia" />
+  <meta name="citation_author_institution" content="Department of Something, University of Whatever" />
+  <meta name="citation_author_orcid" content="XXXX-XXXX-XXXX-XXXX" />
+  <meta name="twitter:creator" content="@placeholder" />
+  <meta name="citation_author" content="Judith" />
+  <meta name="citation_author_institution" content="Department of Something, University of Whatever" />
+  <meta name="citation_author_orcid" content="XXXX-XXXX-XXXX-XXXX" />
+  <meta name="twitter:creator" content="@placeholder" />
   <meta name="citation_author" content="Alexander Peltzer" />
   <meta name="citation_author_institution" content="Translational Medicine &amp; Clinical Pharmacology" />
-  <meta name="citation_author_orcid" content="XXXX-XXXX-XXXX-XXXX" />
+  <meta name="citation_author_orcid" content="0000-0002-6503-2180" />
+  <meta name="twitter:creator" content="@alex_peltzer" />
   <link rel="canonical" href="https://apeltzer.github.io/eager2-paper/" />
   <meta property="og:url" content="https://apeltzer.github.io/eager2-paper/" />
   <meta property="twitter:url" content="https://apeltzer.github.io/eager2-paper/" />
   <meta name="citation_fulltext_html_url" content="https://apeltzer.github.io/eager2-paper/" />
   <meta name="citation_pdf_url" content="https://apeltzer.github.io/eager2-paper/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://apeltzer.github.io/eager2-paper/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://apeltzer.github.io/eager2-paper/v/b6c301147b6d64fb2b619deb9230f44b707dc204/" />
-  <meta name="manubot_html_url_versioned" content="https://apeltzer.github.io/eager2-paper/v/b6c301147b6d64fb2b619deb9230f44b707dc204/" />
-  <meta name="manubot_pdf_url_versioned" content="https://apeltzer.github.io/eager2-paper/v/b6c301147b6d64fb2b619deb9230f44b707dc204/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://apeltzer.github.io/eager2-paper/v/1cd1c661f26fc27a73f84be367566e1a0599ae59/" />
+  <meta name="manubot_html_url_versioned" content="https://apeltzer.github.io/eager2-paper/v/1cd1c661f26fc27a73f84be367566e1a0599ae59/" />
+  <meta name="manubot_pdf_url_versioned" content="https://apeltzer.github.io/eager2-paper/v/1cd1c661f26fc27a73f84be367566e1a0599ae59/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -62,33 +98,112 @@
 </head>
 <body>
 <header id="title-block-header">
-<h1 class="title">nf-core/eager: EAGER2.0 - ancient DNA analysis pipeline</h1>
+<h1 class="title">Reproducible, portable, and efficient ancient genome reconstruction with nf-core/eager</h1>
 </header>
 <p><small><em>
 This manuscript
-(<a href="https://apeltzer.github.io/eager2-paper/v/b6c301147b6d64fb2b619deb9230f44b707dc204/">permalink</a>)
+(<a href="https://apeltzer.github.io/eager2-paper/v/1cd1c661f26fc27a73f84be367566e1a0599ae59/">permalink</a>)
 was automatically generated
-from <a href="https://github.com/apeltzer/eager2-paper/tree/b6c301147b6d64fb2b619deb9230f44b707dc204">apeltzer/eager2-paper@b6c3011</a>
+from <a href="https://github.com/apeltzer/eager2-paper/tree/1cd1c661f26fc27a73f84be367566e1a0599ae59">apeltzer/eager2-paper@1cd1c66</a>
 on April 5, 2020.
 </em></small></p>
 <h2 id="authors">Authors</h2>
 <ul>
-<li><p><strong>James</strong><br>
+<li><p><strong>James A. Fellows Yates</strong><br>
 <img src="images/orcid.svg" class="inline_icon" alt="ORCID icon" />
-<a href="https://orcid.org/XXXX-XXXX-XXXX-XXXX">XXXX-XXXX-XXXX-XXXX</a>
+<a href="https://orcid.org/0000-0001-5585-6277">0000-0001-5585-6277</a>
 · <img src="images/github.svg" class="inline_icon" alt="GitHub icon" />
 <a href="https://github.com/jfy133">jfy133</a>
 · <img src="images/twitter.svg" class="inline_icon" alt="Twitter icon" />
-<a href="https://twitter.com/johndoe">johndoe</a><br>
+<a href="https://twitter.com/jfy133">jfy133</a><br>
+<small>
+Department of Archaeogenetics, Max-Planck-Institute for the Science of Human History
+· Funded by Grant XXXXXXXX
+</small></p></li>
+<li><p><strong>Thiseas</strong><br>
+<img src="images/orcid.svg" class="inline_icon" alt="ORCID icon" />
+<a href="https://orcid.org/XXXX-XXXX-XXXX-XXXX">XXXX-XXXX-XXXX-XXXX</a>
+· <img src="images/github.svg" class="inline_icon" alt="GitHub icon" />
+<a href="https://github.com/thi">thi</a>
+· <img src="images/twitter.svg" class="inline_icon" alt="Twitter icon" />
+<a href="https://twitter.com/placeholder">placeholder</a><br>
+<small>
+Department of Something, University of Whatever
+· Funded by Grant XXXXXXXX
+</small></p></li>
+<li><p><strong>Maxime Borry</strong><br>
+<img src="images/orcid.svg" class="inline_icon" alt="ORCID icon" />
+<a href="https://orcid.org/XXXX-XXXX-XXXX-XXXX">XXXX-XXXX-XXXX-XXXX</a>
+· <img src="images/github.svg" class="inline_icon" alt="GitHub icon" />
+<a href="https://github.com/placeholder">placeholder</a>
+· <img src="images/twitter.svg" class="inline_icon" alt="Twitter icon" />
+<a href="https://twitter.com/placeholder">placeholder</a><br>
+<small>
+Department of Something, University of Whatever
+· Funded by Grant XXXXXXXX
+</small></p></li>
+<li><p><strong>Aida</strong><br>
+<img src="images/orcid.svg" class="inline_icon" alt="ORCID icon" />
+<a href="https://orcid.org/XXXX-XXXX-XXXX-XXXX">XXXX-XXXX-XXXX-XXXX</a>
+· <img src="images/github.svg" class="inline_icon" alt="GitHub icon" />
+<a href="https://github.com/placeholder">placeholder</a>
+· <img src="images/twitter.svg" class="inline_icon" alt="Twitter icon" />
+<a href="https://twitter.com/placeholder">placeholder</a><br>
+<small>
+Department of Something, University of Whatever
+· Funded by Grant XXXXXXXX
+</small></p></li>
+<li><p><strong>Zandra</strong><br>
+<img src="images/orcid.svg" class="inline_icon" alt="ORCID icon" />
+<a href="https://orcid.org/XXXX-XXXX-XXXX-XXXX">XXXX-XXXX-XXXX-XXXX</a>
+· <img src="images/github.svg" class="inline_icon" alt="GitHub icon" />
+<a href="https://github.com/placeholder">placeholder</a>
+· <img src="images/twitter.svg" class="inline_icon" alt="Twitter icon" />
+<a href="https://twitter.com/placeholder">placeholder</a><br>
+<small>
+Department of Something, University of Whatever
+· Funded by Grant XXXXXXXX
+</small></p></li>
+<li><p><strong>Stephen</strong><br>
+<img src="images/orcid.svg" class="inline_icon" alt="ORCID icon" />
+<a href="https://orcid.org/XXXX-XXXX-XXXX-XXXX">XXXX-XXXX-XXXX-XXXX</a>
+· <img src="images/github.svg" class="inline_icon" alt="GitHub icon" />
+<a href="https://github.com/placeholder">placeholder</a>
+· <img src="images/twitter.svg" class="inline_icon" alt="Twitter icon" />
+<a href="https://twitter.com/placeholder">placeholder</a><br>
+<small>
+Department of Something, University of Whatever
+· Funded by Grant XXXXXXXX
+</small></p></li>
+<li><p><strong>Maxime Garcia</strong><br>
+<img src="images/orcid.svg" class="inline_icon" alt="ORCID icon" />
+<a href="https://orcid.org/XXXX-XXXX-XXXX-XXXX">XXXX-XXXX-XXXX-XXXX</a>
+· <img src="images/github.svg" class="inline_icon" alt="GitHub icon" />
+<a href="https://github.com/placeholder">placeholder</a>
+· <img src="images/twitter.svg" class="inline_icon" alt="Twitter icon" />
+<a href="https://twitter.com/placeholder">placeholder</a><br>
+<small>
+Department of Something, University of Whatever
+· Funded by Grant XXXXXXXX
+</small></p></li>
+<li><p><strong>Judith</strong><br>
+<img src="images/orcid.svg" class="inline_icon" alt="ORCID icon" />
+<a href="https://orcid.org/XXXX-XXXX-XXXX-XXXX">XXXX-XXXX-XXXX-XXXX</a>
+· <img src="images/github.svg" class="inline_icon" alt="GitHub icon" />
+<a href="https://github.com/placeholder">placeholder</a>
+· <img src="images/twitter.svg" class="inline_icon" alt="Twitter icon" />
+<a href="https://twitter.com/placeholder">placeholder</a><br>
 <small>
 Department of Something, University of Whatever
 · Funded by Grant XXXXXXXX
 </small></p></li>
 <li><p><strong>Alexander Peltzer</strong><br>
 <img src="images/orcid.svg" class="inline_icon" alt="ORCID icon" />
-<a href="https://orcid.org/XXXX-XXXX-XXXX-XXXX">XXXX-XXXX-XXXX-XXXX</a>
+<a href="https://orcid.org/0000-0002-6503-2180">0000-0002-6503-2180</a>
 · <img src="images/github.svg" class="inline_icon" alt="GitHub icon" />
-<a href="https://github.com/apeltzer">apeltzer</a><br>
+<a href="https://github.com/apeltzer">apeltzer</a>
+· <img src="images/twitter.svg" class="inline_icon" alt="Twitter icon" />
+<a href="https://twitter.com/alex_peltzer">alex_peltzer</a><br>
 <small>
 Translational Medicine &amp; Clinical Pharmacology
 </small></p></li>
