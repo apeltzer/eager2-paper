@@ -6,12 +6,12 @@ author-meta:
 - Aida
 - Zandra
 - Stephen
-- Maxime Garcia
+- Maxime U. Garcia
 - Judith
 - Alexander Peltzer
 bibliography:
 - content/manual-references.json
-date-meta: '2020-04-05'
+date-meta: '2020-04-08'
 header-includes: '<!--
 
   Manubot generated metadata rendered from header-includes-template.html.
@@ -30,9 +30,9 @@ header-includes: '<!--
 
   <meta property="twitter:title" content="Reproducible, portable, and efficient ancient genome reconstruction with nf-core/eager" />
 
-  <meta name="dc.date" content="2020-04-05" />
+  <meta name="dc.date" content="2020-04-08" />
 
-  <meta name="citation_publication_date" content="2020-04-05" />
+  <meta name="citation_publication_date" content="2020-04-08" />
 
   <meta name="dc.language" content="en-GB" />
 
@@ -94,13 +94,13 @@ header-includes: '<!--
 
   <meta name="twitter:creator" content="@placeholder" />
 
-  <meta name="citation_author" content="Maxime Garcia" />
+  <meta name="citation_author" content="Maxime U. Garcia" />
 
-  <meta name="citation_author_institution" content="Department of Something, University of Whatever" />
+  <meta name="citation_author_institution" content="Department of Oncology-Pathology, Karolinska Institutet" />
 
-  <meta name="citation_author_orcid" content="XXXX-XXXX-XXXX-XXXX" />
+  <meta name="citation_author_orcid" content="0000-0003-2827-9261" />
 
-  <meta name="twitter:creator" content="@placeholder" />
+  <meta name="twitter:creator" content="@gau" />
 
   <meta name="citation_author" content="Judith" />
 
@@ -130,11 +130,11 @@ header-includes: '<!--
 
   <link rel="alternate" type="application/pdf" href="https://apeltzer.github.io/eager2-paper/manuscript.pdf" />
 
-  <link rel="alternate" type="text/html" href="https://apeltzer.github.io/eager2-paper/v/7fa5c65b4b7dc9c56cc900b593225dfe04a2aefe/" />
+  <link rel="alternate" type="text/html" href="https://apeltzer.github.io/eager2-paper/v/82f96ed1e83f1d446184d4ec91cc05f790a99089/" />
 
-  <meta name="manubot_html_url_versioned" content="https://apeltzer.github.io/eager2-paper/v/7fa5c65b4b7dc9c56cc900b593225dfe04a2aefe/" />
+  <meta name="manubot_html_url_versioned" content="https://apeltzer.github.io/eager2-paper/v/82f96ed1e83f1d446184d4ec91cc05f790a99089/" />
 
-  <meta name="manubot_pdf_url_versioned" content="https://apeltzer.github.io/eager2-paper/v/7fa5c65b4b7dc9c56cc900b593225dfe04a2aefe/manuscript.pdf" />
+  <meta name="manubot_pdf_url_versioned" content="https://apeltzer.github.io/eager2-paper/v/82f96ed1e83f1d446184d4ec91cc05f790a99089/manuscript.pdf" />
 
   <meta property="og:type" content="article" />
 
@@ -170,10 +170,10 @@ title: Reproducible, portable, and efficient ancient genome reconstruction with 
 
 <small><em>
 This manuscript
-([permalink](https://apeltzer.github.io/eager2-paper/v/7fa5c65b4b7dc9c56cc900b593225dfe04a2aefe/))
+([permalink](https://apeltzer.github.io/eager2-paper/v/82f96ed1e83f1d446184d4ec91cc05f790a99089/))
 was automatically generated
-from [apeltzer/eager2-paper@7fa5c65](https://github.com/apeltzer/eager2-paper/tree/7fa5c65b4b7dc9c56cc900b593225dfe04a2aefe)
-on April 5, 2020.
+from [apeltzer/eager2-paper@82f96ed](https://github.com/apeltzer/eager2-paper/tree/82f96ed1e83f1d446184d4ec91cc05f790a99089)
+on April 8, 2020.
 </em></small>
 
 ## Authors
@@ -252,16 +252,16 @@ on April 5, 2020.
      · Funded by Grant XXXXXXXX
   </small>
 
-+ **Maxime Garcia**<br>
++ **Maxime U. Garcia**<br>
     ![ORCID icon](images/orcid.svg){.inline_icon}
-    [XXXX-XXXX-XXXX-XXXX](https://orcid.org/XXXX-XXXX-XXXX-XXXX)
+    [0000-0003-2827-9261](https://orcid.org/0000-0003-2827-9261)
     · ![GitHub icon](images/github.svg){.inline_icon}
-    [placeholder](https://github.com/placeholder)
+    [MaxUlysse](https://github.com/MaxUlysse)
     · ![Twitter icon](images/twitter.svg){.inline_icon}
-    [placeholder](https://twitter.com/placeholder)<br>
+    [gau](https://twitter.com/gau)<br>
   <small>
-     Department of Something, University of Whatever
-     · Funded by Grant XXXXXXXX
+     Department of Oncology-Pathology, Karolinska Institutet
+     · Funded by Barncancerfonden
   </small>
 
 + **Judith**<br>
