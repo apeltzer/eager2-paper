@@ -11,7 +11,7 @@ author-meta:
 - Alexander Peltzer
 bibliography:
 - content/manual-references.json
-date-meta: '2020-04-08'
+date-meta: '2020-04-27'
 header-includes: '<!--
 
   Manubot generated metadata rendered from header-includes-template.html.
@@ -30,9 +30,9 @@ header-includes: '<!--
 
   <meta property="twitter:title" content="Reproducible, portable, and efficient ancient genome reconstruction with nf-core/eager" />
 
-  <meta name="dc.date" content="2020-04-08" />
+  <meta name="dc.date" content="2020-04-27" />
 
-  <meta name="citation_publication_date" content="2020-04-08" />
+  <meta name="citation_publication_date" content="2020-04-27" />
 
   <meta name="dc.language" content="en-GB" />
 
@@ -64,11 +64,11 @@ header-includes: '<!--
 
   <meta name="citation_author" content="Maxime Borry" />
 
-  <meta name="citation_author_institution" content="Department of Something, University of Whatever" />
+  <meta name="citation_author_institution" content="Department of Archaeogenetics, Max-Planck-Institute for the Science of Human History" />
 
-  <meta name="citation_author_orcid" content="XXXX-XXXX-XXXX-XXXX" />
+  <meta name="citation_author_orcid" content="0000-0001-9140-7559" />
 
-  <meta name="twitter:creator" content="@placeholder" />
+  <meta name="twitter:creator" content="@notmaxib" />
 
   <meta name="citation_author" content="Aida" />
 
@@ -130,11 +130,11 @@ header-includes: '<!--
 
   <link rel="alternate" type="application/pdf" href="https://apeltzer.github.io/eager2-paper/manuscript.pdf" />
 
-  <link rel="alternate" type="text/html" href="https://apeltzer.github.io/eager2-paper/v/82f96ed1e83f1d446184d4ec91cc05f790a99089/" />
+  <link rel="alternate" type="text/html" href="https://apeltzer.github.io/eager2-paper/v/9addcceebc6ee7960067007c93b663766c011a57/" />
 
-  <meta name="manubot_html_url_versioned" content="https://apeltzer.github.io/eager2-paper/v/82f96ed1e83f1d446184d4ec91cc05f790a99089/" />
+  <meta name="manubot_html_url_versioned" content="https://apeltzer.github.io/eager2-paper/v/9addcceebc6ee7960067007c93b663766c011a57/" />
 
-  <meta name="manubot_pdf_url_versioned" content="https://apeltzer.github.io/eager2-paper/v/82f96ed1e83f1d446184d4ec91cc05f790a99089/manuscript.pdf" />
+  <meta name="manubot_pdf_url_versioned" content="https://apeltzer.github.io/eager2-paper/v/9addcceebc6ee7960067007c93b663766c011a57/manuscript.pdf" />
 
   <meta property="og:type" content="article" />
 
@@ -170,10 +170,10 @@ title: Reproducible, portable, and efficient ancient genome reconstruction with 
 
 <small><em>
 This manuscript
-([permalink](https://apeltzer.github.io/eager2-paper/v/82f96ed1e83f1d446184d4ec91cc05f790a99089/))
+([permalink](https://apeltzer.github.io/eager2-paper/v/9addcceebc6ee7960067007c93b663766c011a57/))
 was automatically generated
-from [apeltzer/eager2-paper@82f96ed](https://github.com/apeltzer/eager2-paper/tree/82f96ed1e83f1d446184d4ec91cc05f790a99089)
-on April 8, 2020.
+from [apeltzer/eager2-paper@9addcce](https://github.com/apeltzer/eager2-paper/tree/9addcceebc6ee7960067007c93b663766c011a57)
+on April 27, 2020.
 </em></small>
 
 ## Authors
@@ -206,13 +206,13 @@ on April 8, 2020.
 
 + **Maxime Borry**<br>
     ![ORCID icon](images/orcid.svg){.inline_icon}
-    [XXXX-XXXX-XXXX-XXXX](https://orcid.org/XXXX-XXXX-XXXX-XXXX)
+    [0000-0001-9140-7559](https://orcid.org/0000-0001-9140-7559)
     · ![GitHub icon](images/github.svg){.inline_icon}
-    [placeholder](https://github.com/placeholder)
+    [maxibor](https://github.com/maxibor)
     · ![Twitter icon](images/twitter.svg){.inline_icon}
-    [placeholder](https://twitter.com/placeholder)<br>
+    [notmaxib](https://twitter.com/notmaxib)<br>
   <small>
-     Department of Something, University of Whatever
+     Department of Archaeogenetics, Max-Planck-Institute for the Science of Human History
      · Funded by Grant XXXXXXXX
   </small>
 
@@ -296,11 +296,11 @@ The increasing utilization of ancient DNA (aDNA) to address anthropological, pal
 
 ## Introduction
 
-Despite difficult beginnings, ancient DNA (aDNA) is now becoming a widely accepted source of short and long term evolutionary and anthropological data and questions. The development of next-generation-sequencing, the most common method used in palaeogenetics, has allowed the recovery of ancient DNA from a wide variety of sources including but not limited to the skeletal remains of animals (@doi:10.1016/j.cub.2015.04.007, @doi:10.1038/nature12323, @doi:10.1073/pnas.1901169116, @10.1073/pnas.1710186114), modern and archaic humans (@doi:10.1038/s41586-018-0094-2, doi:0.1038/s41586-018-0455-x), bacteria (@doi:10.1038/nature13591, @doi:10.1073/pnas.1812865115, @doi:10.1371/journal.ppat.1006997), Viruses (@doi:10.1038/s41586-018-0097-z, @doi:10.7554/eLife.36666), plants (cITE), but also coprolites (@doi:10.1016/j.chom.2019.08.018), calculus (@doi:10.1038/ng.2906, @doi:10.1038/nature21674), sediments (@doi:10.1038/nature12921, @doi:10.1126/science.aam9695), medical slides (@doi:10.1093/molbev/msz264) parchment (@doi:10.1098/rstb.2013.0379), and most recently ancient ‘chewing gum’ (@doi:10.1038/s41467-019-13549-9, @doi:10.1038/s42003-019-0399-1), amongst others. The scales of these studies can range from one to thousands of ancient individuals (@doi:10.1038/nature25738, @doi10.1038/nature25778), and can span single (@doi:10.1038/nature10549) to thousands of taxa (@doi:10.1038/ng.2906). These differences of projects have led to a heterogeneous landscape in terms of types of analyses and types of computing resources available to different labs - particularly as countries less developed in archaeogenetics start entering the field. 
+Despite difficult beginnings, ancient DNA (aDNA) is now becoming a widely accepted source of short and long term evolutionary and anthropological data and questions. The development of next-generation-sequencing, the most common method used in palaeogenetics, has allowed the recovery of ancient DNA from a wide variety of sources including but not limited to the skeletal remains of animals (@doi:10.1016/j.cub.2015.04.007, @doi:10.1038/nature12323, @doi:10.1073/pnas.1901169116, @10.1073/pnas.1710186114), modern and archaic humans (@doi:10.1038/s41586-018-0094-2, doi:0.1038/s41586-018-0455-x), bacteria (@doi:10.1038/nature13591, @doi:10.1073/pnas.1812865115, @doi:10.1371/journal.ppat.1006997), Viruses (@doi:10.1038/s41586-018-0097-z, @doi:10.7554/eLife.36666), plants (cITE), but also coprolites (@doi:10.1016/j.chom.2019.08.018), calculus (@doi:10.1038/ng.2906, @doi:10.1038/nature21674), sediments (@doi:10.1038/nature12921, @doi:10.1126/science.aam9695), medical slides (@doi:10.1093/molbev/msz264) parchment (@doi:10.1098/rstb.2013.0379), and most recently ancient ‘chewing gum’ (@doi:10.1038/s41467-019-13549-9, @doi:10.1038/s42003-019-0399-1), amongst others. The scales of these studies can range from one to thousands of ancient individuals (@doi:10.1038/nature25738, @doi10.1038/nature25778), and can span single (@doi:10.1038/nature10549) to thousands of taxa (@doi:10.1038/ng.2906). These differences of projects have led to a heterogeneous landscape in terms of types of analyses and types of computing resources available to different labs - particularly as countries less developed in archaeogenetics start entering the field.
 
-Two commonly used pipelines in the field have been previously published - PALEOMIX (CITE) and EAGER (@doi:10.1186/s13059-016-0918-z). These two pipelines take a similar approach to link together standard tools used for Illumina NGS data processing (quality control, adapter removal/and or merging, mapping, genotyping etc.), but with a specific focus on tools that are designed for or well-suited for ancient DNA (such as bwa aln (CITE) for ultra-short reads and mapDamage (CITE) for aDNA characteristic evaluation). While popular, both tools have suffered from a common occurrence in academic bioinformatics which is development stagnation (CITE). Neither tool has had major updates to the pipeline, meaning versions remain out of date and new ‘standard’ analyses are not being included. The ability to reproduce analysis becomes more challenging as dependencies become more difficult to install, when they become deprecated, as well as increasing ‘bug fixing’ in hidden internal-only versions of tools in different labs. The quality of aDNA studies then suffer, as new labs trying to entire the field without experience and without easy access to field-established routine analyses results in studies being published without the necessary quality controls to ensure authenticity of their data (Cano/Eisenhofer discussions). 
+Two commonly used pipelines in the field have been previously published - PALEOMIX (@doi:10.1038/nprot.2014.063) and EAGER (@doi:10.1186/s13059-016-0918-z). These two pipelines take a similar approach to link together standard tools used for Illumina NGS data processing (quality control, adapter removal/and or merging, mapping, genotyping etc.), but with a specific focus on tools that are designed for or well-suited for ancient DNA (such as bwa aln (@doi:10.1093/bioinformatics/btp324) for ultra-short reads and mapDamage (@doi:10.1093/bioinformatics/btr347) for aDNA characteristic evaluation). While popular, both tools have suffered from a common occurrence in academic bioinformatics which is development stagnation (CITE). Neither tool has had major updates to the pipeline, meaning versions remain out of date and new ‘standard’ analyses are not being included. The ability to reproduce analysis becomes more challenging as dependencies become more difficult to install, when they become deprecated, as well as increasing ‘bug fixing’ in hidden internal-only versions of tools in different labs. The quality of aDNA studies then suffer, as new labs trying to entire the field without experience and without easy access to field-established routine analyses results in studies being published without the necessary quality controls to ensure authenticity of their data (Cano/Eisenhofer discussions).
 
-To address these challenges, we have developed nf-core/eager, the second version of the EAGER pipeline. This has been written in with Nextflow, a domain-specific-language (DSL) designed for the construction of ‘omic analysis pipelines (Di Tomasso)). Nextflow offers two main benefits over the custom pipeline framework used in EAGER, which is a) immediate integration into various schedulers in High-Performance-Cluster (HPC) environments as well as local computers, and b) widely-adopted but simplified programming language with extensive documentation that most intermediate level bioinformaticians can easily access. These two factors allow most labs to run any pipeline efficiently on their own cluster with minimal configuration, and secondly to make it easier for a range of contributors to fix bugs and add functionality (rather than having to learn a fully fledged language or a single pipeline’s-specific framework). In addition, nf-core/eager has been constructed in the context of the nf-core community framework (CITE). nf-core enforces strict guidelines for best-practises in software development, including continuous integration tests, minimum documentation requirement  and code peer-review, while facilitating the adherence to these guidelines by providing templates and active community support. The open community allows support for new contributors and thus a greater source of long-term maintenance of the pipeline. 
+To address these challenges, we have developed nf-core/eager, the second version of the EAGER pipeline. This has been written with Nextflow, a domain-specific-language (DSL) designed for the construction of ‘omic analysis pipelines (@doi:10.1038/nbt.3820). Nextflow offers two main benefits over the custom pipeline framework used in EAGER, which is a) immediate integration into various schedulers in High-Performance-Cluster (HPC) environments as well as local computers, and b) widely-adopted but simplified programming language with extensive documentation that most intermediate level bioinformaticians can easily access. These two factors allow most labs to run any pipeline efficiently on their own cluster with minimal configuration, and secondly to make it easier for a range of contributors to fix bugs and add functionality (rather than having to learn a fully fledged language or a single pipeline’s-specific framework). In addition, nf-core/eager has been constructed in the context of the nf-core community framework (@doi:10.1038/s41587-020-0439-x). nf-core enforces strict guidelines for best-practises in software development, including continuous integration tests, minimum documentation requirement  and code peer-review, while facilitating the adherence to these guidelines by providing templates and active community support. The open community allows support for new contributors and thus a greater source of long-term maintenance of the pipeline.
 
 [. Given the challenges and untapped potential of ancient DNA reproducibility is of…]
 
