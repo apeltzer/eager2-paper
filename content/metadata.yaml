@@ -31,14 +31,14 @@ authors:
       - Department of Something, University of Whatever
     funders: Grant XXXXXXXX
   - 
-    github: placeholder
+    github: maxibor
     name: Maxime Borry
-    initials: 
-    orcid: XXXX-XXXX-XXXX-XXXX
-    twitter: placeholder
-    email: itsme@shh.mpg.de
+    initials: M.B.
+    orcid: 0000-0001-9140-7559
+    twitter: notmaxib
+    email: borry@shh.mpg.de
     affiliations:
-      - Department of Something, University of Whatever
+      - Department of Archaeogenetics, Max-Planck-Institute for the Science of Human History
     funders: Grant XXXXXXXX
   - 
     github: placeholder
