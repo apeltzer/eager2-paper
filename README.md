@@ -2,10 +2,10 @@
 
 <!-- usage note: edit the H1 title above to personalize the manuscript -->
 
-[![HTML Manuscript](https://img.shields.io/badge/manuscript-HTML-blue.svg)](https://apeltzer.github.io/eager2/)
-[![PDF Manuscript](https://img.shields.io/badge/manuscript-PDF-blue.svg)](https://apeltzer.github.io/eager2/manuscript.pdf)
-[![GitHub Actions Status](https://github.com/apeltzer/eager2/workflows/Manubot/badge.svg)](https://github.com/apeltzer/eager2/actions)
-[![Travis Build Status](https://travis-ci.com/apeltzer/eager2.svg?branch=master)](https://travis-ci.com/apeltzer/eager2)
+[![HTML Manuscript](https://img.shields.io/badge/manuscript-HTML-blue.svg)](https://apeltzer.github.io/eager2-paper/)
+[![PDF Manuscript](https://img.shields.io/badge/manuscript-PDF-blue.svg)](https://apeltzer.github.io/eager2-paper/manuscript.pdf)
+[![Manubot](https://github.com/apeltzer/eager2-paper/workflows/Manubot/badge.svg)](https://github.com/apeltzer/eager2-paper/actions)
+[![Travis Build Status](https://travis-ci.com/apeltzer/eager2.svg?branch=master)](https://travis-ci.com/apeltzer/eager2-paper)
 <!-- usage note: delete CI badges above for services not used by your manuscript -->
 
 ## Manuscript description
@@ -82,8 +82,8 @@ If your pull request build fails, see the CI logs for the cause of failure and r
 When a commit to the `master` branch occurs (for example, when a pull request is merged), CI builds the manuscript and writes the results to the [`gh-pages`](https://github.com/apeltzer/eager2/tree/gh-pages) and [`output`](https://github.com/apeltzer/eager2/tree/output) branches.
 The `gh-pages` branch uses [GitHub Pages](https://pages.github.com/) to host the following URLs:
 
-+ **HTML manuscript** at https://apeltzer.github.io/eager2/
-+ **PDF manuscript** at https://apeltzer.github.io/eager2/manuscript.pdf
++ **HTML manuscript** at https://apeltzer.github.io/eager2-paper/
++ **PDF manuscript** at https://apeltzer.github.io/eager2-paper/manuscript.pdf
 
 For continuous integration configuration details, see [`.github/workflows/manubot.yaml`](.github/workflows/manubot.yaml) if using GitHub Actions or [`.travis.yml`](.travis.yml) if using Travis CI.
 
