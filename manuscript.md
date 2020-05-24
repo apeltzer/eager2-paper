@@ -11,7 +11,7 @@ author-meta:
 - Alexander Peltzer
 bibliography:
 - content/manual-references.json
-date-meta: '2020-04-27'
+date-meta: '2020-05-24'
 header-includes: '<!--
 
   Manubot generated metadata rendered from header-includes-template.html.
@@ -30,9 +30,9 @@ header-includes: '<!--
 
   <meta property="twitter:title" content="Reproducible, portable, and efficient ancient genome reconstruction with nf-core/eager" />
 
-  <meta name="dc.date" content="2020-04-27" />
+  <meta name="dc.date" content="2020-05-24" />
 
-  <meta name="citation_publication_date" content="2020-04-27" />
+  <meta name="citation_publication_date" content="2020-05-24" />
 
   <meta name="dc.language" content="en-GB" />
 
@@ -130,11 +130,11 @@ header-includes: '<!--
 
   <link rel="alternate" type="application/pdf" href="https://apeltzer.github.io/eager2-paper/manuscript.pdf" />
 
-  <link rel="alternate" type="text/html" href="https://apeltzer.github.io/eager2-paper/v/9addcceebc6ee7960067007c93b663766c011a57/" />
+  <link rel="alternate" type="text/html" href="https://apeltzer.github.io/eager2-paper/v/9bb4dd432da350d5501fdc12e77a190728919ab7/" />
 
-  <meta name="manubot_html_url_versioned" content="https://apeltzer.github.io/eager2-paper/v/9addcceebc6ee7960067007c93b663766c011a57/" />
+  <meta name="manubot_html_url_versioned" content="https://apeltzer.github.io/eager2-paper/v/9bb4dd432da350d5501fdc12e77a190728919ab7/" />
 
-  <meta name="manubot_pdf_url_versioned" content="https://apeltzer.github.io/eager2-paper/v/9addcceebc6ee7960067007c93b663766c011a57/manuscript.pdf" />
+  <meta name="manubot_pdf_url_versioned" content="https://apeltzer.github.io/eager2-paper/v/9bb4dd432da350d5501fdc12e77a190728919ab7/manuscript.pdf" />
 
   <meta property="og:type" content="article" />
 
@@ -170,10 +170,10 @@ title: Reproducible, portable, and efficient ancient genome reconstruction with 
 
 <small><em>
 This manuscript
-([permalink](https://apeltzer.github.io/eager2-paper/v/9addcceebc6ee7960067007c93b663766c011a57/))
+([permalink](https://apeltzer.github.io/eager2-paper/v/9bb4dd432da350d5501fdc12e77a190728919ab7/))
 was automatically generated
-from [apeltzer/eager2-paper@9addcce](https://github.com/apeltzer/eager2-paper/tree/9addcceebc6ee7960067007c93b663766c011a57)
-on April 27, 2020.
+from [apeltzer/eager2-paper@9bb4dd4](https://github.com/apeltzer/eager2-paper/tree/9bb4dd432da350d5501fdc12e77a190728919ab7)
+on May 24, 2020.
 </em></small>
 
 ## Authors
