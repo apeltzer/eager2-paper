@@ -16,20 +16,20 @@ authors:
     initials: J.A.F.Y.
     orcid: 0000-0001-5585-6277
     twitter: jfy133
-    email: fellows@shh.mpg.de
+    email: jfy133@gmail.com
     affiliations:
       - Department of Archaeogenetics, Max-Planck-Institute for the Science of Human History
-    funders: Grant XXXXXXXX
+    funders: Max Planck Society
   - 
     github: TCLamnidis
-    name: Thiseas
-    initials: 
+    name: Thiseas C. Lamnidis
+    initials: T.C.L.
     orcid: XXXX-XXXX-XXXX-XXXX
-    twitter: placeholder
-    email: itsme@shh.mpg.de
+    twitter: TCLamnidis
+    email: lamnids@shh.mpg.de
     affiliations:
       - Department of Something, University of Whatever
-    funders: Grant XXXXXXXX
+    funders: Max Planck Society
   - 
     github: maxibor
     name: Maxime Borry
@@ -39,41 +39,40 @@ authors:
     email: borry@shh.mpg.de
     affiliations:
       - Department of Archaeogenetics, Max-Planck-Institute for the Science of Human History
-    funders: Grant XXXXXXXX
+    funders: Max Planck Society
   - 
     github: placeholder
-    name: Aida 
-    initials: 
+    name: Aida Andrades Valtueña
+    initials: A.A.V.
     orcid: XXXX-XXXX-XXXX-XXXX
     twitter: placeholder
-    email: itsme@shh.mpg.de
+    email: andrades@shh.mpg.de
     affiliations:
-      - Department of Something, University of Whatever
-    funders: Grant XXXXXXXX
+      - Department of Archaeogenetics, Max-Planck-Institute for the Science of Human History
+    funders: Max Planck Society
   - 
     github: placeholder
-    name: Zandra
-    initials: 
+    name: Zandra Fagernäs
+    initials: Z.F.
     orcid: XXXX-XXXX-XXXX-XXXX
-    twitter: placeholder
-    email: itsme@shh.mpg.de
+    twitter: ZandraSelina
+    email: fagernaes@shh.mpg.de
     affiliations:
-      - Department of Something, University of Whatever
-    funders: Grant XXXXXXXX
+      - Department of Archaeogenetics, Max-Planck-Institute for the Science of Human History
+    funders: Max Planck Society
   - 
     github: placeholder
-    name: Stephen
-    initials: 
+    name: Stephen Clayton
+    initials: S.C.
     orcid: XXXX-XXXX-XXXX-XXXX
-    twitter: placeholder
-    email: itsme@shh.mpg.de
+    email: clayton@shh.mpg.de
     affiliations:
-      - Department of Something, University of Whatever
-    funders: Grant XXXXXXXX
+      - Department of Archaeogenetics, Max-Planck-Institute for the Science of Human History
+    funders: Max Planck Society
   - 
     github: MaxUlysse
     name: Maxime U. Garcia
-    initials: MG
+    initials: M.U.G.
     orcid: 0000-0003-2827-9261
     twitter: gau
     email: maxime.garcia@scilifelab.se
@@ -82,8 +81,8 @@ authors:
     funders: Barncancerfonden
   - 
     github: placeholder
-    name: Judith
-    initials: 
+    name: Judith Neukamm
+    initials: J.N.
     orcid: XXXX-XXXX-XXXX-XXXX
     twitter: placeholder
     email: itsme@uzh
@@ -93,7 +92,7 @@ authors:
   -
     github: apeltzer
     name: Alexander Peltzer
-    initials: 
+    initials: A.P.
     twitter: alex_peltzer
     orcid: 0000-0002-6503-2180
     email: alexander.peltzer@boehringer-ingelheim.com
