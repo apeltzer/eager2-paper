@@ -11,19 +11,19 @@
       "bioinformatics"
     ],
     "lang": "en-GB",
-    "date-meta": "2020-05-24",
+    "date-meta": "2020-05-28",
     "author-meta": [
       "James A. Fellows Yates",
-      "Thiseas",
+      "Thiseas C. Lamnidis",
       "Maxime Borry",
-      "Aida",
-      "Zandra",
-      "Stephen",
+      "Aida Andrades Valtueña",
+      "Zandra Fagernäs",
+      "Stephen Clayton",
       "Maxime U. Garcia",
-      "Judith",
+      "Judith Neukamm",
       "Alexander Peltzer"
     ],
-    "header-includes": "<!--\nManubot generated metadata rendered from header-includes-template.html.\nSuggest improvements at https://github.com/manubot/manubot/blob/master/manubot/process/header-includes-template.html\n-->\n<meta name=\"dc.format\" content=\"text/html\" />\n<meta name=\"dc.title\" content=\"Reproducible, portable, and efficient ancient genome reconstruction with nf-core/eager\" />\n<meta name=\"citation_title\" content=\"Reproducible, portable, and efficient ancient genome reconstruction with nf-core/eager\" />\n<meta property=\"og:title\" content=\"Reproducible, portable, and efficient ancient genome reconstruction with nf-core/eager\" />\n<meta property=\"twitter:title\" content=\"Reproducible, portable, and efficient ancient genome reconstruction with nf-core/eager\" />\n<meta name=\"dc.date\" content=\"2020-05-24\" />\n<meta name=\"citation_publication_date\" content=\"2020-05-24\" />\n<meta name=\"dc.language\" content=\"en-GB\" />\n<meta name=\"citation_language\" content=\"en-GB\" />\n<meta name=\"dc.relation.ispartof\" content=\"Manubot\" />\n<meta name=\"dc.publisher\" content=\"Manubot\" />\n<meta name=\"citation_journal_title\" content=\"Manubot\" />\n<meta name=\"citation_technical_report_institution\" content=\"Manubot\" />\n<meta name=\"citation_author\" content=\"James A. Fellows Yates\" />\n<meta name=\"citation_author_institution\" content=\"Department of Archaeogenetics, Max-Planck-Institute for the Science of Human History\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0001-5585-6277\" />\n<meta name=\"twitter:creator\" content=\"@jfy133\" />\n<meta name=\"citation_author\" content=\"Thiseas\" />\n<meta name=\"citation_author_institution\" content=\"Department of Something, University of Whatever\" />\n<meta name=\"citation_author_orcid\" content=\"XXXX-XXXX-XXXX-XXXX\" />\n<meta name=\"twitter:creator\" content=\"@placeholder\" />\n<meta name=\"citation_author\" content=\"Maxime Borry\" />\n<meta name=\"citation_author_institution\" content=\"Department of Archaeogenetics, Max-Planck-Institute for the Science of Human History\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0001-9140-7559\" />\n<meta name=\"twitter:creator\" content=\"@notmaxib\" />\n<meta name=\"citation_author\" content=\"Aida\" />\n<meta name=\"citation_author_institution\" content=\"Department of Something, University of Whatever\" />\n<meta name=\"citation_author_orcid\" content=\"XXXX-XXXX-XXXX-XXXX\" />\n<meta name=\"twitter:creator\" content=\"@placeholder\" />\n<meta name=\"citation_author\" content=\"Zandra\" />\n<meta name=\"citation_author_institution\" content=\"Department of Something, University of Whatever\" />\n<meta name=\"citation_author_orcid\" content=\"XXXX-XXXX-XXXX-XXXX\" />\n<meta name=\"twitter:creator\" content=\"@placeholder\" />\n<meta name=\"citation_author\" content=\"Stephen\" />\n<meta name=\"citation_author_institution\" content=\"Department of Something, University of Whatever\" />\n<meta name=\"citation_author_orcid\" content=\"XXXX-XXXX-XXXX-XXXX\" />\n<meta name=\"twitter:creator\" content=\"@placeholder\" />\n<meta name=\"citation_author\" content=\"Maxime U. Garcia\" />\n<meta name=\"citation_author_institution\" content=\"Department of Oncology-Pathology, Karolinska Institutet\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0003-2827-9261\" />\n<meta name=\"twitter:creator\" content=\"@gau\" />\n<meta name=\"citation_author\" content=\"Judith\" />\n<meta name=\"citation_author_institution\" content=\"Department of Something, University of Whatever\" />\n<meta name=\"citation_author_orcid\" content=\"XXXX-XXXX-XXXX-XXXX\" />\n<meta name=\"twitter:creator\" content=\"@placeholder\" />\n<meta name=\"citation_author\" content=\"Alexander Peltzer\" />\n<meta name=\"citation_author_institution\" content=\"Translational Medicine &amp; Clinical Pharmacology, Boehringer Ingelheim Pharma GmbH &amp; CO KG, Biberach an der Riss\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0002-6503-2180\" />\n<meta name=\"twitter:creator\" content=\"@alex_peltzer\" />\n<link rel=\"canonical\" href=\"https://apeltzer.github.io/eager2-paper/\" />\n<meta property=\"og:url\" content=\"https://apeltzer.github.io/eager2-paper/\" />\n<meta property=\"twitter:url\" content=\"https://apeltzer.github.io/eager2-paper/\" />\n<meta name=\"citation_fulltext_html_url\" content=\"https://apeltzer.github.io/eager2-paper/\" />\n<meta name=\"citation_pdf_url\" content=\"https://apeltzer.github.io/eager2-paper/manuscript.pdf\" />\n<link rel=\"alternate\" type=\"application/pdf\" href=\"https://apeltzer.github.io/eager2-paper/manuscript.pdf\" />\n<link rel=\"alternate\" type=\"text/html\" href=\"https://apeltzer.github.io/eager2-paper/v/9bb4dd432da350d5501fdc12e77a190728919ab7/\" />\n<meta name=\"manubot_html_url_versioned\" content=\"https://apeltzer.github.io/eager2-paper/v/9bb4dd432da350d5501fdc12e77a190728919ab7/\" />\n<meta name=\"manubot_pdf_url_versioned\" content=\"https://apeltzer.github.io/eager2-paper/v/9bb4dd432da350d5501fdc12e77a190728919ab7/manuscript.pdf\" />\n<meta property=\"og:type\" content=\"article\" />\n<meta property=\"twitter:card\" content=\"summary_large_image\" />\n<link rel=\"icon\" type=\"image/png\" sizes=\"192x192\" href=\"https://manubot.org/favicon-192x192.png\" />\n<link rel=\"mask-icon\" href=\"https://manubot.org/safari-pinned-tab.svg\" color=\"#ad1457\" />\n<meta name=\"theme-color\" content=\"#ad1457\" />\n<!-- end Manubot generated metadata -->",
+    "header-includes": "<!--\nManubot generated metadata rendered from header-includes-template.html.\nSuggest improvements at https://github.com/manubot/manubot/blob/master/manubot/process/header-includes-template.html\n-->\n<meta name=\"dc.format\" content=\"text/html\" />\n<meta name=\"dc.title\" content=\"Reproducible, portable, and efficient ancient genome reconstruction with nf-core/eager\" />\n<meta name=\"citation_title\" content=\"Reproducible, portable, and efficient ancient genome reconstruction with nf-core/eager\" />\n<meta property=\"og:title\" content=\"Reproducible, portable, and efficient ancient genome reconstruction with nf-core/eager\" />\n<meta property=\"twitter:title\" content=\"Reproducible, portable, and efficient ancient genome reconstruction with nf-core/eager\" />\n<meta name=\"dc.date\" content=\"2020-05-28\" />\n<meta name=\"citation_publication_date\" content=\"2020-05-28\" />\n<meta name=\"dc.language\" content=\"en-GB\" />\n<meta name=\"citation_language\" content=\"en-GB\" />\n<meta name=\"dc.relation.ispartof\" content=\"Manubot\" />\n<meta name=\"dc.publisher\" content=\"Manubot\" />\n<meta name=\"citation_journal_title\" content=\"Manubot\" />\n<meta name=\"citation_technical_report_institution\" content=\"Manubot\" />\n<meta name=\"citation_author\" content=\"James A. Fellows Yates\" />\n<meta name=\"citation_author_institution\" content=\"Department of Archaeogenetics, Max-Planck-Institute for the Science of Human History\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0001-5585-6277\" />\n<meta name=\"twitter:creator\" content=\"@jfy133\" />\n<meta name=\"citation_author\" content=\"Thiseas C. Lamnidis\" />\n<meta name=\"citation_author_institution\" content=\"Department of Something, University of Whatever\" />\n<meta name=\"citation_author_orcid\" content=\"XXXX-XXXX-XXXX-XXXX\" />\n<meta name=\"twitter:creator\" content=\"@TCLamnidis\" />\n<meta name=\"citation_author\" content=\"Maxime Borry\" />\n<meta name=\"citation_author_institution\" content=\"Department of Archaeogenetics, Max-Planck-Institute for the Science of Human History\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0001-9140-7559\" />\n<meta name=\"twitter:creator\" content=\"@notmaxib\" />\n<meta name=\"citation_author\" content=\"Aida Andrades Valtueña\" />\n<meta name=\"citation_author_institution\" content=\"Department of Archaeogenetics, Max-Planck-Institute for the Science of Human History\" />\n<meta name=\"citation_author_orcid\" content=\"XXXX-XXXX-XXXX-XXXX\" />\n<meta name=\"twitter:creator\" content=\"@placeholder\" />\n<meta name=\"citation_author\" content=\"Zandra Fagernäs\" />\n<meta name=\"citation_author_institution\" content=\"Department of Archaeogenetics, Max-Planck-Institute for the Science of Human History\" />\n<meta name=\"citation_author_orcid\" content=\"XXXX-XXXX-XXXX-XXXX\" />\n<meta name=\"twitter:creator\" content=\"@ZandraSelina\" />\n<meta name=\"citation_author\" content=\"Stephen Clayton\" />\n<meta name=\"citation_author_institution\" content=\"Department of Archaeogenetics, Max-Planck-Institute for the Science of Human History\" />\n<meta name=\"citation_author_orcid\" content=\"XXXX-XXXX-XXXX-XXXX\" />\n<meta name=\"citation_author\" content=\"Maxime U. Garcia\" />\n<meta name=\"citation_author_institution\" content=\"Department of Oncology-Pathology, Karolinska Institutet\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0003-2827-9261\" />\n<meta name=\"twitter:creator\" content=\"@gau\" />\n<meta name=\"citation_author\" content=\"Judith Neukamm\" />\n<meta name=\"citation_author_institution\" content=\"Department of Something, University of Whatever\" />\n<meta name=\"citation_author_orcid\" content=\"XXXX-XXXX-XXXX-XXXX\" />\n<meta name=\"twitter:creator\" content=\"@placeholder\" />\n<meta name=\"citation_author\" content=\"Alexander Peltzer\" />\n<meta name=\"citation_author_institution\" content=\"Translational Medicine &amp; Clinical Pharmacology, Boehringer Ingelheim Pharma GmbH &amp; CO KG, Biberach an der Riss\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0002-6503-2180\" />\n<meta name=\"twitter:creator\" content=\"@alex_peltzer\" />\n<link rel=\"canonical\" href=\"https://apeltzer.github.io/eager2-paper/\" />\n<meta property=\"og:url\" content=\"https://apeltzer.github.io/eager2-paper/\" />\n<meta property=\"twitter:url\" content=\"https://apeltzer.github.io/eager2-paper/\" />\n<meta name=\"citation_fulltext_html_url\" content=\"https://apeltzer.github.io/eager2-paper/\" />\n<meta name=\"citation_pdf_url\" content=\"https://apeltzer.github.io/eager2-paper/manuscript.pdf\" />\n<link rel=\"alternate\" type=\"application/pdf\" href=\"https://apeltzer.github.io/eager2-paper/manuscript.pdf\" />\n<link rel=\"alternate\" type=\"text/html\" href=\"https://apeltzer.github.io/eager2-paper/v/1f43307321541b3c041b57caf8810cd77fc9bcd1/\" />\n<meta name=\"manubot_html_url_versioned\" content=\"https://apeltzer.github.io/eager2-paper/v/1f43307321541b3c041b57caf8810cd77fc9bcd1/\" />\n<meta name=\"manubot_pdf_url_versioned\" content=\"https://apeltzer.github.io/eager2-paper/v/1f43307321541b3c041b57caf8810cd77fc9bcd1/manuscript.pdf\" />\n<meta property=\"og:type\" content=\"article\" />\n<meta property=\"twitter:card\" content=\"summary_large_image\" />\n<link rel=\"icon\" type=\"image/png\" sizes=\"192x192\" href=\"https://manubot.org/favicon-192x192.png\" />\n<link rel=\"mask-icon\" href=\"https://manubot.org/safari-pinned-tab.svg\" color=\"#ad1457\" />\n<meta name=\"theme-color\" content=\"#ad1457\" />\n<!-- end Manubot generated metadata -->",
     "bibliography": [
       "content/manual-references.json"
     ],
@@ -33,7 +33,7 @@
     "manubot-clear-requests-cache": false
   },
   "manubot": {
-    "date": "May 24, 2020",
+    "date": "May 28, 2020",
     "authors": [
       {
         "github": "jfy133",
@@ -41,26 +41,26 @@
         "initials": "J.A.F.Y.",
         "orcid": "0000-0001-5585-6277",
         "twitter": "jfy133",
-        "email": "fellows@shh.mpg.de",
+        "email": "jfy133@gmail.com",
         "affiliations": [
           "Department of Archaeogenetics, Max-Planck-Institute for the Science of Human History"
         ],
-        "funders": "Grant XXXXXXXX",
+        "funders": "Max Planck Society",
         "affiliation_numbers": [
           1
         ]
       },
       {
         "github": "TCLamnidis",
-        "name": "Thiseas",
-        "initials": null,
+        "name": "Thiseas C. Lamnidis",
+        "initials": "T.C.L.",
         "orcid": "XXXX-XXXX-XXXX-XXXX",
-        "twitter": "placeholder",
-        "email": "itsme@shh.mpg.de",
+        "twitter": "TCLamnidis",
+        "email": "lamnids@shh.mpg.de",
         "affiliations": [
           "Department of Something, University of Whatever"
         ],
-        "funders": "Grant XXXXXXXX",
+        "funders": "Max Planck Society",
         "affiliation_numbers": [
           2
         ]
@@ -75,60 +75,59 @@
         "affiliations": [
           "Department of Archaeogenetics, Max-Planck-Institute for the Science of Human History"
         ],
-        "funders": "Grant XXXXXXXX",
+        "funders": "Max Planck Society",
         "affiliation_numbers": [
           1
         ]
       },
       {
         "github": "placeholder",
-        "name": "Aida",
-        "initials": null,
+        "name": "Aida Andrades Valtueña",
+        "initials": "A.A.V.",
         "orcid": "XXXX-XXXX-XXXX-XXXX",
         "twitter": "placeholder",
-        "email": "itsme@shh.mpg.de",
+        "email": "andrades@shh.mpg.de",
         "affiliations": [
-          "Department of Something, University of Whatever"
+          "Department of Archaeogenetics, Max-Planck-Institute for the Science of Human History"
         ],
-        "funders": "Grant XXXXXXXX",
+        "funders": "Max Planck Society",
         "affiliation_numbers": [
-          2
+          1
         ]
       },
       {
         "github": "placeholder",
-        "name": "Zandra",
-        "initials": null,
+        "name": "Zandra Fagernäs",
+        "initials": "Z.F.",
         "orcid": "XXXX-XXXX-XXXX-XXXX",
-        "twitter": "placeholder",
-        "email": "itsme@shh.mpg.de",
+        "twitter": "ZandraSelina",
+        "email": "fagernaes@shh.mpg.de",
         "affiliations": [
-          "Department of Something, University of Whatever"
+          "Department of Archaeogenetics, Max-Planck-Institute for the Science of Human History"
         ],
-        "funders": "Grant XXXXXXXX",
+        "funders": "Max Planck Society",
         "affiliation_numbers": [
-          2
+          1
         ]
       },
       {
         "github": "placeholder",
-        "name": "Stephen",
-        "initials": null,
+        "name": "Stephen Clayton",
+        "initials": "S.C.",
         "orcid": "XXXX-XXXX-XXXX-XXXX",
-        "twitter": "placeholder",
-        "email": "itsme@shh.mpg.de",
+        "email": "clayton@shh.mpg.de",
         "affiliations": [
-          "Department of Something, University of Whatever"
+          "Department of Archaeogenetics, Max-Planck-Institute for the Science of Human History"
         ],
-        "funders": "Grant XXXXXXXX",
+        "funders": "Max Planck Society",
         "affiliation_numbers": [
-          2
+          1
         ]
       },
       {
         "github": "MaxUlysse",
         "name": "Maxime U. Garcia",
-        "initials": "MG",
+        "initials": "M.U.G.",
         "orcid": "0000-0003-2827-9261",
         "twitter": "gau",
         "email": "maxime.garcia@scilifelab.se",
@@ -142,8 +141,8 @@
       },
       {
         "github": "placeholder",
-        "name": "Judith",
-        "initials": null,
+        "name": "Judith Neukamm",
+        "initials": "J.N.",
         "orcid": "XXXX-XXXX-XXXX-XXXX",
         "twitter": "placeholder",
         "email": "itsme@uzh",
@@ -158,7 +157,7 @@
       {
         "github": "apeltzer",
         "name": "Alexander Peltzer",
-        "initials": null,
+        "initials": "A.P.",
         "twitter": "alex_peltzer",
         "orcid": "0000-0002-6503-2180",
         "email": "alexander.peltzer@boehringer-ingelheim.com",
@@ -193,19 +192,19 @@
       "repo_slug": "apeltzer/eager2-paper",
       "repo_owner": "apeltzer",
       "repo_name": "eager2-paper",
-      "commit": "9bb4dd432da350d5501fdc12e77a190728919ab7",
-      "triggering_commit": "9bb4dd432da350d5501fdc12e77a190728919ab7",
-      "build_url": "https://github.com/apeltzer/eager2-paper/commit/9bb4dd432da350d5501fdc12e77a190728919ab7/checks",
+      "commit": "1f43307321541b3c041b57caf8810cd77fc9bcd1",
+      "triggering_commit": "1f43307321541b3c041b57caf8810cd77fc9bcd1",
+      "build_url": "https://github.com/apeltzer/eager2-paper/commit/1f43307321541b3c041b57caf8810cd77fc9bcd1/checks",
       "job_url": "https://github.com/apeltzer/eager2-paper/runs/run2"
     },
     "html_url": "https://apeltzer.github.io/eager2-paper/",
     "pdf_url": "https://apeltzer.github.io/eager2-paper/manuscript.pdf",
-    "html_url_versioned": "https://apeltzer.github.io/eager2-paper/v/9bb4dd432da350d5501fdc12e77a190728919ab7/",
-    "pdf_url_versioned": "https://apeltzer.github.io/eager2-paper/v/9bb4dd432da350d5501fdc12e77a190728919ab7/manuscript.pdf",
+    "html_url_versioned": "https://apeltzer.github.io/eager2-paper/v/1f43307321541b3c041b57caf8810cd77fc9bcd1/",
+    "pdf_url_versioned": "https://apeltzer.github.io/eager2-paper/v/1f43307321541b3c041b57caf8810cd77fc9bcd1/manuscript.pdf",
     "manubot_version": "0.3.1",
     "rootstock_commit": "7c0f9c30fe03a6e264e19d08f2337266a4ea3e3e",
     "manuscript_stats": {
-      "word_count": 999
+      "word_count": 2511
     }
   }
 }
