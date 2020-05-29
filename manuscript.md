@@ -12,7 +12,7 @@ author-meta:
 bibliography:
 - content/manual-references.json
 date-meta: '2020-05-29'
-header-includes: "<!--\nManubot generated metadata rendered from header-includes-template.html.\nSuggest improvements at https://github.com/manubot/manubot/blob/master/manubot/process/header-includes-template.html\n-->\n<meta name=\"dc.format\" content=\"text/html\" />\n<meta name=\"dc.title\" content=\"Reproducible, portable, and efficient ancient genome reconstruction with nf-core/eager\" />\n<meta name=\"citation_title\" content=\"Reproducible, portable, and efficient ancient genome reconstruction with nf-core/eager\" />\n<meta property=\"og:title\" content=\"Reproducible, portable, and efficient ancient genome reconstruction with nf-core/eager\" />\n<meta property=\"twitter:title\" content=\"Reproducible, portable, and efficient ancient genome reconstruction with nf-core/eager\" />\n<meta name=\"dc.date\" content=\"2020-05-29\" />\n<meta name=\"citation_publication_date\" content=\"2020-05-29\" />\n<meta name=\"dc.language\" content=\"en-GB\" />\n<meta name=\"citation_language\" content=\"en-GB\" />\n<meta name=\"dc.relation.ispartof\" content=\"Manubot\" />\n<meta name=\"dc.publisher\" content=\"Manubot\" />\n<meta name=\"citation_journal_title\" content=\"Manubot\" />\n<meta name=\"citation_technical_report_institution\" content=\"Manubot\" />\n<meta name=\"citation_author\" content=\"James A. Fellows Yates\" />\n<meta name=\"citation_author_institution\" content=\"Department of Archaeogenetics, Max-Planck-Institute for the Science of Human History\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0001-5585-6277\" />\n<meta name=\"twitter:creator\" content=\"@jfy133\" />\n<meta name=\"citation_author\" content=\"Thiseas C. Lamnidis\" />\n<meta name=\"citation_author_institution\" content=\"Department of Archaeogenetics, Max-Planck-Institute for the Science of Human History\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0003-4485-8570\" />\n<meta name=\"twitter:creator\" content=\"@TCLamnidis\" />\n<meta name=\"citation_author\" content=\"Maxime Borry\" />\n<meta name=\"citation_author_institution\" content=\"Department of Archaeogenetics, Max-Planck-Institute for the Science of Human History\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0001-9140-7559\" />\n<meta name=\"twitter:creator\" content=\"@notmaxib\" />\n<meta name=\"citation_author\" content=\"Aida Andrades Valtue\xF1a\" />\n<meta name=\"citation_author_institution\" content=\"Department of Archaeogenetics, Max-Planck-Institute for the Science of Human History\" />\n<meta name=\"citation_author_orcid\" content=\"XXXX-XXXX-XXXX-XXXX\" />\n<meta name=\"twitter:creator\" content=\"@aidaanva\" />\n<meta name=\"citation_author\" content=\"Zandra Fagern\xE4s\" />\n<meta name=\"citation_author_institution\" content=\"Department of Archaeogenetics, Max-Planck-Institute for the Science of Human History\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0003-2667-3556\" />\n<meta name=\"twitter:creator\" content=\"@ZandraSelina\" />\n<meta name=\"citation_author\" content=\"Stephen Clayton\" />\n<meta name=\"citation_author_institution\" content=\"Department of Archaeogenetics, Max-Planck-Institute for the Science of Human History\" />\n<meta name=\"citation_author_orcid\" content=\"XXXX-XXXX-XXXX-XXXX\" />\n<meta name=\"citation_author\" content=\"Maxime U. Garcia\" />\n<meta name=\"citation_author_institution\" content=\"Department of Oncology-Pathology, Karolinska Institutet\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0003-2827-9261\" />\n<meta name=\"twitter:creator\" content=\"@gau\" />\n<meta name=\"citation_author\" content=\"Judith Neukamm\" />\n<meta name=\"citation_author_institution\" content=\"Palaeogenetics Group, Institute of Evolutionary Medicine, University of Zurich\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0001-8141-566X\" />\n<meta name=\"twitter:creator\" content=\"@JudithNeukamm\" />\n<meta name=\"citation_author\" content=\"Alexander Peltzer\" />\n<meta name=\"citation_author_institution\" content=\"Translational Medicine &amp; Clinical Pharmacology, Boehringer Ingelheim Pharma GmbH &amp; CO KG, Biberach an der Riss\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0002-6503-2180\" />\n<meta name=\"twitter:creator\" content=\"@alex_peltzer\" />\n<link rel=\"canonical\" href=\"https://apeltzer.github.io/eager2-paper/\" />\n<meta property=\"og:url\" content=\"https://apeltzer.github.io/eager2-paper/\" />\n<meta property=\"twitter:url\" content=\"https://apeltzer.github.io/eager2-paper/\" />\n<meta name=\"citation_fulltext_html_url\" content=\"https://apeltzer.github.io/eager2-paper/\" />\n<meta name=\"citation_pdf_url\" content=\"https://apeltzer.github.io/eager2-paper/manuscript.pdf\" />\n<link rel=\"alternate\" type=\"application/pdf\" href=\"https://apeltzer.github.io/eager2-paper/manuscript.pdf\" />\n<link rel=\"alternate\" type=\"text/html\" href=\"https://apeltzer.github.io/eager2-paper/v/7cbd147099c9f9f60238a85890bdc5892c9561ad/\" />\n<meta name=\"manubot_html_url_versioned\" content=\"https://apeltzer.github.io/eager2-paper/v/7cbd147099c9f9f60238a85890bdc5892c9561ad/\" />\n<meta name=\"manubot_pdf_url_versioned\" content=\"https://apeltzer.github.io/eager2-paper/v/7cbd147099c9f9f60238a85890bdc5892c9561ad/manuscript.pdf\" />\n<meta property=\"og:type\" content=\"article\" />\n<meta property=\"twitter:card\" content=\"summary_large_image\" />\n<link rel=\"icon\" type=\"image/png\" sizes=\"192x192\" href=\"https://manubot.org/favicon-192x192.png\" />\n<link rel=\"mask-icon\" href=\"https://manubot.org/safari-pinned-tab.svg\" color=\"#ad1457\" />\n<meta name=\"theme-color\" content=\"#ad1457\" />\n<!-- end Manubot generated metadata -->"
+header-includes: "<!--\nManubot generated metadata rendered from header-includes-template.html.\nSuggest improvements at https://github.com/manubot/manubot/blob/master/manubot/process/header-includes-template.html\n-->\n<meta name=\"dc.format\" content=\"text/html\" />\n<meta name=\"dc.title\" content=\"Reproducible, portable, and efficient ancient genome reconstruction with nf-core/eager\" />\n<meta name=\"citation_title\" content=\"Reproducible, portable, and efficient ancient genome reconstruction with nf-core/eager\" />\n<meta property=\"og:title\" content=\"Reproducible, portable, and efficient ancient genome reconstruction with nf-core/eager\" />\n<meta property=\"twitter:title\" content=\"Reproducible, portable, and efficient ancient genome reconstruction with nf-core/eager\" />\n<meta name=\"dc.date\" content=\"2020-05-29\" />\n<meta name=\"citation_publication_date\" content=\"2020-05-29\" />\n<meta name=\"dc.language\" content=\"en-GB\" />\n<meta name=\"citation_language\" content=\"en-GB\" />\n<meta name=\"dc.relation.ispartof\" content=\"Manubot\" />\n<meta name=\"dc.publisher\" content=\"Manubot\" />\n<meta name=\"citation_journal_title\" content=\"Manubot\" />\n<meta name=\"citation_technical_report_institution\" content=\"Manubot\" />\n<meta name=\"citation_author\" content=\"James A. Fellows Yates\" />\n<meta name=\"citation_author_institution\" content=\"Department of Archaeogenetics, Max-Planck-Institute for the Science of Human History\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0001-5585-6277\" />\n<meta name=\"twitter:creator\" content=\"@jfy133\" />\n<meta name=\"citation_author\" content=\"Thiseas C. Lamnidis\" />\n<meta name=\"citation_author_institution\" content=\"Department of Archaeogenetics, Max-Planck-Institute for the Science of Human History\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0003-4485-8570\" />\n<meta name=\"twitter:creator\" content=\"@TCLamnidis\" />\n<meta name=\"citation_author\" content=\"Maxime Borry\" />\n<meta name=\"citation_author_institution\" content=\"Department of Archaeogenetics, Max-Planck-Institute for the Science of Human History\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0001-9140-7559\" />\n<meta name=\"twitter:creator\" content=\"@notmaxib\" />\n<meta name=\"citation_author\" content=\"Aida Andrades Valtue\xF1a\" />\n<meta name=\"citation_author_institution\" content=\"Department of Archaeogenetics, Max-Planck-Institute for the Science of Human History\" />\n<meta name=\"citation_author_orcid\" content=\"XXXX-XXXX-XXXX-XXXX\" />\n<meta name=\"twitter:creator\" content=\"@aidaanva\" />\n<meta name=\"citation_author\" content=\"Zandra Fagern\xE4s\" />\n<meta name=\"citation_author_institution\" content=\"Department of Archaeogenetics, Max-Planck-Institute for the Science of Human History\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0003-2667-3556\" />\n<meta name=\"twitter:creator\" content=\"@ZandraSelina\" />\n<meta name=\"citation_author\" content=\"Stephen Clayton\" />\n<meta name=\"citation_author_institution\" content=\"Department of Archaeogenetics, Max-Planck-Institute for the Science of Human History\" />\n<meta name=\"citation_author_orcid\" content=\"XXXX-XXXX-XXXX-XXXX\" />\n<meta name=\"citation_author\" content=\"Maxime U. Garcia\" />\n<meta name=\"citation_author_institution\" content=\"Department of Oncology-Pathology, Karolinska Institutet\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0003-2827-9261\" />\n<meta name=\"twitter:creator\" content=\"@gau\" />\n<meta name=\"citation_author\" content=\"Judith Neukamm\" />\n<meta name=\"citation_author_institution\" content=\"Palaeogenetics Group, Institute of Evolutionary Medicine, University of Zurich\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0001-8141-566X\" />\n<meta name=\"twitter:creator\" content=\"@JudithNeukamm\" />\n<meta name=\"citation_author\" content=\"Alexander Peltzer\" />\n<meta name=\"citation_author_institution\" content=\"Translational Medicine &amp; Clinical Pharmacology, Boehringer Ingelheim Pharma GmbH &amp; CO KG, Biberach an der Riss\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0002-6503-2180\" />\n<meta name=\"twitter:creator\" content=\"@alex_peltzer\" />\n<link rel=\"canonical\" href=\"https://apeltzer.github.io/eager2-paper/\" />\n<meta property=\"og:url\" content=\"https://apeltzer.github.io/eager2-paper/\" />\n<meta property=\"twitter:url\" content=\"https://apeltzer.github.io/eager2-paper/\" />\n<meta name=\"citation_fulltext_html_url\" content=\"https://apeltzer.github.io/eager2-paper/\" />\n<meta name=\"citation_pdf_url\" content=\"https://apeltzer.github.io/eager2-paper/manuscript.pdf\" />\n<link rel=\"alternate\" type=\"application/pdf\" href=\"https://apeltzer.github.io/eager2-paper/manuscript.pdf\" />\n<link rel=\"alternate\" type=\"text/html\" href=\"https://apeltzer.github.io/eager2-paper/v/d50e928b1e4ce2935c1fe8c1d36e54423c9725eb/\" />\n<meta name=\"manubot_html_url_versioned\" content=\"https://apeltzer.github.io/eager2-paper/v/d50e928b1e4ce2935c1fe8c1d36e54423c9725eb/\" />\n<meta name=\"manubot_pdf_url_versioned\" content=\"https://apeltzer.github.io/eager2-paper/v/d50e928b1e4ce2935c1fe8c1d36e54423c9725eb/manuscript.pdf\" />\n<meta property=\"og:type\" content=\"article\" />\n<meta property=\"twitter:card\" content=\"summary_large_image\" />\n<link rel=\"icon\" type=\"image/png\" sizes=\"192x192\" href=\"https://manubot.org/favicon-192x192.png\" />\n<link rel=\"mask-icon\" href=\"https://manubot.org/safari-pinned-tab.svg\" color=\"#ad1457\" />\n<meta name=\"theme-color\" content=\"#ad1457\" />\n<!-- end Manubot generated metadata -->"
 keywords:
 - nf-core
 - nextflow
@@ -36,9 +36,9 @@ title: Reproducible, portable, and efficient ancient genome reconstruction with 
 
 <small><em>
 This manuscript
-([permalink](https://apeltzer.github.io/eager2-paper/v/7cbd147099c9f9f60238a85890bdc5892c9561ad/))
+([permalink](https://apeltzer.github.io/eager2-paper/v/d50e928b1e4ce2935c1fe8c1d36e54423c9725eb/))
 was automatically generated
-from [apeltzer/eager2-paper@7cbd147](https://github.com/apeltzer/eager2-paper/tree/7cbd147099c9f9f60238a85890bdc5892c9561ad)
+from [apeltzer/eager2-paper@d50e928](https://github.com/apeltzer/eager2-paper/tree/d50e928b1e4ce2935c1fe8c1d36e54423c9725eb)
 on May 29, 2020.
 </em></small>
 
@@ -166,7 +166,7 @@ analysis procedure by building on computational frameworks such as
 Nextflow @doi:10.1038/nbt.3820 and nf-core @doi:10.1038/s41587-020-0439-x.
 The pipeline aims to address three main points: adaptability to different
 computing configurations, reproducibility to ensure robust analytical standards
-in the field, and bring the pipeline up-to-date with the latest routine and ancient
+in the field, and updating the EAGER pipeline to the latest routine and ancient
 genomic practises. This new version of EAGER has been developed within the
 nf-core initiative, to ensure high quality software development and maintenance
 support; contributing to a long-term lifecycle for the pipeline. nf-core/eager
@@ -183,7 +183,7 @@ next-generation-sequencing has allowed the recovery of ancient DNA from a
 wide variety of sources, including but not limited to, the skeletal remains of
 animals (@doi:10.1016/j.cub.2015.04.007, @doi:10.1038/nature12323,
 @doi:10.1073/pnas.1901169116, @10.1073/pnas.1710186114), modern and archaic
-humans (@doi:10.1038/s41586-018-0094-2, @doi:0.1038/s41586-018-0455-x), bacteria
+humans (@doi:10.1038/s41586-018-0094-2, @doi:10.1126/science.1224344, @doi:0.1038/s41586-018-0455-x), bacteria
 (@doi:10.1038/nature13591, @doi:10.1073/pnas.1812865115,
 @doi:10.1371/journal.ppat.1006997), viruses (@doi:10.1038/s41586-018-0097-z,
 @doi:10.7554/eLife.36666), plants (@doi:10.1111/eva.12594,
@@ -191,11 +191,11 @@ humans (@doi:10.1038/s41586-018-0094-2, @doi:0.1038/s41586-018-0455-x), bacteria
 (@doi:10.1016/j.chom.2019.08.018, @doi:10.7717/peerj.9001), dental calculus
 (@doi:10.1038/ng.2906, @doi:10.1038/nature21674), sediments
 (@doi:10.1038/nature12921, @doi:10.1126/science.aam9695), medical slides
-(@doi:10.1093/molbev/msz264) parchment (@doi:10.1098/rstb.2013.0379), and most
+(@doi:10.1093/molbev/msz264), parchment (@doi:10.1098/rstb.2013.0379), and most
 recently ancient ‘chewing gum’
 (@doi:10.1038/s41467-019-13549-9, @doi:10.1038/s42003-019-0399-1). Improvement
 in laboratory protocols to increase yields of otherwise trace amount of DNA has
-at the same time led to studies that can range from one to thousands of ancient
+at the same time led to studies that can range from one to hundreds of ancient
 individuals (@doi:10.1038/nature25738, @doi10.1038/nature25778), spanning
 single (@doi:10.1038/nature10549) to thousands of organisms
 (@doi:10.1038/ng.2906). These differences of disciplines have led to a
@@ -220,14 +220,14 @@ epidemics that had previously been undetected in the archaeological
 record (@doi:10.1016/j.cell.2015.10.009, @doi:10.1016/j.cub.2017.10.025,
 @doi:10.1038/s41586-018-0097-z, @doi:10.7554/eLife.36666). Without easy access
 to the latest field-established analytical routines, aDNA studies from groups
-new to the field risk being published without the necessary quality controls
-checks to ensure authenticity of their data and without yielding the full range
+new to the field risk being published without the necessary quality control
+checks that ensure authenticity of their data and without yielding the full range
 of possibilities from the data.
 
 To address these shortcomings, we have completely re-implemented the latest
 version of the EAGER pipeline in Nextflow, a domain-specific-language (DSL)
 designed for the construction of omics analysis pipelines
-(@doi:10.1038/nbt.3820). In addition, the newly named pipeline - nf-core/eager -
+(@doi:10.1038/nbt.3820)**, introduced new features (Sex determination, XXX), and more flexile pipeline configuration (bam input, better skip logic than eager1)**. In addition, the newly named pipeline - nf-core/eager -
 has been developed in the context of the nf-core community framework
 (@doi:10.1038/s41587-020-0439-x). nf-core enforces strict guidelines for
 best-practises in software development to ensure robust, long-term maintenance
@@ -247,7 +247,7 @@ well as local computers. This portability allows both small and big labs to run
 nf-core/eager regardless of the type of computer or cluster cluster sizes with
 minimal effort or configuration, facilitating reproducibility and therefore
 maintenance of standards within the field. This is further assisted by the
-in-built compatibility with software environments and contains such as conda,
+in-built compatibility with software environments and containers such as conda,
 docker and singularity. This ensures exact versions of software are used by
 a user, regardless of the set-up of the cluster environment. Another major
 change with nf-core/eager is that the GUI input is now replaced with a
@@ -255,30 +255,32 @@ command-line-interface as the primary user interaction mode. This is more
 compatible and portable with most HPCs (that may not offer X11 forwarding) and
 is in line with the vast majority of bioinformatic tools. We therefore believe
 this will not be a hindrance to new researchers from outside computational
-biology, however the nf-core initiative is in the processing in the near future
-of offering multiple alternatives including a command-line wizard, and a
+biology, however the nf-core initiative is in the process of offering multiple 
+alternatives in the near future including a command-line wizard, and a 
 web-based input GUI.
 
-Reproducibility is further made easier through the use of 'profiles' that can
-define configuration parameters for both the computing environment (schedulers,
-cache locations, maximum resource etc.), which can be centrally managed to
-ensure all users of a group use the same settings. Pipeline level profiles,
-specifying default parameters for nf-core/eager itself is therefore more
-portable between different groups through separation of the parameters from
-input data. Compared to the original EAGER that utilised per-FASTQ XML files
-with hardcoded filepaths, researchers can publish alongside their publications
-the specific profile used in their nf-core/eager runs to ensure other groups can
-generate the same results. Using of profiles also reduces mistakes caused by
-insufficient 'prose' based reporting of program settings, which often occurs
-in papers written by researchers unfamiliar with informatics. The default
-nf-core/eager profile uses parameters evaluated in different aDNA specific
-contexts (e.g. @doi:10.1186/1471-2164-13-178), and will be updated in each new 
-release as new studies are published.
+Secondly, reproducibility is made easier through the use of 'profiles' that can
+define configuration parameters.  These profiles can be managed at different
+hierarchical levels. HPC-level profiles can specify parameters for the
+computing environment (schedulers, cache locations, maximum resource etc.),
+which can be centrally managed to ensure all users of a group use the same
+settings. Pipeline-level profiles, specifying default parameters for
+nf-core/eager itself, can be shared, thus making the pipeline portable between
+different groups through separation of the parameters from input data. Compared
+to the original EAGER that utilised per-FASTQ XML files with hardcoded filepaths,
+nf-core/eager allows researchers to publish the specific profile used in
+their runs alongside their publications, to ensure other groups can generate the 
+same results. Usage of profiles also reduces mistakes caused by insufficient 
+'prose' based reporting of program settings, which may occur in papers written 
+by researchers unfamiliar with informatics. The default nf-core/eager profile 
+uses parameters evaluated in different aDNA specific contexts 
+(e.g. @doi:10.1186/1471-2164-13-178), and will be updated in each new release as 
+new studies are published.
 
 nf-core/eager provides improved efficiency over the original EAGER pipeline by
 replacing the sample-by-sample sequential processing with Nextflow's
-asynchronous parallelisation. This combined with nf-core/eager-defined
-per-process customisation of resource parameters reduces unnecessary resource
+asynchronous parallelisation. This, combined with nf-core/eager-defined
+per-process customisation of resource parameters, reduces unnecessary resource
 allocation that can occur with new users to each step of an NGS data processing
 pipeline. This is particularly pertinent given the increasing use of
 centralised HPCs or cloud computing, which often use per-hour cost calculations.
