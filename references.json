@@ -1929,6 +1929,500 @@
   },
   {
     "type": "article-journal",
+    "id": "wT5SMjro",
+    "author": [
+      {
+        "family": "Mathieson",
+        "given": "Iain"
+      },
+      {
+        "family": "Alpaslan-Roodenberg",
+        "given": "Songül"
+      },
+      {
+        "family": "Posth",
+        "given": "Cosimo"
+      },
+      {
+        "family": "Szécsényi-Nagy",
+        "given": "Anna"
+      },
+      {
+        "family": "Rohland",
+        "given": "Nadin"
+      },
+      {
+        "family": "Mallick",
+        "given": "Swapan"
+      },
+      {
+        "family": "Olalde",
+        "given": "Iñigo"
+      },
+      {
+        "family": "Broomandkhoshbacht",
+        "given": "Nasreen"
+      },
+      {
+        "family": "Candilio",
+        "given": "Francesca"
+      },
+      {
+        "family": "Cheronet",
+        "given": "Olivia"
+      },
+      {
+        "family": "Fernandes",
+        "given": "Daniel"
+      },
+      {
+        "family": "Ferry",
+        "given": "Matthew"
+      },
+      {
+        "family": "Gamarra",
+        "given": "Beatriz"
+      },
+      {
+        "family": "Fortes",
+        "given": "Gloria González"
+      },
+      {
+        "family": "Haak",
+        "given": "Wolfgang"
+      },
+      {
+        "family": "Harney",
+        "given": "Eadaoin"
+      },
+      {
+        "family": "Jones",
+        "given": "Eppie"
+      },
+      {
+        "family": "Keating",
+        "given": "Denise"
+      },
+      {
+        "family": "Krause-Kyora",
+        "given": "Ben"
+      },
+      {
+        "family": "Kucukkalipci",
+        "given": "Isil"
+      },
+      {
+        "family": "Michel",
+        "given": "Megan"
+      },
+      {
+        "family": "Mittnik",
+        "given": "Alissa"
+      },
+      {
+        "family": "Nägele",
+        "given": "Kathrin"
+      },
+      {
+        "family": "Novak",
+        "given": "Mario"
+      },
+      {
+        "family": "Oppenheimer",
+        "given": "Jonas"
+      },
+      {
+        "family": "Patterson",
+        "given": "Nick"
+      },
+      {
+        "family": "Pfrengle",
+        "given": "Saskia"
+      },
+      {
+        "family": "Sirak",
+        "given": "Kendra"
+      },
+      {
+        "family": "Stewardson",
+        "given": "Kristin"
+      },
+      {
+        "family": "Vai",
+        "given": "Stefania"
+      },
+      {
+        "family": "Alexandrov",
+        "given": "Stefan"
+      },
+      {
+        "family": "Alt",
+        "given": "Kurt W."
+      },
+      {
+        "family": "Andreescu",
+        "given": "Radian"
+      },
+      {
+        "family": "Antonović",
+        "given": "Dragana"
+      },
+      {
+        "family": "Ash",
+        "given": "Abigail"
+      },
+      {
+        "family": "Atanassova",
+        "given": "Nadezhda"
+      },
+      {
+        "family": "Bacvarov",
+        "given": "Krum"
+      },
+      {
+        "family": "Gusztáv",
+        "given": "Mende Balázs"
+      },
+      {
+        "family": "Bocherens",
+        "given": "Hervé"
+      },
+      {
+        "family": "Bolus",
+        "given": "Michael"
+      },
+      {
+        "family": "Boroneanţ",
+        "given": "Adina"
+      },
+      {
+        "family": "Boyadzhiev",
+        "given": "Yavor"
+      },
+      {
+        "family": "Budnik",
+        "given": "Alicja"
+      },
+      {
+        "family": "Burmaz",
+        "given": "Josip"
+      },
+      {
+        "family": "Chohadzhiev",
+        "given": "Stefan"
+      },
+      {
+        "family": "Conard",
+        "given": "Nicholas J."
+      },
+      {
+        "family": "Cottiaux",
+        "given": "Richard"
+      },
+      {
+        "family": "Čuka",
+        "given": "Maja"
+      },
+      {
+        "family": "Cupillard",
+        "given": "Christophe"
+      },
+      {
+        "family": "Drucker",
+        "given": "Dorothée G."
+      },
+      {
+        "family": "Elenski",
+        "given": "Nedko"
+      },
+      {
+        "family": "Francken",
+        "given": "Michael"
+      },
+      {
+        "family": "Galabova",
+        "given": "Borislava"
+      },
+      {
+        "family": "Ganetsovski",
+        "given": "Georgi"
+      },
+      {
+        "family": "Gély",
+        "given": "Bernard"
+      },
+      {
+        "family": "Hajdu",
+        "given": "Tamás"
+      },
+      {
+        "family": "Handzhyiska",
+        "given": "Veneta"
+      },
+      {
+        "family": "Harvati",
+        "given": "Katerina"
+      },
+      {
+        "family": "Higham",
+        "given": "Thomas"
+      },
+      {
+        "family": "Iliev",
+        "given": "Stanislav"
+      },
+      {
+        "family": "Janković",
+        "given": "Ivor"
+      },
+      {
+        "family": "Karavanić",
+        "given": "Ivor"
+      },
+      {
+        "family": "Kennett",
+        "given": "Douglas J."
+      },
+      {
+        "family": "Komšo",
+        "given": "Darko"
+      },
+      {
+        "family": "Kozak",
+        "given": "Alexandra"
+      },
+      {
+        "family": "Labuda",
+        "given": "Damian"
+      },
+      {
+        "family": "Lari",
+        "given": "Martina"
+      },
+      {
+        "family": "Lazar",
+        "given": "Catalin"
+      },
+      {
+        "family": "Leppek",
+        "given": "Maleen"
+      },
+      {
+        "family": "Leshtakov",
+        "given": "Krassimir"
+      },
+      {
+        "family": "Vetro",
+        "given": "Domenico Lo"
+      },
+      {
+        "family": "Los",
+        "given": "Dženi"
+      },
+      {
+        "family": "Lozanov",
+        "given": "Ivaylo"
+      },
+      {
+        "family": "Malina",
+        "given": "Maria"
+      },
+      {
+        "family": "Martini",
+        "given": "Fabio"
+      },
+      {
+        "family": "McSweeney",
+        "given": "Kath"
+      },
+      {
+        "family": "Meller",
+        "given": "Harald"
+      },
+      {
+        "family": "Menđušić",
+        "given": "Marko"
+      },
+      {
+        "family": "Mirea",
+        "given": "Pavel"
+      },
+      {
+        "family": "Moiseyev",
+        "given": "Vyacheslav"
+      },
+      {
+        "family": "Petrova",
+        "given": "Vanya"
+      },
+      {
+        "family": "Price",
+        "given": "T. Douglas"
+      },
+      {
+        "family": "Simalcsik",
+        "given": "Angela"
+      },
+      {
+        "family": "Sineo",
+        "given": "Luca"
+      },
+      {
+        "family": "Šlaus",
+        "given": "Mario"
+      },
+      {
+        "family": "Slavchev",
+        "given": "Vladimir"
+      },
+      {
+        "family": "Stanev",
+        "given": "Petar"
+      },
+      {
+        "family": "Starović",
+        "given": "Andrej"
+      },
+      {
+        "family": "Szeniczey",
+        "given": "Tamás"
+      },
+      {
+        "family": "Talamo",
+        "given": "Sahra"
+      },
+      {
+        "family": "Teschler-Nicola",
+        "given": "Maria"
+      },
+      {
+        "family": "Thevenet",
+        "given": "Corinne"
+      },
+      {
+        "family": "Valchev",
+        "given": "Ivan"
+      },
+      {
+        "family": "Valentin",
+        "given": "Frédérique"
+      },
+      {
+        "family": "Vasilyev",
+        "given": "Sergey"
+      },
+      {
+        "family": "Veljanovska",
+        "given": "Fanica"
+      },
+      {
+        "family": "Venelinova",
+        "given": "Svetlana"
+      },
+      {
+        "family": "Veselovskaya",
+        "given": "Elizaveta"
+      },
+      {
+        "family": "Viola",
+        "given": "Bence"
+      },
+      {
+        "family": "Virag",
+        "given": "Cristian"
+      },
+      {
+        "family": "Zaninović",
+        "given": "Joško"
+      },
+      {
+        "family": "Zäuner",
+        "given": "Steve"
+      },
+      {
+        "family": "Stockhammer",
+        "given": "Philipp W."
+      },
+      {
+        "family": "Catalano",
+        "given": "Giulio"
+      },
+      {
+        "family": "Krauß",
+        "given": "Raiko"
+      },
+      {
+        "family": "Caramelli",
+        "given": "David"
+      },
+      {
+        "family": "Zariņa",
+        "given": "Gunita"
+      },
+      {
+        "family": "Gaydarska",
+        "given": "Bisserka"
+      },
+      {
+        "family": "Lillie",
+        "given": "Malcolm"
+      },
+      {
+        "family": "Nikitin",
+        "given": "Alexey G."
+      },
+      {
+        "family": "Potekhina",
+        "given": "Inna"
+      },
+      {
+        "family": "Papathanasiou",
+        "given": "Anastasia"
+      },
+      {
+        "family": "Borić",
+        "given": "Dušan"
+      },
+      {
+        "family": "Bonsall",
+        "given": "Clive"
+      },
+      {
+        "family": "Krause",
+        "given": "Johannes"
+      },
+      {
+        "family": "Pinhasi",
+        "given": "Ron"
+      },
+      {
+        "family": "Reich",
+        "given": "David"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2018,
+          2,
+          21
+        ]
+      ]
+    },
+    "container-title": "Nature",
+    "DOI": "10.1038/nature25778",
+    "volume": "555",
+    "issue": "7695",
+    "page": "197-203",
+    "publisher": "Springer Science and Business Media LLC",
+    "title": "The genomic history of southeastern Europe",
+    "URL": "https://doi.org/gc2n9h",
+    "PMCID": "PMC6091220",
+    "PMID": "29466330",
+    "note": "This CSL JSON Item was automatically generated by Manubot v0.3.1 using citation-by-identifier.\nstandard_id: doi:10.1038/nature25778"
+  },
+  {
+    "type": "article-journal",
     "id": "4XDvZWxk",
     "author": [
       {
@@ -2360,6 +2854,8 @@
     "publisher": "Springer Science and Business Media LLC",
     "title": "Ancient Fennoscandian genomes reveal origin and spread of Siberian ancestry in Europe",
     "URL": "https://doi.org/ggxkk6",
+    "PMCID": "PMC6258758",
+    "PMID": "30479341",
     "note": "This CSL JSON Item was automatically generated by Manubot v0.3.1 using citation-by-identifier.\nstandard_id: doi:10.1038/s41467-018-07483-5"
   },
   {
@@ -2545,7 +3041,6 @@
     "publisher": "Springer Science and Business Media LLC",
     "title": "Salmonella enterica genomes from victims of a major sixteenth-century epidemic in Mexico",
     "URL": "https://doi.org/ggxkk7",
-    "PMID": "29335577",
     "note": "This CSL JSON Item was automatically generated by Manubot v0.3.1 using citation-by-identifier.\nstandard_id: doi:10.1038/s41559-017-0446-6"
   },
   {
@@ -2602,7 +3097,6 @@
     "publisher": "Springer Science and Business Media LLC",
     "title": "The origins and adaptation of European potatoes reconstructed from historical genomes",
     "URL": "https://doi.org/ggxkk8",
-    "PMID": "31235927",
     "note": "This CSL JSON Item was automatically generated by Manubot v0.3.1 using citation-by-identifier.\nstandard_id: doi:10.1038/s41559-019-0921-3"
   },
   {
@@ -3101,6 +3595,108 @@
   },
   {
     "type": "article-journal",
+    "id": "qngWumct",
+    "author": [
+      {
+        "family": "Slon",
+        "given": "Viviane"
+      },
+      {
+        "family": "Mafessoni",
+        "given": "Fabrizio"
+      },
+      {
+        "family": "Vernot",
+        "given": "Benjamin"
+      },
+      {
+        "family": "de Filippo",
+        "given": "Cesare"
+      },
+      {
+        "family": "Grote",
+        "given": "Steffi"
+      },
+      {
+        "family": "Viola",
+        "given": "Bence"
+      },
+      {
+        "family": "Hajdinjak",
+        "given": "Mateja"
+      },
+      {
+        "family": "Peyrégne",
+        "given": "Stéphane"
+      },
+      {
+        "family": "Nagel",
+        "given": "Sarah"
+      },
+      {
+        "family": "Brown",
+        "given": "Samantha"
+      },
+      {
+        "family": "Douka",
+        "given": "Katerina"
+      },
+      {
+        "family": "Higham",
+        "given": "Tom"
+      },
+      {
+        "family": "Kozlikin",
+        "given": "Maxim B."
+      },
+      {
+        "family": "Shunkov",
+        "given": "Michael V."
+      },
+      {
+        "family": "Derevianko",
+        "given": "Anatoly P."
+      },
+      {
+        "family": "Kelso",
+        "given": "Janet"
+      },
+      {
+        "family": "Meyer",
+        "given": "Matthias"
+      },
+      {
+        "family": "Prüfer",
+        "given": "Kay"
+      },
+      {
+        "family": "Pääbo",
+        "given": "Svante"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2018,
+          8,
+          22
+        ]
+      ]
+    },
+    "container-title": "Nature",
+    "DOI": "10.1038/s41586-018-0455-x",
+    "volume": "561",
+    "issue": "7721",
+    "page": "113-116",
+    "publisher": "Springer Science and Business Media LLC",
+    "title": "The genome of the offspring of a Neanderthal mother and a Denisovan father",
+    "URL": "https://doi.org/cs64",
+    "PMCID": "PMC6130845",
+    "PMID": "30135579",
+    "note": "This CSL JSON Item was automatically generated by Manubot v0.3.1 using citation-by-identifier.\nstandard_id: doi:10.1038/s41586-018-0455-x"
+  },
+  {
+    "type": "article-journal",
     "id": "wq4G2CfQ",
     "author": [
       {
@@ -3396,6 +3992,96 @@
     "PMCID": "PMC3926038",
     "PMID": "24469802",
     "note": "This CSL JSON Item was automatically generated by Manubot v0.3.1 using citation-by-identifier.\nstandard_id: doi:10.1073/pnas.1318934111"
+  },
+  {
+    "type": "article-journal",
+    "id": "ZMf8LvSn",
+    "author": [
+      {
+        "family": "Star",
+        "given": "Bastiaan"
+      },
+      {
+        "family": "Boessenkool",
+        "given": "Sanne"
+      },
+      {
+        "family": "Gondek",
+        "given": "Agata T."
+      },
+      {
+        "family": "Nikulina",
+        "given": "Elena A."
+      },
+      {
+        "family": "Hufthammer",
+        "given": "Anne Karin"
+      },
+      {
+        "family": "Pampoulie",
+        "given": "Christophe"
+      },
+      {
+        "family": "Knutsen",
+        "given": "Halvor"
+      },
+      {
+        "family": "André",
+        "given": "Carl"
+      },
+      {
+        "family": "Nistelberger",
+        "given": "Heidi M."
+      },
+      {
+        "family": "Dierking",
+        "given": "Jan"
+      },
+      {
+        "family": "Petereit",
+        "given": "Christoph"
+      },
+      {
+        "family": "Heinrich",
+        "given": "Dirk"
+      },
+      {
+        "family": "Jakobsen",
+        "given": "Kjetill S."
+      },
+      {
+        "family": "Stenseth",
+        "given": "Nils Chr."
+      },
+      {
+        "family": "Jentoft",
+        "given": "Sissel"
+      },
+      {
+        "family": "Barrett",
+        "given": "James H."
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2017,
+          8,
+          22
+        ]
+      ]
+    },
+    "container-title": "Proceedings of the National Academy of Sciences",
+    "DOI": "10.1073/pnas.1710186114",
+    "volume": "114",
+    "issue": "34",
+    "page": "9152-9157",
+    "publisher": "Proceedings of the National Academy of Sciences",
+    "title": "Ancient DNA reveals the Arctic origin of Viking Age cod from Haithabu, Germany",
+    "URL": "https://doi.org/gbt8b2",
+    "PMCID": "PMC5576834",
+    "PMID": "28784790",
+    "note": "This CSL JSON Item was automatically generated by Manubot v0.3.1 using citation-by-identifier.\nstandard_id: doi:10.1073/pnas.1710186114"
   },
   {
     "type": "article-journal",
@@ -5840,5 +6526,21 @@
       ]
     },
     "note": "This CSL JSON Item was automatically generated by Manubot v0.3.1 using citation-by-identifier.\nstandard_id: url:https://conda-forge.github.io"
+  },
+  {
+    "id": "R2o2aPyA",
+    "type": "webpage",
+    "title": "Babraham Bioinformatics - FastQC A Quality Control tool for High Throughput Sequence Data",
+    "URL": "https://www.bioinformatics.babraham.ac.uk/projects/fastqc/",
+    "accessed": {
+      "date-parts": [
+        [
+          "2020",
+          6,
+          1
+        ]
+      ]
+    },
+    "note": "This CSL JSON Item was automatically generated by Manubot v0.3.1 using citation-by-identifier.\nstandard_id: url:https://www.bioinformatics.babraham.ac.uk/projects/fastqc"
   }
 ]
