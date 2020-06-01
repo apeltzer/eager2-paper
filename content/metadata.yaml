@@ -24,11 +24,11 @@ authors:
     github: TCLamnidis
     name: Thiseas C. Lamnidis
     initials: T.C.L.
-    orcid: XXXX-XXXX-XXXX-XXXX
+    orcid: 0000-0003-4485-8570
     twitter: TCLamnidis
     email: lamnids@shh.mpg.de
     affiliations:
-      - Department of Something, University of Whatever
+      - Department of Archaeogenetics, Max-Planck-Institute for the Science of Human History
     funders: Max Planck Society
   - 
     github: maxibor
@@ -41,27 +41,27 @@ authors:
       - Department of Archaeogenetics, Max-Planck-Institute for the Science of Human History
     funders: Max Planck Society
   - 
-    github: placeholder
+    github: aidaanva
     name: Aida Andrades Valtueña
     initials: A.A.V.
     orcid: XXXX-XXXX-XXXX-XXXX
-    twitter: placeholder
+    twitter: aidaanva
     email: andrades@shh.mpg.de
     affiliations:
       - Department of Archaeogenetics, Max-Planck-Institute for the Science of Human History
     funders: Max Planck Society
   - 
-    github: placeholder
+    github: ZandraFagernas
     name: Zandra Fagernäs
     initials: Z.F.
-    orcid: XXXX-XXXX-XXXX-XXXX
+    orcid: 0000-0003-2667-3556
     twitter: ZandraSelina
     email: fagernaes@shh.mpg.de
     affiliations:
       - Department of Archaeogenetics, Max-Planck-Institute for the Science of Human History
     funders: Max Planck Society
   - 
-    github: placeholder
+    github: sc13-bioinf
     name: Stephen Clayton
     initials: S.C.
     orcid: XXXX-XXXX-XXXX-XXXX
@@ -80,15 +80,14 @@ authors:
       - Department of Oncology-Pathology, Karolinska Institutet
     funders: Barncancerfonden
   - 
-    github: placeholder
+    github: JudithNeukamm
     name: Judith Neukamm
     initials: J.N.
-    orcid: XXXX-XXXX-XXXX-XXXX
-    twitter: placeholder
-    email: itsme@uzh
+    orcid: 0000-0001-8141-566X
+    twitter: JudithNeukamm
+    email: judith.neukamm@uzh.ch
     affiliations:
-      - Department of Something, University of Whatever
-    funders: Grant XXXXXXXX
+      - Palaeogenetics Group, Institute of Evolutionary Medicine, University of Zurich
   -
     github: apeltzer
     name: Alexander Peltzer
