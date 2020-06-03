@@ -148,9 +148,9 @@
   <meta name="citation_fulltext_html_url" content="https://apeltzer.github.io/eager2-paper/" />
   <meta name="citation_pdf_url" content="https://apeltzer.github.io/eager2-paper/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://apeltzer.github.io/eager2-paper/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://apeltzer.github.io/eager2-paper/v/f4f4541575264a82fff85bf661550369ce0a472e/" />
-  <meta name="manubot_html_url_versioned" content="https://apeltzer.github.io/eager2-paper/v/f4f4541575264a82fff85bf661550369ce0a472e/" />
-  <meta name="manubot_pdf_url_versioned" content="https://apeltzer.github.io/eager2-paper/v/f4f4541575264a82fff85bf661550369ce0a472e/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://apeltzer.github.io/eager2-paper/v/b4c397836973d5a5a595c85217f19d03caaa4fa0/" />
+  <meta name="manubot_html_url_versioned" content="https://apeltzer.github.io/eager2-paper/v/b4c397836973d5a5a595c85217f19d03caaa4fa0/" />
+  <meta name="manubot_pdf_url_versioned" content="https://apeltzer.github.io/eager2-paper/v/b4c397836973d5a5a595c85217f19d03caaa4fa0/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -164,9 +164,9 @@
 </header>
 <p><small><em>
 This manuscript
-(<a href="https://apeltzer.github.io/eager2-paper/v/f4f4541575264a82fff85bf661550369ce0a472e/">permalink</a>)
+(<a href="https://apeltzer.github.io/eager2-paper/v/b4c397836973d5a5a595c85217f19d03caaa4fa0/">permalink</a>)
 was automatically generated
-from <a href="https://github.com/apeltzer/eager2-paper/tree/f4f4541575264a82fff85bf661550369ce0a472e">apeltzer/eager2-paper@f4f4541</a>
+from <a href="https://github.com/apeltzer/eager2-paper/tree/b4c397836973d5a5a595c85217f19d03caaa4fa0">apeltzer/eager2-paper@b4c3978</a>
 on June 3, 2020.
 </em></small></p>
 <h2 id="authors">Authors</h2>
@@ -320,14 +320,20 @@ Quantitative Biology Center (QBiC), Eberhard-Karls-Universität; Translational M
 <h3 id="running">Running</h3>
 <p>After the installation, users can run the pipeline using standard test data by utilizing some of the <code>test</code> profiles we provide (e.g. using Docker):</p>
 <div class="sourceCode" id="cb1"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1"></a><span class="ex">nextflow</span> run nf-core/eager -r 2.1.0 -profile test,docker</span></code></pre></div>
-<p>This will fetch test data automatically, run the pipeline locally with all software tools containerized in a Docker container and store the output of that run in the <code>./results</code> folder of your current directory.</p>
+<p>This will download test data automatically, run the pipeline locally with all software tools containerized in a Docker container and store the output of that run in the <code>./results</code> folder of your current directory.</p>
+<p>The default pipeline settings assumes paired end FASTQ data and will run: FastQC; AdapterRemoval2 (merging and adapter clipping); post-clipping FastQC (for AdapterRemoval2 performance evaluation); bwa mapping (with the ‘aln’ algorithm); samtools flagstat (for mapping statistics); endorS.py (for endogenous DNA calculation); DeDup (for PCR amplicon deduplication); PreSeq (for library complexity evaluation); DamageProfiler and Qualimap2 (for genome coverage statistics) and the MultiQC pipeline run report. If no additional FASTA indicies are given, these will also be generated.</p>
+<p>The pipeline is highly configurable and most modules can be turned on and off at the request of the user using different flags to allow high customisation to each users needs. For example, to include metagenomic screening of off-target reads and sex determination based on on-target mappings of pre-clipped single-end data:</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1"></a><span class="ex">nextflow</span> run nf-core/eager -r 2.1.0 -profile conda --input <span class="st">&#39;/&lt;path&gt;/&lt;to&gt;/*/*R1*.fastq.gz&#39;</span> --single_end --fasta <span class="st">&#39;/&lt;path&gt;/&lt;to&gt;/&lt;reference&gt;.fasta.gz&#39;</span> --skip_fastqc --skip_adapterremoval --run_bam_filtering --bam_discard_unmapped --bam_unmapped_type <span class="st">&#39;fastq&#39;</span> --run_metagenomic_screening --metagenomic_tool <span class="st">&#39;malt&#39;</span> --database <span class="st">&#39;/&lt;path&gt;/&lt;to&gt;/&lt;malt_database&gt;&#39;</span> --run_sexdeterrmine</span></code></pre></div>
 <h4 id="profiles">Profiles</h4>
 <p>We utilize a central configuration profile repository to enable users from various institutions to use pipelines on their particular infrastructure <a href="https://github.com/nf-core/configs">more easily</a>. There are multiple resources listed in this repository with information on how to add your own configuration profile with help from the nf-core community.</p>
 <p>Users can customize this infrastructure profile by themselves, with the nf-core community, or with their local system administrator to make sure that the pipeline runs successfully, and can then rely on the Nextflow and nf-core framework to ensure compatibility upon further infrastructure changes. For example, in order to run the nf-core/eager pipeline at the Max Planck Institute for the Science of Human History (MPI-SHH) in Jena, users only have to run:</p>
-<div class="sourceCode" id="cb2"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1"></a><span class="ex">nextflow</span> run nf-core/eager -r 2.1.0 -profile shh_cdag,test</span></code></pre></div>
+<div class="sourceCode" id="cb3"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1"></a><span class="ex">nextflow</span> run nf-core/eager -r 2.1.0 -profile shh_cdag --input <span class="st">&#39;/&lt;path&gt;/&lt;to&gt;/*/*{R1,R2}*.fastq.gz&#39;</span> --fasta <span class="st">&#39;/&lt;path&gt;/&lt;to&gt;/&lt;reference&gt;.fasta.gz&#39;</span></span></code></pre></div>
 <p>This runs the testing profile of the nf-core/eager pipeline with parameters specifically adapted to the HPC system at the MPI-SHH. In some cases, similar institutional configs for other institutions may already exist (originally utilised for different nf-core pipelines), so users need not write their own.</p>
 <h4 id="inputs">Inputs</h4>
-<p>The pipeline can be started using (raw) FASTQ files from sequencing or pre-mapped BAM files. Additionally, the pipeline requires a FASTA reference genome. If users have complex setups, e.g. multiple sequencing lanes that require merging of files for example, the pipeline can be supplied with a tabular separated value (TSV) file to enable such complex data handling.</p>
+<p>The pipeline can be started using (raw) FASTQ files from sequencing or pre-mapped BAM files. Additionally, the pipeline requires a FASTA reference genome.</p>
+<p>If BAM input is provided, an optional convertion to FASTQ is offered, otherwise BAM files processing will start from the post-mapping stage.</p>
+<p>If users have complex setups, e.g. multiple sequencing lanes that require merging of files for example, the pipeline can be supplied with a tabular separated value (TSV) file to enable such complex data handling. Both FASTQs and BAMs can be provided in this set up. FASTQs with the same library name and sequencing chemistry but sequenced across multiple lanes will be concatenated after AdapterRemoval and prior mapping. Libraries with the sample name and with the same UDG treatment, will be merged after deduplication; if libraries with the sample name have different UDG treatment, these will be merged after the aDNA modification stage (i.e. BAM trimming or PMDtools, if turned on), prior genotyping.</p>
+<p>As Nextflow will automatically download files from URLs, profiles and/or TSV files can include links to publically avaliable data (e.g. the ENA FTP server). This assists in reproducibiliy as if profiles or TSV files are uploaded with a publication, a researcher wishing to reanalyse the data in the same way can user the exact same settings and merging procedures in the original publication, without having to reconstruct this from prose.</p>
 <h4 id="monitoring">Monitoring</h4>
 <p>Users can either monitor their pipeline execution with the messages Nextflow prints to the console while running, or utilize projects such as <a href="https://tower.nf">Nextflow Tower</a> to monitor their analysis pipeline during runtime.</p>
 <h4 id="output">Output</h4>
@@ -533,7 +539,7 @@ DOI: <a href="https://doi.org/10.1093/bioinformatics/btr347">10.1093/bioinformat
 <p>32. <strong>Early Divergent Strains of Yersinia pestis in Eurasia 5,000 Years Ago</strong><br />
 Simon Rasmussen, Morten Erik Allentoft, Kasper Nielsen, Ludovic Orlando, Martin Sikora, Karl-Göran Sjögren, Anders Gorm Pedersen, Mikkel Schubert, Alex Van Dam, Christian Moliin Outzen Kapel, … Eske Willerslev<br />
 <em>Cell</em> (2015-10) <a href="https://doi.org/f3mxqd">https://doi.org/f3mxqd</a><br />
-DOI: <a href="https://doi.org/10.1016/j.cell.2015.10.009">10.1016/j.cell.2015.10.009</a></p>
+DOI: <a href="https://doi.org/10.1016/j.cell.2015.10.009">10.1016/j.cell.2015.10.009</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/26496604">26496604</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4644222">PMC4644222</a></p>
 </div>
 <div id="ref-XFBeyZB9">
 <p>33. <strong>The Stone Age Plague and Its Persistence in Eurasia</strong><br />
@@ -613,7 +619,7 @@ DOI: <a href="https://doi.org/10.5281/zenodo.3557708">10.5281/zenodo.3557708</a>
 <p>46. <strong>Separating endogenous ancient DNA from modern day contamination in a Siberian Neandertal</strong><br />
 Pontus Skoglund, Bernd H. Northoff, Michael V. Shunkov, Anatoli P. Derevianko, Svante Pääbo, Johannes Krause, Mattias Jakobsson<br />
 <em>Proceedings of the National Academy of Sciences</em> (2014-02-11) <a href="https://doi.org/f2z5sw">https://doi.org/f2z5sw</a><br />
-DOI: <a href="https://doi.org/10.1073/pnas.1318934111">10.1073/pnas.1318934111</a></p>
+DOI: <a href="https://doi.org/10.1073/pnas.1318934111">10.1073/pnas.1318934111</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/24469802">24469802</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3926038">PMC3926038</a></p>
 </div>
 <div id="ref-18bWeJ11I">
 <p>47. <strong>An efficient and scalable analysis framework for variant extraction and refinement from population-scale DNA sequence data</strong><br />
