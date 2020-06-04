@@ -44,7 +44,7 @@ authors:
     github: aidaanva
     name: Aida Andrades Valtueña
     initials: A.A.V.
-    orcid: XXXX-XXXX-XXXX-XXXX
+    orcid: 0000-0002-1737-2228
     twitter: aidaanva
     email: andrades@shh.mpg.de
     affiliations:
@@ -64,7 +64,7 @@ authors:
     github: sc13-bioinf
     name: Stephen Clayton
     initials: S.C.
-    orcid: XXXX-XXXX-XXXX-XXXX
+    orcid: 0000-0001-5223-9695
     email: clayton@shh.mpg.de
     affiliations:
       - Department of Archaeogenetics, Max-Planck-Institute for the Science of Human History
@@ -96,4 +96,5 @@ authors:
     orcid: 0000-0002-6503-2180
     email: alexander.peltzer@boehringer-ingelheim.com
     affiliations:
+      - Quantitative Biology Center (QBiC), Eberhard-Karls-Universität
       - Translational Medicine & Clinical Pharmacology, Boehringer Ingelheim Pharma GmbH & CO KG, Biberach an der Riss
