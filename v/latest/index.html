@@ -148,9 +148,9 @@
   <meta name="citation_fulltext_html_url" content="https://apeltzer.github.io/eager2-paper/" />
   <meta name="citation_pdf_url" content="https://apeltzer.github.io/eager2-paper/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://apeltzer.github.io/eager2-paper/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://apeltzer.github.io/eager2-paper/v/3716a069941c6b8273f4e0c72a0c25e855cbd79a/" />
-  <meta name="manubot_html_url_versioned" content="https://apeltzer.github.io/eager2-paper/v/3716a069941c6b8273f4e0c72a0c25e855cbd79a/" />
-  <meta name="manubot_pdf_url_versioned" content="https://apeltzer.github.io/eager2-paper/v/3716a069941c6b8273f4e0c72a0c25e855cbd79a/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://apeltzer.github.io/eager2-paper/v/6da0fed4f87e9be4a58feed26ee3c9b505388c75/" />
+  <meta name="manubot_html_url_versioned" content="https://apeltzer.github.io/eager2-paper/v/6da0fed4f87e9be4a58feed26ee3c9b505388c75/" />
+  <meta name="manubot_pdf_url_versioned" content="https://apeltzer.github.io/eager2-paper/v/6da0fed4f87e9be4a58feed26ee3c9b505388c75/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -164,9 +164,9 @@
 </header>
 <p><small><em>
 This manuscript
-(<a href="https://apeltzer.github.io/eager2-paper/v/3716a069941c6b8273f4e0c72a0c25e855cbd79a/">permalink</a>)
+(<a href="https://apeltzer.github.io/eager2-paper/v/6da0fed4f87e9be4a58feed26ee3c9b505388c75/">permalink</a>)
 was automatically generated
-from <a href="https://github.com/apeltzer/eager2-paper/tree/3716a069941c6b8273f4e0c72a0c25e855cbd79a">apeltzer/eager2-paper@3716a06</a>
+from <a href="https://github.com/apeltzer/eager2-paper/tree/6da0fed4f87e9be4a58feed26ee3c9b505388c75">apeltzer/eager2-paper@6da0fed</a>
 on June 4, 2020.
 </em></small></p>
 <h2 id="authors">Authors</h2>
@@ -367,21 +367,20 @@ allows both small and big labs to run nf-core/eager regardless of the type of
 computer or cluster size, with minimal effort or configuration, facilitating
 reproducibility and therefore maintenance of standards within the field. This is
 further assisted by the in-built compatibility with software environments and
-containers such as Conda (<a href="https://conda.io/">https://conda.io/</a>), Docker
-<a href="https://www.docker.com/">https://www.docker.com/</a> and Singularity
-(<a href="https://sylabs.io/">https://sylabs.io/</a>). These are single packages that
-include all the software (with exact versions) required by the pipeline, in a
-form that they are are installable and runnable regardless of the setup of their
-local software environment. Another major change with nf-core/eager is that the
-graphical-user-interaface (GUI) set up of an nf-core/eager run, is now replaced
-with a command-line-interface (CLI) as the primary user interaction mode. This
-is more compatible and portable with most HPCs (that may not offer display of
-program windows), and is in line with the vast majority of bioinformatic tools.
-We therefore believe this will not be a hindrance to new researchers from
-outside computational biology. However there are plans from Nextflow (with
-[https://tower.nf]) and within the nf-core community to provide multiple
-alternatives in the near future including a CLI wizard and a web-based input
-GUI.</p>
+containers such as Conda <span class="citation" data-cites="iU0FZYFP">[<a href="#ref-iU0FZYFP" role="doc-biblioref">44</a>]</span>,
+Docker<span class="citation" data-cites="rmvJ2O0Q">[<a href="#ref-rmvJ2O0Q" role="doc-biblioref">45</a>]</span> and Singularity <span class="citation" data-cites="99QkJBoF">[<a href="#ref-99QkJBoF" role="doc-biblioref">46</a>]</span>.
+These are single packages that include all the software (with exact versions)
+required by the pipeline, in a form that they are are installable and runnable
+regardless of the setup of their local software environment. Another major
+change with nf-core/eager is that the graphical-user-interaface (GUI) set up of
+an nf-core/eager run, is now replaced with a command-line-interface (CLI) as the
+primary user interaction mode. This is more compatible and portable with most
+HPCs (that may not offer display of program windows), and is in line with the
+vast majority of bioinformatic tools. We therefore believe this will not be a
+hindrance to new researchers from outside computational biology. However there
+are plans from Nextflow (with tower.nf <span class="citation" data-cites="jJzDdoAE">[<a href="#ref-jJzDdoAE" role="doc-biblioref">47</a>]</span> and within the
+nf-core community to provide multiple alternatives in the near future including
+a CLI wizard and a web-based input GUI.</p>
 <p>Secondly, reproducibility is made easier through the use of ‘profiles’ that can
 define configuration parameters. These profiles can be managed at different
 hierarchical levels. HPC-level profiles can specify parameters for the computing
@@ -398,7 +397,7 @@ ensure other groups can generate the same results. Usage of profiles also
 reduces mistakes caused by insufficient ‘prose’ based reporting of program
 settings, which may occur in papers written by researchers unfamiliar with
 informatics. The default nf-core/eager profile uses parameters evaluated in
-different aDNA specific contexts (e.g. <span class="citation" data-cites="WQbjOgBC"><a href="#ref-WQbjOgBC" role="doc-biblioref">44</a></span>], and will
+different aDNA specific contexts (e.g. <span class="citation" data-cites="WQbjOgBC"><a href="#ref-WQbjOgBC" role="doc-biblioref">48</a></span>], and will
 be updated in each new release as new studies are published.</p>
 <p>nf-core/eager provides improved efficiency over the original EAGER pipeline by
 replacing the sample-by-sample sequential processing with Nextflow’s
@@ -418,9 +417,9 @@ this can be split into four main stages:</p>
 </ol>
 <ul>
 <li>Sequencing quality control: FastQC
-<span class="citation" data-cites="R2o2aPyA">[<a href="#ref-R2o2aPyA" role="doc-biblioref">45</a>]</span></li>
+<span class="citation" data-cites="R2o2aPyA">[<a href="#ref-R2o2aPyA" role="doc-biblioref">49</a>]</span></li>
 <li>Sequencing artefact clean-up (merging, adapter clipping): AdapterRemoval2
-<span class="citation" data-cites="L1GdB71G">[<a href="#ref-L1GdB71G" role="doc-biblioref">46</a>]</span></li>
+<span class="citation" data-cites="L1GdB71G">[<a href="#ref-L1GdB71G" role="doc-biblioref">50</a>]</span></li>
 <li>Preprocessing statistics generation</li>
 </ul>
 <ol start="2" type="1">
@@ -429,63 +428,65 @@ this can be split into four main stages:</p>
 <ul>
 <li>Alignment against reference genome: BWA <span class="citation" data-cites="roi5bwXL">[<a href="#ref-roi5bwXL" role="doc-biblioref">39</a>]</span>, CircularMapper
 <span class="citation" data-cites="12TkhsLGD">[<a href="#ref-12TkhsLGD" role="doc-biblioref">38</a>]</span></li>
-<li>Mapping quality filtering: Samtools <span class="citation" data-cites="IPc8cy7s">[<a href="#ref-IPc8cy7s" role="doc-biblioref">49</a>]</span></li>
+<li>Mapping quality filtering: Samtools <span class="citation" data-cites="IPc8cy7s">[<a href="#ref-IPc8cy7s" role="doc-biblioref">53</a>]</span></li>
 <li>PCR duplicate removal: DeDup <span class="citation" data-cites="12TkhsLGD">[<a href="#ref-12TkhsLGD" role="doc-biblioref">38</a>]</span>, Picard
-MarkDuplicates<span class="citation" data-cites="14nSa8zB9">[<a href="#ref-14nSa8zB9" role="doc-biblioref">50</a>]</span></li>
-<li>Mapping statistics generation: PreSeq <span class="citation" data-cites="17zUqUTNA">[<a href="#ref-17zUqUTNA" role="doc-biblioref">51</a>]</span>,
-Qualimap2<span class="citation" data-cites="O3E8cbBW">[<a href="#ref-O3E8cbBW" role="doc-biblioref">52</a>]</span></li>
+MarkDuplicates<span class="citation" data-cites="14nSa8zB9">[<a href="#ref-14nSa8zB9" role="doc-biblioref">54</a>]</span></li>
+<li>Mapping statistics generation: PreSeq <span class="citation" data-cites="17zUqUTNA">[<a href="#ref-17zUqUTNA" role="doc-biblioref">55</a>]</span>,
+Qualimap2<span class="citation" data-cites="O3E8cbBW">[<a href="#ref-O3E8cbBW" role="doc-biblioref">56</a>]</span></li>
 </ul>
 <ol start="3" type="1">
 <li>aDNA Evaluation and Modification</li>
 </ol>
 <ul>
-<li>Damage profiling: DamageProfiler <span class="citation" data-cites="1Ab7DZE7s">[<a href="#ref-1Ab7DZE7s" role="doc-biblioref">53</a>]</span></li>
-<li>aDNA reads selection: PMDTools <span class="citation" data-cites="lh0Dclyl">[<a href="#ref-lh0Dclyl" role="doc-biblioref">54</a>]</span></li>
-<li>Damage removal: Bamutils<span class="citation" data-cites="18bWeJ11I">[<a href="#ref-18bWeJ11I" role="doc-biblioref">55</a>]</span></li>
-<li>(Human) contamination estimation: ANGSD <span class="citation" data-cites="FyiP2I2k">[<a href="#ref-FyiP2I2k" role="doc-biblioref">56</a>]</span></li>
+<li>Damage profiling: DamageProfiler <span class="citation" data-cites="1Ab7DZE7s">[<a href="#ref-1Ab7DZE7s" role="doc-biblioref">57</a>]</span></li>
+<li>aDNA reads selection: PMDTools <span class="citation" data-cites="lh0Dclyl">[<a href="#ref-lh0Dclyl" role="doc-biblioref">58</a>]</span></li>
+<li>Damage removal: Bamutils<span class="citation" data-cites="18bWeJ11I">[<a href="#ref-18bWeJ11I" role="doc-biblioref">59</a>]</span></li>
+<li>(Human) contamination estimation: ANGSD <span class="citation" data-cites="FyiP2I2k">[<a href="#ref-FyiP2I2k" role="doc-biblioref">60</a>]</span></li>
 </ul>
 <ol start="4" type="1">
-<li>Genotyping and Consensus Sequencing: GATK <span class="citation" data-cites="14nSa8zB9">[<a href="#ref-14nSa8zB9" role="doc-biblioref">50</a>]</span>,
+<li>Genotyping and Consensus Sequencing: GATK <span class="citation" data-cites="14nSa8zB9">[<a href="#ref-14nSa8zB9" role="doc-biblioref">54</a>]</span>,
 VCF2Genome <span class="citation" data-cites="12TkhsLGD">[<a href="#ref-12TkhsLGD" role="doc-biblioref">38</a>]</span></li>
 </ol>
 <p>In nf-core/eager, all tools also originally used in EAGER have been updated to
-latest versions, as available on Bioconda <span class="citation" data-cites="sYguBb3Q">[<a href="#ref-sYguBb3Q" role="doc-biblioref">57</a>]</span> and
-Conda-forge <span class="citation" data-cites="qj0Rqpq8">[<a href="#ref-qj0Rqpq8" role="doc-biblioref">58</a>]</span> to ensure widespread
+latest versions, as available on Bioconda <span class="citation" data-cites="sYguBb3Q">[<a href="#ref-sYguBb3Q" role="doc-biblioref">61</a>]</span> and
+Conda-forge <span class="citation" data-cites="qj0Rqpq8">[<a href="#ref-qj0Rqpq8" role="doc-biblioref">62</a>]</span> to ensure widespread
 accessibility and stability of utilized tools. The MapDamage2 (for damage
 profile generation) <span class="citation" data-cites="14YGEdSwc">[<a href="#ref-14YGEdSwc" role="doc-biblioref">35</a>]</span> and Schmutzi for
-(mitochondrial contamination estimation) <span class="citation" data-cites="5S7TlWlb">[<a href="#ref-5S7TlWlb" role="doc-biblioref">59</a>]</span>
+(mitochondrial contamination estimation) <span class="citation" data-cites="5S7TlWlb">[<a href="#ref-5S7TlWlb" role="doc-biblioref">63</a>]</span>
 methods have not been carried over to nf-core/eager, the first because a more
 performant successor method is now available (DamageProfiler), and the latter
 because a stable release of the method could not be migrated to Bioconda. We
 anticipate that there will be an updated version of Schmutzi in the near future
 that will allow us to integrate the method again in nf-core/eager, once a
 version is released on Bioconda. Support for the Bowtie2 aligner
-<span class="citation" data-cites="PiS0h6Mu">[<a href="#ref-PiS0h6Mu" role="doc-biblioref">60</a>]</span> will be added in the near future, after consultation
+<span class="citation" data-cites="PiS0h6Mu">[<a href="#ref-PiS0h6Mu" role="doc-biblioref">64</a>]</span> will be added in the near future, after consultation
 with the palaeogenetics community. New tools to the basic workflow include fastp
-<span class="citation" data-cites="pt9vlq4w">[<a href="#ref-pt9vlq4w" role="doc-biblioref">61</a>]</span> for the removal of ‘poly-G’ sequencing
+<span class="citation" data-cites="pt9vlq4w">[<a href="#ref-pt9vlq4w" role="doc-biblioref">65</a>]</span> for the removal of ‘poly-G’ sequencing
 artefacts that are common in 2-colour Illumina sequencing machines (such as the
 increasingly popular NextSeq and NovaSeq platforms,
-<a href="https://sequencing.qcfail.com/articles/illumina-2-colour-chemistry-can-overcall-high-confidence-g-bases/">https://sequencing.qcfail.com/articles/illumina-2-colour-chemistry-can-overcall-high-confidence-g-bases/</a>).
-For genotyping we have now included FreeBayes <span class="citation" data-cites="doi:1207.3907">[<span class="citeproc-not-found" data-reference-id="doi:1207.3907"><strong>???</strong></span>]</span> as an alternative
+<span class="citation" data-cites="or1FajUp">[<a href="#ref-or1FajUp" role="doc-biblioref">66</a>]</span>).
+For genotyping we have now included FreeBayes <span class="citation" data-cites="qKTLLip1">[<a href="#ref-qKTLLip1" role="doc-biblioref">67</a>]</span> as an alternative
 to the human-focused GATK tools. We have also maintained the possibility of
 using the now unsupported GATK UnifiedGenotyper, as the GATK HaplotypeCaller
 performs <em>de novo</em> assembly around possible variants, which may not be suitable
 for low-coverage aDNA data.</p>
+<div id="fig:workflow-schematic" class="fignos">
 <figure>
-<img src="images/Fig1-eager2_workflow_v1.png" alt="" /><figcaption>Simplified schematic of the nf-core/eager workflow pipeline. Green filled
+<img src="images/Fig1-eager2_workflow_v1.png" style="width:100.0%" alt="" /><figcaption><span>Figure 1:</span> Simplified schematic of the nf-core/eager workflow pipeline. Green filled
 bubbles indicate new functionality added over the original EAGER
 pipeline.</figcaption>
 </figure>
+</div>
 <p>We have further extended the genomic analysis functionality of the pipeline by
 adding ancient metagenomic analysis, to identify the wider taxonomic content of
 a sample. We have added the ability to screen all off-target reads (not mapped
 to the reference genome) with two metagenomic profilers: MALT
-<span class="citation" data-cites="194vI7Tnf">[<a href="#ref-194vI7Tnf" role="doc-biblioref">62</a>]</span> and Kraken2
-<span class="citation" data-cites="wfp4mBcT">[<a href="#ref-wfp4mBcT" role="doc-biblioref">64</a>]</span>. Characterisation of properties of authentic
+<span class="citation" data-cites="194vI7Tnf">[<a href="#ref-194vI7Tnf" role="doc-biblioref">68</a>]</span> and Kraken2
+<span class="citation" data-cites="wfp4mBcT">[<a href="#ref-wfp4mBcT" role="doc-biblioref">70</a>]</span>. Characterisation of properties of authentic
 aDNA from MALT alignments is carried out with the HOPS pipeline
-<span class="citation" data-cites="cvMiJCKj">[<a href="#ref-cvMiJCKj" role="doc-biblioref">65</a>]</span>. Ancient metagenomic studies sometimes may
+<span class="citation" data-cites="cvMiJCKj">[<a href="#ref-cvMiJCKj" role="doc-biblioref">71</a>]</span>. Ancient metagenomic studies sometimes may
 include comparative samples from living individuals
-[<span class="citation" data-cites="BF7nFrAi"><a href="#ref-BF7nFrAi" role="doc-biblioref">66</a></span>). To support open data, whilst respecting data
+[<span class="citation" data-cites="BF7nFrAi"><a href="#ref-BF7nFrAi" role="doc-biblioref">72</a></span>). To support open data, whilst respecting data
 privacy, nf-core/eager includes a ‘strip_fastq’ script which creates raw FASTQ
 files, but with reference-genome mapped reads removed. This allows safe upload
 of sequencing data to public repositories with identifiable human data removed.</p>
@@ -497,11 +498,11 @@ bacterial genome reconstruction <span class="citation" data-cites="jz1XHWKM">[<a
 output SNP alignment FASTA file can then be used for downstream analyses such as
 phylogenetic tree construction. Simple coverage statistics of particular
 annotations (e.g. genes) of an input reference is offered by bedtools
-<span class="citation" data-cites="1HWiAHnIw">[<a href="#ref-1HWiAHnIw" role="doc-biblioref">67</a>]</span>, which can be used, for example, for
+<span class="citation" data-cites="1HWiAHnIw">[<a href="#ref-1HWiAHnIw" role="doc-biblioref">73</a>]</span>, which can be used, for example, for
 determining functional differences between ancient bacterial strains (as in
-<span class="citation" data-cites="doi:0.1016/j.cub.2017.10.025">[<span class="citeproc-not-found" data-reference-id="doi:0.1016/j.cub.2017.10.025"><strong>???</strong></span>]</span>). When using a human reference genome,
+<span class="citation" data-cites="XFBeyZB9">[<a href="#ref-XFBeyZB9" role="doc-biblioref">41</a>]</span>). When using a human reference genome,
 nf-core/eager can now also can give estimates of the biological sex of a given
-individual with Sex.DetEERRmine <span class="citation" data-cites="KlTB2lhf">[<a href="#ref-KlTB2lhf" role="doc-biblioref">68</a>]</span>. A dedicated
+individual with Sex.DetEERRmine <span class="citation" data-cites="KlTB2lhf">[<a href="#ref-KlTB2lhf" role="doc-biblioref">74</a>]</span>. A dedicated
 ‘endogenous DNA’ calculator (endorS.py) is also included to provide a percentage
 estimate of the sequenced reads matching reference out of the whole a sequencing
 library.</p>
@@ -520,11 +521,13 @@ multiple sequencing runs and/or library types.</p>
 <p>The original EAGER pipeline required users to look through many independent
 output directories and files to make full assessment of their sequencing data.
 This has now been replaced with a much more extensive MultiQC
-<span class="citation" data-cites="U9WbDW7I">[<a href="#ref-U9WbDW7I" role="doc-biblioref">69</a>]</span> report. This tool aggregates the log files
+<span class="citation" data-cites="U9WbDW7I">[<a href="#ref-U9WbDW7I" role="doc-biblioref">75</a>]</span> report. This tool aggregates the log files
 of every supported tool into a single interactive report, and assists users in
 making fuller assessment of their sequencing and analysis runs. Most tools
 within nf-core/eager have a corresponding MultiQC module to ensure as an
 evaluation as complete as possible.</p>
+<p>An overview of the entire pipeline can be seen in Figure
+<a href="#fig:workflow-schematic">1</a></p>
 <h2 id="accessibility">Accessibility</h2>
 <p>Alongside the portable new pipeline report, we have written extensive
 documentation on all parts of running and interpreting the output of the
@@ -561,10 +564,11 @@ field, and sets up the pipeline for staying at the forefront of palaeogenetic
 analysis.</p>
 <h2 id="methods">Methods</h2>
 <h3 id="installation">Installation</h3>
-<p>nf-core/eager requires Java, Nextflow and either a functional Conda installation
-<em>or</em> Docker/Singularity container installation. A quick installation guide to
-follow to get started can be found in the <em>Quickstart</em> section of the
-nf-core/eager <a href="https://github.com/nf-core/eager#quick-start">documentation</a>.</p>
+<p>nf-core/eager requires a version of Java, Nextflow and either a functional Conda
+installation <em>or</em> Docker/Singularity container installation. A quick
+installation guide to follow to get started can be found in the <em>Quickstart</em>
+section of the nf-core/eager repository
+<span class="citation" data-cites="NXbAmDI0">[<a href="#ref-NXbAmDI0" role="doc-biblioref">76</a>]</span>.</p>
 <h3 id="running">Running</h3>
 <p>After the installation, users can run the pipeline using standard test data by
 utilizing some of the <code>test</code> profiles we provide (e.g. using Docker):</p>
@@ -588,10 +592,10 @@ single-end data:</p>
 <div class="sourceCode" id="cb2"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1"></a><span class="ex">nextflow</span> run nf-core/eager -r 2.1.0 -profile conda --input <span class="st">&#39;/&lt;path&gt;/&lt;to&gt;/*/*R1*.fastq.gz&#39;</span> --single_end --fasta <span class="st">&#39;/&lt;path&gt;/&lt;to&gt;/&lt;reference&gt;.fasta.gz&#39;</span> --skip_fastqc --skip_adapterremoval --run_bam_filtering --bam_discard_unmapped --bam_unmapped_type <span class="st">&#39;fastq&#39;</span> --run_metagenomic_screening --metagenomic_tool <span class="st">&#39;malt&#39;</span> --database <span class="st">&#39;/&lt;path&gt;/&lt;to&gt;/&lt;malt_database&gt;&#39;</span> --run_sexdeterrmine</span></code></pre></div>
 <h4 id="profiles">Profiles</h4>
 <p>We utilize a central configuration profile repository to enable users from
-various institutions to use pipelines on their particular infrastructure <a href="https://github.com/nf-core/configs">more
-easily</a>. There are multiple resources listed
-in this repository with information on how to add your own configuration profile
-with help from the nf-core community.</p>
+various institutions to use pipelines on their particular infrastructure more
+easily <span class="citation" data-cites="13kS0x2y1">[<a href="#ref-13kS0x2y1" role="doc-biblioref">77</a>]</span>. There are multiple resources
+listed in this repository with information on how to add your own configuration
+profile with help from the nf-core community.</p>
 <p>Users can customize this infrastructure profile by themselves, with the nf-core
 community, or with their local system administrator to make sure that the
 pipeline runs successfully, and can then rely on the Nextflow and nf-core
@@ -627,8 +631,8 @@ the exact same settings and merging procedures in the original publication,
 without having to reconstruct this from prose.</p>
 <h4 id="monitoring">Monitoring</h4>
 <p>Users can either monitor their pipeline execution with the messages Nextflow
-prints to the console while running, or utilize projects such as <a href="https://tower.nf">Nextflow
-Tower</a> to monitor their analysis pipeline during runtime.</p>
+prints to the console while running, or utilize projects such as Nextflow Tower
+<span class="citation" data-cites="jJzDdoAE">[<a href="#ref-jJzDdoAE" role="doc-biblioref">47</a>]</span> to monitor their analysis pipeline during runtime.</p>
 <h4 id="output">Output</h4>
 <p>The pipeline produces several dozen output files in various file formats, with a
 more detailed listing available in the user documentation. This includes
@@ -919,154 +923,186 @@ Philip A. Ewels, Alexander Peltzer, Sven Fillinger, Harshil Patel, Johannes Alne
 <em>Nature Biotechnology</em> (2020-02-13) <a href="https://doi.org/ggk3qh">https://doi.org/ggk3qh</a><br />
 DOI: <a href="https://doi.org/10.1038/s41587-020-0439-x">10.1038/s41587-020-0439-x</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/32055031">32055031</a></p>
 </div>
+<div id="ref-iU0FZYFP">
+<p>44. <strong>Conda — Conda documentation</strong><a href="https://docs.conda.io/en/latest/">https://docs.conda.io/en/latest/</a></p>
+</div>
+<div id="ref-rmvJ2O0Q">
+<p>45. <strong>Empowering App Development for Developers | Docker</strong><a href="https://www.docker.com/">https://www.docker.com/</a></p>
+</div>
+<div id="ref-99QkJBoF">
+<p>46. <strong>Home</strong><br />
+Sylabs.io<br />
+<a href="https://sylabs.io/">https://sylabs.io/</a></p>
+</div>
+<div id="ref-jJzDdoAE">
+<p>47. <strong>Nextflow Tower</strong><a href="https://tower.nf/">https://tower.nf/</a></p>
+</div>
 <div id="ref-WQbjOgBC">
-<p>44. <strong>Improving ancient DNA read mapping against modern reference genomes</strong><br />
+<p>48. <strong>Improving ancient DNA read mapping against modern reference genomes</strong><br />
 Mikkel Schubert, Aurelien Ginolhac, Stinus Lindgreen, John F Thompson, Khaled AS AL-Rasheid, Eske Willerslev, Anders Krogh, Ludovic Orlando<br />
 <em>BMC Genomics</em> (2012) <a href="https://doi.org/gb3ff7">https://doi.org/gb3ff7</a><br />
 DOI: <a href="https://doi.org/10.1186/1471-2164-13-178">10.1186/1471-2164-13-178</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/22574660">22574660</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3468387">PMC3468387</a></p>
 </div>
 <div id="ref-R2o2aPyA">
-<p>45. <strong>Babraham Bioinformatics - FastQC A Quality Control tool for High Throughput Sequence Data</strong><a href="https://www.bioinformatics.babraham.ac.uk/projects/fastqc/">https://www.bioinformatics.babraham.ac.uk/projects/fastqc/</a></p>
+<p>49. <strong>Babraham Bioinformatics - FastQC A Quality Control tool for High Throughput Sequence Data</strong><a href="https://www.bioinformatics.babraham.ac.uk/projects/fastqc/">https://www.bioinformatics.babraham.ac.uk/projects/fastqc/</a></p>
 </div>
 <div id="ref-L1GdB71G">
-<p>46. <strong>AdapterRemoval v2: rapid adapter trimming, identification, and read merging</strong><br />
+<p>50. <strong>AdapterRemoval v2: rapid adapter trimming, identification, and read merging</strong><br />
 Mikkel Schubert, Stinus Lindgreen, Ludovic Orlando<br />
 <em>BMC Research Notes</em> (2016-02-12) <a href="https://doi.org/gfzqhb">https://doi.org/gfzqhb</a><br />
 DOI: <a href="https://doi.org/10.1186/s13104-016-1900-2">10.1186/s13104-016-1900-2</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/26868221">26868221</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4751634">PMC4751634</a></p>
 </div>
 <div id="ref-1AzMUkwox">
-<p>47. <strong>Fast and accurate long-read alignment with Burrows–Wheeler transform</strong><br />
+<p>51. <strong>Fast and accurate long-read alignment with Burrows–Wheeler transform</strong><br />
 Heng Li, Richard Durbin<br />
 <em>Bioinformatics</em> (2010-03-01) <a href="https://doi.org/cm27kg">https://doi.org/cm27kg</a><br />
 DOI: <a href="https://doi.org/10.1093/bioinformatics/btp698">10.1093/bioinformatics/btp698</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/20080505">20080505</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2828108">PMC2828108</a></p>
 </div>
 <div id="ref-gmH6YDca">
-<p>48. <strong>Aligning sequence reads, clone sequences and assembly contigs with BWA-MEM</strong><br />
+<p>52. <strong>Aligning sequence reads, clone sequences and assembly contigs with BWA-MEM</strong><br />
 Heng Li<br />
 <em>arXiv</em> (2013-05-28) <a href="https://arxiv.org/abs/1303.3997">https://arxiv.org/abs/1303.3997</a></p>
 </div>
 <div id="ref-IPc8cy7s">
-<p>49. <strong>The Sequence Alignment/Map format and SAMtools</strong><br />
+<p>53. <strong>The Sequence Alignment/Map format and SAMtools</strong><br />
 H. Li, B. Handsaker, A. Wysoker, T. Fennell, J. Ruan, N. Homer, G. Marth, G. Abecasis, R. Durbin, 1000 Genome Project Data Processing Subgroup<br />
 <em>Bioinformatics</em> (2009-06-08) <a href="https://doi.org/ff6426">https://doi.org/ff6426</a><br />
 DOI: <a href="https://doi.org/10.1093/bioinformatics/btp352">10.1093/bioinformatics/btp352</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/19505943">19505943</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2723002">PMC2723002</a></p>
 </div>
 <div id="ref-14nSa8zB9">
-<p>50. <strong>The Genome Analysis Toolkit: A MapReduce framework for analyzing next-generation DNA sequencing data</strong><br />
+<p>54. <strong>The Genome Analysis Toolkit: A MapReduce framework for analyzing next-generation DNA sequencing data</strong><br />
 A. McKenna, M. Hanna, E. Banks, A. Sivachenko, K. Cibulskis, A. Kernytsky, K. Garimella, D. Altshuler, S. Gabriel, M. Daly, M. A. DePristo<br />
 <em>Genome Research</em> (2010-07-19) <a href="https://doi.org/bnzbn6">https://doi.org/bnzbn6</a><br />
 DOI: <a href="https://doi.org/10.1101/gr.107524.110">10.1101/gr.107524.110</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/20644199">20644199</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2928508">PMC2928508</a></p>
 </div>
 <div id="ref-17zUqUTNA">
-<p>51. <strong>Predicting the molecular complexity of sequencing libraries</strong><br />
+<p>55. <strong>Predicting the molecular complexity of sequencing libraries</strong><br />
 Timothy Daley, Andrew D Smith<br />
 <em>Nature Methods</em> (2013-02-24) <a href="https://doi.org/gfx6f5">https://doi.org/gfx6f5</a><br />
 DOI: <a href="https://doi.org/10.1038/nmeth.2375">10.1038/nmeth.2375</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/23435259">23435259</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3612374">PMC3612374</a></p>
 </div>
 <div id="ref-O3E8cbBW">
-<p>52. <strong>Qualimap 2: advanced multi-sample quality control for high-throughput sequencing data</strong><br />
+<p>56. <strong>Qualimap 2: advanced multi-sample quality control for high-throughput sequencing data</strong><br />
 Konstantin Okonechnikov, Ana Conesa, Fernando García-Alcalde<br />
 <em>Bioinformatics</em> (2015-10-01) <a href="https://doi.org/ggxrmx">https://doi.org/ggxrmx</a><br />
 DOI: <a href="https://doi.org/10.1093/bioinformatics/btv566">10.1093/bioinformatics/btv566</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/26428292">26428292</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4708105">PMC4708105</a></p>
 </div>
 <div id="ref-1Ab7DZE7s">
-<p>53. <strong>Integrative-Transcriptomics/DamageProfiler: DamageProfiler v0.4.9</strong><br />
+<p>57. <strong>Integrative-Transcriptomics/DamageProfiler: DamageProfiler v0.4.9</strong><br />
 Judith Neukamm, Alexander Peltzer<br />
 <em>Zenodo</em> (2019-11-29) <a href="https://doi.org/ggxrmz">https://doi.org/ggxrmz</a><br />
 DOI: <a href="https://doi.org/10.5281/zenodo.3557708">10.5281/zenodo.3557708</a></p>
 </div>
 <div id="ref-lh0Dclyl">
-<p>54. <strong>Separating endogenous ancient DNA from modern day contamination in a Siberian Neandertal</strong><br />
+<p>58. <strong>Separating endogenous ancient DNA from modern day contamination in a Siberian Neandertal</strong><br />
 Pontus Skoglund, Bernd H. Northoff, Michael V. Shunkov, Anatoli P. Derevianko, Svante Pääbo, Johannes Krause, Mattias Jakobsson<br />
 <em>Proceedings of the National Academy of Sciences</em> (2014-02-11) <a href="https://doi.org/f2z5sw">https://doi.org/f2z5sw</a><br />
 DOI: <a href="https://doi.org/10.1073/pnas.1318934111">10.1073/pnas.1318934111</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/24469802">24469802</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3926038">PMC3926038</a></p>
 </div>
 <div id="ref-18bWeJ11I">
-<p>55. <strong>An efficient and scalable analysis framework for variant extraction and refinement from population-scale DNA sequence data</strong><br />
+<p>59. <strong>An efficient and scalable analysis framework for variant extraction and refinement from population-scale DNA sequence data</strong><br />
 Goo Jun, Mary Kate Wing, Gonçalo R. Abecasis, Hyun Min Kang<br />
 <em>Genome Research</em> (2015-06) <a href="https://doi.org/f7dz2d">https://doi.org/f7dz2d</a><br />
 DOI: <a href="https://doi.org/10.1101/gr.176552.114">10.1101/gr.176552.114</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/25883319">25883319</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4448687">PMC4448687</a></p>
 </div>
 <div id="ref-FyiP2I2k">
-<p>56. <strong>ANGSD: Analysis of Next Generation Sequencing Data</strong><br />
+<p>60. <strong>ANGSD: Analysis of Next Generation Sequencing Data</strong><br />
 Thorfinn Sand Korneliussen, Anders Albrechtsen, Rasmus Nielsen<br />
 <em>BMC Bioinformatics</em> (2014-11-25) <a href="https://doi.org/gb8wpz">https://doi.org/gb8wpz</a><br />
 DOI: <a href="https://doi.org/10.1186/s12859-014-0356-4">10.1186/s12859-014-0356-4</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/25420514">25420514</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4248462">PMC4248462</a></p>
 </div>
 <div id="ref-sYguBb3Q">
-<p>57. <strong>Bioconda: sustainable and comprehensive software distribution for the life sciences</strong><br />
+<p>61. <strong>Bioconda: sustainable and comprehensive software distribution for the life sciences</strong><br />
 Björn Grüning, Ryan Dale, Andreas Sjödin, Brad A. Chapman, Jillian Rowe, Christopher H. Tomkins-Tinch, Renan Valieris, Johannes Köster, The Bioconda Team<br />
 <em>Nature Methods</em> (2018-07-02) <a href="https://doi.org/gd2xzp">https://doi.org/gd2xzp</a><br />
 DOI: <a href="https://doi.org/10.1038/s41592-018-0046-7">10.1038/s41592-018-0046-7</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/29967506">29967506</a></p>
 </div>
 <div id="ref-qj0Rqpq8">
-<p>58. <strong>conda-forge | community driven packaging for conda</strong><a href="https://conda-forge.org/">https://conda-forge.org/</a></p>
+<p>62. <strong>conda-forge | community driven packaging for conda</strong><a href="https://conda-forge.org/">https://conda-forge.org/</a></p>
 </div>
 <div id="ref-5S7TlWlb">
-<p>59. <strong>Schmutzi: estimation of contamination and endogenous mitochondrial consensus calling for ancient DNA</strong><br />
+<p>63. <strong>Schmutzi: estimation of contamination and endogenous mitochondrial consensus calling for ancient DNA</strong><br />
 Gabriel Renaud, Viviane Slon, Ana T. Duggan, Janet Kelso<br />
 <em>Genome Biology</em> (2015-10-12) <a href="https://doi.org/f72mvg">https://doi.org/f72mvg</a><br />
 DOI: <a href="https://doi.org/10.1186/s13059-015-0776-0">10.1186/s13059-015-0776-0</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/26458810">26458810</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4601135">PMC4601135</a></p>
 </div>
 <div id="ref-PiS0h6Mu">
-<p>60. <strong>Fast gapped-read alignment with Bowtie 2</strong><br />
+<p>64. <strong>Fast gapped-read alignment with Bowtie 2</strong><br />
 Ben Langmead, Steven L Salzberg<br />
 <em>Nature Methods</em> (2012-03-04) <a href="https://doi.org/gd2xzn">https://doi.org/gd2xzn</a><br />
 DOI: <a href="https://doi.org/10.1038/nmeth.1923">10.1038/nmeth.1923</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/22388286">22388286</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3322381">PMC3322381</a></p>
 </div>
 <div id="ref-pt9vlq4w">
-<p>61. <strong>fastp: an ultra-fast all-in-one FASTQ preprocessor</strong><br />
+<p>65. <strong>fastp: an ultra-fast all-in-one FASTQ preprocessor</strong><br />
 Shifu Chen, Yanqing Zhou, Yaru Chen, Jia Gu<br />
 <em>Bioinformatics</em> (2018-09-01) <a href="https://doi.org/gd9mrb">https://doi.org/gd9mrb</a><br />
 DOI: <a href="https://doi.org/10.1093/bioinformatics/bty560">10.1093/bioinformatics/bty560</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/30423086">30423086</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6129281">PMC6129281</a></p>
 </div>
+<div id="ref-or1FajUp">
+<p>66. <strong>QC Fail Sequencing » Illumina 2 colour chemistry can overcall high confidence G bases</strong><a href="https://sequencing.qcfail.com/articles/illumina-2-colour-chemistry-can-overcall-high-confidence-g-bases/">https://sequencing.qcfail.com/articles/illumina-2-colour-chemistry-can-overcall-high-confidence-g-bases/</a></p>
+</div>
+<div id="ref-qKTLLip1">
+<p>67. <strong>Haplotype-based variant detection from short-read sequencing</strong><br />
+Erik Garrison, Gabor Marth<br />
+<em>arXiv</em> (2012-07-24) <a href="https://arxiv.org/abs/1207.3907">https://arxiv.org/abs/1207.3907</a></p>
+</div>
 <div id="ref-194vI7Tnf">
-<p>62. <strong>MALT: Fast alignment and analysis of metagenomic DNA sequence data applied to the Tyrolean Iceman</strong><br />
+<p>68. <strong>MALT: Fast alignment and analysis of metagenomic DNA sequence data applied to the Tyrolean Iceman</strong><br />
 Alexander Herbig, Frank Maixner, Kirsten I. Bos, Albert Zink, Johannes Krause, Daniel H. Huson<br />
 <em>bioRxiv</em> (2016-04-27) <a href="https://doi.org/ggxkk9">https://doi.org/ggxkk9</a><br />
 DOI: <a href="https://doi.org/10.1101/050559">10.1101/050559</a></p>
 </div>
 <div id="ref-qDQBcgzB">
-<p>63. <strong>Salmonella enterica genomes from victims of a major sixteenth-century epidemic in Mexico</strong><br />
+<p>69. <strong>Salmonella enterica genomes from victims of a major sixteenth-century epidemic in Mexico</strong><br />
 Åshild J. Vågene, Alexander Herbig, Michael G. Campana, Nelly M. Robles García, Christina Warinner, Susanna Sabin, Maria A. Spyrou, Aida Andrades Valtueña, Daniel Huson, Noreen Tuross, … Johannes Krause<br />
 <em>Nature Ecology &amp; Evolution</em> (2018-01-15) <a href="https://doi.org/ggxkk7">https://doi.org/ggxkk7</a><br />
-DOI: <a href="https://doi.org/10.1038/s41559-017-0446-6">10.1038/s41559-017-0446-6</a></p>
+DOI: <a href="https://doi.org/10.1038/s41559-017-0446-6">10.1038/s41559-017-0446-6</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/29335577">29335577</a></p>
 </div>
 <div id="ref-wfp4mBcT">
-<p>64. <strong>Improved metagenomic analysis with Kraken 2</strong><br />
+<p>70. <strong>Improved metagenomic analysis with Kraken 2</strong><br />
 Derrick E. Wood, Jennifer Lu, Ben Langmead<br />
 <em>Genome Biology</em> (2019-11-28) <a href="https://doi.org/ggfk55">https://doi.org/ggfk55</a><br />
 DOI: <a href="https://doi.org/10.1186/s13059-019-1891-0">10.1186/s13059-019-1891-0</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/31779668">31779668</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6883579">PMC6883579</a></p>
 </div>
 <div id="ref-cvMiJCKj">
-<p>65. <strong>HOPS: automated detection and authentication of pathogen DNA in archaeological remains</strong><br />
+<p>71. <strong>HOPS: automated detection and authentication of pathogen DNA in archaeological remains</strong><br />
 Ron Hübler, Felix M. Key, Christina Warinner, Kirsten I. Bos, Johannes Krause, Alexander Herbig<br />
 <em>Genome Biology</em> (2019-12-16) <a href="https://doi.org/ggxkmb">https://doi.org/ggxkmb</a><br />
 DOI: <a href="https://doi.org/10.1186/s13059-019-1903-0">10.1186/s13059-019-1903-0</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/31842945">31842945</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6913047">PMC6913047</a></p>
 </div>
 <div id="ref-BF7nFrAi">
-<p>66. <strong>Microbial differences between dental plaque and historic dental calculus are related to oral biofilm maturation stage</strong><br />
+<p>72. <strong>Microbial differences between dental plaque and historic dental calculus are related to oral biofilm maturation stage</strong><br />
 Irina M. Velsko, James A. Fellows Yates, Franziska Aron, Richard W. Hagan, Laurent A. F. Frantz, Louise Loe, Juan Bautista Rodriguez Martinez, Eros Chaves, Chris Gosden, Greger Larson, Christina Warinner<br />
 <em>Microbiome</em> (2019-07-06) <a href="https://doi.org/ggxkmc">https://doi.org/ggxkmc</a><br />
 DOI: <a href="https://doi.org/10.1186/s40168-019-0717-3">10.1186/s40168-019-0717-3</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/31279340">31279340</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6612086">PMC6612086</a></p>
 </div>
 <div id="ref-1HWiAHnIw">
-<p>67. <strong>BEDTools: a flexible suite of utilities for comparing genomic features</strong><br />
+<p>73. <strong>BEDTools: a flexible suite of utilities for comparing genomic features</strong><br />
 Aaron R. Quinlan, Ira M. Hall<br />
 <em>Bioinformatics</em> (2010-03-15) <a href="https://doi.org/cmrms3">https://doi.org/cmrms3</a><br />
 DOI: <a href="https://doi.org/10.1093/bioinformatics/btq033">10.1093/bioinformatics/btq033</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/20110278">20110278</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2832824">PMC2832824</a></p>
 </div>
 <div id="ref-KlTB2lhf">
-<p>68. <strong>Ancient Fennoscandian genomes reveal origin and spread of Siberian ancestry in Europe</strong><br />
+<p>74. <strong>Ancient Fennoscandian genomes reveal origin and spread of Siberian ancestry in Europe</strong><br />
 Thiseas C. Lamnidis, Kerttu Majander, Choongwon Jeong, Elina Salmela, Anna Wessman, Vyacheslav Moiseyev, Valery Khartanovich, Oleg Balanovsky, Matthias Ongyerth, Antje Weihmann, … Stephan Schiffels<br />
 <em>Nature Communications</em> (2018-11-27) <a href="https://doi.org/ggxkk6">https://doi.org/ggxkk6</a><br />
 DOI: <a href="https://doi.org/10.1038/s41467-018-07483-5">10.1038/s41467-018-07483-5</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/30479341">30479341</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6258758">PMC6258758</a></p>
 </div>
 <div id="ref-U9WbDW7I">
-<p>69. <strong>MultiQC: summarize analysis results for multiple tools and samples in a single report</strong><br />
+<p>75. <strong>MultiQC: summarize analysis results for multiple tools and samples in a single report</strong><br />
 Philip Ewels, Måns Magnusson, Sverker Lundin, Max Käller<br />
 <em>Bioinformatics</em> (2016-10-01) <a href="https://doi.org/f3s996">https://doi.org/f3s996</a><br />
 DOI: <a href="https://doi.org/10.1093/bioinformatics/btw354">10.1093/bioinformatics/btw354</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/27312411">27312411</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5039924">PMC5039924</a></p>
+</div>
+<div id="ref-NXbAmDI0">
+<p>76. <strong>nf-core/eager</strong><br />
+nf-core<br />
+(2020-06-03) <a href="https://github.com/nf-core/eager">https://github.com/nf-core/eager</a></p>
+</div>
+<div id="ref-13kS0x2y1">
+<p>77. <strong>nf-core/configs</strong><br />
+nf-core<br />
+(2020-06-03) <a href="https://github.com/nf-core/configs">https://github.com/nf-core/configs</a></p>
 </div>
 </div>
 <!-- default theme -->
