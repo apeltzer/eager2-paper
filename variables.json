@@ -23,7 +23,7 @@
       "Judith Neukamm",
       "Alexander Peltzer"
     ],
-    "header-includes": "<!--\nManubot generated metadata rendered from header-includes-template.html.\nSuggest improvements at https://github.com/manubot/manubot/blob/master/manubot/process/header-includes-template.html\n-->\n<meta name=\"dc.format\" content=\"text/html\" />\n<meta name=\"dc.title\" content=\"Reproducible, portable, and efficient ancient genome reconstruction with nf-core/eager\" />\n<meta name=\"citation_title\" content=\"Reproducible, portable, and efficient ancient genome reconstruction with nf-core/eager\" />\n<meta property=\"og:title\" content=\"Reproducible, portable, and efficient ancient genome reconstruction with nf-core/eager\" />\n<meta property=\"twitter:title\" content=\"Reproducible, portable, and efficient ancient genome reconstruction with nf-core/eager\" />\n<meta name=\"dc.date\" content=\"2020-06-04\" />\n<meta name=\"citation_publication_date\" content=\"2020-06-04\" />\n<meta name=\"dc.language\" content=\"en-GB\" />\n<meta name=\"citation_language\" content=\"en-GB\" />\n<meta name=\"dc.relation.ispartof\" content=\"Manubot\" />\n<meta name=\"dc.publisher\" content=\"Manubot\" />\n<meta name=\"citation_journal_title\" content=\"Manubot\" />\n<meta name=\"citation_technical_report_institution\" content=\"Manubot\" />\n<meta name=\"citation_author\" content=\"James A. Fellows Yates\" />\n<meta name=\"citation_author_institution\" content=\"Microbiome Sciences Group, Department of Archaeogenetics, Max-Planck-Institute for the Science of Human History\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0001-5585-6277\" />\n<meta name=\"twitter:creator\" content=\"@jfy133\" />\n<meta name=\"citation_author\" content=\"Thiseas C. Lamnidis\" />\n<meta name=\"citation_author_institution\" content=\"Population Genetics Group, Department of Archaeogenetics, Max-Planck-Institute for the Science of Human History\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0003-4485-8570\" />\n<meta name=\"twitter:creator\" content=\"@TCLamnidis\" />\n<meta name=\"citation_author\" content=\"Maxime Borry\" />\n<meta name=\"citation_author_institution\" content=\"Microbiome Sciences Group, Department of Archaeogenetics, Max-Planck-Institute for the Science of Human History\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0001-9140-7559\" />\n<meta name=\"twitter:creator\" content=\"@notmaxib\" />\n<meta name=\"citation_author\" content=\"Aida Andrades Valtueña\" />\n<meta name=\"citation_author_institution\" content=\"Computational Pathogenomics Group, Department of Archaeogenetics, Max-Planck-Institute for the Science of Human History\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0002-1737-2228\" />\n<meta name=\"twitter:creator\" content=\"@aidaanva\" />\n<meta name=\"citation_author\" content=\"Zandra Fagernäs\" />\n<meta name=\"citation_author_institution\" content=\"Microbiome Sciences Group, Department of Archaeogenetics, Max-Planck-Institute for the Science of Human History\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0003-2667-3556\" />\n<meta name=\"twitter:creator\" content=\"@ZandraSelina\" />\n<meta name=\"citation_author\" content=\"Stephen Clayton\" />\n<meta name=\"citation_author_institution\" content=\"Department of Archaeogenetics, Max-Planck-Institute for the Science of Human History\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0001-5223-9695\" />\n<meta name=\"citation_author\" content=\"Maxime U. Garcia\" />\n<meta name=\"citation_author_institution\" content=\"Department of Oncology-Pathology, Karolinska Institutet\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0003-2827-9261\" />\n<meta name=\"twitter:creator\" content=\"@gau\" />\n<meta name=\"citation_author\" content=\"Judith Neukamm\" />\n<meta name=\"citation_author_institution\" content=\"Palaeogenetics Group, Institute of Evolutionary Medicine, University of Zurich\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0001-8141-566X\" />\n<meta name=\"twitter:creator\" content=\"@JudithNeukamm\" />\n<meta name=\"citation_author\" content=\"Alexander Peltzer\" />\n<meta name=\"citation_author_institution\" content=\"Quantitative Biology Center (QBiC), Eberhard-Karls-Universität\" />\n<meta name=\"citation_author_institution\" content=\"Translational Medicine &amp; Clinical Pharmacology, Boehringer Ingelheim Pharma GmbH &amp; CO KG, Biberach an der Riss\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0002-6503-2180\" />\n<meta name=\"twitter:creator\" content=\"@alex_peltzer\" />\n<link rel=\"canonical\" href=\"https://apeltzer.github.io/eager2-paper/\" />\n<meta property=\"og:url\" content=\"https://apeltzer.github.io/eager2-paper/\" />\n<meta property=\"twitter:url\" content=\"https://apeltzer.github.io/eager2-paper/\" />\n<meta name=\"citation_fulltext_html_url\" content=\"https://apeltzer.github.io/eager2-paper/\" />\n<meta name=\"citation_pdf_url\" content=\"https://apeltzer.github.io/eager2-paper/manuscript.pdf\" />\n<link rel=\"alternate\" type=\"application/pdf\" href=\"https://apeltzer.github.io/eager2-paper/manuscript.pdf\" />\n<link rel=\"alternate\" type=\"text/html\" href=\"https://apeltzer.github.io/eager2-paper/v/29872f784da8deaaf25a54bc2f300fd58599a575/\" />\n<meta name=\"manubot_html_url_versioned\" content=\"https://apeltzer.github.io/eager2-paper/v/29872f784da8deaaf25a54bc2f300fd58599a575/\" />\n<meta name=\"manubot_pdf_url_versioned\" content=\"https://apeltzer.github.io/eager2-paper/v/29872f784da8deaaf25a54bc2f300fd58599a575/manuscript.pdf\" />\n<meta property=\"og:type\" content=\"article\" />\n<meta property=\"twitter:card\" content=\"summary_large_image\" />\n<link rel=\"icon\" type=\"image/png\" sizes=\"192x192\" href=\"https://manubot.org/favicon-192x192.png\" />\n<link rel=\"mask-icon\" href=\"https://manubot.org/safari-pinned-tab.svg\" color=\"#ad1457\" />\n<meta name=\"theme-color\" content=\"#ad1457\" />\n<!-- end Manubot generated metadata -->",
+    "header-includes": "<!--\nManubot generated metadata rendered from header-includes-template.html.\nSuggest improvements at https://github.com/manubot/manubot/blob/master/manubot/process/header-includes-template.html\n-->\n<meta name=\"dc.format\" content=\"text/html\" />\n<meta name=\"dc.title\" content=\"Reproducible, portable, and efficient ancient genome reconstruction with nf-core/eager\" />\n<meta name=\"citation_title\" content=\"Reproducible, portable, and efficient ancient genome reconstruction with nf-core/eager\" />\n<meta property=\"og:title\" content=\"Reproducible, portable, and efficient ancient genome reconstruction with nf-core/eager\" />\n<meta property=\"twitter:title\" content=\"Reproducible, portable, and efficient ancient genome reconstruction with nf-core/eager\" />\n<meta name=\"dc.date\" content=\"2020-06-04\" />\n<meta name=\"citation_publication_date\" content=\"2020-06-04\" />\n<meta name=\"dc.language\" content=\"en-GB\" />\n<meta name=\"citation_language\" content=\"en-GB\" />\n<meta name=\"dc.relation.ispartof\" content=\"Manubot\" />\n<meta name=\"dc.publisher\" content=\"Manubot\" />\n<meta name=\"citation_journal_title\" content=\"Manubot\" />\n<meta name=\"citation_technical_report_institution\" content=\"Manubot\" />\n<meta name=\"citation_author\" content=\"James A. Fellows Yates\" />\n<meta name=\"citation_author_institution\" content=\"Microbiome Sciences Group, Department of Archaeogenetics, Max-Planck-Institute for the Science of Human History, Jena, Germany\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0001-5585-6277\" />\n<meta name=\"twitter:creator\" content=\"@jfy133\" />\n<meta name=\"citation_author\" content=\"Thiseas C. Lamnidis\" />\n<meta name=\"citation_author_institution\" content=\"Population Genetics Group, Department of Archaeogenetics, Max-Planck-Institute for the Science of Human History, Jena, Germany\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0003-4485-8570\" />\n<meta name=\"twitter:creator\" content=\"@TCLamnidis\" />\n<meta name=\"citation_author\" content=\"Maxime Borry\" />\n<meta name=\"citation_author_institution\" content=\"Microbiome Sciences Group, Department of Archaeogenetics, Max-Planck-Institute for the Science of Human History, Jena, Germany\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0001-9140-7559\" />\n<meta name=\"twitter:creator\" content=\"@notmaxib\" />\n<meta name=\"citation_author\" content=\"Aida Andrades Valtueña\" />\n<meta name=\"citation_author_institution\" content=\"Computational Pathogenomics Group, Department of Archaeogenetics, Max-Planck-Institute for the Science of Human History, Jena, Germany\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0002-1737-2228\" />\n<meta name=\"twitter:creator\" content=\"@aidaanva\" />\n<meta name=\"citation_author\" content=\"Zandra Fagernäs\" />\n<meta name=\"citation_author_institution\" content=\"Microbiome Sciences Group, Department of Archaeogenetics, Max-Planck-Institute for the Science of Human History, Jena, Germany\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0003-2667-3556\" />\n<meta name=\"twitter:creator\" content=\"@ZandraSelina\" />\n<meta name=\"citation_author\" content=\"Stephen Clayton\" />\n<meta name=\"citation_author_institution\" content=\"Department of Archaeogenetics, Max-Planck-Institute for the Science of Human History, Jena, Germany\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0001-5223-9695\" />\n<meta name=\"citation_author\" content=\"Maxime U. Garcia\" />\n<meta name=\"citation_author_institution\" content=\"Department of Oncology-Pathology, Karolinska Institutet, Stockholm, Sweden\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0003-2827-9261\" />\n<meta name=\"twitter:creator\" content=\"@gau\" />\n<meta name=\"citation_author\" content=\"Judith Neukamm\" />\n<meta name=\"citation_author_institution\" content=\"Palaeogenetics Group, Institute of Evolutionary Medicine, University of Zurich, Zürich, Switzerland\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0001-8141-566X\" />\n<meta name=\"twitter:creator\" content=\"@JudithNeukamm\" />\n<meta name=\"citation_author\" content=\"Alexander Peltzer\" />\n<meta name=\"citation_author_institution\" content=\"Quantitative Biology Center (QBiC), Eberhard-Karls-Universität, Tübingen, Germany\" />\n<meta name=\"citation_author_institution\" content=\"Translational Medicine &amp; Clinical Pharmacology, Boehringer Ingelheim Pharma GmbH &amp; CO KG, Biberach an der Riss, Germany\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0002-6503-2180\" />\n<meta name=\"twitter:creator\" content=\"@alex_peltzer\" />\n<link rel=\"canonical\" href=\"https://apeltzer.github.io/eager2-paper/\" />\n<meta property=\"og:url\" content=\"https://apeltzer.github.io/eager2-paper/\" />\n<meta property=\"twitter:url\" content=\"https://apeltzer.github.io/eager2-paper/\" />\n<meta name=\"citation_fulltext_html_url\" content=\"https://apeltzer.github.io/eager2-paper/\" />\n<meta name=\"citation_pdf_url\" content=\"https://apeltzer.github.io/eager2-paper/manuscript.pdf\" />\n<link rel=\"alternate\" type=\"application/pdf\" href=\"https://apeltzer.github.io/eager2-paper/manuscript.pdf\" />\n<link rel=\"alternate\" type=\"text/html\" href=\"https://apeltzer.github.io/eager2-paper/v/3716a069941c6b8273f4e0c72a0c25e855cbd79a/\" />\n<meta name=\"manubot_html_url_versioned\" content=\"https://apeltzer.github.io/eager2-paper/v/3716a069941c6b8273f4e0c72a0c25e855cbd79a/\" />\n<meta name=\"manubot_pdf_url_versioned\" content=\"https://apeltzer.github.io/eager2-paper/v/3716a069941c6b8273f4e0c72a0c25e855cbd79a/manuscript.pdf\" />\n<meta property=\"og:type\" content=\"article\" />\n<meta property=\"twitter:card\" content=\"summary_large_image\" />\n<link rel=\"icon\" type=\"image/png\" sizes=\"192x192\" href=\"https://manubot.org/favicon-192x192.png\" />\n<link rel=\"mask-icon\" href=\"https://manubot.org/safari-pinned-tab.svg\" color=\"#ad1457\" />\n<meta name=\"theme-color\" content=\"#ad1457\" />\n<!-- end Manubot generated metadata -->",
     "bibliography": [
       "content/manual-references.json"
     ],
@@ -43,7 +43,7 @@
         "twitter": "jfy133",
         "email": "jfy133@gmail.com",
         "affiliations": [
-          "Microbiome Sciences Group, Department of Archaeogenetics, Max-Planck-Institute for the Science of Human History"
+          "Microbiome Sciences Group, Department of Archaeogenetics, Max-Planck-Institute for the Science of Human History, Jena, Germany"
         ],
         "funders": "Max Planck Society",
         "affiliation_numbers": [
@@ -58,7 +58,7 @@
         "twitter": "TCLamnidis",
         "email": "lamnids@shh.mpg.de",
         "affiliations": [
-          "Population Genetics Group, Department of Archaeogenetics, Max-Planck-Institute for the Science of Human History"
+          "Population Genetics Group, Department of Archaeogenetics, Max-Planck-Institute for the Science of Human History, Jena, Germany"
         ],
         "funders": "Max Planck Society",
         "affiliation_numbers": [
@@ -73,7 +73,7 @@
         "twitter": "notmaxib",
         "email": "borry@shh.mpg.de",
         "affiliations": [
-          "Microbiome Sciences Group, Department of Archaeogenetics, Max-Planck-Institute for the Science of Human History"
+          "Microbiome Sciences Group, Department of Archaeogenetics, Max-Planck-Institute for the Science of Human History, Jena, Germany"
         ],
         "funders": "Max Planck Society",
         "affiliation_numbers": [
@@ -88,7 +88,7 @@
         "twitter": "aidaanva",
         "email": "andrades@shh.mpg.de",
         "affiliations": [
-          "Computational Pathogenomics Group, Department of Archaeogenetics, Max-Planck-Institute for the Science of Human History"
+          "Computational Pathogenomics Group, Department of Archaeogenetics, Max-Planck-Institute for the Science of Human History, Jena, Germany"
         ],
         "funders": "Max Planck Society",
         "affiliation_numbers": [
@@ -103,7 +103,7 @@
         "twitter": "ZandraSelina",
         "email": "fagernaes@shh.mpg.de",
         "affiliations": [
-          "Microbiome Sciences Group, Department of Archaeogenetics, Max-Planck-Institute for the Science of Human History"
+          "Microbiome Sciences Group, Department of Archaeogenetics, Max-Planck-Institute for the Science of Human History, Jena, Germany"
         ],
         "funders": "Max Planck Society",
         "affiliation_numbers": [
@@ -117,7 +117,7 @@
         "orcid": "0000-0001-5223-9695",
         "email": "clayton@shh.mpg.de",
         "affiliations": [
-          "Department of Archaeogenetics, Max-Planck-Institute for the Science of Human History"
+          "Department of Archaeogenetics, Max-Planck-Institute for the Science of Human History, Jena, Germany"
         ],
         "funders": "Max Planck Society",
         "affiliation_numbers": [
@@ -132,7 +132,7 @@
         "twitter": "gau",
         "email": "maxime.garcia@scilifelab.se",
         "affiliations": [
-          "Department of Oncology-Pathology, Karolinska Institutet"
+          "Department of Oncology-Pathology, Karolinska Institutet, Stockholm, Sweden"
         ],
         "funders": "Barncancerfonden",
         "affiliation_numbers": [
@@ -147,7 +147,7 @@
         "twitter": "JudithNeukamm",
         "email": "judith.neukamm@uzh.ch",
         "affiliations": [
-          "Palaeogenetics Group, Institute of Evolutionary Medicine, University of Zurich"
+          "Palaeogenetics Group, Institute of Evolutionary Medicine, University of Zurich, Zürich, Switzerland"
         ],
         "affiliation_numbers": [
           6
@@ -161,8 +161,8 @@
         "orcid": "0000-0002-6503-2180",
         "email": "alexander.peltzer@boehringer-ingelheim.com",
         "affiliations": [
-          "Quantitative Biology Center (QBiC), Eberhard-Karls-Universität",
-          "Translational Medicine & Clinical Pharmacology, Boehringer Ingelheim Pharma GmbH & CO KG, Biberach an der Riss"
+          "Quantitative Biology Center (QBiC), Eberhard-Karls-Universität, Tübingen, Germany",
+          "Translational Medicine & Clinical Pharmacology, Boehringer Ingelheim Pharma GmbH & CO KG, Biberach an der Riss, Germany"
         ],
         "affiliation_numbers": [
           7,
@@ -172,35 +172,35 @@
     ],
     "affiliations": [
       {
-        "affiliation": "Microbiome Sciences Group, Department of Archaeogenetics, Max-Planck-Institute for the Science of Human History",
+        "affiliation": "Microbiome Sciences Group, Department of Archaeogenetics, Max-Planck-Institute for the Science of Human History, Jena, Germany",
         "affiliation_number": 1
       },
       {
-        "affiliation": "Population Genetics Group, Department of Archaeogenetics, Max-Planck-Institute for the Science of Human History",
+        "affiliation": "Population Genetics Group, Department of Archaeogenetics, Max-Planck-Institute for the Science of Human History, Jena, Germany",
         "affiliation_number": 2
       },
       {
-        "affiliation": "Computational Pathogenomics Group, Department of Archaeogenetics, Max-Planck-Institute for the Science of Human History",
+        "affiliation": "Computational Pathogenomics Group, Department of Archaeogenetics, Max-Planck-Institute for the Science of Human History, Jena, Germany",
         "affiliation_number": 3
       },
       {
-        "affiliation": "Department of Archaeogenetics, Max-Planck-Institute for the Science of Human History",
+        "affiliation": "Department of Archaeogenetics, Max-Planck-Institute for the Science of Human History, Jena, Germany",
         "affiliation_number": 4
       },
       {
-        "affiliation": "Department of Oncology-Pathology, Karolinska Institutet",
+        "affiliation": "Department of Oncology-Pathology, Karolinska Institutet, Stockholm, Sweden",
         "affiliation_number": 5
       },
       {
-        "affiliation": "Palaeogenetics Group, Institute of Evolutionary Medicine, University of Zurich",
+        "affiliation": "Palaeogenetics Group, Institute of Evolutionary Medicine, University of Zurich, Zürich, Switzerland",
         "affiliation_number": 6
       },
       {
-        "affiliation": "Quantitative Biology Center (QBiC), Eberhard-Karls-Universität",
+        "affiliation": "Quantitative Biology Center (QBiC), Eberhard-Karls-Universität, Tübingen, Germany",
         "affiliation_number": 7
       },
       {
-        "affiliation": "Translational Medicine & Clinical Pharmacology, Boehringer Ingelheim Pharma GmbH & CO KG, Biberach an der Riss",
+        "affiliation": "Translational Medicine & Clinical Pharmacology, Boehringer Ingelheim Pharma GmbH & CO KG, Biberach an der Riss, Germany",
         "affiliation_number": 8
       }
     ],
@@ -209,19 +209,19 @@
       "repo_slug": "apeltzer/eager2-paper",
       "repo_owner": "apeltzer",
       "repo_name": "eager2-paper",
-      "commit": "29872f784da8deaaf25a54bc2f300fd58599a575",
-      "triggering_commit": "29872f784da8deaaf25a54bc2f300fd58599a575",
-      "build_url": "https://github.com/apeltzer/eager2-paper/commit/29872f784da8deaaf25a54bc2f300fd58599a575/checks",
+      "commit": "3716a069941c6b8273f4e0c72a0c25e855cbd79a",
+      "triggering_commit": "3716a069941c6b8273f4e0c72a0c25e855cbd79a",
+      "build_url": "https://github.com/apeltzer/eager2-paper/commit/3716a069941c6b8273f4e0c72a0c25e855cbd79a/checks",
       "job_url": "https://github.com/apeltzer/eager2-paper/runs/run2"
     },
     "html_url": "https://apeltzer.github.io/eager2-paper/",
     "pdf_url": "https://apeltzer.github.io/eager2-paper/manuscript.pdf",
-    "html_url_versioned": "https://apeltzer.github.io/eager2-paper/v/29872f784da8deaaf25a54bc2f300fd58599a575/",
-    "pdf_url_versioned": "https://apeltzer.github.io/eager2-paper/v/29872f784da8deaaf25a54bc2f300fd58599a575/manuscript.pdf",
+    "html_url_versioned": "https://apeltzer.github.io/eager2-paper/v/3716a069941c6b8273f4e0c72a0c25e855cbd79a/",
+    "pdf_url_versioned": "https://apeltzer.github.io/eager2-paper/v/3716a069941c6b8273f4e0c72a0c25e855cbd79a/manuscript.pdf",
     "manubot_version": "0.3.1",
     "rootstock_commit": "7c0f9c30fe03a6e264e19d08f2337266a4ea3e3e",
     "manuscript_stats": {
-      "word_count": 3331
+      "word_count": 3761
     }
   }
 }
