@@ -18,7 +18,7 @@ authors:
     twitter: jfy133
     email: jfy133@gmail.com
     affiliations:
-      - Microbiome Sciences Group, Department of Archaeogenetics, Max-Planck-Institute for the Science of Human History
+      - Microbiome Sciences Group, Department of Archaeogenetics, Max-Planck-Institute for the Science of Human History, Jena, Germany
     funders: Max Planck Society
   - 
     github: TCLamnidis
@@ -28,7 +28,7 @@ authors:
     twitter: TCLamnidis
     email: lamnids@shh.mpg.de
     affiliations:
-      - Population Genetics Group, Department of Archaeogenetics, Max-Planck-Institute for the Science of Human History
+      - Population Genetics Group, Department of Archaeogenetics, Max-Planck-Institute for the Science of Human History, Jena, Germany
     funders: Max Planck Society
   - 
     github: maxibor
@@ -38,7 +38,7 @@ authors:
     twitter: notmaxib
     email: borry@shh.mpg.de
     affiliations:
-      - Microbiome Sciences Group, Department of Archaeogenetics, Max-Planck-Institute for the Science of Human History
+      - Microbiome Sciences Group, Department of Archaeogenetics, Max-Planck-Institute for the Science of Human History, Jena, Germany
     funders: Max Planck Society
   - 
     github: aidaanva
@@ -48,7 +48,7 @@ authors:
     twitter: aidaanva
     email: andrades@shh.mpg.de
     affiliations:
-      - Computational Pathogenomics Group, Department of Archaeogenetics, Max-Planck-Institute for the Science of Human History
+      - Computational Pathogenomics Group, Department of Archaeogenetics, Max-Planck-Institute for the Science of Human History, Jena, Germany
     funders: Max Planck Society
   - 
     github: ZandraFagernas
@@ -58,7 +58,7 @@ authors:
     twitter: ZandraSelina
     email: fagernaes@shh.mpg.de
     affiliations:
-      - Microbiome Sciences Group, Department of Archaeogenetics, Max-Planck-Institute for the Science of Human History
+      - Microbiome Sciences Group, Department of Archaeogenetics, Max-Planck-Institute for the Science of Human History, Jena, Germany
     funders: Max Planck Society
   - 
     github: sc13-bioinf
@@ -67,7 +67,7 @@ authors:
     orcid: 0000-0001-5223-9695
     email: clayton@shh.mpg.de
     affiliations:
-      - Department of Archaeogenetics, Max-Planck-Institute for the Science of Human History
+      - Department of Archaeogenetics, Max-Planck-Institute for the Science of Human History, Jena, Germany
     funders: Max Planck Society
   - 
     github: MaxUlysse
@@ -77,7 +77,7 @@ authors:
     twitter: gau
     email: maxime.garcia@scilifelab.se
     affiliations:
-      - Department of Oncology-Pathology, Karolinska Institutet
+      - Department of Oncology-Pathology, Karolinska Institutet, Stockholm, Sweden
     funders: Barncancerfonden
   - 
     github: JudithNeukamm
@@ -87,7 +87,7 @@ authors:
     twitter: JudithNeukamm
     email: judith.neukamm@uzh.ch
     affiliations:
-      - Palaeogenetics Group, Institute of Evolutionary Medicine, University of Zurich
+      - Palaeogenetics Group, Institute of Evolutionary Medicine, University of Zurich, Zürich, Switzerland
   -
     github: apeltzer
     name: Alexander Peltzer
@@ -96,5 +96,5 @@ authors:
     orcid: 0000-0002-6503-2180
     email: alexander.peltzer@boehringer-ingelheim.com
     affiliations:
-      - Quantitative Biology Center (QBiC), Eberhard-Karls-Universität
-      - Translational Medicine & Clinical Pharmacology, Boehringer Ingelheim Pharma GmbH & CO KG, Biberach an der Riss
+      - Quantitative Biology Center (QBiC), Eberhard-Karls-Universität, Tübingen, Germany
+      - Translational Medicine & Clinical Pharmacology, Boehringer Ingelheim Pharma GmbH & CO KG, Biberach an der Riss, Germany
