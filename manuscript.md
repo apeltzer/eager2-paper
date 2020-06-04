@@ -12,7 +12,7 @@ author-meta:
 bibliography:
 - content/manual-references.json
 date-meta: '2020-06-04'
-header-includes: "<!--\nManubot generated metadata rendered from header-includes-template.html.\nSuggest improvements at https://github.com/manubot/manubot/blob/master/manubot/process/header-includes-template.html\n-->\n<meta name=\"dc.format\" content=\"text/html\" />\n<meta name=\"dc.title\" content=\"Reproducible, portable, and efficient ancient genome reconstruction with nf-core/eager\" />\n<meta name=\"citation_title\" content=\"Reproducible, portable, and efficient ancient genome reconstruction with nf-core/eager\" />\n<meta property=\"og:title\" content=\"Reproducible, portable, and efficient ancient genome reconstruction with nf-core/eager\" />\n<meta property=\"twitter:title\" content=\"Reproducible, portable, and efficient ancient genome reconstruction with nf-core/eager\" />\n<meta name=\"dc.date\" content=\"2020-06-04\" />\n<meta name=\"citation_publication_date\" content=\"2020-06-04\" />\n<meta name=\"dc.language\" content=\"en-GB\" />\n<meta name=\"citation_language\" content=\"en-GB\" />\n<meta name=\"dc.relation.ispartof\" content=\"Manubot\" />\n<meta name=\"dc.publisher\" content=\"Manubot\" />\n<meta name=\"citation_journal_title\" content=\"Manubot\" />\n<meta name=\"citation_technical_report_institution\" content=\"Manubot\" />\n<meta name=\"citation_author\" content=\"James A. Fellows Yates\" />\n<meta name=\"citation_author_institution\" content=\"Microbiome Sciences Group, Department of Archaeogenetics, Max-Planck-Institute for the Science of Human History, Jena, Germany\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0001-5585-6277\" />\n<meta name=\"twitter:creator\" content=\"@jfy133\" />\n<meta name=\"citation_author\" content=\"Thiseas C. Lamnidis\" />\n<meta name=\"citation_author_institution\" content=\"Population Genetics Group, Department of Archaeogenetics, Max-Planck-Institute for the Science of Human History, Jena, Germany\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0003-4485-8570\" />\n<meta name=\"twitter:creator\" content=\"@TCLamnidis\" />\n<meta name=\"citation_author\" content=\"Maxime Borry\" />\n<meta name=\"citation_author_institution\" content=\"Microbiome Sciences Group, Department of Archaeogenetics, Max-Planck-Institute for the Science of Human History, Jena, Germany\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0001-9140-7559\" />\n<meta name=\"twitter:creator\" content=\"@notmaxib\" />\n<meta name=\"citation_author\" content=\"Aida Andrades Valtue\xF1a\" />\n<meta name=\"citation_author_institution\" content=\"Computational Pathogenomics Group, Department of Archaeogenetics, Max-Planck-Institute for the Science of Human History, Jena, Germany\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0002-1737-2228\" />\n<meta name=\"twitter:creator\" content=\"@aidaanva\" />\n<meta name=\"citation_author\" content=\"Zandra Fagern\xE4s\" />\n<meta name=\"citation_author_institution\" content=\"Microbiome Sciences Group, Department of Archaeogenetics, Max-Planck-Institute for the Science of Human History, Jena, Germany\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0003-2667-3556\" />\n<meta name=\"twitter:creator\" content=\"@ZandraSelina\" />\n<meta name=\"citation_author\" content=\"Stephen Clayton\" />\n<meta name=\"citation_author_institution\" content=\"Department of Archaeogenetics, Max-Planck-Institute for the Science of Human History, Jena, Germany\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0001-5223-9695\" />\n<meta name=\"citation_author\" content=\"Maxime U. Garcia\" />\n<meta name=\"citation_author_institution\" content=\"Department of Oncology-Pathology, Karolinska Institutet, Stockholm, Sweden\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0003-2827-9261\" />\n<meta name=\"twitter:creator\" content=\"@gau\" />\n<meta name=\"citation_author\" content=\"Judith Neukamm\" />\n<meta name=\"citation_author_institution\" content=\"Palaeogenetics Group, Institute of Evolutionary Medicine, University of Zurich, Z\xFCrich, Switzerland\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0001-8141-566X\" />\n<meta name=\"twitter:creator\" content=\"@JudithNeukamm\" />\n<meta name=\"citation_author\" content=\"Alexander Peltzer\" />\n<meta name=\"citation_author_institution\" content=\"Quantitative Biology Center (QBiC), Eberhard-Karls-Universit\xE4t, T\xFCbingen, Germany\" />\n<meta name=\"citation_author_institution\" content=\"Translational Medicine &amp; Clinical Pharmacology, Boehringer Ingelheim Pharma GmbH &amp; CO KG, Biberach an der Riss, Germany\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0002-6503-2180\" />\n<meta name=\"twitter:creator\" content=\"@alex_peltzer\" />\n<link rel=\"canonical\" href=\"https://apeltzer.github.io/eager2-paper/\" />\n<meta property=\"og:url\" content=\"https://apeltzer.github.io/eager2-paper/\" />\n<meta property=\"twitter:url\" content=\"https://apeltzer.github.io/eager2-paper/\" />\n<meta name=\"citation_fulltext_html_url\" content=\"https://apeltzer.github.io/eager2-paper/\" />\n<meta name=\"citation_pdf_url\" content=\"https://apeltzer.github.io/eager2-paper/manuscript.pdf\" />\n<link rel=\"alternate\" type=\"application/pdf\" href=\"https://apeltzer.github.io/eager2-paper/manuscript.pdf\" />\n<link rel=\"alternate\" type=\"text/html\" href=\"https://apeltzer.github.io/eager2-paper/v/3716a069941c6b8273f4e0c72a0c25e855cbd79a/\" />\n<meta name=\"manubot_html_url_versioned\" content=\"https://apeltzer.github.io/eager2-paper/v/3716a069941c6b8273f4e0c72a0c25e855cbd79a/\" />\n<meta name=\"manubot_pdf_url_versioned\" content=\"https://apeltzer.github.io/eager2-paper/v/3716a069941c6b8273f4e0c72a0c25e855cbd79a/manuscript.pdf\" />\n<meta property=\"og:type\" content=\"article\" />\n<meta property=\"twitter:card\" content=\"summary_large_image\" />\n<link rel=\"icon\" type=\"image/png\" sizes=\"192x192\" href=\"https://manubot.org/favicon-192x192.png\" />\n<link rel=\"mask-icon\" href=\"https://manubot.org/safari-pinned-tab.svg\" color=\"#ad1457\" />\n<meta name=\"theme-color\" content=\"#ad1457\" />\n<!-- end Manubot generated metadata -->"
+header-includes: "<!--\nManubot generated metadata rendered from header-includes-template.html.\nSuggest improvements at https://github.com/manubot/manubot/blob/master/manubot/process/header-includes-template.html\n-->\n<meta name=\"dc.format\" content=\"text/html\" />\n<meta name=\"dc.title\" content=\"Reproducible, portable, and efficient ancient genome reconstruction with nf-core/eager\" />\n<meta name=\"citation_title\" content=\"Reproducible, portable, and efficient ancient genome reconstruction with nf-core/eager\" />\n<meta property=\"og:title\" content=\"Reproducible, portable, and efficient ancient genome reconstruction with nf-core/eager\" />\n<meta property=\"twitter:title\" content=\"Reproducible, portable, and efficient ancient genome reconstruction with nf-core/eager\" />\n<meta name=\"dc.date\" content=\"2020-06-04\" />\n<meta name=\"citation_publication_date\" content=\"2020-06-04\" />\n<meta name=\"dc.language\" content=\"en-GB\" />\n<meta name=\"citation_language\" content=\"en-GB\" />\n<meta name=\"dc.relation.ispartof\" content=\"Manubot\" />\n<meta name=\"dc.publisher\" content=\"Manubot\" />\n<meta name=\"citation_journal_title\" content=\"Manubot\" />\n<meta name=\"citation_technical_report_institution\" content=\"Manubot\" />\n<meta name=\"citation_author\" content=\"James A. Fellows Yates\" />\n<meta name=\"citation_author_institution\" content=\"Microbiome Sciences Group, Department of Archaeogenetics, Max-Planck-Institute for the Science of Human History, Jena, Germany\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0001-5585-6277\" />\n<meta name=\"twitter:creator\" content=\"@jfy133\" />\n<meta name=\"citation_author\" content=\"Thiseas C. Lamnidis\" />\n<meta name=\"citation_author_institution\" content=\"Population Genetics Group, Department of Archaeogenetics, Max-Planck-Institute for the Science of Human History, Jena, Germany\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0003-4485-8570\" />\n<meta name=\"twitter:creator\" content=\"@TCLamnidis\" />\n<meta name=\"citation_author\" content=\"Maxime Borry\" />\n<meta name=\"citation_author_institution\" content=\"Microbiome Sciences Group, Department of Archaeogenetics, Max-Planck-Institute for the Science of Human History, Jena, Germany\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0001-9140-7559\" />\n<meta name=\"twitter:creator\" content=\"@notmaxib\" />\n<meta name=\"citation_author\" content=\"Aida Andrades Valtue\xF1a\" />\n<meta name=\"citation_author_institution\" content=\"Computational Pathogenomics Group, Department of Archaeogenetics, Max-Planck-Institute for the Science of Human History, Jena, Germany\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0002-1737-2228\" />\n<meta name=\"twitter:creator\" content=\"@aidaanva\" />\n<meta name=\"citation_author\" content=\"Zandra Fagern\xE4s\" />\n<meta name=\"citation_author_institution\" content=\"Microbiome Sciences Group, Department of Archaeogenetics, Max-Planck-Institute for the Science of Human History, Jena, Germany\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0003-2667-3556\" />\n<meta name=\"twitter:creator\" content=\"@ZandraSelina\" />\n<meta name=\"citation_author\" content=\"Stephen Clayton\" />\n<meta name=\"citation_author_institution\" content=\"Department of Archaeogenetics, Max-Planck-Institute for the Science of Human History, Jena, Germany\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0001-5223-9695\" />\n<meta name=\"citation_author\" content=\"Maxime U. Garcia\" />\n<meta name=\"citation_author_institution\" content=\"Department of Oncology-Pathology, Karolinska Institutet, Stockholm, Sweden\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0003-2827-9261\" />\n<meta name=\"twitter:creator\" content=\"@gau\" />\n<meta name=\"citation_author\" content=\"Judith Neukamm\" />\n<meta name=\"citation_author_institution\" content=\"Palaeogenetics Group, Institute of Evolutionary Medicine, University of Zurich, Z\xFCrich, Switzerland\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0001-8141-566X\" />\n<meta name=\"twitter:creator\" content=\"@JudithNeukamm\" />\n<meta name=\"citation_author\" content=\"Alexander Peltzer\" />\n<meta name=\"citation_author_institution\" content=\"Quantitative Biology Center (QBiC), Eberhard-Karls-Universit\xE4t, T\xFCbingen, Germany\" />\n<meta name=\"citation_author_institution\" content=\"Translational Medicine &amp; Clinical Pharmacology, Boehringer Ingelheim Pharma GmbH &amp; CO KG, Biberach an der Riss, Germany\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0002-6503-2180\" />\n<meta name=\"twitter:creator\" content=\"@alex_peltzer\" />\n<link rel=\"canonical\" href=\"https://apeltzer.github.io/eager2-paper/\" />\n<meta property=\"og:url\" content=\"https://apeltzer.github.io/eager2-paper/\" />\n<meta property=\"twitter:url\" content=\"https://apeltzer.github.io/eager2-paper/\" />\n<meta name=\"citation_fulltext_html_url\" content=\"https://apeltzer.github.io/eager2-paper/\" />\n<meta name=\"citation_pdf_url\" content=\"https://apeltzer.github.io/eager2-paper/manuscript.pdf\" />\n<link rel=\"alternate\" type=\"application/pdf\" href=\"https://apeltzer.github.io/eager2-paper/manuscript.pdf\" />\n<link rel=\"alternate\" type=\"text/html\" href=\"https://apeltzer.github.io/eager2-paper/v/6da0fed4f87e9be4a58feed26ee3c9b505388c75/\" />\n<meta name=\"manubot_html_url_versioned\" content=\"https://apeltzer.github.io/eager2-paper/v/6da0fed4f87e9be4a58feed26ee3c9b505388c75/\" />\n<meta name=\"manubot_pdf_url_versioned\" content=\"https://apeltzer.github.io/eager2-paper/v/6da0fed4f87e9be4a58feed26ee3c9b505388c75/manuscript.pdf\" />\n<meta property=\"og:type\" content=\"article\" />\n<meta property=\"twitter:card\" content=\"summary_large_image\" />\n<link rel=\"icon\" type=\"image/png\" sizes=\"192x192\" href=\"https://manubot.org/favicon-192x192.png\" />\n<link rel=\"mask-icon\" href=\"https://manubot.org/safari-pinned-tab.svg\" color=\"#ad1457\" />\n<meta name=\"theme-color\" content=\"#ad1457\" />\n<!-- end Manubot generated metadata -->"
 keywords:
 - nf-core
 - nextflow
@@ -36,9 +36,9 @@ title: Reproducible, portable, and efficient ancient genome reconstruction with 
 
 <small><em>
 This manuscript
-([permalink](https://apeltzer.github.io/eager2-paper/v/3716a069941c6b8273f4e0c72a0c25e855cbd79a/))
+([permalink](https://apeltzer.github.io/eager2-paper/v/6da0fed4f87e9be4a58feed26ee3c9b505388c75/))
 was automatically generated
-from [apeltzer/eager2-paper@3716a06](https://github.com/apeltzer/eager2-paper/tree/3716a069941c6b8273f4e0c72a0c25e855cbd79a)
+from [apeltzer/eager2-paper@6da0fed](https://github.com/apeltzer/eager2-paper/tree/6da0fed4f87e9be4a58feed26ee3c9b505388c75)
 on June 4, 2020.
 </em></small>
 
@@ -272,21 +272,20 @@ allows both small and big labs to run nf-core/eager regardless of the type of
 computer or cluster size, with minimal effort or configuration, facilitating
 reproducibility and therefore maintenance of standards within the field. This is
 further assisted by the in-built compatibility with software environments and
-containers such as Conda ([https://conda.io/](https://conda.io/)), Docker
-[https://www.docker.com/](https://www.docker.com/) and Singularity
-([https://sylabs.io/](https://sylabs.io/)). These are single packages that
-include all the software (with exact versions) required by the pipeline, in a
-form that they are are installable and runnable regardless of the setup of their
-local software environment. Another major change with nf-core/eager is that the
-graphical-user-interaface (GUI) set up of an nf-core/eager run, is now replaced
-with a command-line-interface (CLI) as the primary user interaction mode. This
-is more compatible and portable with most HPCs (that may not offer display of
-program windows), and is in line with the vast majority of bioinformatic tools.
-We therefore believe this will not be a hindrance to new researchers from
-outside computational biology. However there are plans from Nextflow (with
-[https://tower.nf]) and within the nf-core community to provide multiple
-alternatives in the near future including a CLI wizard and a web-based input
-GUI.
+containers such as Conda [@url:https://conda.io],
+Docker[@url:https://www.docker.com] and Singularity [@url:https://sylabs.io].
+These are single packages that include all the software (with exact versions)
+required by the pipeline, in a form that they are are installable and runnable
+regardless of the setup of their local software environment. Another major
+change with nf-core/eager is that the graphical-user-interaface (GUI) set up of
+an nf-core/eager run, is now replaced with a command-line-interface (CLI) as the
+primary user interaction mode. This is more compatible and portable with most
+HPCs (that may not offer display of program windows), and is in line with the
+vast majority of bioinformatic tools. We therefore believe this will not be a
+hindrance to new researchers from outside computational biology. However there
+are plans from Nextflow (with tower.nf [@url:https://tower.nf] and within the
+nf-core community to provide multiple alternatives in the near future including
+a CLI wizard and a web-based input GUI.
 
 Secondly, reproducibility is made easier through the use of 'profiles' that can
 define configuration parameters. These profiles can be managed at different
@@ -326,7 +325,7 @@ this can be split into four main stages:
 
 1. Preprocessing
 - Sequencing quality control: FastQC
-  [@url:https://www.bioinformatics.babraham.ac.uk/projects/fastqc/]
+  [@url:https://www.bioinformatics.babraham.ac.uk/projects/fastqc]
 - Sequencing artefact clean-up (merging, adapter clipping): AdapterRemoval2
   [@doi:10.1186/s13104-016-1900-2]
 - Preprocessing statistics generation
@@ -364,8 +363,8 @@ with the palaeogenetics community. New tools to the basic workflow include fastp
 [@doi:10.1093/bioinformatics/bty560] for the removal of 'poly-G' sequencing
 artefacts that are common in 2-colour Illumina sequencing machines (such as the
 increasingly popular NextSeq and NovaSeq platforms,
-[https://sequencing.qcfail.com/articles/illumina-2-colour-chemistry-can-overcall-high-confidence-g-bases/](https://sequencing.qcfail.com/articles/illumina-2-colour-chemistry-can-overcall-high-confidence-g-bases/)).
-For genotyping we have now included FreeBayes [@doi:1207.3907] as an alternative
+[@url:https://sequencing.qcfail.com/articles/illumina-2-colour-chemistry-can-overcall-high-confidence-g-bases/]).
+For genotyping we have now included FreeBayes [@arxiv:1207.3907] as an alternative
 to the human-focused GATK tools. We have also maintained the possibility of
 using the now unsupported GATK UnifiedGenotyper, as the GATK HaplotypeCaller
 performs _de novo_ assembly around possible variants, which may not be suitable
@@ -373,7 +372,8 @@ for low-coverage aDNA data.
 
 ![Simplified schematic of the nf-core/eager workflow pipeline. Green filled
 bubbles indicate new functionality added over the original EAGER
-pipeline.](images/Fig1-eager2_workflow_v1.png)
+pipeline.](images/Fig1-eager2_workflow_v1.png){#fig:workflow-schematic
+width="100%"}
 
 We have further extended the genomic analysis functionality of the pipeline by
 adding ancient metagenomic analysis, to identify the wider taxonomic content of
@@ -399,7 +399,7 @@ phylogenetic tree construction. Simple coverage statistics of particular
 annotations (e.g. genes) of an input reference is offered by bedtools
 [@doi:10.1093/bioinformatics/btq033], which can be used, for example, for
 determining functional differences between ancient bacterial strains (as in
-[@doi:0.1016/j.cub.2017.10.025]). When using a human reference genome,
+[@doi:10.1016/j.cub.2017.10.025]). When using a human reference genome,
 nf-core/eager can now also can give estimates of the biological sex of a given
 individual with Sex.DetEERRmine [@doi:10.1038/s41467-018-07483-5]. A dedicated
 'endogenous DNA' calculator (endorS.py) is also included to provide a percentage
@@ -427,6 +427,9 @@ of every supported tool into a single interactive report, and assists users in
 making fuller assessment of their sequencing and analysis runs. Most tools
 within nf-core/eager have a corresponding MultiQC module to ensure as an
 evaluation as complete as possible.
+
+An overview of the entire pipeline can be seen in Figure
+{@fig:workflow-schematic}
 
 ## Accessibility
 
@@ -473,10 +476,11 @@ analysis.
 
 ### Installation
 
-nf-core/eager requires Java, Nextflow and either a functional Conda installation
-*or* Docker/Singularity container installation. A quick installation guide to
-follow to get started can be found in the *Quickstart* section of the
-nf-core/eager [documentation](https://github.com/nf-core/eager#quick-start).
+nf-core/eager requires a version of Java, Nextflow and either a functional Conda
+installation *or* Docker/Singularity container installation. A quick
+installation guide to follow to get started can be found in the *Quickstart*
+section of the nf-core/eager repository
+[@url:https://github.com/nf-core/eager#quick-start].
 
 ### Running
 
@@ -513,10 +517,10 @@ nextflow run nf-core/eager -r 2.1.0 -profile conda --input '/<path>/<to>/*/*R1*.
 #### Profiles
 
 We utilize a central configuration profile repository to enable users from
-various institutions to use pipelines on their particular infrastructure [more
-easily](https://github.com/nf-core/configs). There are multiple resources listed
-in this repository with information on how to add your own configuration profile
-with help from the nf-core community.
+various institutions to use pipelines on their particular infrastructure more
+easily [@url:https://github.com/nf-core/configs]. There are multiple resources
+listed in this repository with information on how to add your own configuration
+profile with help from the nf-core community.
 
 Users can customize this infrastructure profile by themselves, with the nf-core
 community, or with their local system administrator to make sure that the
@@ -564,8 +568,8 @@ without having to reconstruct this from prose.
 #### Monitoring
 
 Users can either monitor their pipeline execution with the messages Nextflow
-prints to the console while running, or utilize projects such as [Nextflow
-Tower](https://tower.nf) to monitor their analysis pipeline during runtime.
+prints to the console while running, or utilize projects such as Nextflow Tower
+[@url:https://tower.nf] to monitor their analysis pipeline during runtime.
 
 #### Output
 
