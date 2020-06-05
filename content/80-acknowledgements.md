@@ -13,5 +13,5 @@ pipeline.
 We also want to thank Alexander Herbig and Wolfgang Haak for kindly providing
 comments on this manuscript.
 
-We also acknowledge Christina Warinner, Stephan Schiffels and the Max Planck
+We also want to acknowledge Christina Warinner, Stephan Schiffels and the Max Planck
 Society who provided funds for travel to nf-core events.
