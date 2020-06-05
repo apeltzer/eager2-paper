@@ -10,7 +10,7 @@ Human History who performed beta testing of the pipeline. We thank the aDNA
 twitter community for responding to polls regarding design decisions of the
 pipeline.
 
-We also want to thank Alexander and Herbig, Wolfgang Haak for kindly providing
+We also want to thank Alexander Herbig and Wolfgang Haak for kindly providing
 comments on this manuscript.
 
 We also acknowledge Christina Warinner, Stephan Schiffels and the Max Planck
