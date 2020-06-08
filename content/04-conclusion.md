@@ -1,7 +1,7 @@
 ## Conclusion
 
 nf-core/eager is an efficient, portable, and accessible pipeline for processing
-aDNA genomic data. This re-implementation of EAGER into Nextflow and nf-core
+ancient genomic data. This re-implementation of EAGER into Nextflow and nf-core
 will improve reproducibility and inclusion of rapidly increasing aDNA datasets,
 for both large and small laboratories. Extensive documentation also enables
 newcomers to the field get a practical understanding on how to interpret aDNA in
