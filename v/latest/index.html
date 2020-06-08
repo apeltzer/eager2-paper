@@ -147,13 +147,13 @@
   <meta name="citation_fulltext_html_url" content="https://apeltzer.github.io/eager2-paper/" />
   <meta name="citation_pdf_url" content="https://apeltzer.github.io/eager2-paper/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://apeltzer.github.io/eager2-paper/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://apeltzer.github.io/eager2-paper/v/583657b51e08d67a139e45e5b27b1085b63a6744/" />
-  <meta name="manubot_html_url_versioned" content="https://apeltzer.github.io/eager2-paper/v/583657b51e08d67a139e45e5b27b1085b63a6744/" />
-  <meta name="manubot_pdf_url_versioned" content="https://apeltzer.github.io/eager2-paper/v/583657b51e08d67a139e45e5b27b1085b63a6744/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://apeltzer.github.io/eager2-paper/v/0bff73a0d704c4c05393e5295106626fd42f3f6c/" />
+  <meta name="manubot_html_url_versioned" content="https://apeltzer.github.io/eager2-paper/v/0bff73a0d704c4c05393e5295106626fd42f3f6c/" />
+  <meta name="manubot_pdf_url_versioned" content="https://apeltzer.github.io/eager2-paper/v/0bff73a0d704c4c05393e5295106626fd42f3f6c/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
-  <meta property="og:image" content="https://github.com/apeltzer/eager2-paper/raw/583657b51e08d67a139e45e5b27b1085b63a6744/content/images/nf-core-eager_social_preview.png" />
-  <meta property="twitter:image" content="https://github.com/apeltzer/eager2-paper/raw/583657b51e08d67a139e45e5b27b1085b63a6744/content/images/nf-core-eager_social_preview.png" />
+  <meta property="og:image" content="https://github.com/apeltzer/eager2-paper/raw/0bff73a0d704c4c05393e5295106626fd42f3f6c/content/images/nf-core-eager_social_preview.png" />
+  <meta property="twitter:image" content="https://github.com/apeltzer/eager2-paper/raw/0bff73a0d704c4c05393e5295106626fd42f3f6c/content/images/nf-core-eager_social_preview.png" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
   <link rel="mask-icon" href="https://manubot.org/safari-pinned-tab.svg" color="#ad1457" />
   <meta name="theme-color" content="#ad1457" />
@@ -165,9 +165,9 @@
 </header>
 <p><small><em>
 This manuscript
-(<a href="https://apeltzer.github.io/eager2-paper/v/583657b51e08d67a139e45e5b27b1085b63a6744/">permalink</a>)
+(<a href="https://apeltzer.github.io/eager2-paper/v/0bff73a0d704c4c05393e5295106626fd42f3f6c/">permalink</a>)
 was automatically generated
-from <a href="https://github.com/apeltzer/eager2-paper/tree/583657b51e08d67a139e45e5b27b1085b63a6744">apeltzer/eager2-paper@583657b</a>
+from <a href="https://github.com/apeltzer/eager2-paper/tree/0bff73a0d704c4c05393e5295106626fd42f3f6c">apeltzer/eager2-paper@0bff73a</a>
 on June 8, 2020.
 </em></small></p>
 <h2 id="authors">Authors</h2>
@@ -370,13 +370,13 @@ reproducibility and therefore maintenance of standards within the field. This is
 further assisted by the in-built compatibility with software environments and
 containers such as Conda <span class="citation" data-cites="iU0FZYFP">[<a href="#ref-iU0FZYFP" role="doc-biblioref">44</a>]</span>,
 Docker<span class="citation" data-cites="rmvJ2O0Q">[<a href="#ref-rmvJ2O0Q" role="doc-biblioref">45</a>]</span> and Singularity <span class="citation" data-cites="99QkJBoF">[<a href="#ref-99QkJBoF" role="doc-biblioref">46</a>]</span>.
-These are single packages that include all the software (with exact versions)
+These are isolated sandboxes including all softwares (with exact versions)
 required by the pipeline, in a form that is installable and runnable regardless
 of the setup of their local software environment. Another major change with
 nf-core/eager is that the graphical-user-interface (GUI) set up of an
 nf-core/eager run is now replaced with a command-line-interface (CLI) as the
 primary user interaction mode. This is more compatible and portable with most
-HPCs (that may not offer display of program windows), and is in line with the
+HPCs (that may not offer display of a window system), and is in line with the
 vast majority of bioinformatic tools. We therefore believe this will not be a
 hindrance to new researchers from outside computational biology. However, there
 are plans from Nextflow (with tower.nf <span class="citation" data-cites="jJzDdoAE">[<a href="#ref-jJzDdoAE" role="doc-biblioref">47</a>]</span>) and within the
@@ -387,7 +387,7 @@ define configuration parameters. These profiles can be managed at different
 hierarchical levels. HPC-level profiles can specify parameters for the computing
 environment (job schedulers, cache locations for containers, maximum memory and
 CPU resources etc.), which can be centrally managed to ensure all users of a
-group use the same settings. Pipeline-level profiles, specifying default
+group use the same settings. Pipeline-level profiles, specifying
 parameters for nf-core/eager itself, allow fast access to routine pipeline-run
 parameters via a single flag in the nf-core/eager run command, without having to
 configure each new run from scratch.</p>
@@ -403,7 +403,7 @@ new release as new studies are published.</p>
 <p>nf-core/eager provides improved efficiency over the original EAGER pipeline by
 replacing the sample-by-sample sequential processing with Nextflow’s
 asynchronous parallelisation, whereby multiple pipeline steps and samples are
-run in parallel (in addition to single pipeline step multi-threading). This,
+run in parallel (in addition to natively parallelized pipeline steps). This,
 combined with pre-defined per-process customisation of resource parameters,
 reduces unnecessary resource allocation that can occur with new users to each
 step of an NGS data processing pipeline. This is particularly pertinent given
@@ -649,7 +649,7 @@ more detailed listing available in the user documentation. This includes
 metrics, statistical analysis data and standardized output files (BAM, VCF) for
 close inspection and further downstream analysis, as well as a MultiQC report.
 If an emailing daemon is set up on the server, the latter can even be emailed to
-users automatically, when starting the pipeline with a dedicated option (–email
+users automatically, when starting the pipeline with a dedicated option (--email
 you@yourdomain.org).</p>
 <h2 id="data-and-software-availability">Data and software availability</h2>
 <p>All code is available on github at
@@ -856,7 +856,7 @@ DOI: <a href="https://doi.org/10.3389/fgene.2018.00575">10.3389/fgene.2018.00575
 <p>30. <strong>Instability and decay of the primary structure of DNA</strong><br />
 Tomas Lindahl<br />
 <em>Nature</em> (1993-04) <a href="https://doi.org/d9c9vq">https://doi.org/d9c9vq</a><br />
-DOI: <a href="https://doi.org/10.1038/362709a0">10.1038/362709a0</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/8469282">8469282</a></p>
+DOI: <a href="https://doi.org/10.1038/362709a0">10.1038/362709a0</a></p>
 </div>
 <div id="ref-ZeQp0m3j">
 <p>31. <strong>Nuclear DNA sequences from the Middle Pleistocene Sima de los Huesos hominins</strong><br />
@@ -921,8 +921,8 @@ DOI: <a href="https://doi.org/10.1093/bioinformatics/btr347">10.1093/bioinformat
 <div id="ref-XFBeyZB9">
 <p>41. <strong>The Stone Age Plague and Its Persistence in Eurasia</strong><br />
 Aida Andrades Valtueña, Alissa Mittnik, Felix M. Key, Wolfgang Haak, Raili Allmäe, Andrej Belinskij, Mantas Daubaras, Michal Feldman, Rimantas Jankauskas, Ivor Janković, … Johannes Krause<br />
-<em>Current Biology</em> (2017-12) <a href="https://doi.org/cgmv">https://doi.org/cgmv</a><br />
-DOI: <a href="https://doi.org/10.1016/j.cub.2017.10.025">10.1016/j.cub.2017.10.025</a></p>
+<em>Current Biology</em> (2017-12) <a href="https://doi.org/10.1016/j.cub.2017.10.025">https://doi.org/10.1016/j.cub.2017.10.025</a><br />
+DOI: <a href="https://doi.org/10.1016/j.cub.2017.10.025">10.1016/j.cub.2017.10.025</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/29174893">29174893</a></p>
 </div>
 <div id="ref-4XDvZWxk">
 <p>42. <strong>Nextflow enables reproducible computational workflows</strong><br />
