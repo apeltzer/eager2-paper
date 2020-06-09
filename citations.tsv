@@ -68,6 +68,7 @@ doi:10.3389/fgene.2018.00575	doi:10.3389/fgene.2018.00575	doi:10.3389/fgene.2018
 doi:10.5281/zenodo.3557708	doi:10.5281/zenodo.3557708	doi:10.5281/zenodo.3557708	1Ab7DZE7s
 doi:10.7554/eLife.36666	doi:10.7554/eLife.36666	doi:10.7554/elife.36666	1HEgHFzOs
 doi:10.7717/peerj.9001	doi:10.7717/peerj.9001	doi:10.7717/peerj.9001	h6xmK5cY
+url:ftp://ftp.ebi.ac.uk/pub/databases/ena	url:ftp://ftp.ebi.ac.uk/pub/databases/ena	url:ftp://ftp.ebi.ac.uk/pub/databases/ena	MZoTE5kE
 url:https://conda-forge.github.io	url:https://conda-forge.github.io	url:https://conda-forge.github.io	qj0Rqpq8
 url:https://conda.io	url:https://conda.io	url:https://conda.io	iU0FZYFP
 url:https://github.com/nf-core/configs	url:https://github.com/nf-core/configs	url:https://github.com/nf-core/configs	13kS0x2y1
@@ -77,3 +78,4 @@ url:https://sylabs.io	url:https://sylabs.io	url:https://sylabs.io	99QkJBoF
 url:https://tower.nf	url:https://tower.nf	url:https://tower.nf	jJzDdoAE
 url:https://www.bioinformatics.babraham.ac.uk/projects/fastqc	url:https://www.bioinformatics.babraham.ac.uk/projects/fastqc	url:https://www.bioinformatics.babraham.ac.uk/projects/fastqc	R2o2aPyA
 url:https://www.docker.com	url:https://www.docker.com	url:https://www.docker.com	rmvJ2O0Q
+url:https://www.nextflow.io/docs/latest/config.html	url:https://www.nextflow.io/docs/latest/config.html	url:https://www.nextflow.io/docs/latest/config.html	BzcpEB6A
