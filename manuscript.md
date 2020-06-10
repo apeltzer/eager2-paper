@@ -11,8 +11,8 @@ author-meta:
 - Alexander Peltzer
 bibliography:
 - content/manual-references.json
-date-meta: '2020-06-09'
-header-includes: "<!--\nManubot generated metadata rendered from header-includes-template.html.\nSuggest improvements at https://github.com/manubot/manubot/blob/master/manubot/process/header-includes-template.html\n-->\n<meta name=\"dc.format\" content=\"text/html\" />\n<meta name=\"dc.title\" content=\"Reproducible, portable, and efficient ancient genome reconstruction with nf-core/eager\" />\n<meta name=\"citation_title\" content=\"Reproducible, portable, and efficient ancient genome reconstruction with nf-core/eager\" />\n<meta property=\"og:title\" content=\"Reproducible, portable, and efficient ancient genome reconstruction with nf-core/eager\" />\n<meta property=\"twitter:title\" content=\"Reproducible, portable, and efficient ancient genome reconstruction with nf-core/eager\" />\n<meta name=\"dc.date\" content=\"2020-06-09\" />\n<meta name=\"citation_publication_date\" content=\"2020-06-09\" />\n<meta name=\"dc.language\" content=\"en-GB\" />\n<meta name=\"citation_language\" content=\"en-GB\" />\n<meta name=\"dc.relation.ispartof\" content=\"Manubot\" />\n<meta name=\"dc.publisher\" content=\"Manubot\" />\n<meta name=\"citation_journal_title\" content=\"Manubot\" />\n<meta name=\"citation_technical_report_institution\" content=\"Manubot\" />\n<meta name=\"citation_author\" content=\"James A. Fellows Yates\" />\n<meta name=\"citation_author_institution\" content=\"Microbiome Sciences Group, Department of Archaeogenetics, Max-Planck-Institute for the Science of Human History, Jena, Germany\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0001-5585-6277\" />\n<meta name=\"twitter:creator\" content=\"@jafellowsyates\" />\n<meta name=\"citation_author\" content=\"Thiseas C. Lamnidis\" />\n<meta name=\"citation_author_institution\" content=\"Population Genetics Group, Department of Archaeogenetics, Max-Planck-Institute for the Science of Human History, Jena, Germany\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0003-4485-8570\" />\n<meta name=\"twitter:creator\" content=\"@TCLamnidis\" />\n<meta name=\"citation_author\" content=\"Maxime Borry\" />\n<meta name=\"citation_author_institution\" content=\"Microbiome Sciences Group, Department of Archaeogenetics, Max-Planck-Institute for the Science of Human History, Jena, Germany\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0001-9140-7559\" />\n<meta name=\"twitter:creator\" content=\"@notmaxib\" />\n<meta name=\"citation_author\" content=\"Aida Andrades Valtue\xF1a\" />\n<meta name=\"citation_author_institution\" content=\"Computational Pathogenomics Group, Department of Archaeogenetics, Max-Planck-Institute for the Science of Human History, Jena, Germany\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0002-1737-2228\" />\n<meta name=\"twitter:creator\" content=\"@aidaanva\" />\n<meta name=\"citation_author\" content=\"Zandra Fagern\xE4s\" />\n<meta name=\"citation_author_institution\" content=\"Microbiome Sciences Group, Department of Archaeogenetics, Max-Planck-Institute for the Science of Human History, Jena, Germany\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0003-2667-3556\" />\n<meta name=\"twitter:creator\" content=\"@ZandraSelina\" />\n<meta name=\"citation_author\" content=\"Stephen Clayton\" />\n<meta name=\"citation_author_institution\" content=\"Department of Archaeogenetics, Max-Planck-Institute for the Science of Human History, Jena, Germany\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0001-5223-9695\" />\n<meta name=\"citation_author\" content=\"Maxime U. Garcia\" />\n<meta name=\"citation_author_institution\" content=\"Department of Oncology-Pathology, Karolinska Institutet, Stockholm, Sweden\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0003-2827-9261\" />\n<meta name=\"twitter:creator\" content=\"@gau\" />\n<meta name=\"citation_author\" content=\"Judith Neukamm\" />\n<meta name=\"citation_author_institution\" content=\"Palaeogenetics Group, Institute of Evolutionary Medicine, University of Zurich, Z\xFCrich, Switzerland\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0001-8141-566X\" />\n<meta name=\"twitter:creator\" content=\"@JudithNeukamm\" />\n<meta name=\"citation_author\" content=\"Alexander Peltzer\" />\n<meta name=\"citation_author_institution\" content=\"Quantitative Biology Center (QBiC), Eberhard-Karls-Universit\xE4t, T\xFCbingen, Germany\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0002-6503-2180\" />\n<meta name=\"twitter:creator\" content=\"@alex_peltzer\" />\n<link rel=\"canonical\" href=\"https://apeltzer.github.io/eager2-paper/\" />\n<meta property=\"og:url\" content=\"https://apeltzer.github.io/eager2-paper/\" />\n<meta property=\"twitter:url\" content=\"https://apeltzer.github.io/eager2-paper/\" />\n<meta name=\"citation_fulltext_html_url\" content=\"https://apeltzer.github.io/eager2-paper/\" />\n<meta name=\"citation_pdf_url\" content=\"https://apeltzer.github.io/eager2-paper/manuscript.pdf\" />\n<link rel=\"alternate\" type=\"application/pdf\" href=\"https://apeltzer.github.io/eager2-paper/manuscript.pdf\" />\n<link rel=\"alternate\" type=\"text/html\" href=\"https://apeltzer.github.io/eager2-paper/v/2f42e1e97bb38f0574a3ad1feb26c4e01d475897/\" />\n<meta name=\"manubot_html_url_versioned\" content=\"https://apeltzer.github.io/eager2-paper/v/2f42e1e97bb38f0574a3ad1feb26c4e01d475897/\" />\n<meta name=\"manubot_pdf_url_versioned\" content=\"https://apeltzer.github.io/eager2-paper/v/2f42e1e97bb38f0574a3ad1feb26c4e01d475897/manuscript.pdf\" />\n<meta property=\"og:type\" content=\"article\" />\n<meta property=\"twitter:card\" content=\"summary_large_image\" />\n<meta property=\"og:image\" content=\"https://github.com/apeltzer/eager2-paper/raw/2f42e1e97bb38f0574a3ad1feb26c4e01d475897/content/images/nf-core-eager_social_preview.png\" />\n<meta property=\"twitter:image\" content=\"https://github.com/apeltzer/eager2-paper/raw/2f42e1e97bb38f0574a3ad1feb26c4e01d475897/content/images/nf-core-eager_social_preview.png\" />\n<link rel=\"icon\" type=\"image/png\" sizes=\"192x192\" href=\"https://manubot.org/favicon-192x192.png\" />\n<link rel=\"mask-icon\" href=\"https://manubot.org/safari-pinned-tab.svg\" color=\"#ad1457\" />\n<meta name=\"theme-color\" content=\"#ad1457\" />\n<!-- end Manubot generated metadata -->"
+date-meta: '2020-06-10'
+header-includes: "<!--\nManubot generated metadata rendered from header-includes-template.html.\nSuggest improvements at https://github.com/manubot/manubot/blob/master/manubot/process/header-includes-template.html\n-->\n<meta name=\"dc.format\" content=\"text/html\" />\n<meta name=\"dc.title\" content=\"Reproducible, portable, and efficient ancient genome reconstruction with nf-core/eager\" />\n<meta name=\"citation_title\" content=\"Reproducible, portable, and efficient ancient genome reconstruction with nf-core/eager\" />\n<meta property=\"og:title\" content=\"Reproducible, portable, and efficient ancient genome reconstruction with nf-core/eager\" />\n<meta property=\"twitter:title\" content=\"Reproducible, portable, and efficient ancient genome reconstruction with nf-core/eager\" />\n<meta name=\"dc.date\" content=\"2020-06-10\" />\n<meta name=\"citation_publication_date\" content=\"2020-06-10\" />\n<meta name=\"dc.language\" content=\"en-GB\" />\n<meta name=\"citation_language\" content=\"en-GB\" />\n<meta name=\"dc.relation.ispartof\" content=\"Manubot\" />\n<meta name=\"dc.publisher\" content=\"Manubot\" />\n<meta name=\"citation_journal_title\" content=\"Manubot\" />\n<meta name=\"citation_technical_report_institution\" content=\"Manubot\" />\n<meta name=\"citation_author\" content=\"James A. Fellows Yates\" />\n<meta name=\"citation_author_institution\" content=\"Microbiome Sciences Group, Department of Archaeogenetics, Max-Planck-Institute for the Science of Human History, Jena, Germany\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0001-5585-6277\" />\n<meta name=\"twitter:creator\" content=\"@jafellowsyates\" />\n<meta name=\"citation_author\" content=\"Thiseas C. Lamnidis\" />\n<meta name=\"citation_author_institution\" content=\"Population Genetics Group, Department of Archaeogenetics, Max-Planck-Institute for the Science of Human History, Jena, Germany\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0003-4485-8570\" />\n<meta name=\"twitter:creator\" content=\"@TCLamnidis\" />\n<meta name=\"citation_author\" content=\"Maxime Borry\" />\n<meta name=\"citation_author_institution\" content=\"Microbiome Sciences Group, Department of Archaeogenetics, Max-Planck-Institute for the Science of Human History, Jena, Germany\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0001-9140-7559\" />\n<meta name=\"twitter:creator\" content=\"@notmaxib\" />\n<meta name=\"citation_author\" content=\"Aida Andrades Valtue\xF1a\" />\n<meta name=\"citation_author_institution\" content=\"Computational Pathogenomics Group, Department of Archaeogenetics, Max-Planck-Institute for the Science of Human History, Jena, Germany\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0002-1737-2228\" />\n<meta name=\"twitter:creator\" content=\"@aidaanva\" />\n<meta name=\"citation_author\" content=\"Zandra Fagern\xE4s\" />\n<meta name=\"citation_author_institution\" content=\"Microbiome Sciences Group, Department of Archaeogenetics, Max-Planck-Institute for the Science of Human History, Jena, Germany\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0003-2667-3556\" />\n<meta name=\"twitter:creator\" content=\"@ZandraSelina\" />\n<meta name=\"citation_author\" content=\"Stephen Clayton\" />\n<meta name=\"citation_author_institution\" content=\"Department of Archaeogenetics, Max-Planck-Institute for the Science of Human History, Jena, Germany\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0001-5223-9695\" />\n<meta name=\"citation_author\" content=\"Maxime U. Garcia\" />\n<meta name=\"citation_author_institution\" content=\"Department of Oncology-Pathology, Karolinska Institutet, Stockholm, Sweden\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0003-2827-9261\" />\n<meta name=\"twitter:creator\" content=\"@gau\" />\n<meta name=\"citation_author\" content=\"Judith Neukamm\" />\n<meta name=\"citation_author_institution\" content=\"Palaeogenetics Group, Institute of Evolutionary Medicine, University of Zurich, Z\xFCrich, Switzerland\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0001-8141-566X\" />\n<meta name=\"twitter:creator\" content=\"@JudithNeukamm\" />\n<meta name=\"citation_author\" content=\"Alexander Peltzer\" />\n<meta name=\"citation_author_institution\" content=\"Quantitative Biology Center (QBiC), Eberhard-Karls-Universit\xE4t, T\xFCbingen, Germany\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0002-6503-2180\" />\n<meta name=\"twitter:creator\" content=\"@alex_peltzer\" />\n<link rel=\"canonical\" href=\"https://apeltzer.github.io/eager2-paper/\" />\n<meta property=\"og:url\" content=\"https://apeltzer.github.io/eager2-paper/\" />\n<meta property=\"twitter:url\" content=\"https://apeltzer.github.io/eager2-paper/\" />\n<meta name=\"citation_fulltext_html_url\" content=\"https://apeltzer.github.io/eager2-paper/\" />\n<meta name=\"citation_pdf_url\" content=\"https://apeltzer.github.io/eager2-paper/manuscript.pdf\" />\n<link rel=\"alternate\" type=\"application/pdf\" href=\"https://apeltzer.github.io/eager2-paper/manuscript.pdf\" />\n<link rel=\"alternate\" type=\"text/html\" href=\"https://apeltzer.github.io/eager2-paper/v/a3be4385c5d69fdd8eb713e8ba9aac6d33f41c9d/\" />\n<meta name=\"manubot_html_url_versioned\" content=\"https://apeltzer.github.io/eager2-paper/v/a3be4385c5d69fdd8eb713e8ba9aac6d33f41c9d/\" />\n<meta name=\"manubot_pdf_url_versioned\" content=\"https://apeltzer.github.io/eager2-paper/v/a3be4385c5d69fdd8eb713e8ba9aac6d33f41c9d/manuscript.pdf\" />\n<meta property=\"og:type\" content=\"article\" />\n<meta property=\"twitter:card\" content=\"summary_large_image\" />\n<meta property=\"og:image\" content=\"https://github.com/apeltzer/eager2-paper/raw/a3be4385c5d69fdd8eb713e8ba9aac6d33f41c9d/content/images/nf-core-eager_social_preview.png\" />\n<meta property=\"twitter:image\" content=\"https://github.com/apeltzer/eager2-paper/raw/a3be4385c5d69fdd8eb713e8ba9aac6d33f41c9d/content/images/nf-core-eager_social_preview.png\" />\n<link rel=\"icon\" type=\"image/png\" sizes=\"192x192\" href=\"https://manubot.org/favicon-192x192.png\" />\n<link rel=\"mask-icon\" href=\"https://manubot.org/safari-pinned-tab.svg\" color=\"#ad1457\" />\n<meta name=\"theme-color\" content=\"#ad1457\" />\n<!-- end Manubot generated metadata -->"
 keywords:
 - nf-core
 - nextflow
@@ -36,10 +36,10 @@ title: Reproducible, portable, and efficient ancient genome reconstruction with 
 
 <small><em>
 This manuscript
-([permalink](https://apeltzer.github.io/eager2-paper/v/2f42e1e97bb38f0574a3ad1feb26c4e01d475897/))
+([permalink](https://apeltzer.github.io/eager2-paper/v/a3be4385c5d69fdd8eb713e8ba9aac6d33f41c9d/))
 was automatically generated
-from [apeltzer/eager2-paper@2f42e1e](https://github.com/apeltzer/eager2-paper/tree/2f42e1e97bb38f0574a3ad1feb26c4e01d475897)
-on June 9, 2020.
+from [apeltzer/eager2-paper@a3be438](https://github.com/apeltzer/eager2-paper/tree/a3be4385c5d69fdd8eb713e8ba9aac6d33f41c9d)
+on June 10, 2020.
 </em></small>
 
 ## Authors
@@ -154,7 +154,7 @@ on June 9, 2020.
 
 ## Abstract {.page_break_before}
 
-The broadening utilization of ancient DNA (aDNA) to address archaeological,
+The broadening utilisation of ancient DNA (aDNA) to address archaeological,
 palaeontological, and biological questions is resulting in a rising diversity in
 the size of laboratories and scale of analyses being performed. In the context
 of this heterogeneous landscape, we present nf-core/eager, an advanced and
@@ -181,7 +181,7 @@ next-generation sequencing has allowed the recovery of aDNA from a wide variety
 of sources, including but not limited to, the skeletal remains of animals
 [@doi:10.1016/j.cub.2015.04.007; @doi:10.1038/nature12323;
 @doi:10.1073/pnas.1901169116; @doi:10.1073/pnas.1710186114], modern and archaic
-humans [@doi:10.1038/s41586-018-0094-2; @doi:10.1126/science.1224344;
+humans [@doi:10.1038/s41586-018-0094-2; @doi:10.1126/science.1188021; @doi:10.1126/science.1224344;
 @doi:10.1038/s41586-018-0455-x], bacteria [@doi:10.1038/nature13591;
 @doi:10.1073/pnas.1812865115; @doi:10.1371/journal.ppat.1006997], viruses
 [@doi:10.1038/s41586-018-0097-z; @doi:10.7554/eLife.36666], plants
@@ -196,24 +196,24 @@ yields of otherwise trace amounts of DNA has at the same time led to studies tha
 can total hundreds of ancient individuals [@doi:10.1038/nature25738;
 @doi:10.1038/nature25778], spanning single [@doi:10.1038/nature10549] to
 thousands of organisms [@doi:10.1038/ng.2906]. These differences of disciplines
-have led to a heterogeneous landscape in terms of types of analyses and require
-different types of computing resources for each lab [@doi:10.1093/bib/bbu022;
+have led to a heterogeneous landscape in terms of the types of analyses undertaken, 
+and their computational resource requirements [@doi:10.1093/bib/bbu022;
 @doi:10.3389/fgene.2018.00575]. Taking into consideration the unequal
 distribution of resources (and infrastructure such as internet connection),
 streamlined and efficient pipelines can help increase accessibility to
-high-quality analyses
+high-quality analyses.
 
 The degraded nature of aDNA poses an extra layer of complexity to standard
 modern genomic analysis. Through a variety of processes [@doi:10.1038/362709a0],
-DNA molecules will fragment overtime resulting in ultra-short molecules
-[@doi:10.1038/nature17405]). These sequences have low nucleotide complexity
+DNA molecules fragment over time, resulting in ultra-short molecules
+[@doi:10.1038/nature17405]. These sequences have low nucleotide complexity
 making it difficult to identify with precision which part of the genome a read
 is derived from. Furthermore, when fragmentation is not a 'clean break', this can
 lead to uneven ends with single-stranded 'overhangs' at end of molecules, which
 are susceptible to chemical processes such as deamination that lead to
 misincorporation of bases during library construction
 [@doi:10.1073/pnas.0704665104]. On top of this, taphonomic processes such as
-heat, moisture, and microbial and burial environment processes lead to varying
+heat, moisture, and microbial- and burial-environment processes lead to varying
 rates of degradation [@doi:10.1093/nar/gkx361;
 @doi:10.1146/annurev-genom-091416-035526], where the original DNA content of a
 sample is lost and supplanted by modern environmental DNA. Later handling by
@@ -236,7 +236,7 @@ removal/and or paired-end read merging, mapping of reads to a reference genome,
 genotyping, etc.), but with a specific focus on tools that are designed for, or
 well-suited for aDNA (such as the bwa aln algorithm for ultra-short molecules
 [@doi:10.1093/bioinformatics/btp324] and mapDamage
-[@doi:10.1093/bioinformatics/btr347] for aDNA characteristics evaluation). Yet,
+[@doi:10.1093/bioinformatics/btr347] for evaluation of aDNA characteristics). Yet,
 neither of these pipelines have had major updates to bring them in-line with
 current routine aDNA analyses. Metagenomic screening of off-target genomic reads
 for pathogens or microbiomes [@doi:10.1038/ng.2906; @doi:10.1038/nature21674]
@@ -247,7 +247,7 @@ the archaeological record [@doi:10.1016/j.cell.2015.10.009;
 @doi:10.7554/eLife.36666]. Without easy access to the latest field-established
 analytical routines, aDNA studies risk being published without the necessary
 quality control checks that ensure aDNA authenticity and without yielding the
-full range of possibilities from their data.
+full range of possibilities from their data. A further point would be that given that material from samples is limited, there are both ethical as well as economical interests to maximize yield [@doi:10.3390/genes8070180].
 
 To address these shortcomings, we have completely re-implemented the latest
 version of the EAGER pipeline in Nextflow [@doi:10.1038/nbt.3820] (a
@@ -263,23 +263,23 @@ best-practises in software development.
 
 ## Scalability, Portability, and Efficiency
 
-The reimplementation of EAGER into Nextflow offers a range of benefits over the
+The re-implementation of EAGER into Nextflow offers a range of benefits over the
 original custom pipeline framework.
 
 Firstly, the new framework provides immediate integration of nf-core/eager into
 various job schedulers in POSIX High-Performance-Cluster (HPC) environments,
 cloud computing resources, as well as local workstations. This portability
-allows both small and big labs to run nf-core/eager regardless of the type of
-computer or cluster size, with minimal effort or configuration, facilitating
+allows users to run nf-core/eager regardless of the type of
+computing insfrastructure or cluster size (if applicable), with minimal effort or configuration, which facilitates
 reproducibility and therefore maintenance of standards within the field. This is
 further assisted by the in-built compatibility with software environments and
-containers such as Conda [@url:https://conda.io], Docker
-[@url:https://www.docker.com] and Singularity [@url:https://sylabs.io]. These
-are single packages that include all the software (with exact versions) required
-by the pipeline, in a form that is installable and runnable regardless of the
-setup of their local software environment. Another major change with
+containers such as Conda [@url:https://conda.io],
+Docker [@url:https://www.docker.com] and Singularity [@url:https://sylabs.io].
+These are isolated sandboxes including all software (with exact versions)
+required by the pipeline, in a form that is installable and runnable by users regardless
+of the setup of their local software environment. Another major change with
 nf-core/eager is that the graphical-user-interface (GUI) set up of an
-nf-core/eager run is now replaced with a command-line-interface (CLI) as the
+EAGER run is now replaced with a command-line-interface (CLI) as the
 primary user interaction mode. This is more compatible and portable with most
 HPCs (that may not offer display of a window system), and is in line with the
 vast majority of bioinformatic tools. We therefore believe this will not be a
@@ -296,19 +296,17 @@ CPU resources etc.), which can be centrally managed to ensure all users of a
 group use the same settings. Pipeline-level profiles, specifying
 parameters for nf-core/eager itself, allow fast access to routine pipeline-run
 parameters via a single flag in the nf-core/eager run command, without having to
-configure each new run from scratch.
-
-Compared to the original EAGER that utilised per-FASTQ XML files with hardcoded
+configure each new run from scratch. Compared to the original EAGER, which utilised per-FASTQ XML files with hardcoded
 filepaths for a specific user's server, nf-core/eager allows researchers to
 publish the specific profile used in their runs alongside their publications, to
 ensure other groups can generate the same results. Usage of profiles also
 reduces mistakes caused by insufficient 'prose' based reporting of program
 settings that can be regularly found in the literature. The default
-nf-core/eager profile uses parameters evaluated in different aDNA specific
-contexts (e.g. in @doi:10.1186/1471-2164-13-178), and will be updated in each
+nf-core/eager profile uses parameters evaluated in different aDNA-specific
+contexts (e.g. in [@doi:10.1186/1471-2164-13-178]), and will be updated in each
 new release as new studies are published.
 
-nf-core/eager provides improved efficiency over the original EAGER pipeline by
+Finally, nf-core/eager provides improved efficiency over the original EAGER pipeline by
 replacing the sample-by-sample sequential processing with Nextflow's
 asynchronous parallelisation, whereby multiple pipeline steps and samples are
 run in parallel (in addition to natively parallelized pipeline steps). This,
@@ -324,13 +322,13 @@ nf-core/eager follows a similar structural foundation to the original EAGER.
 Given Illumina short-read FASTQ and/or BAM files, and a reference FASTA file,
 this can be split into four main stages:
 
-1. Preprocessing
+1. Pre-processing
    - Sequencing quality control: FastQC
      [@url:https://www.bioinformatics.babraham.ac.uk/projects/fastqc]
    - Sequencing artefact clean-up (merging, adapter clipping): AdapterRemoval2
      [@doi:10.1186/s13104-016-1900-2]
-   - Preprocessing statistics generation
-2. Mapping and post- processing
+   - Pre-processing statistics generation
+2. Mapping and post-processing
    - Alignment against reference genome: BWA
      [@doi:10.1093/bioinformatics/btp324; @doi:10.1093/bioinformatics/btp698,
      @arxiv:1303.3997], CircularMapper [@doi:10.1186/s13059-016-0918-z]
@@ -343,11 +341,11 @@ this can be split into four main stages:
    - Damage profiling: DamageProfiler [@doi:10.5281/zenodo.3557708]
    - aDNA reads selection: PMDtools [@doi:10.1073/pnas.1318934111]
    - Damage removal: Bamutils[@doi:10.1101/gr.176552.114]
-   - (Human) contamination estimation: ANGSD [@doi:10.1186/s12859-014-0356-4]
-4. Genotyping and Consensus Sequencing: GATK [@doi:10.1101/gr.107524.110],
+   - (Human) nuclear contamination estimation: ANGSD [@doi:10.1186/s12859-014-0356-4]
+4. Genotyping and Consensus Sequence Generation: GATK [@doi:10.1101/gr.107524.110],
    VCF2Genome [@doi:10.1186/s13059-016-0918-z]
 
-In nf-core/eager, all tools also originally used in EAGER have been updated to
+In nf-core/eager, all tools originally used in EAGER have been updated to their
 latest versions, as available on Bioconda [@doi:10.1038/s41592-018-0046-7] and
 Conda-forge [@url:https://conda-forge.github.io] to ensure widespread
 accessibility and stability of utilized tools. The MapDamage2 (for damage
@@ -365,7 +363,7 @@ with the palaeogenetics community. New tools to the basic workflow include fastp
 artefacts that are common in 2-colour Illumina sequencing machines (such as the
 increasingly popular NextSeq and NovaSeq platforms
 [@url:https://sequencing.qcfail.com/articles/illumina-2-colour-chemistry-can-overcall-high-confidence-g-bases/]).
-For genotyping we have now included FreeBayes [@arxiv:1207.3907] as an
+For genotyping, we have now included FreeBayes [@arxiv:1207.3907] as an
 alternative to the human-focused GATK tools. We have also maintained the
 possibility of using the now unsupported GATK UnifiedGenotyper, as the GATK
 HaplotypeCaller performs _de novo_ assembly around possible variants, which may
@@ -376,19 +374,19 @@ bubbles indicate new functionality added over the original EAGER
 pipeline.](images/Fig1_eager2_workflow.png){#fig:workflow-schematic
 width="100%"}
 
-We have further extended the genomic analysis functionality of the pipeline by
+We have further extended the functionality of the pipeline by
 adding ancient metagenomic analysis, to identify the wider taxonomic content of
-a sample. We have added the ability to screen all off-target reads (not mapped
+a sample. We have added the possibility to screen all off-target reads (not mapped
 to the reference genome) with two metagenomic profilers: MALT
 [@doi:10.1101/050559; @doi:10.1038/s41559-017-0446-6] and Kraken2
 [@doi:10.1186/s13059-019-1891-0]. Characterisation of properties of authentic
 aDNA from MALT alignments is carried out with the HOPS pipeline
-[@doi:10.1186/s13059-019-1903-0]. Ancient metagenomic studies sometimes may
+[@doi:10.1186/s13059-019-1903-0]. Ancient metagenomic studies sometimes 
 include comparative samples from living individuals
-[@doi:10.1186/s40168-019-0717-3)]. To support open data, whilst respecting data
+[@doi:10.1186/s40168-019-0717-3)]. To support open data, whilst respecting personal data
 privacy, nf-core/eager includes a 'strip_fastq' script which creates raw FASTQ
-files, but without reference-genome mapped reads. This allows safe upload of
-sequencing data to public repositories with identifiable human data removed.
+files, but with all reads sucessfully mapped to the reference genome removed. This allows safe upload
+of sequencing data to public repositories after removal of identifiable human data.
 
 Additional functionality tailored for ancient bacterial genomics includes
 integration of a SNP alignment generation tool, MultiVCFAnalyzer
@@ -409,13 +407,13 @@ number of reads sequenced per library.
 
 Given the large amount of sequencing often required to yield sufficient genome
 coverage from aDNA data, palaeogeneticists tend to use multiple (differently
-treated) libraries or sequencing runs. The original EAGER pipeline could only
+treated) libraries, and/or merge data from multiple sequencing runs per library. The original EAGER pipeline could only
 run single libraries at a time, and in these contexts required significant
 manual user input in merging different FASTQ or BAM files. A major upgrade in
 nf-core/eager is that the new pipeline supports automated processing of complex
 sequencing strategies for many samples. As an alternative to direct paths to
 FASTQ or BAM files, the pipeline can also accept a simple table in TSV format
-which includes file paths and additional metadata such as sample name, library
+that includes file paths and additional metadata such as sample name, library
 name, sequencing lane, colour chemistry, and UDG treatment. This allows
 simultaneous processing and appropriate merging of heterogeneous data from
 multiple sequencing runs and/or library types.
@@ -425,7 +423,7 @@ output directories and files to make full assessment of their sequencing data.
 This has now been replaced with a much more extensive MultiQC
 [@doi:10.1093/bioinformatics/btw354] report. This tool aggregates the log files
 of every supported tool into a single interactive report, and assists users in
-making fuller assessment of their sequencing and analysis runs. Most tools
+making a fuller assessment of their sequencing and analysis runs. Most tools
 within nf-core/eager have a corresponding MultiQC module to enable comprehensive
 evaluation of all stages of the pipeline.
 
@@ -448,22 +446,21 @@ downstream analyses.
 
 ![Example schematic images of pipeline output documentation that can assist new
 users in the interpretation to next-generation-sequencing aDNA
-
 processing.](images/Fig2_fastqc_adapter_content.png){#fig:doc-image-example
 width="70%"}
 
 The development of nf-core/eager in Nextflow and the nf-core initiative will
-also improve open-source community contributions to the pipeline. While Nextflow
-is written primarily in the java-based Groovy, the Nextflow DSL simplifies a
-number of concepts to an intermediate level that bioinformaticians without
-Java/Groovy experience can easily access (regardless of own programming language
-experience). Furthermore, Nextflow places ubiquitous and more widely known
-command-line interfaces, such as bash, in a prominent position within the code,
-rather than custom java code and classes. We hope this will motivate further bug
-fixes and feature contributions from the community, to keep the pipeline
-state-of-the-art and ensure a longer life-cycle. This will also be supported by
-the active and welcoming nf-core community who provide general guidance and
-advice on developing Nextflow and nf-core pipelines.
+also improve open-source development, while ensuring the high quality of community contributions to the pipeline. While Nextflow
+is written primarily in Groovy, the Nextflow DSL simplifies a number of concepts
+to an intermediate level that bioinformaticians without Java/Groovy experience
+can easily access (regardless of own programming language experience).
+Furthermore, Nextflow places ubiquitous and more widely known command-line
+interfaces, such as bash, in a prominent position within the code, rather than
+custom java code and classes. We hope this will motivate further bug fixes and
+feature contributions from the community, to keep the pipeline state-of-the-art
+and ensure a longer life-cycle. This will also be supported by the active and
+welcoming nf-core community who provide general guidance and advice on
+developing Nextflow and nf-core pipelines.
 
 
 ## Conclusion
@@ -492,7 +489,7 @@ section of the nf-core/eager repository
 ### Running
 
 After the installation, users can run the pipeline using standard test data by
-utilizing some of the `test` profiles we provide (e.g. using Docker):
+utilising some of the `test` profiles we provide (e.g. using Docker):
 
 ```bash
 nextflow run nf-core/eager -r 2.1.0 -profile test,docker
@@ -529,15 +526,13 @@ nextflow run nf-core/eager -r 2.1.0 -profile conda --input '/<path>/<to>/*/*R1*.
 
 #### Profiles
 
-Local private configuration profiles
-[@url:https://www.nextflow.io/docs/latest/config.html] are also supplemented
-with the nf-core central configuration profile repository to enable users from
+We utilise a central configuration profile repository to enable users from
 various institutions to use pipelines on their particular infrastructure more
 easily [@url:https://github.com/nf-core/configs]. There are multiple resources
 listed in this repository with information on how to add your own configuration
 profile with help from the nf-core community.
 
-Users can customize this infrastructure profile by themselves, with the nf-core
+Users can customise this infrastructure profile by themselves, with the nf-core
 community, or with their local system administrator to make sure that the
 pipeline runs successfully, and can then rely on the Nextflow and nf-core
 framework to ensure compatibility upon further infrastructure changes. For
@@ -561,15 +556,16 @@ genome. If BAM input is provided, an optional conversion to FASTQ is offered,
 otherwise BAM files processing will start from the post-mapping stage.
 
 If users have complex set-ups, e.g. multiple sequencing lanes that require
-merging of files, the pipeline can be supplied with a tabu separated value (TSV)
-file to enable such complex data handling. Both FASTQs and BAMs can be provided
-in this set up. FASTQs with the same library name and sequencing chemistry but
-sequenced across multiple lanes will be concatenated after AdapterRemoval and
-prior mapping. Libraries with the sample name and with the same UDG treatment,
-will be merged after deduplication. If libraries with the sample name have
-different UDG treatment, these will be merged after the aDNA modification stage
-(i.e. BAM trimming or PMDtools, if turned on), prior genotyping, as shown in in
-Figure {@fig:merging-files}.
+merging of files, the pipeline can be supplied with a tab
+separated value (TSV) file to enable such complex data handling. Both FASTQs and
+BAMs can be provided in this set up. FASTQs with the same library name and
+sequencing chemistry but sequenced across multiple lanes will be concatenated
+after AdapterRemoval and prior mapping. Libraries with the sample name and with
+the same UDG treatment, will be merged after deduplication. If libraries with
+the sample name have different UDG treatment, these will be merged after the
+aDNA modification stage (i.e. BAM trimming or PMDtools, if turned on), prior
+to genotyping, as shown in  Figure {@fig:merging-files}.
+
 
 ![Schematic of different processing and merging points based on the nature of
 different libraries, as specified in metadata of a TSV file. Dashed boxes
@@ -577,25 +573,23 @@ represent optional library-specific
 processes](images/Fig3_merging_files.png){#fig:merging-files width="70%"}
 
 As Nextflow will automatically download files from URLs, profiles and/or TSV
-files can include links to publicly available data (e.g. the ENA FTP server
-[@url:ftp://ftp.ebi.ac.uk/pub/databases/ena/]). This assists in reproducibility
-as if profiles or TSV files are uploaded with a publication, a researcher
-wishing to re-analyse the data in the same way can use the exact settings and
-merging procedures in the original publication, without having to reconstruct
-this from prose.
+files can include links to publicly available data (e.g. the ENA FTP server).
+This assists in reproducibility, because if profiles or TSV files are uploaded with a
+publication, a researcher wishing to re-analyse the data in the same way can use
+the exact settings and merging procedures in the original publication, without
+having to reconstruct this from prose.
 
 #### Monitoring
 
-Users can either monitor their pipeline execution with real-time messages
-Nextflow prints to the console while running, or utilize projects such as
-Nextflow Tower [@url:https://tower.nf] to monitor their analysis pipeline during
-runtime.
+Users can either monitor their pipeline execution with the messages Nextflow
+prints to the console while running, or utilise projects such as Nextflow Tower
+[@url:https://tower.nf] to monitor their analysis pipeline during runtime.
 
 #### Output
 
-The pipeline produces several dozen output files in various file formats, with a
-more detailed listing available in the user documentation. This includes
-metrics, statistical analysis data and standardized output files (BAM, VCF) for
+The pipeline produces a multitude of output files in various file formats, with a
+more detailed listing available in the user documentation. These include
+metrics, statistical analysis data, and standardised output files (BAM, VCF) for
 close inspection and further downstream analysis, as well as a MultiQC report.
 If an emailing daemon is set up on the server, the latter can even be emailed to
 users automatically, when starting the pipeline with a dedicated option (\-\-email
