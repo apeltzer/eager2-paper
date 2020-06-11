@@ -11,7 +11,7 @@
       "bioinformatics"
     ],
     "lang": "en-GB",
-    "date-meta": "2020-06-10",
+    "date-meta": "2020-06-11",
     "author-meta": [
       "James A. Fellows Yates",
       "Thiseas C. Lamnidis",
@@ -23,7 +23,7 @@
       "Judith Neukamm",
       "Alexander Peltzer"
     ],
-    "header-includes": "<!--\nManubot generated metadata rendered from header-includes-template.html.\nSuggest improvements at https://github.com/manubot/manubot/blob/master/manubot/process/header-includes-template.html\n-->\n<meta name=\"dc.format\" content=\"text/html\" />\n<meta name=\"dc.title\" content=\"Reproducible, portable, and efficient ancient genome reconstruction with nf-core/eager\" />\n<meta name=\"citation_title\" content=\"Reproducible, portable, and efficient ancient genome reconstruction with nf-core/eager\" />\n<meta property=\"og:title\" content=\"Reproducible, portable, and efficient ancient genome reconstruction with nf-core/eager\" />\n<meta property=\"twitter:title\" content=\"Reproducible, portable, and efficient ancient genome reconstruction with nf-core/eager\" />\n<meta name=\"dc.date\" content=\"2020-06-10\" />\n<meta name=\"citation_publication_date\" content=\"2020-06-10\" />\n<meta name=\"dc.language\" content=\"en-GB\" />\n<meta name=\"citation_language\" content=\"en-GB\" />\n<meta name=\"dc.relation.ispartof\" content=\"Manubot\" />\n<meta name=\"dc.publisher\" content=\"Manubot\" />\n<meta name=\"citation_journal_title\" content=\"Manubot\" />\n<meta name=\"citation_technical_report_institution\" content=\"Manubot\" />\n<meta name=\"citation_author\" content=\"James A. Fellows Yates\" />\n<meta name=\"citation_author_institution\" content=\"Microbiome Sciences Group, Department of Archaeogenetics, Max-Planck-Institute for the Science of Human History, Jena, Germany\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0001-5585-6277\" />\n<meta name=\"twitter:creator\" content=\"@jafellowsyates\" />\n<meta name=\"citation_author\" content=\"Thiseas C. Lamnidis\" />\n<meta name=\"citation_author_institution\" content=\"Population Genetics Group, Department of Archaeogenetics, Max-Planck-Institute for the Science of Human History, Jena, Germany\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0003-4485-8570\" />\n<meta name=\"twitter:creator\" content=\"@TCLamnidis\" />\n<meta name=\"citation_author\" content=\"Maxime Borry\" />\n<meta name=\"citation_author_institution\" content=\"Microbiome Sciences Group, Department of Archaeogenetics, Max-Planck-Institute for the Science of Human History, Jena, Germany\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0001-9140-7559\" />\n<meta name=\"twitter:creator\" content=\"@notmaxib\" />\n<meta name=\"citation_author\" content=\"Aida Andrades Valtueña\" />\n<meta name=\"citation_author_institution\" content=\"Computational Pathogenomics Group, Department of Archaeogenetics, Max-Planck-Institute for the Science of Human History, Jena, Germany\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0002-1737-2228\" />\n<meta name=\"twitter:creator\" content=\"@aidaanva\" />\n<meta name=\"citation_author\" content=\"Zandra Fagernäs\" />\n<meta name=\"citation_author_institution\" content=\"Microbiome Sciences Group, Department of Archaeogenetics, Max-Planck-Institute for the Science of Human History, Jena, Germany\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0003-2667-3556\" />\n<meta name=\"twitter:creator\" content=\"@ZandraSelina\" />\n<meta name=\"citation_author\" content=\"Stephen Clayton\" />\n<meta name=\"citation_author_institution\" content=\"Department of Archaeogenetics, Max-Planck-Institute for the Science of Human History, Jena, Germany\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0001-5223-9695\" />\n<meta name=\"citation_author\" content=\"Maxime U. Garcia\" />\n<meta name=\"citation_author_institution\" content=\"Department of Oncology-Pathology, Karolinska Institutet, Stockholm, Sweden\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0003-2827-9261\" />\n<meta name=\"twitter:creator\" content=\"@gau\" />\n<meta name=\"citation_author\" content=\"Judith Neukamm\" />\n<meta name=\"citation_author_institution\" content=\"Palaeogenetics Group, Institute of Evolutionary Medicine, University of Zurich, Zürich, Switzerland\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0001-8141-566X\" />\n<meta name=\"twitter:creator\" content=\"@JudithNeukamm\" />\n<meta name=\"citation_author\" content=\"Alexander Peltzer\" />\n<meta name=\"citation_author_institution\" content=\"Quantitative Biology Center (QBiC), Eberhard-Karls-Universität, Tübingen, Germany\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0002-6503-2180\" />\n<meta name=\"twitter:creator\" content=\"@alex_peltzer\" />\n<link rel=\"canonical\" href=\"https://apeltzer.github.io/eager2-paper/\" />\n<meta property=\"og:url\" content=\"https://apeltzer.github.io/eager2-paper/\" />\n<meta property=\"twitter:url\" content=\"https://apeltzer.github.io/eager2-paper/\" />\n<meta name=\"citation_fulltext_html_url\" content=\"https://apeltzer.github.io/eager2-paper/\" />\n<meta name=\"citation_pdf_url\" content=\"https://apeltzer.github.io/eager2-paper/manuscript.pdf\" />\n<link rel=\"alternate\" type=\"application/pdf\" href=\"https://apeltzer.github.io/eager2-paper/manuscript.pdf\" />\n<link rel=\"alternate\" type=\"text/html\" href=\"https://apeltzer.github.io/eager2-paper/v/a3be4385c5d69fdd8eb713e8ba9aac6d33f41c9d/\" />\n<meta name=\"manubot_html_url_versioned\" content=\"https://apeltzer.github.io/eager2-paper/v/a3be4385c5d69fdd8eb713e8ba9aac6d33f41c9d/\" />\n<meta name=\"manubot_pdf_url_versioned\" content=\"https://apeltzer.github.io/eager2-paper/v/a3be4385c5d69fdd8eb713e8ba9aac6d33f41c9d/manuscript.pdf\" />\n<meta property=\"og:type\" content=\"article\" />\n<meta property=\"twitter:card\" content=\"summary_large_image\" />\n<meta property=\"og:image\" content=\"https://github.com/apeltzer/eager2-paper/raw/a3be4385c5d69fdd8eb713e8ba9aac6d33f41c9d/content/images/nf-core-eager_social_preview.png\" />\n<meta property=\"twitter:image\" content=\"https://github.com/apeltzer/eager2-paper/raw/a3be4385c5d69fdd8eb713e8ba9aac6d33f41c9d/content/images/nf-core-eager_social_preview.png\" />\n<link rel=\"icon\" type=\"image/png\" sizes=\"192x192\" href=\"https://manubot.org/favicon-192x192.png\" />\n<link rel=\"mask-icon\" href=\"https://manubot.org/safari-pinned-tab.svg\" color=\"#ad1457\" />\n<meta name=\"theme-color\" content=\"#ad1457\" />\n<!-- end Manubot generated metadata -->",
+    "header-includes": "<!--\nManubot generated metadata rendered from header-includes-template.html.\nSuggest improvements at https://github.com/manubot/manubot/blob/master/manubot/process/header-includes-template.html\n-->\n<meta name=\"dc.format\" content=\"text/html\" />\n<meta name=\"dc.title\" content=\"Reproducible, portable, and efficient ancient genome reconstruction with nf-core/eager\" />\n<meta name=\"citation_title\" content=\"Reproducible, portable, and efficient ancient genome reconstruction with nf-core/eager\" />\n<meta property=\"og:title\" content=\"Reproducible, portable, and efficient ancient genome reconstruction with nf-core/eager\" />\n<meta property=\"twitter:title\" content=\"Reproducible, portable, and efficient ancient genome reconstruction with nf-core/eager\" />\n<meta name=\"dc.date\" content=\"2020-06-11\" />\n<meta name=\"citation_publication_date\" content=\"2020-06-11\" />\n<meta name=\"dc.language\" content=\"en-GB\" />\n<meta name=\"citation_language\" content=\"en-GB\" />\n<meta name=\"dc.relation.ispartof\" content=\"Manubot\" />\n<meta name=\"dc.publisher\" content=\"Manubot\" />\n<meta name=\"citation_journal_title\" content=\"Manubot\" />\n<meta name=\"citation_technical_report_institution\" content=\"Manubot\" />\n<meta name=\"citation_author\" content=\"James A. Fellows Yates\" />\n<meta name=\"citation_author_institution\" content=\"Microbiome Sciences Group, Department of Archaeogenetics, Max Planck Institute for the Science of Human History, Jena, Germany\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0001-5585-6277\" />\n<meta name=\"twitter:creator\" content=\"@jafellowsyates\" />\n<meta name=\"citation_author\" content=\"Thiseas C. Lamnidis\" />\n<meta name=\"citation_author_institution\" content=\"Population Genetics Group, Department of Archaeogenetics, Max Planck Institute for the Science of Human History, Jena, Germany\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0003-4485-8570\" />\n<meta name=\"twitter:creator\" content=\"@TCLamnidis\" />\n<meta name=\"citation_author\" content=\"Maxime Borry\" />\n<meta name=\"citation_author_institution\" content=\"Microbiome Sciences Group, Department of Archaeogenetics, Max Planck Institute for the Science of Human History, Jena, Germany\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0001-9140-7559\" />\n<meta name=\"twitter:creator\" content=\"@notmaxib\" />\n<meta name=\"citation_author\" content=\"Aida Andrades Valtueña\" />\n<meta name=\"citation_author_institution\" content=\"Computational Pathogenomics Group, Department of Archaeogenetics, Max Planck Institute for the Science of Human History, Jena, Germany\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0002-1737-2228\" />\n<meta name=\"twitter:creator\" content=\"@aidaanva\" />\n<meta name=\"citation_author\" content=\"Zandra Fagernäs\" />\n<meta name=\"citation_author_institution\" content=\"Microbiome Sciences Group, Department of Archaeogenetics, Max Planck Institute for the Science of Human History, Jena, Germany\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0003-2667-3556\" />\n<meta name=\"twitter:creator\" content=\"@ZandraSelina\" />\n<meta name=\"citation_author\" content=\"Stephen Clayton\" />\n<meta name=\"citation_author_institution\" content=\"Department of Archaeogenetics, Max Planck Institute for the Science of Human History, Jena, Germany\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0001-5223-9695\" />\n<meta name=\"citation_author\" content=\"Maxime U. Garcia\" />\n<meta name=\"citation_author_institution\" content=\"Department of Oncology-Pathology, Karolinska Institutet, Stockholm, Sweden\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0003-2827-9261\" />\n<meta name=\"twitter:creator\" content=\"@gau\" />\n<meta name=\"citation_author\" content=\"Judith Neukamm\" />\n<meta name=\"citation_author_institution\" content=\"Palaeogenetics Group, Institute of Evolutionary Medicine, University of Zurich, Zürich, Switzerland\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0001-8141-566X\" />\n<meta name=\"twitter:creator\" content=\"@JudithNeukamm\" />\n<meta name=\"citation_author\" content=\"Alexander Peltzer\" />\n<meta name=\"citation_author_institution\" content=\"Quantitative Biology Center (QBiC), Eberhard-Karls-Universität, Tübingen, Germany\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0002-6503-2180\" />\n<meta name=\"twitter:creator\" content=\"@alex_peltzer\" />\n<link rel=\"canonical\" href=\"https://apeltzer.github.io/eager2-paper/\" />\n<meta property=\"og:url\" content=\"https://apeltzer.github.io/eager2-paper/\" />\n<meta property=\"twitter:url\" content=\"https://apeltzer.github.io/eager2-paper/\" />\n<meta name=\"citation_fulltext_html_url\" content=\"https://apeltzer.github.io/eager2-paper/\" />\n<meta name=\"citation_pdf_url\" content=\"https://apeltzer.github.io/eager2-paper/manuscript.pdf\" />\n<link rel=\"alternate\" type=\"application/pdf\" href=\"https://apeltzer.github.io/eager2-paper/manuscript.pdf\" />\n<link rel=\"alternate\" type=\"text/html\" href=\"https://apeltzer.github.io/eager2-paper/v/91f3ed63ce7115dab433adf550aa6f0f52ebcbf1/\" />\n<meta name=\"manubot_html_url_versioned\" content=\"https://apeltzer.github.io/eager2-paper/v/91f3ed63ce7115dab433adf550aa6f0f52ebcbf1/\" />\n<meta name=\"manubot_pdf_url_versioned\" content=\"https://apeltzer.github.io/eager2-paper/v/91f3ed63ce7115dab433adf550aa6f0f52ebcbf1/manuscript.pdf\" />\n<meta property=\"og:type\" content=\"article\" />\n<meta property=\"twitter:card\" content=\"summary_large_image\" />\n<meta property=\"og:image\" content=\"https://github.com/apeltzer/eager2-paper/raw/91f3ed63ce7115dab433adf550aa6f0f52ebcbf1/content/images/nf-core-eager_social_preview.png\" />\n<meta property=\"twitter:image\" content=\"https://github.com/apeltzer/eager2-paper/raw/91f3ed63ce7115dab433adf550aa6f0f52ebcbf1/content/images/nf-core-eager_social_preview.png\" />\n<link rel=\"icon\" type=\"image/png\" sizes=\"192x192\" href=\"https://manubot.org/favicon-192x192.png\" />\n<link rel=\"mask-icon\" href=\"https://manubot.org/safari-pinned-tab.svg\" color=\"#ad1457\" />\n<meta name=\"theme-color\" content=\"#ad1457\" />\n<!-- end Manubot generated metadata -->",
     "bibliography": [
       "content/manual-references.json"
     ],
@@ -33,7 +33,7 @@
     "manubot-clear-requests-cache": false
   },
   "manubot": {
-    "date": "June 10, 2020",
+    "date": "June 11, 2020",
     "authors": [
       {
         "github": "jfy133",
@@ -43,7 +43,7 @@
         "twitter": "jafellowsyates",
         "email": "jfy133@gmail.com",
         "affiliations": [
-          "Microbiome Sciences Group, Department of Archaeogenetics, Max-Planck-Institute for the Science of Human History, Jena, Germany"
+          "Microbiome Sciences Group, Department of Archaeogenetics, Max Planck Institute for the Science of Human History, Jena, Germany"
         ],
         "funders": "Max Planck Society",
         "affiliation_numbers": [
@@ -58,7 +58,7 @@
         "twitter": "TCLamnidis",
         "email": "lamnids@shh.mpg.de",
         "affiliations": [
-          "Population Genetics Group, Department of Archaeogenetics, Max-Planck-Institute for the Science of Human History, Jena, Germany"
+          "Population Genetics Group, Department of Archaeogenetics, Max Planck Institute for the Science of Human History, Jena, Germany"
         ],
         "funders": "Max Planck Society",
         "affiliation_numbers": [
@@ -73,7 +73,7 @@
         "twitter": "notmaxib",
         "email": "borry@shh.mpg.de",
         "affiliations": [
-          "Microbiome Sciences Group, Department of Archaeogenetics, Max-Planck-Institute for the Science of Human History, Jena, Germany"
+          "Microbiome Sciences Group, Department of Archaeogenetics, Max Planck Institute for the Science of Human History, Jena, Germany"
         ],
         "funders": "Max Planck Society",
         "affiliation_numbers": [
@@ -88,7 +88,7 @@
         "twitter": "aidaanva",
         "email": "andrades@shh.mpg.de",
         "affiliations": [
-          "Computational Pathogenomics Group, Department of Archaeogenetics, Max-Planck-Institute for the Science of Human History, Jena, Germany"
+          "Computational Pathogenomics Group, Department of Archaeogenetics, Max Planck Institute for the Science of Human History, Jena, Germany"
         ],
         "funders": "Max Planck Society",
         "affiliation_numbers": [
@@ -103,7 +103,7 @@
         "twitter": "ZandraSelina",
         "email": "fagernaes@shh.mpg.de",
         "affiliations": [
-          "Microbiome Sciences Group, Department of Archaeogenetics, Max-Planck-Institute for the Science of Human History, Jena, Germany"
+          "Microbiome Sciences Group, Department of Archaeogenetics, Max Planck Institute for the Science of Human History, Jena, Germany"
         ],
         "funders": "Max Planck Society",
         "affiliation_numbers": [
@@ -117,7 +117,7 @@
         "orcid": "0000-0001-5223-9695",
         "email": "clayton@shh.mpg.de",
         "affiliations": [
-          "Department of Archaeogenetics, Max-Planck-Institute for the Science of Human History, Jena, Germany"
+          "Department of Archaeogenetics, Max Planck Institute for the Science of Human History, Jena, Germany"
         ],
         "funders": "Max Planck Society",
         "affiliation_numbers": [
@@ -170,19 +170,19 @@
     ],
     "affiliations": [
       {
-        "affiliation": "Microbiome Sciences Group, Department of Archaeogenetics, Max-Planck-Institute for the Science of Human History, Jena, Germany",
+        "affiliation": "Microbiome Sciences Group, Department of Archaeogenetics, Max Planck Institute for the Science of Human History, Jena, Germany",
         "affiliation_number": 1
       },
       {
-        "affiliation": "Population Genetics Group, Department of Archaeogenetics, Max-Planck-Institute for the Science of Human History, Jena, Germany",
+        "affiliation": "Population Genetics Group, Department of Archaeogenetics, Max Planck Institute for the Science of Human History, Jena, Germany",
         "affiliation_number": 2
       },
       {
-        "affiliation": "Computational Pathogenomics Group, Department of Archaeogenetics, Max-Planck-Institute for the Science of Human History, Jena, Germany",
+        "affiliation": "Computational Pathogenomics Group, Department of Archaeogenetics, Max Planck Institute for the Science of Human History, Jena, Germany",
         "affiliation_number": 3
       },
       {
-        "affiliation": "Department of Archaeogenetics, Max-Planck-Institute for the Science of Human History, Jena, Germany",
+        "affiliation": "Department of Archaeogenetics, Max Planck Institute for the Science of Human History, Jena, Germany",
         "affiliation_number": 4
       },
       {
@@ -203,20 +203,20 @@
       "repo_slug": "apeltzer/eager2-paper",
       "repo_owner": "apeltzer",
       "repo_name": "eager2-paper",
-      "commit": "a3be4385c5d69fdd8eb713e8ba9aac6d33f41c9d",
-      "triggering_commit": "a3be4385c5d69fdd8eb713e8ba9aac6d33f41c9d",
-      "build_url": "https://github.com/apeltzer/eager2-paper/commit/a3be4385c5d69fdd8eb713e8ba9aac6d33f41c9d/checks",
+      "commit": "91f3ed63ce7115dab433adf550aa6f0f52ebcbf1",
+      "triggering_commit": "91f3ed63ce7115dab433adf550aa6f0f52ebcbf1",
+      "build_url": "https://github.com/apeltzer/eager2-paper/commit/91f3ed63ce7115dab433adf550aa6f0f52ebcbf1/checks",
       "job_url": "https://github.com/apeltzer/eager2-paper/runs/run2"
     },
     "html_url": "https://apeltzer.github.io/eager2-paper/",
     "pdf_url": "https://apeltzer.github.io/eager2-paper/manuscript.pdf",
-    "html_url_versioned": "https://apeltzer.github.io/eager2-paper/v/a3be4385c5d69fdd8eb713e8ba9aac6d33f41c9d/",
-    "pdf_url_versioned": "https://apeltzer.github.io/eager2-paper/v/a3be4385c5d69fdd8eb713e8ba9aac6d33f41c9d/manuscript.pdf",
+    "html_url_versioned": "https://apeltzer.github.io/eager2-paper/v/91f3ed63ce7115dab433adf550aa6f0f52ebcbf1/",
+    "pdf_url_versioned": "https://apeltzer.github.io/eager2-paper/v/91f3ed63ce7115dab433adf550aa6f0f52ebcbf1/manuscript.pdf",
     "manubot_version": "0.3.1",
     "rootstock_commit": "7c0f9c30fe03a6e264e19d08f2337266a4ea3e3e",
-    "thumbnail_url": "https://github.com/apeltzer/eager2-paper/raw/a3be4385c5d69fdd8eb713e8ba9aac6d33f41c9d/content/images/nf-core-eager_social_preview.png",
+    "thumbnail_url": "https://github.com/apeltzer/eager2-paper/raw/91f3ed63ce7115dab433adf550aa6f0f52ebcbf1/content/images/nf-core-eager_social_preview.png",
     "manuscript_stats": {
-      "word_count": 3910
+      "word_count": 3935
     }
   }
 }
