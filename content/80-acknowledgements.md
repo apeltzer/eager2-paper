@@ -11,7 +11,6 @@ twitter community for responding to polls regarding design decisions during
 development.
 
 We also want to thank Selina Carlhoff, Alexander Herbig and Wolfgang Haak for
-providing comments and suggestions on this manuscript.
-
-We also want to acknowledge Christina Warinner, Stephan Schiffels and the Max
-Planck Society who provided funds for travel to nf-core events.
+providing comments and suggestions on this manuscript, and acknowledge
+Christina Warinner, Stephan Schiffels and the Max Planck Society who provided 
+funds for travel to nf-core events.
