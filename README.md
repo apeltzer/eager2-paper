@@ -1,7 +1,7 @@
 # Output directory containing the formatted manuscript
 
 The [`gh-pages`](https://github.com/apeltzer/eager2-paper/tree/gh-pages) branch hosts the contents of this directory at <https://apeltzer.github.io/eager2-paper/>.
-The permalink for this webpage version is <https://apeltzer.github.io/eager2-paper/v/a3be4385c5d69fdd8eb713e8ba9aac6d33f41c9d/>.
+The permalink for this webpage version is <https://apeltzer.github.io/eager2-paper/v/91f3ed63ce7115dab433adf550aa6f0f52ebcbf1/>.
 To redirect to the permalink for the latest manuscript version at anytime, use the link <https://apeltzer.github.io/eager2-paper/v/freeze/>.
 
 ## Files
@@ -35,4 +35,4 @@ Verifying timestamps with the `ots verify` command requires running a local bitc
 ## Source
 
 The manuscripts in this directory were built from
-[`a3be4385c5d69fdd8eb713e8ba9aac6d33f41c9d`](https://github.com/apeltzer/eager2-paper/commit/a3be4385c5d69fdd8eb713e8ba9aac6d33f41c9d).
+[`91f3ed63ce7115dab433adf550aa6f0f52ebcbf1`](https://github.com/apeltzer/eager2-paper/commit/91f3ed63ce7115dab433adf550aa6f0f52ebcbf1).
