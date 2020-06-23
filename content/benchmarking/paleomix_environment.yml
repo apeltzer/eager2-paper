@@ -5,7 +5,7 @@ channels:
     - conda-forge
 dependencies:
   - python=2.7 
-  - pip 
+  - pip=20.1.1
   - adapterremoval=2.3.1 
   - samtools=1.9 
   - picard=2.22.9 

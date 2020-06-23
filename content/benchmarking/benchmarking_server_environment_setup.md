@@ -25,6 +25,22 @@ sudo apt install x11-apps
 xeyes
 ```
 
+We will also use aspera for faster file downloading of test data
+
+```bash
+cd ~/bin/
+wget https://download.asperasoft.com/download/sw/cli/3.9.6/ibm-aspera-cli-3.9.6.1467.159c5b1-linux-64-release.sh
+sh ibm-aspera-cli-3.9.6.1467.159c5b1-linux-64-release.sh
+echo 'export PATH=/home/cloud/.aspera/cli/bin:$PATH' >> ~/.bashrc
+source ~/.bashrc
+```
+
+Install rename for speedy regex file rename
+
+```bash
+sudo apt install rename
+```
+
 ### nf-core/eager
 
 Install Java
@@ -49,7 +65,7 @@ source ~/.bashrc
 nextflow run hello
 ```
 
-Should see the following 
+Should see the following:
 
 ```txt
 N E X T F L O W  ~  version 20.04.1
@@ -70,7 +86,7 @@ Hello world!
 
 We will use Singularity as our container system, as this is supported by
 both nf-core/eager and EAGER v1. This requires a little more setup over conda,
-but it is more robust.
+however it is more robust.
 
 ```bash
 cd ~
@@ -144,7 +160,7 @@ The virtual env thing doesn't actually include all the software, as I
 erroneously thought first time around. Lets try conda instead. Will use 2.7
 as all of PALAEOMIX is in Python2.
 
-Firstly install conda and set up so it can use bioconda, where most of the 
+Firstly install conda and set up so it can use bioconda, where most of the
 bioinformatics tools are derived from.
 
 ```bash
@@ -164,13 +180,13 @@ conda config --add channels bioconda
 conda config --add channels conda-forge
 ```
 
-Now we can create an environment specifically for PALAEOMIX (postscript: 
+Now we can create an environment specifically for PALAEOMIX (postscript:
 to speed this up I've added an `paleomix_environment.yaml` file than you can
 then use instead with `conda env create -f paleomix_environment.yaml`)
 
 ```bash
 # Make conda environment; note adding missing GATK and R requirement(s) not in docs: https://github.com/MikkelSchubert/paleomix/issues/28
-conda create -n paleomix python=2.7 pip adapterremoval=2.3.1 samtools=1.9 picard=2.22.9 bowtie2=2.3.5.1 bwa=0.7.17 mapdamage2=2.0.9 gatk=3.8 r-base=3.5.1 r-rcpp=1.0.4.6 r-rcppgsl=0.3.7 r-gam=1.16.1 r-inline=0.3.15
+conda create -n paleomix python=2.7 pip=20.1.1 adapterremoval=2.3.1 samtools=1.9 picard=2.22.9 bowtie2=2.3.5.1 bwa=0.7.17 mapdamage2=2.0.9 gatk=3.8 r-base=3.5.1 r-rcpp=1.0.4.6 r-rcppgsl=0.3.7 r-gam=1.16.1 r-inline=0.3.15
 
 conda activate paleomix
 
@@ -209,7 +225,7 @@ paleomix bam_pipeline run 000_makefile.yaml
 
 ```
 
-As I'm not familar with paleomix, lets try a real-life test, following the 
+As I'm not familar with paleomix, lets try a real-life test, following the
 documentation.
 
 ```bash
@@ -247,38 +263,30 @@ singularity exec -B .:/data ~/.singularity/cache/EAGER-cache/EAGER-GUI_latest.si
 
 ```
 
-
 ### Versions
 
+To record all versions of all the install tools, we can see the output of the following commands
+
 ```bash
-# Kernal
+# Kernel
 uname -r
-4.15.0-91-generic
+4.15.0-106-generic
 
-
+# OS
 lsb_release -a
 No LSB modules are available.
-Distributor ID:	Ubuntu
-Description:	Ubuntu 18.04.4 LTS
-Release:	18.04
-Codename:	bionic
+Distributor ID: Ubuntu
+Description:    Ubuntu 18.04.4 LTS
+Release:    18.04
+Codename:   bionic
 
-
-docker version
-Client:
- Version:           19.03.6
- API version:       1.40
- Go version:        go1.12.17
- Git commit:        369ce74a3c
- Built:             Fri Feb 28 23:45:43 2020
- OS/Arch:           linux/amd64
- Experimental:      false
-
+# Java
 java -version
 openjdk version "11.0.7" 2020-04-14
 OpenJDK Runtime Environment (build 11.0.7+10-post-Ubuntu-2ubuntu218.04)
 OpenJDK 64-Bit Server VM (build 11.0.7+10-post-Ubuntu-2ubuntu218.04, mixed mode, sharing)
 
+# Nextflow
 nextflow -version
 
       N E X T F L O W
@@ -287,22 +295,92 @@ nextflow -version
       cite doi:10.1038/nbt.3820
       http://nextflow.io
 
-python --version
-Python 2.7.17
+# Singularity (for nf-core/eager and EAGER)
+singularity --version
+singularity version 3.5.2
 
-pip --version
-pip 9.0.1 from /usr/lib/python2.7/dist-packages (python 2.7)
-
-virtualenv --version
-virtualenv 20.0.21 from /home/cloud/.local/lib/python2.7/site-packages/virtualenv/__init__.pyc
+# Conda (for palaeomix)
+conda --version
+conda 4.7.12
 
 paleomix
 PALEOMIX - pipelines and tools for NGS data analyses.
 Version: 1.2.14
 
-singularity --version
-singularity version 3.5.2
+# For EAGER
+cat ~/EAGER-test/output/Report_output_versions.txt
+EAGER-CLI    1.92.55
+EAGER-GUI   1.92.37
+ReportTable Version     1.92.33
 
+```
 
+### Benchmarking Data
+
+For a straightforward testing dataset, we will be mapping shotgun sequencing
+data of Viking Age cod (fish), from Star et al. ([2017, PNAS](https://dx.doi.org/10.1073/pnas.1710186114)). For run-time purposes, we will use a subset of these
+samples.
+
+We will download the following sequencing data from the [EBI's ENA archive](https://www.ebi.ac.uk/ena), and the reference genome from the ENA FTP server.
+
+#### Table 1 | List of sequencing data used for benchmarking
+
+| Sample_Name | Library_ID     | Lane | study_accession | run_accession | tax_id | scientific_name | instrument_model    | library_layout | fastq_ftp                                                                                                                                         | fastq_aspera                                                                                                                                          | submitted_ftp                                                                                                                                                                                         |
+|-------------|----------------|------|-----------------|---------------|--------|-----------------|---------------------|----------------|---------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| COD076      | COD076E1bL1    |    8 | PRJEB20524      | ERR1943600    |   8049 | Gadus morhua    | Illumina HiSeq 2500 | PAIRED         | ftp.sra.ebi.ac.uk/vol1/fastq/ERR194/000/ERR1943600/ERR1943600_1.fastq.gz;ftp.sra.ebi.ac.uk/vol1/fastq/ERR194/000/ERR1943600/ERR1943600_2.fastq.gz | fasp.sra.ebi.ac.uk:/vol1/fastq/ERR194/000/ERR1943600/ERR1943600_1.fastq.gz;fasp.sra.ebi.ac.uk:/vol1/fastq/ERR194/000/ERR1943600/ERR1943600_2.fastq.gz | ftp.sra.ebi.ac.uk/vol1/run/ERR194/ERR1943600/COD076E1bL1_CTCGCGC_L008_R1_001.fastq.gz;ftp.sra.ebi.ac.uk/vol1/run/ERR194/ERR1943600/COD076E1bL1_CTCGCGC_L008_R2_001.fastq.gz                           |
+| COD076      | COD076E1bL1    |    6 | PRJEB20524      | ERR1943601    |   8049 | Gadus morhua    | Illumina HiSeq 2500 | PAIRED         | ftp.sra.ebi.ac.uk/vol1/fastq/ERR194/001/ERR1943601/ERR1943601_1.fastq.gz;ftp.sra.ebi.ac.uk/vol1/fastq/ERR194/001/ERR1943601/ERR1943601_2.fastq.gz | fasp.sra.ebi.ac.uk:/vol1/fastq/ERR194/001/ERR1943601/ERR1943601_1.fastq.gz;fasp.sra.ebi.ac.uk:/vol1/fastq/ERR194/001/ERR1943601/ERR1943601_2.fastq.gz | ftp.sra.ebi.ac.uk/vol1/run/ERR194/ERR1943601/COD076E1bL1_CTCGCGC_L006_R1_001.fastq.gz;ftp.sra.ebi.ac.uk/vol1/run/ERR194/ERR1943601/COD076E1bL1_CTCGCGC_L006_R2_001.fastq.gz                           |
+| COD076      | COD076E1bL1    |    1 | PRJEB20524      | ERR1943602    |   8049 | Gadus morhua    | Illumina HiSeq 2500 | PAIRED         | ftp.sra.ebi.ac.uk/vol1/fastq/ERR194/002/ERR1943602/ERR1943602_1.fastq.gz;ftp.sra.ebi.ac.uk/vol1/fastq/ERR194/002/ERR1943602/ERR1943602_2.fastq.gz | fasp.sra.ebi.ac.uk:/vol1/fastq/ERR194/002/ERR1943602/ERR1943602_1.fastq.gz;fasp.sra.ebi.ac.uk:/vol1/fastq/ERR194/002/ERR1943602/ERR1943602_2.fastq.gz | ftp.sra.ebi.ac.uk/vol1/run/ERR194/ERR1943602/C9NP5ANXX_COD076E1bL1_CTCGCGC_L001_R1_001.fastq.gz;ftp.sra.ebi.ac.uk/vol1/run/ERR194/ERR1943602/C9NP5ANXX_COD076E1bL1_CTCGCGC_L001_R2_001.fastq.gz       |
+| COD092      | COD092E1bL1i69 |    6 | PRJEB20524      | ERR1943607    |   8049 | Gadus morhua    | Illumina HiSeq 2500 | PAIRED         | ftp.sra.ebi.ac.uk/vol1/fastq/ERR194/007/ERR1943607/ERR1943607_1.fastq.gz;ftp.sra.ebi.ac.uk/vol1/fastq/ERR194/007/ERR1943607/ERR1943607_2.fastq.gz | fasp.sra.ebi.ac.uk:/vol1/fastq/ERR194/007/ERR1943607/ERR1943607_1.fastq.gz;fasp.sra.ebi.ac.uk:/vol1/fastq/ERR194/007/ERR1943607/ERR1943607_2.fastq.gz | ftp.sra.ebi.ac.uk/vol1/run/ERR194/ERR1943607/C9VJJANXX_COD092E1bL1i69_AACCTGC_L006_R1_001.fastq.gz;ftp.sra.ebi.ac.uk/vol1/run/ERR194/ERR1943607/C9VJJANXX_COD092E1bL1i69_AACCTGC_L006_R2_001.fastq.gz |
+| COD092      | COD092E1bL1i69 |    7 | PRJEB20524      | ERR1943608    |   8049 | Gadus morhua    | Illumina HiSeq 2500 | PAIRED         | ftp.sra.ebi.ac.uk/vol1/fastq/ERR194/008/ERR1943608/ERR1943608_1.fastq.gz;ftp.sra.ebi.ac.uk/vol1/fastq/ERR194/008/ERR1943608/ERR1943608_2.fastq.gz | fasp.sra.ebi.ac.uk:/vol1/fastq/ERR194/008/ERR1943608/ERR1943608_1.fastq.gz;fasp.sra.ebi.ac.uk:/vol1/fastq/ERR194/008/ERR1943608/ERR1943608_2.fastq.gz | ftp.sra.ebi.ac.uk/vol1/run/ERR194/ERR1943608/C9VJJANXX_COD092E1bL1i69_AACCTGC_L007_R1_001.fastq.gz;ftp.sra.ebi.ac.uk/vol1/run/ERR194/ERR1943608/C9VJJANXX_COD092E1bL1i69_AACCTGC_L007_R2_001.fastq.gz |
+| COD092      | COD092E1bL1i69 |    8 | PRJEB20524      | ERR1943609    |   8049 | Gadus morhua    | Illumina HiSeq 2500 | PAIRED         | ftp.sra.ebi.ac.uk/vol1/fastq/ERR194/009/ERR1943609/ERR1943609_1.fastq.gz;ftp.sra.ebi.ac.uk/vol1/fastq/ERR194/009/ERR1943609/ERR1943609_2.fastq.gz | fasp.sra.ebi.ac.uk:/vol1/fastq/ERR194/009/ERR1943609/ERR1943609_1.fastq.gz;fasp.sra.ebi.ac.uk:/vol1/fastq/ERR194/009/ERR1943609/ERR1943609_2.fastq.gz | ftp.sra.ebi.ac.uk/vol1/run/ERR194/ERR1943609/C9VJJANXX_COD092E1bL1i69_AACCTGC_L008_R1_001.fastq.gz;ftp.sra.ebi.ac.uk/vol1/run/ERR194/ERR1943609/C9VJJANXX_COD092E1bL1i69_AACCTGC_L008_R2_001.fastq.gz |
+Alternatively, for the ASPERA version
+
+The reference genome can be downloaded from the [NCBI's SRA FTP server](http://ftp.sra.ebi.ac.uk/) from [https://ftp.ncbi.nlm.nih.gov/genomes/refseq/vertebrate_other/Gadus_morhua/representative/GCF_902167405.1_gadMor3.0/GCF_902167405.1_gadMor3.0_genomic.fna.gz](https://ftp.ncbi.nlm.nih.gov/genomes/refseq/vertebrate_other/Gadus_morhua/representative/GCF_902167405.1_gadMor3.0/GCF_902167405.1_gadMor3.0_genomic.fna.gz)
+
+```bash
+mkdir -p ~/benchmarks/input ~/benchmarks/output ~/benchmarks/reference
+cd ~/benchmarks/input
+```
+
+We will place these in directories and rename in a form primarily
+compatible with EAGER, which is most heavily dependent on folder structure.
+
+```bash
+screen -R downloads
+
+for i in fasp.sra.ebi.ac.uk:/vol1/fastq/ERR194/000/ERR1943600/ERR1943600_1.fastq.gz fasp.sra.ebi.ac.uk:/vol1/fastq/ERR194/000/ERR1943600/ERR1943600_2.fastq.gz fasp.sra.ebi.ac.uk:/vol1/fastq/ERR194/001/ERR1943601/ERR1943601_1.fastq.gz fasp.sra.ebi.ac.uk:/vol1/fastq/ERR194/001/ERR1943601/ERR1943601_2.fastq.gz fasp.sra.ebi.ac.uk:/vol1/fastq/ERR194/002/ERR1943602/ERR1943602_1.fastq.gz fasp.sra.ebi.ac.uk:/vol1/fastq/ERR194/002/ERR1943602/ERR1943602_2.fastq.gz fasp.sra.ebi.ac.uk:/vol1/fastq/ERR194/007/ERR1943607/ERR1943607_1.fastq.gz fasp.sra.ebi.ac.uk:/vol1/fastq/ERR194/007/ERR1943607/ERR1943607_2.fastq.gz fasp.sra.ebi.ac.uk:/vol1/fastq/ERR194/008/ERR1943608/ERR1943608_1.fastq.gz fasp.sra.ebi.ac.uk:/vol1/fastq/ERR194/008/ERR1943608/ERR1943608_2.fastq.gz fasp.sra.ebi.ac.uk:/vol1/fastq/ERR194/009/ERR1943609/ERR1943609_1.fastq.gz fasp.sra.ebi.ac.uk:/vol1/fastq/ERR194/009/ERR1943609/ERR1943609_2.fastq.gz; do
+    ascp -QT -l 300m -P33001 \
+    -i /home/cloud/.aspera/cli/etc/asperaweb_id_dsa.openssh \
+    era-fasp@"$i" \
+    .
+done
+
+mkdir COD076 COD092
+
+mv ERR194360{0..2}_* COD076
+mv ERR194360{7..9}_* COD092
+
+rename s/_/_R/ */*.gz
+rename s/.fastq/_000.fastq/ */*.gz
+rename s/_R/_S0_L000_R/ */*.gz
+
+## Now manually rename the Lane for each one
+rename s/ERR1943600_S0_L000_R/ERR1943600_S0_L008_R/ */*.gz
+rename s/ERR1943601_S0_L000_R/ERR1943601_S0_L006_R/ */*.gz
+rename s/ERR1943602_S0_L000_R/ERR1943602_S0_L001_R/ */*.gz
+rename s/ERR1943607_S0_L000_R/ERR1943607_S0_L006_R/ */*.gz
+rename s/ERR1943608_S0_L000_R/ERR1943608_S0_L007_R/ */*.gz
+rename s/ERR1943609_S0_L000_R/ERR1943609_S0_L008_R/ */*.gz
+
+## And make sample names consistent
+rename s/ERR.*_S/COD076E1bL1_S/ COD076/*.gz
+rename s/ERR.*_S/COD092E1bL1i69_S/ COD092/*.gz
+```
+
+To download the reference genome
+
+```bash
+cd ~/benchmarks/reference
+wget https://ftp.ncbi.nlm.nih.gov/genomes/refseq/vertebrate_other/Gadus_morhua/representative/GCF_902167405.1_gadMor3.0/GCF_902167405.1_gadMor3.0_genomic.fna.gz
 
 ```
