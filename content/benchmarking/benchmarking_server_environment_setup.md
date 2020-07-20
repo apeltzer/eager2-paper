@@ -8,6 +8,9 @@ server. The server OS was set to Ubuntu 18.04.
 
 ## Server setup
 
+When logging in for server preparation and EAGER setup, ensure to log in with
+`shh -X` so you can open X11 windows. All other sessions do not require this.
+
 ### Preparation
 
 Ensure everything is up-to-date
@@ -35,11 +38,28 @@ echo 'export PATH=/home/cloud/.aspera/cli/bin:$PATH' >> ~/.bashrc
 source ~/.bashrc
 ```
 
-Install rename for speedy regex file rename
+Install rename for speedy regex file rename and tree for faster folder structure
+look up
 
 ```bash
 sudo apt install rename
+sudo apt tree
 ```
+
+Install XMLlint for easier reading of EAGER XML files
+```bash
+sudo apt-get install libxml2-utils
+```
+
+Some personal alias
+
+```bash
+echo "alias ltree='tree -C | less -R'" >> ~/.bashrc
+echo "alias ll='ls -alFh'" >> ~/.bashrc
+echo "alias l='ls -CF'" >> ~/.bashrc
+
+```
+
 
 ### nf-core/eager
 
@@ -84,8 +104,8 @@ Bonjour world!
 Hello world!
 ```
 
-We will use Singularity as our container system, as this is supported by
-both nf-core/eager and EAGER v1. This requires a little more setup over conda,
+We will use Singularity as our container system, as this is supported by both
+nf-core/eager and EAGER v1. This requires a little more setup over conda,
 however it is more robust.
 
 ```bash
@@ -145,20 +165,43 @@ cd !$
 nextflow pull nf-core/eager -r dev
 nextflow run nf-core/eager -r dev -profile test_tsv,singularity
 cd ~
+```
+
+Finally, we will generate a 'config' file that sets the maximum resources of
+the particular server we are using.
+
+```
+nano ~/.nextflow/config
+```
+
+Add the following and save.
+
+```
+profile {
+  pub_benchmarking {
+    params {
+      // Defaults only, expecting to be overwritten
+      max_memory = 256.GB
+      max_cpus = 32
+      max_time = 240.h
+      igenomes_base = 's3://ngi-igenomes/igenomes/'
+    }
+  }
+}
 
 ```
 
 ### PALEOMIX
 
-The [documentation](https://paleomix.readthedocs.io/en/latest/) for PALEOMIX
-was a little confusing, so this required a bit of back and forth. For safety
-I resorted to using a conda environment rather than the `virtualenv` thing, as
-it does a similar thing but I can also contain all the additional software
+The [documentation](https://paleomix.readthedocs.io/en/latest/) for PALEOMIX was
+a little confusing, so this required a bit of back and forth. For safety I
+resorted to using a conda environment rather than the `virtualenv` thing, as it
+does a similar thing but I can also contain all the additional software
 dependencies.
 
 The virtual env thing doesn't actually include all the software, as I
-erroneously thought first time around. Lets try conda instead. Will use 2.7
-as all of PALAEOMIX is in Python2.
+erroneously thought first time around. Lets try conda instead. Will use 2.7 as
+all of PALAEOMIX is in Python2.
 
 Firstly install conda and set up so it can use bioconda, where most of the
 bioinformatics tools are derived from.
@@ -180,9 +223,9 @@ conda config --add channels bioconda
 conda config --add channels conda-forge
 ```
 
-Now we can create an environment specifically for PALAEOMIX (postscript:
-to speed this up I've added an `paleomix_environment.yaml` file than you can
-then use instead with `conda env create -f paleomix_environment.yaml`)
+Now we can create an environment specifically for PALAEOMIX (postscript: to
+speed this up I've added an `paleomix_environment.yaml` file than you can then
+use instead with `conda env create -f paleomix_environment.yaml`)
 
 ```bash
 # Make conda environment; note adding missing GATK and R requirement(s) not in docs: https://github.com/MikkelSchubert/paleomix/issues/28
@@ -200,11 +243,11 @@ source ~/.bashrc
 conda activate paleomix
 ```
 
-Ok now we have some hardcoded dependencies to fix..
-Firstly we need to get the GATK JAR, because it isn't actually allowed to be
-shipped in the bioconda GATK bioconda recipe because of licensing. We can then
-symlink this into the ugly folder PALEOMIX wants for the test (at least). We
-can also symlink the picard JAR that came with the bioconda environment.
+Ok now we have some hardcoded dependencies to fix.. Firstly we need to get the
+GATK JAR, because it isn't actually allowed to be shipped in the bioconda GATK
+bioconda recipe because of licensing. We can then symlink this into the ugly
+folder PALEOMIX wants for the test (at least). We can also symlink the picard
+JAR that came with the bioconda environment.
 
 ```bash
 wget https://storage.googleapis.com/gatk-software/package-archive/gatk/GenomeAnalysisTK-3.8-1-0-gf15c1c3ef.tar.bz2
@@ -225,12 +268,18 @@ paleomix bam_pipeline run 000_makefile.yaml
 
 ```
 
-As I'm not familar with paleomix, lets try a real-life test, following the
-documentation.
+We can generate a global settings file to make sure it runs properly, and bump
+resources to match of this server.
+
+Note we will only change the maximum of the server. All other values are 
+kept as default.
 
 ```bash
 paleomix bam_pipeline run --write-config
+sed -i 's/max_threads = 16/max_threads = 32/g' ~/.paleomix/bam_pipeline.ini
 ```
+
+
 
 ### EAGER
 
@@ -265,7 +314,8 @@ singularity exec -B .:/data ~/.singularity/cache/EAGER-cache/EAGER-GUI_latest.si
 
 ### Versions
 
-To record all versions of all the install tools, we can see the output of the following commands
+To record all versions of all the install tools, we can see the output of the
+following commands
 
 ```bash
 # Kernel
@@ -318,10 +368,13 @@ ReportTable Version     1.92.33
 ### Benchmarking Data
 
 For a straightforward testing dataset, we will be mapping shotgun sequencing
-data of Viking Age cod (fish), from Star et al. ([2017, PNAS](https://dx.doi.org/10.1073/pnas.1710186114)). For run-time purposes, we will use a subset of these
-samples.
+data of Viking Age cod (fish), from Star et al. ([2017,
+PNAS](https://dx.doi.org/10.1073/pnas.1710186114)). For run-time purposes, we
+will use a subset of these samples.
 
-We will download the following sequencing data from the [EBI's ENA archive](https://www.ebi.ac.uk/ena), and the reference genome from the ENA FTP server.
+We will download the following sequencing data from the [EBI's ENA
+archive](https://www.ebi.ac.uk/ena), and the reference genome from the ENA FTP
+server.
 
 #### Table 1 | List of sequencing data used for benchmarking
 
@@ -335,15 +388,17 @@ We will download the following sequencing data from the [EBI's ENA archive](http
 | COD092      | COD092E1bL1i69 |    8 | PRJEB20524      | ERR1943609    |   8049 | Gadus morhua    | Illumina HiSeq 2500 | PAIRED         | ftp.sra.ebi.ac.uk/vol1/fastq/ERR194/009/ERR1943609/ERR1943609_1.fastq.gz;ftp.sra.ebi.ac.uk/vol1/fastq/ERR194/009/ERR1943609/ERR1943609_2.fastq.gz | fasp.sra.ebi.ac.uk:/vol1/fastq/ERR194/009/ERR1943609/ERR1943609_1.fastq.gz;fasp.sra.ebi.ac.uk:/vol1/fastq/ERR194/009/ERR1943609/ERR1943609_2.fastq.gz | ftp.sra.ebi.ac.uk/vol1/run/ERR194/ERR1943609/C9VJJANXX_COD092E1bL1i69_AACCTGC_L008_R1_001.fastq.gz;ftp.sra.ebi.ac.uk/vol1/run/ERR194/ERR1943609/C9VJJANXX_COD092E1bL1i69_AACCTGC_L008_R2_001.fastq.gz |
 Alternatively, for the ASPERA version
 
-The reference genome can be downloaded from the [NCBI's SRA FTP server](http://ftp.sra.ebi.ac.uk/) from [https://ftp.ncbi.nlm.nih.gov/genomes/refseq/vertebrate_other/Gadus_morhua/representative/GCF_902167405.1_gadMor3.0/GCF_902167405.1_gadMor3.0_genomic.fna.gz](https://ftp.ncbi.nlm.nih.gov/genomes/refseq/vertebrate_other/Gadus_morhua/representative/GCF_902167405.1_gadMor3.0/GCF_902167405.1_gadMor3.0_genomic.fna.gz)
+The reference genome can be downloaded from the [NCBI's SRA FTP
+server](http://ftp.sra.ebi.ac.uk/) from
+[https://ftp.ncbi.nlm.nih.gov/genomes/refseq/vertebrate_other/Gadus_morhua/representative/GCF_902167405.1_gadMor3.0/GCF_902167405.1_gadMor3.0_genomic.fna.gz](https://ftp.ncbi.nlm.nih.gov/genomes/refseq/vertebrate_other/Gadus_morhua/representative/GCF_902167405.1_gadMor3.0/GCF_902167405.1_gadMor3.0_genomic.fna.gz)
 
 ```bash
 mkdir -p ~/benchmarks/input ~/benchmarks/output ~/benchmarks/reference
 cd ~/benchmarks/input
 ```
 
-We will place these in directories and rename in a form primarily
-compatible with EAGER, which is most heavily dependent on folder structure.
+We will place these in directories and rename in a form primarily compatible
+with EAGER, which is most heavily dependent on folder structure.
 
 ```bash
 screen -R downloads
@@ -383,4 +438,171 @@ To download the reference genome
 cd ~/benchmarks/reference
 wget https://ftp.ncbi.nlm.nih.gov/genomes/refseq/vertebrate_other/Gadus_morhua/representative/GCF_902167405.1_gadMor3.0/GCF_902167405.1_gadMor3.0_genomic.fna.gz
 
+## unzip as EAGER can't cope with gzipped
+gunzip GCF_902167405.1_gadMor3.0_genomic.fna.gz
+## Rename to .fasta as paleomix can't cope
+rename s/.fna/.fasta/
 ```
+
+As each pipeline can generate refernece indicies themselves, (and we don't want
+one pipeline to generate all of them for us), we will make symlinks into each
+pipelines' own reference directory.
+
+
+```
+mkdir EAGER/ paleomix/ nfcore-eager/
+ln -s ~/benchmarks/reference/GCF_902167405.1_gadMor3.0_genomic.fasta ~/benchmarks/reference/EAGER/
+ln -s ~/benchmarks/reference/GCF_902167405.1_gadMor3.0_genomic.fasta ~/benchmarks/reference/paleomix/
+ln -s ~/benchmarks/reference/GCF_902167405.1_gadMor3.0_genomic.fasta ~/benchmarks/reference/nfcore-eager/
+
+```
+
+## Benchmarking
+
+### EAGER1 Setup Instructions
+
+Set up XMLs
+
+```bash
+## ensure logged in with shh -X to open the GUI window!
+cd ~/benchmarks
+mkdir -p output/EAGER
+singularity exec -B .:/data ~/.singularity/cache/EAGER-cache/EAGER-GUI_latest.sif eager
+```
+
+#### Table 2 | Input settings for EAGER benchmark. All values are default unless specified. Modules run are FastQC, AdapterRemoval, Mapping, RemoveDuplicates, Damage calculation,
+
+Section | Field | Value
+--------|------|------
+Input   | Path | ~/benchmarks/input/
+Input   | Organism Type | Other
+Input   | Age of Dataset | Ancient
+Input   | Treated Data   | non-UDG Treated
+Input   | Pairment | Paired Data |
+Input   | Capture Data | FALSE
+Input   | Calculate on target | FALSE
+Input   | Input is already concatenated (skip merging) | FALSE
+Input   | Concatenate lanewise together | TRUE
+Input   | MTCapture Data | FALSE
+Output  | Path | ~/benchmarks/output/EAGER
+Reference | Path | ~/benchmarks/reference/EAGER/GCF_902167405.1_gadMor3.0_genomic.fna
+Reference | Name of mitochondrial chromosome | NC_002081.1 Gadus
+Resources | CPU Cores | 32
+Resources | Memory in GB | 256
+Mapping | Activate | TRUE
+Mapping | Tool | BWA
+Mapping | BWA SeedLength (-l) | 1024
+Mapping | Max #diff (-n) | 0.04
+Mapping | BWA Qualityfilter (-q) | 25
+Remove Duplicates | MarkDuplicates
+Damage Calculation | Activate | True
+Damage Calculation | Tool | DamageProfiler
+
+> Note that the pipeline does now allow the `--mm` parameter for
+> AdapterRemoval2, and will not be exactly comparable to paleomix
+
+```bash
+## Important! Before doing this log out and log back in again WITHOUT -X in the shh command, else damageProfiler will crash!
+screen -R EAGER
+cd ~/benchmarks/output
+
+for i in {1..10}; do
+    { time singularity exec -B ./EAGER:/data ~/.singularity/cache/EAGER-cache/EAGER-GUI_latest.sif eagercli /data ; } 2> time_EAGER_"$i".log
+    if [[ $i != 10 ]]; then
+         rm -r EAGER/*/*/ EAGER/*.{csv,html,png,ReportGenerator,txt} EAGER/*/*.log EAGER/*/DONE*
+    fi
+done
+```
+
+### Paleomix Setup
+
+```bash
+cd ~/benchmarks
+mkdir -p output/paleomix
+paleomix bam_pipeline mkfile > output/paleomix/makefile_paleomix.yaml
+```
+
+Now modify the makefile to match our data
+
+```bash
+sed -i 's/CompressionFormat: bz2/CompressionFormat: gz/' output/paleomix/makefile_paleomix.yaml
+sed -i 's/--mm: 3/# --mm: 3/' output/paleomix/makefile_paleomix.yaml ## remove as EAGER1 doesn't provide this option
+sed -i 's/--minlength: 25/--minlength: 30/' output/paleomix/makefile_paleomix.yaml
+sed -i 's/MinQuality: 0/MinQuality: 25/' output/paleomix/makefile_paleomix.yaml # To follow Star paper
+sed -i 's/NAME_OF_PREFIX:/GCF_902167405.1_gadMor3.0_genomic:/' output/paleomix/makefile_paleomix.yaml
+sed -i 's+Path: PATH_TO_PREFIX+Path: /home/cloud/benchmarks/reference/paleomix/GCF_902167405.1_gadMor3.0_genomic.fna+' output/paleomix/makefile_paleomix.yaml
+sed -i 's/UseSeed: yes/UseSeed: no/' output/paleomix/makefile_paleomix.yaml
+
+sed -i 's/#NAME_OF_TARGET:/COD076:/' output/paleomix/makefile_paleomix.yaml
+sed -i 's/#  NAME_OF_SAMPLE:/  COD076:/' output/paleomix/makefile_paleomix.yaml
+sed -i 's/#    NAME_OF_LIBRARY:/    COD076E1bL1:/' output/paleomix/makefile_paleomix.yaml
+sed -i 's+#      NAME_OF_LANE: PATH_WITH_WILDCARDS+      Lane_8: /home/cloud/benchmarks/input/COD076/COD076E1bL1_S0_L008_R{Pair}_*.fastq.gz+' output/paleomix/makefile_paleomix.yaml
+echo "      Lane_6: /home/cloud/benchmarks/input/COD076/COD076E1bL1_S0_L006_R{Pair}_*.fastq.gz" >> output/paleomix/makefile_paleomix.yaml
+echo "      Lane_1: /home/cloud/benchmarks/input/COD076/COD076E1bL1_S0_L001_R{Pair}_*.fastq.gz" >> output/paleomix/makefile_paleomix.yaml
+echo "" >> output/paleomix/makefile_paleomix.yaml
+echo "COD092:" >>  output/paleomix/makefile_paleomix.yaml
+echo "  COD092:" >>  output/paleomix/makefile_paleomix.yaml
+echo "    COD092E1bL1i69:" >>  output/paleomix/makefile_paleomix.yaml
+echo "      Lane_6: /home/cloud/benchmarks/input/COD092/COD092E1bL1i69_S0_L006_R{Pair}_*.fastq.gz" >> output/paleomix/makefile_paleomix.yaml
+echo "      Lane_7: /home/cloud/benchmarks/input/COD092/COD092E1bL1i69_S0_L007_R{Pair}_*.fastq.gz" >> output/paleomix/makefile_paleomix.yaml
+echo "      Lane_8: /home/cloud/benchmarks/input/COD092/COD092E1bL1i69_S0_L008_R{Pair}_*.fastq.gz" >> output/paleomix/makefile_paleomix.yaml
+
+```
+
+To then run
+
+```bash
+conda activate paleomix
+cd ~/benchmarks/output/paleomix
+
+
+for i in {1..10}; do
+    { time paleomix bam_pipeline run makefile_paleomix.yaml ; } 2> ../time_paleomix_"$i".log
+    if [[ $i != 10 ]]; then
+         rm -r !(makefile_paleomix.yaml)
+    fi
+done
+
+{ time paleomix bam_pipeline run makefile_paleomix.yaml ; } 2> time_paleomix_"$i".log
+```
+
+### nf-core/eager setup
+
+Go into directory and set up file
+
+```bash
+mkdir ~/benchmarks/output/nfcore-eager
+cd !$
+
+nano nfcore-eager_tsv.tsv
+```
+
+Paste the following then save
+
+```
+Sample_Name	Library_ID	Lane	Colour_Chemistry	SeqType	Organism	Strandedness	UDG_Treatment	R1	R2	BAM
+COD076	COD076E1bL1	1	4	PE	g_morhua	double	none	/home/cloud/benchmarks/input/COD076/COD076E1bL1_S0_L001_R1_000.fastq.gz	/home/cloud/benchmarks/input/COD076/COD076E1bL1_S0_L001_R2_000.fastq.gz	NA
+COD076	COD076E1bL1	6	4	PE	g_morhua	double	none	/home/cloud/benchmarks/input/COD076/COD076E1bL1_S0_L006_R1_000.fastq.gz	/home/cloud/benchmarks/input/COD076/COD076E1bL1_S0_L006_R2_000.fastq.gz	NA
+COD076	COD076E1bL1	8	4	PE	g_morhua	double	none	/home/cloud/benchmarks/input/COD076/COD076E1bL1_S0_L008_R1_000.fastq.gz	/home/cloud/benchmarks/input/COD076/COD076E1bL1_S0_L008_R2_000.fastq.gz	NA
+COD092	OD092E1bL1i69	6	4	PE	g_morhua	double	none	/home/cloud/benchmarks/input/COD092/COD092E1bL1i69_S0_L006_R1_000.fastq.gz	/home/cloud/benchmarks/input/COD092/COD092E1bL1i69_S0_L006_R2_000.fastq.gz	NA
+COD092	OD092E1bL1i69	7	4	PE	g_morhua	double	none	/home/cloud/benchmarks/input/COD092/COD092E1bL1i69_S0_L007_R1_000.fastq.gz	/home/cloud/benchmarks/input/COD092/COD092E1bL1i69_S0_L007_R2_000.fastq.gz	NA
+COD092	OD092E1bL1i69	8	4	PE	g_morhua	double	none	/home/cloud/benchmarks/input/COD092/COD092E1bL1i69_S0_L008_R1_000.fastq.gz	/home/cloud/benchmarks/input/COD092/COD092E1bL1i69_S0_L008_R2_000.fastq.gz	NA
+```
+To then run
+
+```bash
+{ time nextflow run nf-core/eager -r dev \
+--input 'nfcore-eager_tsv.tsv' \
+-profile pub_benchmarking,singularity \
+--fasta '/home/cloud/benchmarks/reference/GCF_902167405.1_gadMor3.0_genomic.fasta' \
+--skip_preseq \
+--run_bam_filtering \
+--bam_mapping_quality_threshold 25 \
+--bam_discard_unmapped \
+--bam_unmapped_type 'discard' \
+--dedupper 'markduplicates' \
+--max_time '48.h'; } 2> ../time_nfcore-eager.log
+
+```
+
+TODO Fix nf-core base times!
