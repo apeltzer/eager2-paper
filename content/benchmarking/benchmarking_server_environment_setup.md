@@ -488,7 +488,7 @@ Output  | Path | ~/benchmarks/output/EAGER
 Reference | Path | ~/benchmarks/reference/EAGER/GCF_902167405.1_gadMor3.0_genomic.fna
 Reference | Name of mitochondrial chromosome | NC_002081.1 Gadus
 Resources | CPU Cores | 32
-Resources | Memory in GB | 256
+Resources | Memory in GB | 250
 Mapping | Activate | TRUE
 Mapping | Tool | BWA
 Mapping | BWA SeedLength (-l) | 1024
@@ -500,6 +500,8 @@ Damage Calculation | Tool | DamageProfiler
 
 > Note that the pipeline does now allow the `--mm` parameter for
 > AdapterRemoval2, and will not be exactly comparable to paleomix
+
+> Memory is set to slightly less than total on system to allow buffer space.
 
 ```bash
 ## Important! Before doing this log out and log back in again WITHOUT -X in the shh command, else damageProfiler will crash!
@@ -604,5 +606,3 @@ To then run
 --max_time '48.h'; } 2> ../time_nfcore-eager.log
 
 ```
-
-TODO Fix nf-core base times!

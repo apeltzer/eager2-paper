@@ -2,7 +2,7 @@
 
 We thank the nf-core community for general support and suggestions during the
 writing of the pipeline. We also thank Arielle Munters, Hester van Schalkwyk,
-Irina Velsko, Katerine Eaton, Luc Venturini, Marcel Keller, Pierre Lindenbaum,
+Irina Velsko, Katherine Eaton, Luc Venturini, Marcel Keller, Pierre Lindenbaum,
 Pontus Skoglund, Raphael Eisenhofer, Torsten Günter, and Kevin Lord for bug
 reports and feature suggestions. We are grateful to the members of the
 Department of Archaeogenetics at the Max Planck Institute for the Science of
