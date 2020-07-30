@@ -167,8 +167,8 @@ nextflow run nf-core/eager -r dev -profile test_tsv,singularity
 cd ~
 ```
 
-Finally, we will generate a 'config' file that sets the maximum resources of
-the particular server we are using.
+Finally, we will generate a 'config' file that sets the maximum resources of the
+particular server we are using.
 
 ```
 nano ~/.nextflow/config
@@ -271,8 +271,8 @@ paleomix bam_pipeline run 000_makefile.yaml
 We can generate a global settings file to make sure it runs properly, and bump
 resources to match of this server.
 
-Note we will only change the maximum of the server. All other values are 
-kept as default.
+Note we will only change the maximum of the server. All other values are kept as
+default.
 
 ```bash
 paleomix bam_pipeline run --write-config
@@ -455,6 +455,7 @@ ln -s ~/benchmarks/reference/GCF_902167405.1_gadMor3.0_genomic.fasta ~/benchmark
 ln -s ~/benchmarks/reference/GCF_902167405.1_gadMor3.0_genomic.fasta ~/benchmarks/reference/paleomix/
 ln -s ~/benchmarks/reference/GCF_902167405.1_gadMor3.0_genomic.fasta ~/benchmarks/reference/nfcore-eager/
 
+rename 's/.fna/.fasta/' ~/benchmarks/reference/paleomix/*fna -n
 ```
 
 ## Benchmarking
@@ -511,7 +512,8 @@ cd ~/benchmarks/output
 for i in {1..10}; do
     { time singularity exec -B ./EAGER:/data ~/.singularity/cache/EAGER-cache/EAGER-GUI_latest.sif eagercli /data ; } 2> time_EAGER_"$i".log
     if [[ $i != 10 ]]; then
-         rm -r EAGER/*/*/ EAGER/*.{csv,html,png,ReportGenerator,txt} EAGER/*/*.log EAGER/*/DONE*
+         rm -r ~/benchmarks/output/EAGER/*/*/ ~/benchmarks/output/EAGER/*.{csv,html,png,ReportGenerator,txt} EAGER/*/*.log ~/benchmarks/output/EAGER/*/DONE*
+         rm ~/benchmarks/reference/EAGER*.{dict,amb,ann,bwt,fai,pac,sa} ~/benchmarks/reference/EAGER/DONE*
     fi
 done
 ```
@@ -532,7 +534,7 @@ sed -i 's/--mm: 3/# --mm: 3/' output/paleomix/makefile_paleomix.yaml ## remove a
 sed -i 's/--minlength: 25/--minlength: 30/' output/paleomix/makefile_paleomix.yaml
 sed -i 's/MinQuality: 0/MinQuality: 25/' output/paleomix/makefile_paleomix.yaml # To follow Star paper
 sed -i 's/NAME_OF_PREFIX:/GCF_902167405.1_gadMor3.0_genomic:/' output/paleomix/makefile_paleomix.yaml
-sed -i 's+Path: PATH_TO_PREFIX+Path: /home/cloud/benchmarks/reference/paleomix/GCF_902167405.1_gadMor3.0_genomic.fna+' output/paleomix/makefile_paleomix.yaml
+sed -i 's+Path: PATH_TO_PREFIX+Path: /home/cloud/benchmarks/reference/paleomix/GCF_902167405.1_gadMor3.0_genomic.fasta+' output/paleomix/makefile_paleomix.yaml
 sed -i 's/UseSeed: yes/UseSeed: no/' output/paleomix/makefile_paleomix.yaml
 
 sed -i 's/#NAME_OF_TARGET:/COD076:/' output/paleomix/makefile_paleomix.yaml
@@ -557,15 +559,47 @@ To then run
 conda activate paleomix
 cd ~/benchmarks/output/paleomix
 
-
 for i in {1..10}; do
     { time paleomix bam_pipeline run makefile_paleomix.yaml ; } 2> ../time_paleomix_"$i".log
     if [[ $i != 10 ]]; then
-         rm -r !(makefile_paleomix.yaml)
+         ## Fix this to make it safer!
+         rm -r ~/benchmarks/output/paleomix/!(makefile_paleomix.yaml)
+         rm ~/benchmarks/reference/paleomix/*.{dict,amb,ann,bwt,fai,pac,sa,validated}
+
     fi
 done
+```
 
-{ time paleomix bam_pipeline run makefile_paleomix.yaml ; } 2> time_paleomix_"$i".log
+## paleomix optimised
+
+The paleomix run however is not configured very nicely, as the
+`bam_pipeline.ini` does not multi-thread mapping steps, which is not a fair
+comparison to EAGER. Therefore we will re-run but allowing muti-threading for
+bwa, one of the longest running steps.
+
+```bash
+mkdir -p ~/benchmarks/output/paleomix_optimised
+cp ~/benchmarks/output/paleomix/makefile_paleomix.yaml ~/benchmarks/output/paleomix_optimised/makefile_paleomix.yaml
+
+```
+
+For comparison with nf-core/eager, that also allows non-sequential job running,
+we will set this value to the same number of CPUs which is 4.
+
+```bash
+screen -R paleomix_optimised
+conda activate paleomix
+cd ~/benchmarks/output/paleomix_optimised
+
+for i in {1..10}; do
+    { time paleomix bam_pipeline run makefile_paleomix.yaml --max-threads 4 ; } 2> ../time_paleomix_optimised_"$i".log
+    if [[ $i != 10 ]]; then
+         ## Fix this to make it safer!
+         rm -r ~/benchmarks/output/paleomix_optimised/!(makefile_paleomix.yaml)
+         rm ~/benchmarks/reference/paleomix/*.{dict,amb,ann,bwt,fai,pac,sa,validated}
+
+    fi
+done
 ```
 
 ### nf-core/eager setup
@@ -582,20 +616,20 @@ nano nfcore-eager_tsv.tsv
 Paste the following then save
 
 ```
-Sample_Name	Library_ID	Lane	Colour_Chemistry	SeqType	Organism	Strandedness	UDG_Treatment	R1	R2	BAM
-COD076	COD076E1bL1	1	4	PE	g_morhua	double	none	/home/cloud/benchmarks/input/COD076/COD076E1bL1_S0_L001_R1_000.fastq.gz	/home/cloud/benchmarks/input/COD076/COD076E1bL1_S0_L001_R2_000.fastq.gz	NA
-COD076	COD076E1bL1	6	4	PE	g_morhua	double	none	/home/cloud/benchmarks/input/COD076/COD076E1bL1_S0_L006_R1_000.fastq.gz	/home/cloud/benchmarks/input/COD076/COD076E1bL1_S0_L006_R2_000.fastq.gz	NA
-COD076	COD076E1bL1	8	4	PE	g_morhua	double	none	/home/cloud/benchmarks/input/COD076/COD076E1bL1_S0_L008_R1_000.fastq.gz	/home/cloud/benchmarks/input/COD076/COD076E1bL1_S0_L008_R2_000.fastq.gz	NA
-COD092	OD092E1bL1i69	6	4	PE	g_morhua	double	none	/home/cloud/benchmarks/input/COD092/COD092E1bL1i69_S0_L006_R1_000.fastq.gz	/home/cloud/benchmarks/input/COD092/COD092E1bL1i69_S0_L006_R2_000.fastq.gz	NA
-COD092	OD092E1bL1i69	7	4	PE	g_morhua	double	none	/home/cloud/benchmarks/input/COD092/COD092E1bL1i69_S0_L007_R1_000.fastq.gz	/home/cloud/benchmarks/input/COD092/COD092E1bL1i69_S0_L007_R2_000.fastq.gz	NA
-COD092	OD092E1bL1i69	8	4	PE	g_morhua	double	none	/home/cloud/benchmarks/input/COD092/COD092E1bL1i69_S0_L008_R1_000.fastq.gz	/home/cloud/benchmarks/input/COD092/COD092E1bL1i69_S0_L008_R2_000.fastq.gz	NA
+Sample_Name Library_ID  Lane  Colour_Chemistry  SeqType Organism  Strandedness  UDG_Treatment R1  R2  BAM
+COD076  COD076E1bL1 1 4 PE  g_morhua  double  none  /home/cloud/benchmarks/input/COD076/COD076E1bL1_S0_L001_R1_000.fastq.gz /home/cloud/benchmarks/input/COD076/COD076E1bL1_S0_L001_R2_000.fastq.gz NA
+COD076  COD076E1bL1 6 4 PE  g_morhua  double  none  /home/cloud/benchmarks/input/COD076/COD076E1bL1_S0_L006_R1_000.fastq.gz /home/cloud/benchmarks/input/COD076/COD076E1bL1_S0_L006_R2_000.fastq.gz NA
+COD076  COD076E1bL1 8 4 PE  g_morhua  double  none  /home/cloud/benchmarks/input/COD076/COD076E1bL1_S0_L008_R1_000.fastq.gz /home/cloud/benchmarks/input/COD076/COD076E1bL1_S0_L008_R2_000.fastq.gz NA
+COD092  OD092E1bL1i69 6 4 PE  g_morhua  double  none  /home/cloud/benchmarks/input/COD092/COD092E1bL1i69_S0_L006_R1_000.fastq.gz  /home/cloud/benchmarks/input/COD092/COD092E1bL1i69_S0_L006_R2_000.fastq.gz  NA
+COD092  OD092E1bL1i69 7 4 PE  g_morhua  double  none  /home/cloud/benchmarks/input/COD092/COD092E1bL1i69_S0_L007_R1_000.fastq.gz  /home/cloud/benchmarks/input/COD092/COD092E1bL1i69_S0_L007_R2_000.fastq.gz  NA
+COD092  OD092E1bL1i69 8 4 PE  g_morhua  double  none  /home/cloud/benchmarks/input/COD092/COD092E1bL1i69_S0_L008_R1_000.fastq.gz  /home/cloud/benchmarks/input/COD092/COD092E1bL1i69_S0_L008_R2_000.fastq.gz  NA
 ```
 To then run
 
 ```bash
 { time nextflow run nf-core/eager -r dev \
 --input 'nfcore-eager_tsv.tsv' \
--profile pub_benchmarking,singularity \
+-profile pub_benchmarking,benchmarking_vikingfish,singularity \
 --fasta '/home/cloud/benchmarks/reference/GCF_902167405.1_gadMor3.0_genomic.fasta' \
 --skip_preseq \
 --run_bam_filtering \
