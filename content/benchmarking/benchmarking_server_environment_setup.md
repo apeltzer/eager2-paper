@@ -170,21 +170,138 @@ cd ~
 Finally, we will generate a 'config' file that sets the maximum resources of the
 particular server we are using.
 
-```
-nano ~/.nextflow/config
+```bash
+nano ~/.nextflow/pub_eager_vikingfish.conf
 ```
 
-Add the following and save.
+Add the following and save. This modifies the CPUs to 32, mem to 250 (leaving 6
+for nextflow itself and other background processes), and boost the wall-times
+for each process to a large number. These would normally be customised for each
+machine, and typical dataset.
 
-```
-profile {
-  pub_benchmarking {
+```text
+profiles {
+  pub_eager_vikingfish {
+    process {
+      cpus = { check_max( 1 * task.attempt, 'cpus' ) }
+      memory = { check_max( 7.GB * task.attempt, 'memory' ) }
+      time = { check_max( 4.h * task.attempt, 'time' ) }
+
+      errorStrategy = { task.exitStatus in [143,137,104,134,139] ? 'retry' : 'finish' }
+      maxRetries = 3
+      maxErrors = '-1'
+
+      // Generic resource requirements - s(ingle)c(ore)/m(ulti)c(ore)
+
+      withLabel:'sc_tiny'{
+          cpus = { check_max( 1, 'cpus' ) }
+          memory = { check_max( 1.GB * task.attempt, 'memory' ) }
+          time = { check_max( 24.h * task.attempt, 'time' ) }
+      }
+
+      withLabel:'sc_small'{
+          cpus = { check_max( 1, 'cpus' ) }
+          memory = { check_max( 4.GB * task.attempt, 'memory' ) }
+          time = { check_max( 24.h * task.attempt, 'time' ) }
+      }
+
+      withLabel:'sc_medium'{
+          cpus = { check_max( 1, 'cpus' ) }
+          memory = { check_max( 8.GB * task.attempt, 'memory' ) }
+          time = { check_max( 24.h * task.attempt, 'time' ) }
+      }
+
+      withLabel:'mc_small'{
+          cpus = { check_max( 2, 'cpus' ) }
+          memory = { check_max( 4.GB * task.attempt, 'memory' ) }
+          time = { check_max( 24.h * task.attempt, 'time' ) }
+      }
+
+      withLabel:'mc_medium' {
+          cpus = { check_max( 4, 'cpus' ) }
+          memory = { check_max( 8.GB * task.attempt, 'memory' ) }
+          time = { check_max( 24.h * task.attempt, 'time' ) }
+      }
+
+      withLabel:'mc_large'{
+          cpus = { check_max( 8, 'cpus' ) }
+          memory = { check_max( 16.GB * task.attempt, 'memory' ) }
+          time = { check_max( 24.h * task.attempt, 'time' ) }
+      }
+
+      withLabel:'mc_huge'{
+          cpus = { check_max( 32, 'cpus' ) }
+          memory = { check_max( 256.GB * task.attempt, 'memory' ) }
+          time = { check_max( 24.h * task.attempt, 'time' ) }
+      }
+
+      // Process-specific resource requirements (others leave at default, e.g. Fastqc)
+      withName:get_software_versions {
+        memory = { check_max( 2.GB, 'memory' ) }
+        cache = false
+      }
+
+      withName:qualimap{
+        errorStrategy = 'ignore'
+      }
+
+      withName:preseq {
+        errorStrategy = 'ignore'
+      }
+
+      // Add 141 ignore due to unclean pipe closing by pmdtools https://github.com/pontussk/PMDtools/issues/7
+      withName: pmdtools {
+        errorStrategy = { task.exitStatus in [141] ? 'ignore' : 'retry' }
+      }
+
+      // Add 1 retry as not enough heapspace java error gives exit code 1
+      withName: malt {
+        errorStrategy = { task.exitStatus in [1] ? 'retry' : 'finish' }
+      }
+
+      withName: multiqc {
+        errorStrategy = { task.exitStatus in [143,137] ? 'retry' : 'ignore' }
+      }
+    }
+
     params {
       // Defaults only, expecting to be overwritten
-      max_memory = 256.GB
+      max_memory = 250.GB
       max_cpus = 32
       max_time = 240.h
       igenomes_base = 's3://ngi-igenomes/igenomes/'
+      config_profile_description = 'Profile for nf-core/eager publication test environment'
+    }
+  }
+}
+
+def check_max(obj, type) {
+  if (type == 'memory') {
+    try {
+      if (obj.compareTo(params.max_memory as nextflow.util.MemoryUnit) == 1)
+        return params.max_memory as nextflow.util.MemoryUnit
+      else
+        return obj
+    } catch (all) {
+      println "   ### ERROR ###   Max memory '${params.max_memory}' is not valid! Using default value: $obj"
+      return obj
+    }
+  } else if (type == 'time') {
+    try {
+      if (obj.compareTo(params.max_time as nextflow.util.Duration) == 1)
+        return params.max_time as nextflow.util.Duration
+      else
+        return obj
+    } catch (all) {
+      println "   ### ERROR ###   Max time '${params.max_time}' is not valid! Using default value: $obj"
+      return obj
+    }
+  } else if (type == 'cpus') {
+    try {
+      return Math.min( obj, params.max_cpus as int )
+    } catch (all) {
+      println "   ### ERROR ###   Max cpus '${params.max_cpus}' is not valid! Using default value: $obj"
+      return obj
     }
   }
 }
@@ -613,30 +730,41 @@ cd !$
 nano nfcore-eager_tsv.tsv
 ```
 
-Paste the following then save
+Paste the following (ensure you're pasting TABS and not spaces) then save
 
+```text
+Sample_Name	Library_ID	Lane	Colour_Chemistry	SeqType	Organism	Strandedness	UDG_Treatment	R1	R2	BAM
+COD076	COD076E1bL1	1	4	PE	g_morhua	double	none	/home/cloud/benchmarks/input/COD076/COD076E1bL1_S0_L001_R1_000.fastq.gz	/home/cloud/benchmarks/input/COD076/COD076E1bL1_S0_L001_R2_000.fastq.gz	NA
+COD076	COD076E1bL1	6	4	PE	g_morhua	double	none	/home/cloud/benchmarks/input/COD076/COD076E1bL1_S0_L006_R1_000.fastq.gz	/home/cloud/benchmarks/input/COD076/COD076E1bL1_S0_L006_R2_000.fastq.gz	NA
+COD076	COD076E1bL1	8	4	PE	g_morhua	double	none	/home/cloud/benchmarks/input/COD076/COD076E1bL1_S0_L008_R1_000.fastq.gz	/home/cloud/benchmarks/input/COD076/COD076E1bL1_S0_L008_R2_000.fastq.gz	NA
+COD092	COD092E1bL1i69	6	4	PE	g_morhua	double	none	/home/cloud/benchmarks/input/COD092/COD092E1bL1i69_S0_L006_R1_000.fastq.gz	/home/cloud/benchmarks/input/COD092/COD092E1bL1i69_S0_L006_R2_000.fastq.gz	NA
+COD092	COD092E1bL1i69	7	4	PE	g_morhua	double	none	/home/cloud/benchmarks/input/COD092/COD092E1bL1i69_S0_L007_R1_000.fastq.gz	/home/cloud/benchmarks/input/COD092/COD092E1bL1i69_S0_L007_R2_000.fastq.gz	NA
+COD092	COD092E1bL1i69	8	4	PE	g_morhua	double	none	/home/cloud/benchmarks/input/COD092/COD092E1bL1i69_S0_L008_R1_000.fastq.gz	/home/cloud/benchmarks/input/COD092/COD092E1bL1i69_S0_L008_R2_000.fastq.gz	NA
 ```
-Sample_Name Library_ID  Lane  Colour_Chemistry  SeqType Organism  Strandedness  UDG_Treatment R1  R2  BAM
-COD076  COD076E1bL1 1 4 PE  g_morhua  double  none  /home/cloud/benchmarks/input/COD076/COD076E1bL1_S0_L001_R1_000.fastq.gz /home/cloud/benchmarks/input/COD076/COD076E1bL1_S0_L001_R2_000.fastq.gz NA
-COD076  COD076E1bL1 6 4 PE  g_morhua  double  none  /home/cloud/benchmarks/input/COD076/COD076E1bL1_S0_L006_R1_000.fastq.gz /home/cloud/benchmarks/input/COD076/COD076E1bL1_S0_L006_R2_000.fastq.gz NA
-COD076  COD076E1bL1 8 4 PE  g_morhua  double  none  /home/cloud/benchmarks/input/COD076/COD076E1bL1_S0_L008_R1_000.fastq.gz /home/cloud/benchmarks/input/COD076/COD076E1bL1_S0_L008_R2_000.fastq.gz NA
-COD092  OD092E1bL1i69 6 4 PE  g_morhua  double  none  /home/cloud/benchmarks/input/COD092/COD092E1bL1i69_S0_L006_R1_000.fastq.gz  /home/cloud/benchmarks/input/COD092/COD092E1bL1i69_S0_L006_R2_000.fastq.gz  NA
-COD092  OD092E1bL1i69 7 4 PE  g_morhua  double  none  /home/cloud/benchmarks/input/COD092/COD092E1bL1i69_S0_L007_R1_000.fastq.gz  /home/cloud/benchmarks/input/COD092/COD092E1bL1i69_S0_L007_R2_000.fastq.gz  NA
-COD092  OD092E1bL1i69 8 4 PE  g_morhua  double  none  /home/cloud/benchmarks/input/COD092/COD092E1bL1i69_S0_L008_R1_000.fastq.gz  /home/cloud/benchmarks/input/COD092/COD092E1bL1i69_S0_L008_R2_000.fastq.gz  NA
-```
+
 To then run
 
 ```bash
-{ time nextflow run nf-core/eager -r dev \
---input 'nfcore-eager_tsv.tsv' \
--profile pub_benchmarking,benchmarking_vikingfish,singularity \
---fasta '/home/cloud/benchmarks/reference/GCF_902167405.1_gadMor3.0_genomic.fasta' \
---skip_preseq \
---run_bam_filtering \
---bam_mapping_quality_threshold 25 \
---bam_discard_unmapped \
---bam_unmapped_type 'discard' \
---dedupper 'markduplicates' \
---max_time '48.h'; } 2> ../time_nfcore-eager.log
+
+for i in {1..10}; do
+    { time nextflow run nf-core/eager -r dev \
+            --input 'nfcore-eager_tsv.tsv' \
+            -c ~/.nextflow/pub_eager_vikingfish.conf \
+            -profile pub_eager_vikingfish,benchmarking_vikingfish,singularity \
+            --fasta '/home/cloud/benchmarks/reference/GCF_902167405.1_gadMor3.0_genomic.fasta' \
+            -name 'gwdg_test' \
+            --outdir '~/benchmarks/output/nfcore-eager/results/' \
+            -w '~/benchmarks/output/nfcore-eager/work/' \
+            --skip_preseq \
+            --run_bam_filtering \
+            --bam_mapping_quality_threshold 25 \
+            --bam_discard_unmapped \
+            --bam_unmapped_type 'discard' \
+            --dedupper 'markduplicates' } 2> ../time_nf-core_eager_"$i".log
+    if [[ $i != 10 ]]; then
+         ## Fix this to make it safer!
+         rm -r ~/benchmarks/output/nfcore-eager/!(nfcore-eager_tsv.tsv) ~/benchmarks/output/nfcore-eager/.nex*
+    fi
+done
 
 ```
