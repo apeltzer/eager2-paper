@@ -47,6 +47,7 @@ sudo apt tree
 ```
 
 Install XMLlint for easier reading of EAGER XML files
+
 ```bash
 sudo apt-get install libxml2-utils
 ```
@@ -59,7 +60,6 @@ echo "alias ll='ls -alFh'" >> ~/.bashrc
 echo "alias l='ls -CF'" >> ~/.bashrc
 
 ```
-
 
 ### nf-core/eager
 
@@ -396,8 +396,6 @@ paleomix bam_pipeline run --write-config
 sed -i 's/max_threads = 16/max_threads = 32/g' ~/.paleomix/bam_pipeline.ini
 ```
 
-
-
 ### EAGER
 
 Now finally we can set up EAGER v1.
@@ -479,6 +477,10 @@ cat ~/EAGER-test/output/Report_output_versions.txt
 EAGER-CLI    1.92.55
 EAGER-GUI   1.92.37
 ReportTable Version     1.92.33
+
+# For measuring run time
+/usr/bin/time
+GNU time 1.7
 
 ```
 
@@ -565,8 +567,7 @@ As each pipeline can generate refernece indicies themselves, (and we don't want
 one pipeline to generate all of them for us), we will make symlinks into each
 pipelines' own reference directory.
 
-
-```
+```bash
 mkdir EAGER/ paleomix/ nfcore-eager/
 ln -s ~/benchmarks/reference/GCF_902167405.1_gadMor3.0_genomic.fasta ~/benchmarks/reference/EAGER/
 ln -s ~/benchmarks/reference/GCF_902167405.1_gadMor3.0_genomic.fasta ~/benchmarks/reference/paleomix/
@@ -588,7 +589,7 @@ mkdir -p output/EAGER
 singularity exec -B .:/data ~/.singularity/cache/EAGER-cache/EAGER-GUI_latest.sif eager
 ```
 
-#### Table 2 | Input settings for EAGER benchmark. All values are default unless specified. Modules run are FastQC, AdapterRemoval, Mapping, RemoveDuplicates, Damage calculation,
+#### Table 2 | Input settings for EAGER benchmark. All values are default unless specified. Modules run are FastQC, AdapterRemoval, Mapping, RemoveDuplicates, Damage calculation
 
 Section | Field | Value
 --------|------|------
@@ -607,6 +608,7 @@ Reference | Path | ~/benchmarks/reference/EAGER/GCF_902167405.1_gadMor3.0_genomi
 Reference | Name of mitochondrial chromosome | NC_002081.1 Gadus
 Resources | CPU Cores | 32
 Resources | Memory in GB | 250
+FastQC | Activate | FALSE
 Mapping | Activate | TRUE
 Mapping | Tool | BWA
 Mapping | BWA SeedLength (-l) | 1024
@@ -616,8 +618,8 @@ Remove Duplicates | MarkDuplicates
 Damage Calculation | Activate | True
 Damage Calculation | Tool | DamageProfiler
 
-> Note that the pipeline does now allow the `--mm` parameter for
-> AdapterRemoval2, and will not be exactly comparable to paleomix
+Note that the pipeline does now allow the `--mm` parameter for
+AdapterRemoval2, and will not be exactly comparable to paleomix
 
 > Memory is set to slightly less than total on system to allow buffer space.
 
@@ -748,13 +750,14 @@ To then run
 
 for i in {1..10}; do
     { time nextflow run nf-core/eager -r dev \
-            --input 'nfcore-eager_tsv.tsv' \
-            -c ~/.nextflow/pub_eager_vikingfish.conf \
-            -profile pub_eager_vikingfish,benchmarking_vikingfish,singularity \
+      --input 'nfcore-eager_tsv.tsv' \
+      -c ~/.nextflow/pub_eager_vikingfish.conf \
+      -profile pub_eager_vikingfish,benchmarking_vikingfish,singularity \
             --fasta '/home/cloud/benchmarks/reference/GCF_902167405.1_gadMor3.0_genomic.fasta' \
             -name 'gwdg_test' \
-            --outdir '~/benchmarks/output/nfcore-eager/results/' \
-            -w '~/benchmarks/output/nfcore-eager/work/' \
+            --outdir ~/benchmarks/output/nfcore-eager/results/ \
+            -w ~/benchmarks/output/nfcore-eager/work/ \
+            --skip_fastqc \
             --skip_preseq \
             --run_bam_filtering \
             --bam_mapping_quality_threshold 25 \
@@ -767,4 +770,49 @@ for i in {1..10}; do
     fi
 done
 
+```
+
+### Final Benchmarking Command
+
+To ensure as fair as possible comparison, rather than running each program
+separately, we will run each iteration of each command next to each other.
+
+Therefore if IO gets busy on other VMs in the network, each pipeleine run of
+that iteration will fall aproximately in the same period.
+
+```bash
+cd ~/benchmarks/output
+
+for i in {1..10}; do
+    ## EAGER
+    unset DISPLAY && { time singularity exec -B ~/benchmarks/output/EAGER:/data ~/.singularity/cache/EAGER-cache/EAGER-GUI_latest.sif eagercli /data ; } 2> time_EAGER_"$i".log
+    if [[ $i != 10 ]]; then
+         rm -r ~/benchmarks/output/EAGER/*/*/ ~/benchmarks/output/EAGER/*.{csv,html,png,ReportGenerator,txt} ~/benchmarks/output/EAGER/*/*.log ~/benchmarks/output/EAGER/*/DONE*
+         rm ~/benchmarks/reference/EAGER*.{dict,amb,ann,bwt,fai,pac,sa} ~/benchmarks/reference/EAGER/DONE*
+    fi
+    ## Paleomix Default
+    conda activate paleomix
+    { time paleomix bam_pipeline run ~/benchmarks/output/paleomix/makefile_paleomix.yaml ; } 2> time_paleomix_"$i".log
+    if [[ $i != 10 ]]; then
+         ## Fix this to make it safer!
+         rm -r ~/benchmarks/output/paleomix/!(makefile_paleomix.yaml)
+         rm ~/benchmarks/reference/paleomix/*.{dict,amb,ann,bwt,fai,pac,sa,validated}
+    fi
+    ## Paleomix Better defaults=
+    { time paleomix bam_pipeline run ~/benchmarks/output/paleomix_optimised/makefile_paleomix.yaml --bwa-max-threads 4 ; } 2> time_paleomix_optimised_"$i".log
+    if [[ $i != 10 ]]; then
+         ## Fix this to make it safer!
+         rm -r ~/benchmarks/output/paleomix_optimised/!(makefile_paleomix.yaml)
+         rm ~/benchmarks/reference/paleomix/*.{dict,amb,ann,bwt,fai,pac,sa,validated}
+    fi
+    conda deactivate
+    ## nf-core/eager
+    cd ~/benchmarks/output/nfcore-eager/
+    { time nextflow run nf-core/eager -r dev --input ~/benchmarks/output/nfcore-eager/nfcore-eager_tsv.tsv -c ~/.nextflow/pub_eager_vikingfish.conf -profile pub_eager_vikingfish,benchmarking_vikingfish,singularity --fasta ~/benchmarks/reference/GCF_902167405.1_gadMor3.0_genomic.fasta --outdir ~/benchmarks/output/nfcore-eager/results/ -w ~/benchmarks/output/nfcore-eager/work/ --skip_fastqc --skip_preseq --run_bam_filtering --bam_mapping_quality_threshold 25 --bam_discard_unmapped --bam_unmapped_type 'discard' --dedupper 'markduplicates' ; } 2> ../time_nf-core_eager_"$i".log
+    cd ~/benchmarks/output/
+    if [[ $i != 10 ]]; then
+         ## Fix this to make it safer!
+         rm -r ~/benchmarks/output/nfcore-eager/!(nfcore-eager_tsv.tsv) ~/benchmarks/output/nfcore-eager/.nex*
+    fi
+done
 ```
