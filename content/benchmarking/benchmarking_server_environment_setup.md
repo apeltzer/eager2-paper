@@ -52,6 +52,12 @@ Install XMLlint for easier reading of EAGER XML files
 sudo apt-get install libxml2-utils
 ```
 
+For easy hardware summaries
+
+```bash
+sudo apt install hwinfo
+```
+
 Some personal alias
 
 ```bash
@@ -167,6 +173,8 @@ nextflow run nf-core/eager -r dev -profile test_tsv,singularity
 cd ~
 ```
 
+This pulled commit hash: 830c22d448441e5e19508c198f530a7656c9f25d
+
 Finally, we will generate a 'config' file that sets the maximum resources of the
 particular server we are using.
 
@@ -271,6 +279,13 @@ profiles {
       max_time = 240.h
       igenomes_base = 's3://ngi-igenomes/igenomes/'
       config_profile_description = 'Profile for nf-core/eager publication test environment'
+    }
+  }
+  pub_eager_vikingfish_optimised {
+    process {
+      withName: bwa {
+        cpus = { check_max( 12, 'cpus' ) }
+      }
     }
   }
 }
@@ -433,11 +448,11 @@ To record all versions of all the install tools, we can see the output of the
 following commands
 
 ```bash
-# Kernel
+## Kernel
 uname -r
-4.15.0-106-generic
+4.15.0-112-generic
 
-# OS
+## OS
 lsb_release -a
 No LSB modules are available.
 Distributor ID: Ubuntu
@@ -445,13 +460,13 @@ Description:    Ubuntu 18.04.4 LTS
 Release:    18.04
 Codename:   bionic
 
-# Java
+## Java
 java -version
 openjdk version "11.0.7" 2020-04-14
 OpenJDK Runtime Environment (build 11.0.7+10-post-Ubuntu-2ubuntu218.04)
 OpenJDK 64-Bit Server VM (build 11.0.7+10-post-Ubuntu-2ubuntu218.04, mixed mode, sharing)
 
-# Nextflow
+## Nextflow
 nextflow -version
 
       N E X T F L O W
@@ -460,11 +475,11 @@ nextflow -version
       cite doi:10.1038/nbt.3820
       http://nextflow.io
 
-# Singularity (for nf-core/eager and EAGER)
+## Singularity (for nf-core/eager and EAGER)
 singularity --version
 singularity version 3.5.2
 
-# Conda (for palaeomix)
+## Conda (for palaeomix)
 conda --version
 conda 4.7.12
 
@@ -472,15 +487,20 @@ paleomix
 PALEOMIX - pipelines and tools for NGS data analyses.
 Version: 1.2.14
 
-# For EAGER
+## For EAGER
 cat ~/EAGER-test/output/Report_output_versions.txt
 EAGER-CLI    1.92.55
 EAGER-GUI   1.92.37
 ReportTable Version     1.92.33
 
-# For measuring run time
+## For measuring run time
 /usr/bin/time
 GNU time 1.7
+
+# hardware
+lscpu
+sudo lshw -short
+hwinfo --short
 
 ```
 
@@ -618,8 +638,8 @@ Remove Duplicates | MarkDuplicates
 Damage Calculation | Activate | True
 Damage Calculation | Tool | DamageProfiler
 
-Note that the pipeline does now allow the `--mm` parameter for
-AdapterRemoval2, and will not be exactly comparable to paleomix
+Note that the pipeline does now allow the `--mm` parameter for AdapterRemoval2,
+and will not be exactly comparable to paleomix
 
 > Memory is set to slightly less than total on system to allow buffer space.
 
@@ -735,13 +755,13 @@ nano nfcore-eager_tsv.tsv
 Paste the following (ensure you're pasting TABS and not spaces) then save
 
 ```text
-Sample_Name	Library_ID	Lane	Colour_Chemistry	SeqType	Organism	Strandedness	UDG_Treatment	R1	R2	BAM
-COD076	COD076E1bL1	1	4	PE	g_morhua	double	none	/home/cloud/benchmarks/input/COD076/COD076E1bL1_S0_L001_R1_000.fastq.gz	/home/cloud/benchmarks/input/COD076/COD076E1bL1_S0_L001_R2_000.fastq.gz	NA
-COD076	COD076E1bL1	6	4	PE	g_morhua	double	none	/home/cloud/benchmarks/input/COD076/COD076E1bL1_S0_L006_R1_000.fastq.gz	/home/cloud/benchmarks/input/COD076/COD076E1bL1_S0_L006_R2_000.fastq.gz	NA
-COD076	COD076E1bL1	8	4	PE	g_morhua	double	none	/home/cloud/benchmarks/input/COD076/COD076E1bL1_S0_L008_R1_000.fastq.gz	/home/cloud/benchmarks/input/COD076/COD076E1bL1_S0_L008_R2_000.fastq.gz	NA
-COD092	COD092E1bL1i69	6	4	PE	g_morhua	double	none	/home/cloud/benchmarks/input/COD092/COD092E1bL1i69_S0_L006_R1_000.fastq.gz	/home/cloud/benchmarks/input/COD092/COD092E1bL1i69_S0_L006_R2_000.fastq.gz	NA
-COD092	COD092E1bL1i69	7	4	PE	g_morhua	double	none	/home/cloud/benchmarks/input/COD092/COD092E1bL1i69_S0_L007_R1_000.fastq.gz	/home/cloud/benchmarks/input/COD092/COD092E1bL1i69_S0_L007_R2_000.fastq.gz	NA
-COD092	COD092E1bL1i69	8	4	PE	g_morhua	double	none	/home/cloud/benchmarks/input/COD092/COD092E1bL1i69_S0_L008_R1_000.fastq.gz	/home/cloud/benchmarks/input/COD092/COD092E1bL1i69_S0_L008_R2_000.fastq.gz	NA
+Sample_Name Library_ID  Lane  Colour_Chemistry  SeqType Organism  Strandedness  UDG_Treatment R1  R2  BAM
+COD076  COD076E1bL1 1 4 PE  g_morhua  double  none  /home/cloud/benchmarks/input/COD076/COD076E1bL1_S0_L001_R1_000.fastq.gz /home/cloud/benchmarks/input/COD076/COD076E1bL1_S0_L001_R2_000.fastq.gz NA
+COD076  COD076E1bL1 6 4 PE  g_morhua  double  none  /home/cloud/benchmarks/input/COD076/COD076E1bL1_S0_L006_R1_000.fastq.gz /home/cloud/benchmarks/input/COD076/COD076E1bL1_S0_L006_R2_000.fastq.gz NA
+COD076  COD076E1bL1 8 4 PE  g_morhua  double  none  /home/cloud/benchmarks/input/COD076/COD076E1bL1_S0_L008_R1_000.fastq.gz /home/cloud/benchmarks/input/COD076/COD076E1bL1_S0_L008_R2_000.fastq.gz NA
+COD092  COD092E1bL1i69  6 4 PE  g_morhua  double  none  /home/cloud/benchmarks/input/COD092/COD092E1bL1i69_S0_L006_R1_000.fastq.gz  /home/cloud/benchmarks/input/COD092/COD092E1bL1i69_S0_L006_R2_000.fastq.gz  NA
+COD092  COD092E1bL1i69  7 4 PE  g_morhua  double  none  /home/cloud/benchmarks/input/COD092/COD092E1bL1i69_S0_L007_R1_000.fastq.gz  /home/cloud/benchmarks/input/COD092/COD092E1bL1i69_S0_L007_R2_000.fastq.gz  NA
+COD092  COD092E1bL1i69  8 4 PE  g_morhua  double  none  /home/cloud/benchmarks/input/COD092/COD092E1bL1i69_S0_L008_R1_000.fastq.gz  /home/cloud/benchmarks/input/COD092/COD092E1bL1i69_S0_L008_R2_000.fastq.gz  NA
 ```
 
 To then run
@@ -772,6 +792,16 @@ done
 
 ```
 
+### nf-core/eager optimised
+
+The nf-core/eager optimised version (to do fair comparison between optimised
+palaeomix with more realistic bwa multi-threading), is the same as default
+nf-core/eager but with different output directory.
+
+```bash
+cp -r ~/benchmarks/output/nfcore-eager/ ~/benchmarks/output/nfcore-eager-optimised/
+```
+
 ### Final Benchmarking Command
 
 To ensure as fair as possible comparison, rather than running each program
@@ -783,23 +813,30 @@ that iteration will fall aproximately in the same period.
 ```bash
 cd ~/benchmarks/output
 
+mkdir runtimes results
+
 for i in {1..10}; do
     ## EAGER
-    unset DISPLAY && { time singularity exec -B ~/benchmarks/output/EAGER:/data ~/.singularity/cache/EAGER-cache/EAGER-GUI_latest.sif eagercli /data ; } 2> time_EAGER_"$i".log
+    unset DISPLAY && { time singularity exec -B ~/benchmarks/output/EAGER:/data ~/.singularity/cache/EAGER-cache/EAGER-GUI_latest.sif eagercli /data ; } 2> runtimes/time_EAGER_"$i".log
+    cp ~/benchmarks/output/EAGER/Report_EAGER.csv results/Report_EAGER_$i.csv
     if [[ $i != 10 ]]; then
          rm -r ~/benchmarks/output/EAGER/*/*/ ~/benchmarks/output/EAGER/*.{csv,html,png,ReportGenerator,txt} ~/benchmarks/output/EAGER/*/*.log ~/benchmarks/output/EAGER/*/DONE*
-         rm ~/benchmarks/reference/EAGER*.{dict,amb,ann,bwt,fai,pac,sa} ~/benchmarks/reference/EAGER/DONE*
+         rm ~/benchmarks/reference/EAGER/*.{dict,amb,ann,bwt,fai,pac,sa} ~/benchmarks/reference/EAGER/DONE*
     fi
     ## Paleomix Default
     conda activate paleomix
-    { time paleomix bam_pipeline run ~/benchmarks/output/paleomix/makefile_paleomix.yaml ; } 2> time_paleomix_"$i".log
+    { time paleomix bam_pipeline run ~/benchmarks/output/paleomix/makefile_paleomix.yaml ; } 2> runtimes/time_paleomix_"$i".log
+    rename -e "s/.summary/_$i.summary/g;s/COD/paleomix_COD/" paleomix/*summary
+    cp paleomix/*summary results/
     if [[ $i != 10 ]]; then
          ## Fix this to make it safer!
          rm -r ~/benchmarks/output/paleomix/!(makefile_paleomix.yaml)
          rm ~/benchmarks/reference/paleomix/*.{dict,amb,ann,bwt,fai,pac,sa,validated}
     fi
     ## Paleomix Better defaults=
-    { time paleomix bam_pipeline run ~/benchmarks/output/paleomix_optimised/makefile_paleomix.yaml --bwa-max-threads 4 ; } 2> time_paleomix_optimised_"$i".log
+    { time paleomix bam_pipeline run ~/benchmarks/output/paleomix_optimised/makefile_paleomix.yaml --bwa-max-threads 4 ; } 2> runtimes/time_paleomix_optimised_"$i".log
+    rename -e "s/.summary/_$i.summary/g;s/COD/paleomix_optimised_COD/" paleomix-optimised/*summary
+    cp paleomix_optimised/*summary results/
     if [[ $i != 10 ]]; then
          ## Fix this to make it safer!
          rm -r ~/benchmarks/output/paleomix_optimised/!(makefile_paleomix.yaml)
@@ -808,11 +845,100 @@ for i in {1..10}; do
     conda deactivate
     ## nf-core/eager
     cd ~/benchmarks/output/nfcore-eager/
-    { time nextflow run nf-core/eager -r dev --input ~/benchmarks/output/nfcore-eager/nfcore-eager_tsv.tsv -c ~/.nextflow/pub_eager_vikingfish.conf -profile pub_eager_vikingfish,benchmarking_vikingfish,singularity --fasta ~/benchmarks/reference/GCF_902167405.1_gadMor3.0_genomic.fasta --outdir ~/benchmarks/output/nfcore-eager/results/ -w ~/benchmarks/output/nfcore-eager/work/ --skip_fastqc --skip_preseq --run_bam_filtering --bam_mapping_quality_threshold 25 --bam_discard_unmapped --bam_unmapped_type 'discard' --dedupper 'markduplicates' ; } 2> ../time_nf-core_eager_"$i".log
+    { time nextflow run nf-core/eager -r dev --input ~/benchmarks/output/nfcore-eager/nfcore-eager_tsv.tsv -c ~/.nextflow/pub_eager_vikingfish.conf -profile pub_eager_vikingfish,singularity --fasta ~/benchmarks/reference/GCF_902167405.1_gadMor3.0_genomic.fasta --outdir ~/benchmarks/output/nfcore-eager/results/ -w ~/benchmarks/output/nfcore-eager/work/ --skip_fastqc --skip_preseq --run_bam_filtering --bam_mapping_quality_threshold 25 --bam_discard_unmapped --bam_unmapped_type 'discard' --dedupper 'markduplicates' ; } 2> ../runtimes/time_nf-core-eager_"$i".log
     cd ~/benchmarks/output/
+    cp ~/benchmarks/output/nfcore-eager/results/multiqc/multiqc_data/multiqc_general_stats.txt results/nfcore-eager_multiqc_general_stats_$i.csv
     if [[ $i != 10 ]]; then
          ## Fix this to make it safer!
          rm -r ~/benchmarks/output/nfcore-eager/!(nfcore-eager_tsv.tsv) ~/benchmarks/output/nfcore-eager/.nex*
     fi
+    ## nf-core/eager optimised
+    cd ~/benchmarks/output/nfcore-eager-optimised/
+    { time nextflow run nf-core/eager -r dev --input ~/benchmarks/output/nfcore-eager-optimised/nfcore-eager_tsv.tsv -c ~/.nextflow/pub_eager_vikingfish.conf -profile pub_eager_vikingfish_optimised,pub_eager_vikingfish,singularity --fasta ~/benchmarks/reference/GCF_902167405.1_gadMor3.0_genomic.fasta --outdir ~/benchmarks/output/nfcore-eager-optimised/results/ -w ~/benchmarks/output/nfcore-eager-optimised/work/ --skip_fastqc --skip_preseq --run_bam_filtering --bam_mapping_quality_threshold 25 --bam_discard_unmapped --bam_unmapped_type 'discard' --dedupper 'markduplicates' ; } 2> ../runtimes/time_nf-core-eager-optimised_"$i".log
+    cd ~/benchmarks/output/
+    cp ~/benchmarks/output/nfcore-eager-optimised/results/multiqc/multiqc_data/multiqc_general_stats.txt results/nfcore-eager-optimised_multiqc_general_stats_$i.csv
+    if [[ $i != 10 ]]; then
+         ## Fix this to make it safer!
+         rm -r ~/benchmarks/output/nfcore-eager-optimised/!(nfcore-eager_tsv.tsv) ~/benchmarks/output/nfcore-eager-optimised/.nex*
+    fi
 done
+```
+
+### Results Cleanup
+
+```bash
+grep -n -e 'real' -e 'sys' -e 'user' *.log > benchmarking_aggregated_runtimes.txt
+```
+
+This file was then downloaded to my local PC, and we summarised in the results
+with R.
+
+The R environment is as follows
+
+```r
+library(tidyverse)
+library(knitr)
+
+sessionInfo()
+
+R version 3.6.3 (2020-02-29)
+Platform: x86_64-pc-linux-gnu (64-bit)
+Running under: Ubuntu 20.04.1 LTS
+
+Matrix products: default
+BLAS:   /usr/lib/x86_64-linux-gnu/blas/libblas.so.3.9.0
+LAPACK: /usr/lib/x86_64-linux-gnu/lapack/liblapack.so.3.9.0
+
+locale:
+ [1] LC_CTYPE=en_GB.UTF-8       LC_NUMERIC=C               LC_TIME=en_GB.UTF-8        LC_COLLATE=en_GB.UTF-8     LC_MONETARY=en_GB.UTF-8
+ [6] LC_MESSAGES=en_GB.UTF-8    LC_PAPER=en_GB.UTF-8       LC_NAME=C                  LC_ADDRESS=C               LC_TELEPHONE=C
+[11] LC_MEASUREMENT=en_GB.UTF-8 LC_IDENTIFICATION=C
+
+attached base packages:
+[1] stats     graphics  grDevices utils     datasets  methods   base
+
+other attached packages:
+ [1] knitr_1.29      forcats_0.5.0   stringr_1.4.0   dplyr_1.0.1     purrr_0.3.4     readr_1.3.1     tidyr_1.1.1     tibble_3.0.3    ggplot2_3.3.2  
+[10] tidyverse_1.3.0
+
+loaded via a namespace (and not attached):
+ [1] Rcpp_1.0.5       highr_0.8        cellranger_1.1.0 pillar_1.4.6     compiler_3.6.3   dbplyr_1.4.4     tools_3.6.3      evaluate_0.14    jsonlite_1.7.0  
+[10] lubridate_1.7.9  lifecycle_0.2.0  gtable_0.3.0     pkgconfig_2.0.3  rlang_0.4.7      reprex_0.3.0     cli_2.0.2        DBI_1.1.0        rstudioapi_0.11
+[19] xfun_0.16        haven_2.3.1      withr_2.2.0      xml2_1.3.2       httr_1.4.2       fs_1.5.0         generics_0.0.2   vctrs_0.3.2      hms_0.5.3
+[28] grid_3.6.3       tidyselect_1.1.0 glue_1.4.1       R6_2.4.1         fansi_0.4.1      readxl_1.3.1     modelr_0.1.8     blob_1.2.1       magrittr_1.5
+[37] backports_1.1.8  scales_1.1.1     ellipsis_0.3.1   rvest_0.3.6      assertthat_0.2.1 colorspace_1.4-1 utf8_1.1.4       stringi_1.4.6    munsell_0.5.0
+[46] broom_0.7.0      crayon_1.3.4
+
+## Load aggregated runtimes
+
+results <- read_tsv("benchmarking_aggregated_runtimes.txt", col_names = c("Run", "Runtime"))
+
+## Cleanup 
+
+results_clean <- results %>% 
+  separate(col = Run, sep = ":", c("File", "Line", "Category")) %>%
+  select(-Line) %>%
+  mutate(File = str_remove(File, "time_") %>% 
+           str_remove(".log") %>% 
+           str_replace("nf-core_eager", "nf-core/eager") %>%
+           str_replace("paleomix_optimised", "paleomix-optimised"),
+         Runtime_Minutes = map(Runtime, ~str_split(.x, "m") %>% unlist %>% unlist %>% pluck(1)) %>% unlist %>% as.numeric()
+         ) %>%
+  separate(File, sep = "_", into = c("Pipeline", "Replicate")) %>%
+  select(-Runtime) %>%
+  filter(Replicate != 1)
+
+## Summarise
+
+results_final_tidy <- results_clean %>% 
+  group_by(Pipeline, Category) %>% 
+  summarise(Mean = mean(Runtime_Minutes),
+            SD = round(sd(Runtime_Minutes), digits = 1)) %>%
+  arrange(Category, Mean)
+
+results_final_print <- results_final_tidy %>%
+  unite(col = "Mean Runtime", Mean, SD, sep = ' ± ') %>%
+  pivot_wider(names_from = Category, values_from = `Mean Runtime`) %>%
+  kable()
+
 ```
