@@ -5,12 +5,11 @@ sessionInfo()
 
 ## Columns to keep
 
+## paleomix only reports QF reads so will only use those
 eager_cols <- c(replicate = "Replicate",
                 sample_name = "Sample Name", 
                 processed_reads = "# reads after C&M prior mapping", 
-                mapped_reads = "# mapped reads prior RMDup", 
-                mapped_qf_reads = "# mapped reads prior RMDup QF",
-                ontarget = "Endogenous DNA (%)", 
+                mapped_qf_reads = "# mapped reads prior RMDup QF", 
                 ontarget_qf = "Endogenous DNA QF (%)", 
                 dedupped_mapped_reads = "Mapped Reads after RMDup", 
                 mean_depth_coverage = "Mean Coverage", 
@@ -19,9 +18,7 @@ eager_cols <- c(replicate = "Replicate",
 nfcoreeager_cols <- c(replicate = "Replicate",
                       sample_name = "Sample", 
                       processed_reads = "Samtools Flagstat (pre-samtools filter)_mqc-generalstats-samtools_flagstat_pre_samtools_filter-flagstat_total",
-                      mapped_reads = "Samtools Flagstat (pre-samtools filter)_mqc-generalstats-samtools_flagstat_pre_samtools_filter-mapped_passed",
                       mapped_qf_reads = "Samtools Flagstat (post-samtools filter)_mqc-generalstats-samtools_flagstat_post_samtools_filter-mapped_passed",
-                      ontarget = "endorSpy_mqc-generalstats-endorspy-endogenous_dna",
                       ontarget_qf = "endorSpy_mqc-generalstats-endorspy-endogenous_dna_post",
                       dedupped_mapped_reads = "QualiMap_mqc-generalstats-qualimap-mapped_reads",
                       mean_depth_coverage = "QualiMap_mqc-generalstats-qualimap-mean_coverage",
@@ -31,7 +28,8 @@ nfcoreeager_cols <- c(replicate = "Replicate",
 paleomix_cols <- c(replicate = "Replicate",
                    sample_name = "Target", 
                    processed_reads = "seq_retained_reads", 
-                   mapped_reads = "hits_raw(GCF_902167405.1_gadMor3.0_genomic)", 
+                   mapped_qf_reads = "hits_raw(GCF_902167405.1_gadMor3.0_genomic)", 
+                   ontarget_qf = "hits_raw_frac(GCF_902167405.1_gadMor3.0_genomic)",
                    dedupped_mapped_reads = "hits_unique(GCF_902167405.1_gadMor3.0_genomic)", 
                    mean_depth_coverage = "hits_coverage(GCF_902167405.1_gadMor3.0_genomic)",
                    mean_read_length = "hits_length(GCF_902167405.1_gadMor3.0_genomic)")
@@ -75,7 +73,9 @@ raw_paleomix <- Sys.glob("results/paleomix_C*") %>%
   filter(Measure != "lib_type") %>%
   mutate(Value = as.numeric(Value)) %>%
   pivot_wider(names_from = Measure, values_from = Value) %>%
-  filter(Replicate != 1)
+  filter(Replicate != 1) %>%
+  mutate(`hits_raw_frac(GCF_902167405.1_gadMor3.0_genomic)` = `hits_raw_frac(GCF_902167405.1_gadMor3.0_genomic)` * 100)
+
 
 
 raw_paleomix_optimised <- Sys.glob("results/paleomix_o*") %>%
@@ -86,7 +86,8 @@ raw_paleomix_optimised <- Sys.glob("results/paleomix_o*") %>%
   filter(Measure != "lib_type") %>%
   mutate(Value = as.numeric(Value)) %>%
   pivot_wider(names_from = Measure, values_from = Value) %>%
-  filter(Replicate != 1)
+  filter(Replicate != 1) %>%
+  mutate(`hits_raw_frac(GCF_902167405.1_gadMor3.0_genomic)` = `hits_raw_frac(GCF_902167405.1_gadMor3.0_genomic)` * 100)
 
 
 ## Standardisation and summarising
@@ -108,8 +109,8 @@ standardise_summarise(raw_nfcoreeager, nfcoreeager_cols) %>% mutate(pipeline = "
 standardise_summarise(raw_paleomix, paleomix_cols) %>% mutate(pipeline = "paleomix"),
 standardise_summarise(raw_paleomix_optimised, paleomix_cols) %>% mutate(pipeline = "paleomix_optimsed")) %>%
   select(pipeline, everything()) %>%
-  pivot_wider(names_from = pipeline, values_from = mean_sd_values)
-
-
+  pivot_wider(names_from = pipeline, values_from = mean_sd_values) %>%
+  mutate(category = factor(category, levels = c("processed_reads", "mapped_qf_reads", "ontarget_qf", "dedupped_mapped_reads", "mean_depth_coverage", "mean_read_length"))) %>% 
+  arrange(category)
 
 
