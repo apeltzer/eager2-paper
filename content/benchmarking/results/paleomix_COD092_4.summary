@@ -30,13 +30,13 @@ COD092	*	*	seq_retained_reads	70249181	# Total number of retained reads
 COD092	*	*	seq_retained_nts	3862796586	# Total number of NTs in retained reads
 COD092	*	*	seq_retained_length	54.9870693297	# Average number of NTs in retained reads
 
-COD092	*	*	hits_raw(GCF_902167405.1_gadMor3.0_genomic)	16208079	# Total number of hits (prior to PCR duplicate filtering)
-COD092	*	*	hits_raw_frac(GCF_902167405.1_gadMor3.0_genomic)	0.230722675614	# Total number of hits vs. total number of reads retained
-COD092	*	*	hits_clonality(GCF_902167405.1_gadMor3.0_genomic)	0.148833553933	# Fraction of hits that were PCR duplicates
-COD092	*	*	hits_unique(GCF_902167405.1_gadMor3.0_genomic)	13795773	# Total number of hits (excluding any PCR duplicates)
-COD092	*	*	hits_unique_frac(GCF_902167405.1_gadMor3.0_genomic)	0.196383399829	# Total number of unique hits vs. total number of reads retained
-COD092	*	*	hits_coverage(GCF_902167405.1_gadMor3.0_genomic)	1.00249826555	# Estimated coverage from unique hits
-COD092	*	*	hits_length(GCF_902167405.1_gadMor3.0_genomic)	48.6844892997	# Average number of aligned bases per unique hit
+COD092	*	*	hits_raw(GCF_902167405.1_gadMor3.0_genomic)	16208027	# Total number of hits (prior to PCR duplicate filtering)
+COD092	*	*	hits_raw_frac(GCF_902167405.1_gadMor3.0_genomic)	0.230721935392	# Total number of hits vs. total number of reads retained
+COD092	*	*	hits_clonality(GCF_902167405.1_gadMor3.0_genomic)	0.148830761449	# Fraction of hits that were PCR duplicates
+COD092	*	*	hits_unique(GCF_902167405.1_gadMor3.0_genomic)	13795774	# Total number of hits (excluding any PCR duplicates)
+COD092	*	*	hits_unique_frac(GCF_902167405.1_gadMor3.0_genomic)	0.196383414064	# Total number of unique hits vs. total number of reads retained
+COD092	*	*	hits_coverage(GCF_902167405.1_gadMor3.0_genomic)	1.00249700728	# Estimated coverage from unique hits
+COD092	*	*	hits_length(GCF_902167405.1_gadMor3.0_genomic)	48.6844246651	# Average number of aligned bases per unique hit
 
 
 COD092	COD092	*	lib_type	PE	# SE, PE, or * (for both)
@@ -51,13 +51,13 @@ COD092	COD092	*	seq_retained_reads	70249181	# Total number of retained reads
 COD092	COD092	*	seq_retained_nts	3862796586	# Total number of NTs in retained reads
 COD092	COD092	*	seq_retained_length	54.9870693297	# Average number of NTs in retained reads
 
-COD092	COD092	*	hits_raw(GCF_902167405.1_gadMor3.0_genomic)	16208079	# Total number of hits (prior to PCR duplicate filtering)
-COD092	COD092	*	hits_raw_frac(GCF_902167405.1_gadMor3.0_genomic)	0.230722675614	# Total number of hits vs. total number of reads retained
-COD092	COD092	*	hits_clonality(GCF_902167405.1_gadMor3.0_genomic)	0.148833553933	# Fraction of hits that were PCR duplicates
-COD092	COD092	*	hits_unique(GCF_902167405.1_gadMor3.0_genomic)	13795773	# Total number of hits (excluding any PCR duplicates)
-COD092	COD092	*	hits_unique_frac(GCF_902167405.1_gadMor3.0_genomic)	0.196383399829	# Total number of unique hits vs. total number of reads retained
-COD092	COD092	*	hits_coverage(GCF_902167405.1_gadMor3.0_genomic)	1.00249826555	# Estimated coverage from unique hits
-COD092	COD092	*	hits_length(GCF_902167405.1_gadMor3.0_genomic)	48.6844892997	# Average number of aligned bases per unique hit
+COD092	COD092	*	hits_raw(GCF_902167405.1_gadMor3.0_genomic)	16208027	# Total number of hits (prior to PCR duplicate filtering)
+COD092	COD092	*	hits_raw_frac(GCF_902167405.1_gadMor3.0_genomic)	0.230721935392	# Total number of hits vs. total number of reads retained
+COD092	COD092	*	hits_clonality(GCF_902167405.1_gadMor3.0_genomic)	0.148830761449	# Fraction of hits that were PCR duplicates
+COD092	COD092	*	hits_unique(GCF_902167405.1_gadMor3.0_genomic)	13795774	# Total number of hits (excluding any PCR duplicates)
+COD092	COD092	*	hits_unique_frac(GCF_902167405.1_gadMor3.0_genomic)	0.196383414064	# Total number of unique hits vs. total number of reads retained
+COD092	COD092	*	hits_coverage(GCF_902167405.1_gadMor3.0_genomic)	1.00249700728	# Estimated coverage from unique hits
+COD092	COD092	*	hits_length(GCF_902167405.1_gadMor3.0_genomic)	48.6844246651	# Average number of aligned bases per unique hit
 
 
 COD092	COD092	COD092E1bL1i69	lib_type	PE	# SE, PE, or * (for both)
@@ -72,12 +72,12 @@ COD092	COD092	COD092E1bL1i69	seq_retained_reads	70249181	# Total number of retai
 COD092	COD092	COD092E1bL1i69	seq_retained_nts	3862796586	# Total number of NTs in retained reads
 COD092	COD092	COD092E1bL1i69	seq_retained_length	54.9870693297	# Average number of NTs in retained reads
 
-COD092	COD092	COD092E1bL1i69	hits_raw(GCF_902167405.1_gadMor3.0_genomic)	16208079	# Total number of hits (prior to PCR duplicate filtering)
-COD092	COD092	COD092E1bL1i69	hits_raw_frac(GCF_902167405.1_gadMor3.0_genomic)	0.230722675614	# Total number of hits vs. total number of reads retained
-COD092	COD092	COD092E1bL1i69	hits_clonality(GCF_902167405.1_gadMor3.0_genomic)	0.148833553933	# Fraction of hits that were PCR duplicates
-COD092	COD092	COD092E1bL1i69	hits_unique(GCF_902167405.1_gadMor3.0_genomic)	13795773	# Total number of hits (excluding any PCR duplicates)
-COD092	COD092	COD092E1bL1i69	hits_unique_frac(GCF_902167405.1_gadMor3.0_genomic)	0.196383399829	# Total number of unique hits vs. total number of reads retained
-COD092	COD092	COD092E1bL1i69	hits_coverage(GCF_902167405.1_gadMor3.0_genomic)	1.00249826555	# Estimated coverage from unique hits
-COD092	COD092	COD092E1bL1i69	hits_length(GCF_902167405.1_gadMor3.0_genomic)	48.6844892997	# Average number of aligned bases per unique hit
+COD092	COD092	COD092E1bL1i69	hits_raw(GCF_902167405.1_gadMor3.0_genomic)	16208027	# Total number of hits (prior to PCR duplicate filtering)
+COD092	COD092	COD092E1bL1i69	hits_raw_frac(GCF_902167405.1_gadMor3.0_genomic)	0.230721935392	# Total number of hits vs. total number of reads retained
+COD092	COD092	COD092E1bL1i69	hits_clonality(GCF_902167405.1_gadMor3.0_genomic)	0.148830761449	# Fraction of hits that were PCR duplicates
+COD092	COD092	COD092E1bL1i69	hits_unique(GCF_902167405.1_gadMor3.0_genomic)	13795774	# Total number of hits (excluding any PCR duplicates)
+COD092	COD092	COD092E1bL1i69	hits_unique_frac(GCF_902167405.1_gadMor3.0_genomic)	0.196383414064	# Total number of unique hits vs. total number of reads retained
+COD092	COD092	COD092E1bL1i69	hits_coverage(GCF_902167405.1_gadMor3.0_genomic)	1.00249700728	# Estimated coverage from unique hits
+COD092	COD092	COD092E1bL1i69	hits_length(GCF_902167405.1_gadMor3.0_genomic)	48.6844246651	# Average number of aligned bases per unique hit
 
 

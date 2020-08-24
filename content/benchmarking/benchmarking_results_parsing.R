@@ -114,3 +114,5 @@ standardise_summarise(raw_paleomix_optimised, paleomix_cols) %>% mutate(pipeline
   arrange(category)
 
 
+combined %>%
+  kable()

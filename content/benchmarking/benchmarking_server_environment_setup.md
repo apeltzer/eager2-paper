@@ -836,7 +836,6 @@ for i in {1..10}; do
     ## Paleomix Better defaults=
     { time paleomix bam_pipeline run ~/benchmarks/output/paleomix_optimised/makefile_paleomix.yaml --bwa-max-threads 4 ; } 2> runtimes/time_paleomix_optimised_"$i".log
     rename -e "s/.summary/_$i.summary/g;s/COD/paleomix_optimised_COD/" paleomix-optimised/*summary
-    cp paleomix_optimised/*summary results/
     if [[ $i != 10 ]]; then
          ## Fix this to make it safer!
          rm -r ~/benchmarks/output/paleomix_optimised/!(makefile_paleomix.yaml)
@@ -856,7 +855,6 @@ for i in {1..10}; do
     cd ~/benchmarks/output/nfcore-eager-optimised/
     { time nextflow run nf-core/eager -r dev --input ~/benchmarks/output/nfcore-eager-optimised/nfcore-eager_tsv.tsv -c ~/.nextflow/pub_eager_vikingfish.conf -profile pub_eager_vikingfish_optimised,pub_eager_vikingfish,singularity --fasta ~/benchmarks/reference/GCF_902167405.1_gadMor3.0_genomic.fasta --outdir ~/benchmarks/output/nfcore-eager-optimised/results/ -w ~/benchmarks/output/nfcore-eager-optimised/work/ --skip_fastqc --skip_preseq --run_bam_filtering --bam_mapping_quality_threshold 25 --bam_discard_unmapped --bam_unmapped_type 'discard' --dedupper 'markduplicates' ; } 2> ../runtimes/time_nf-core-eager-optimised_"$i".log
     cd ~/benchmarks/output/
-    cp ~/benchmarks/output/nfcore-eager-optimised/results/multiqc/multiqc_data/multiqc_general_stats.txt results/nfcore-eager-optimised_multiqc_general_stats_$i.csv
     if [[ $i != 10 ]]; then
          ## Fix this to make it safer!
          rm -r ~/benchmarks/output/nfcore-eager-optimised/!(nfcore-eager_tsv.tsv) ~/benchmarks/output/nfcore-eager-optimised/.nex*
@@ -867,11 +865,11 @@ done
 ### Results Cleanup
 
 ```bash
-grep -n -e 'real' -e 'sys' -e 'user' *.log > benchmarking_aggregated_runtimes.txt
+grep -n -e 'real' -e 'sys' -e 'user' runtimes/*.log > benchmarking_aggregated_runtimes.txt
 ```
 
-This file was then downloaded to my local PC, and we summarised in the results
-with R.
+The aggregated runtime and pipeline 'report' files was then downloaded to a
+local PC (via scp), and we summarised in the results with R.
 
 The R environment is as follows
 
