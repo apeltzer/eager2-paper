@@ -20,7 +20,7 @@ nf-core/eager config files avaliable in the nf-core configs central repository:
 https://github.com/nf-core/configs/blob/master/conf/shh.config (for standard
 profiles) and
 https://github.com/nf-core/configs/blob/master/conf/pipeline/eager/shh.config
-(for pipeline specific parameters). 
+(for pipeline specific parameters).
 
 This analysis further uses singularity version XXX, nextflow verison version
 20.04.1 (build 5335)
