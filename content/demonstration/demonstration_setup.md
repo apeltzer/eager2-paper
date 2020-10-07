@@ -4,12 +4,11 @@ This document describes the set up of the pipeline runs used to demonstrate the
 additional functionality of nf-core/eager, primarily running metagenomic
 screening for pathogens alongside running human DNA screening. This is run on an
 institutional server at MPI-SHH due to the requirements of large servers for
-screening via MALT (>756 GB memory)
+screening via MALT (e.g. a 2 TB memory node for NCBI Nt database)
 
-Here we will attempt to reanalyse the 'manual' pathogen screening  in Andrades
-Valtueña et al. 2017 and retrieve human biological metadata of the samples from
-Andrades Valtueña et al. (that were reported in various other papers) but in a
-single nf-core/eager run.
+Here we will attempt to re-analyse the 'manual' human screening statistics and
+pathogen screening  in Barquera et al. (2020, Current Biology) in a single
+nf-core/eager run.
 
 ## Environment
 
@@ -22,25 +21,25 @@ profiles) and
 https://github.com/nf-core/configs/blob/master/conf/pipeline/eager/shh.config
 (for pipeline specific parameters).
 
-This analysis further uses singularity version XXX, nextflow verison version
-20.04.1 (build 5335)
-,
-nf-core/eager version 2.2.0dev commit e8906c128c
+This analysis further uses singularity version XXX, Nextflow version
+20.04.1 (build 5335), and nf-core/eager version 2.2.0dev commit e7471a78a3.
 
 ## Set up
 
-Andrades Valtueña et al. originally took shotgun human data from a range of
-human population-genetics papers, and mapped directly to the _Yersinia pestis_
-genome. The pestis postive samples are those below in the following list.
+Barquera et al. originally generated shotgun data from individuals excavated
+from a 16th century burial ground in Mexico City (Mexico) for human population
+genetics analysis. In addition, they screened the off-target reads from the
+teeth samples for a list of pathogenic taxa. The results from the various
+analyses applied to shotgun screening was then used to guide in-solution 
+enrichment experiments.
 
-Due to the depth of very deep sequencing across many of the samples, we will
-only focus here on two samples: KunilaII and Post6 (representing reasonably
-sequenced samples), representing samples from two sites.
+A summary of the results can be seen here:
 
-| Sample   | Pop-Gen Reference              | Bio. Sex | Human On-Target (%) | Mean Fragment Length |
-|----------|--------------------------------|----------|---------------------|----------------------|
-| KunilaII | Mittnik et al. 2017 Nat Comms. | XY Endo: | 14.81               | 49.8                 |
-| Post6    | Knipper et al. 2017 PNAS        | XY       | 57.16               | 39.7                 |
+| Lab ID | Raw Reads (millions) | Biological Sex  |
+|--------|----------------------|-----------------|
+| SJN001 | ~10                  | Male
+| SJN002 | ~10                  | Male
+| SJN003 | ~10                  | Male
 
 These samples represent different seuqencing strategies including multiple
 libraries (KunilaII, UDG and non-UDG), and also sequencing across multiple
