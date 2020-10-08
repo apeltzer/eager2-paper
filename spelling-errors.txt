@@ -7,7 +7,7 @@ amplicon
 Andrades
 ANGSD
 apeltzer
-Archaeogenetics
+archaeogenetics
 Archäologie
 Arielle
 arxiv
@@ -20,7 +20,7 @@ Barncancerfonden
 Barquera
 bedtools
 bejel
-Benchmarking
+benchmarking
 Bioconda
 bioinf
 bioinformatic
@@ -57,7 +57,7 @@ ERC
 Fagernäs
 FASTA
 fastp
-FASTQ
+fastq
 FastQC
 FASTQs
 filepaths
@@ -98,7 +98,7 @@ Lamnidis
 lifecycle
 Lindenbaum
 Luc
-MapDamage
+mapDamage
 MarkDuplicates
 maxibor
 Maxime
@@ -133,7 +133,7 @@ palaeogenetic
 palaeogeneticists
 Palaeogenetics
 palaeontological
-PALEOMIX
+paleomix
 pallidum
 parallelisation
 parallelised

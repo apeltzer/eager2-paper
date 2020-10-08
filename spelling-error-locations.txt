@@ -93,7 +93,6 @@ content/03.results-and-discussion.md:83:MarkDuplicates
 content/03.results-and-discussion.md:84:PreSeq
 content/03.results-and-discussion.md:86:aDNA
 content/03.results-and-discussion.md:87:DamageProfiler
-content/03.results-and-discussion.md:87:zenodo
 content/03.results-and-discussion.md:88:aDNA
 content/03.results-and-discussion.md:88:PMDtools
 content/03.results-and-discussion.md:89:Bamutils
