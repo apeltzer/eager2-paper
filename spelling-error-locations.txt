@@ -402,11 +402,13 @@ content/80-acknowledgements.md:5:Lindenbaum
 content/80-acknowledgements.md:5:Luc
 content/80-acknowledgements.md:5:Velsko
 content/80-acknowledgements.md:5:Venturini
+content/80-acknowledgements.md:6:Åshild
 content/80-acknowledgements.md:6:Eisenhofer
 content/80-acknowledgements.md:6:Günter
 content/80-acknowledgements.md:6:Pontus
 content/80-acknowledgements.md:6:Skoglund
 content/80-acknowledgements.md:6:Torsten
+content/80-acknowledgements.md:6:Vågene
 content/80-acknowledgements.md:8:Archaeogenetics
 content/80-acknowledgements.md:9:aDNA
 content/80-acknowledgements.md:13:benchmarking

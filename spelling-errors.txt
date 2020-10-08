@@ -11,6 +11,7 @@ Archaeogenetics
 Archäologie
 Arielle
 arxiv
+Åshild
 autosomes
 BAM
 BAMs
@@ -34,7 +35,7 @@ CLI
 CLIs
 commensal
 commmon
-conda
+Conda
 config
 configs
 coverages
@@ -97,12 +98,12 @@ Lamnidis
 lifecycle
 Lindenbaum
 Luc
-MapDamage
-markduplicates
+mapDamage
+MarkDuplicates
 maxibor
 Maxime
 MaxUlysse
-Metagenomic
+metagenomic
 Microbiome
 microbiomes
 microbiota
@@ -148,7 +149,7 @@ pileupCaller
 PMDtools
 Pontus
 POSIX
-pre
+Pre
 preprint
 preprocessing
 PreSeq
@@ -167,7 +168,7 @@ robusticity
 runnable
 runtime
 runtimes
-samtools
+SAMtools
 Scalability
 Schalkwyk
 Schiffels
@@ -192,6 +193,7 @@ UDG
 und
 UnifiedGenotyper
 Universität
+Vågene
 Valtueña
 VCF
 Velsko
