@@ -1,4 +1,4 @@
-Adapter
+adapter
 AdapterRemoval
 aDNA
 aidaanva
@@ -7,7 +7,7 @@ amplicon
 Andrades
 ANGSD
 apeltzer
-archaeogenetics
+Archaeogenetics
 Archäologie
 Arielle
 arxiv
@@ -34,7 +34,7 @@ CLI
 CLIs
 commensal
 commmon
-Conda
+conda
 config
 configs
 coverages
@@ -70,7 +70,7 @@ GATK
 gau
 GCF
 genomic
-genotyping
+Genotyping
 Günter
 GWDG
 Haak
@@ -97,7 +97,7 @@ Lamnidis
 lifecycle
 Lindenbaum
 Luc
-mapDamage
+MapDamage
 markduplicates
 maxibor
 Maxime
@@ -132,13 +132,13 @@ palaeogenetic
 palaeogeneticists
 Palaeogenetics
 palaeontological
-paleomix
+PALEOMIX
 pallidum
 parallelisation
 parallelised
 Pathogenomics
 PCR
-peltzer
+Peltzer
 performant
 pestis
 Philipp
@@ -167,7 +167,7 @@ robusticity
 runnable
 runtime
 runtimes
-SAMtools
+samtools
 Scalability
 Schalkwyk
 Schiffels
