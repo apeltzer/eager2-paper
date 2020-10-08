@@ -2,7 +2,7 @@
 output/*
 !output/README.md
 
-webpage/v
+#webpage/v
 
 # When PDF building fails, a temporary symlink named images in the root
 # directory is not removed.
