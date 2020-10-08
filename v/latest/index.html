@@ -13,7 +13,7 @@
   <meta name="author" content="Maxime U. Garcia" />
   <meta name="author" content="Judith Neukamm" />
   <meta name="author" content="Alexander Peltzer" />
-  <meta name="dcterms.date" content="2020-08-06" />
+  <meta name="dcterms.date" content="2020-10-08" />
   <meta name="keywords" content="nf-core, nextflow, ancientDNA, aDNA, palaeogenetics, archaeogenetics, bioinformatics" />
   <title>Reproducible, portable, and efficient ancient genome reconstruction with nf-core/eager</title>
   <style>
@@ -98,8 +98,8 @@
   <meta name="citation_title" content="Reproducible, portable, and efficient ancient genome reconstruction with nf-core/eager" />
   <meta property="og:title" content="Reproducible, portable, and efficient ancient genome reconstruction with nf-core/eager" />
   <meta property="twitter:title" content="Reproducible, portable, and efficient ancient genome reconstruction with nf-core/eager" />
-  <meta name="dc.date" content="2020-08-06" />
-  <meta name="citation_publication_date" content="2020-08-06" />
+  <meta name="dc.date" content="2020-10-08" />
+  <meta name="citation_publication_date" content="2020-10-08" />
   <meta name="dc.language" content="en-GB" />
   <meta name="citation_language" content="en-GB" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -148,13 +148,13 @@
   <meta name="citation_fulltext_html_url" content="https://apeltzer.github.io/eager2-paper/" />
   <meta name="citation_pdf_url" content="https://apeltzer.github.io/eager2-paper/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://apeltzer.github.io/eager2-paper/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://apeltzer.github.io/eager2-paper/v/66afeffdd0db93f7c3d5e6a40c223aecacc70241/" />
-  <meta name="manubot_html_url_versioned" content="https://apeltzer.github.io/eager2-paper/v/66afeffdd0db93f7c3d5e6a40c223aecacc70241/" />
-  <meta name="manubot_pdf_url_versioned" content="https://apeltzer.github.io/eager2-paper/v/66afeffdd0db93f7c3d5e6a40c223aecacc70241/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://apeltzer.github.io/eager2-paper/v/de239a177d0a3c503c7c14de4e8c1f2c80e66c64/" />
+  <meta name="manubot_html_url_versioned" content="https://apeltzer.github.io/eager2-paper/v/de239a177d0a3c503c7c14de4e8c1f2c80e66c64/" />
+  <meta name="manubot_pdf_url_versioned" content="https://apeltzer.github.io/eager2-paper/v/de239a177d0a3c503c7c14de4e8c1f2c80e66c64/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
-  <meta property="og:image" content="https://github.com/apeltzer/eager2-paper/raw/66afeffdd0db93f7c3d5e6a40c223aecacc70241/content/images/nf-core-eager_social_preview.png" />
-  <meta property="twitter:image" content="https://github.com/apeltzer/eager2-paper/raw/66afeffdd0db93f7c3d5e6a40c223aecacc70241/content/images/nf-core-eager_social_preview.png" />
+  <meta property="og:image" content="https://github.com/apeltzer/eager2-paper/raw/de239a177d0a3c503c7c14de4e8c1f2c80e66c64/content/images/nf-core-eager_social_preview.png" />
+  <meta property="twitter:image" content="https://github.com/apeltzer/eager2-paper/raw/de239a177d0a3c503c7c14de4e8c1f2c80e66c64/content/images/nf-core-eager_social_preview.png" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
   <link rel="mask-icon" href="https://manubot.org/safari-pinned-tab.svg" color="#ad1457" />
   <meta name="theme-color" content="#ad1457" />
@@ -166,10 +166,10 @@
 </header>
 <p><small><em>
 This manuscript
-(<a href="https://apeltzer.github.io/eager2-paper/v/66afeffdd0db93f7c3d5e6a40c223aecacc70241/">permalink</a>)
+(<a href="https://apeltzer.github.io/eager2-paper/v/de239a177d0a3c503c7c14de4e8c1f2c80e66c64/">permalink</a>)
 was automatically generated
-from <a href="https://github.com/apeltzer/eager2-paper/tree/66afeffdd0db93f7c3d5e6a40c223aecacc70241">apeltzer/eager2-paper@66afeff</a>
-on August 6, 2020.
+from <a href="https://github.com/apeltzer/eager2-paper/tree/de239a177d0a3c503c7c14de4e8c1f2c80e66c64">apeltzer/eager2-paper@de239a1</a>
+on October 8, 2020.
 </em></small></p>
 <h2 id="authors">Authors</h2>
 <ul>
@@ -274,15 +274,12 @@ Quantitative Biology Center (QBiC), Eberhard-Karls-Universität, Tübingen, Germ
 palaeontological, and biological questions is resulting in a rising diversity in
 the size of laboratories and scale of analyses being performed. In the context
 of this heterogeneous landscape, we present nf-core/eager, an advanced and
-entirely redesigned pipeline for the analysis of ancient genomic data.
-nf-core/eager builds on existing ideas and concepts introduced in the original
-EAGER pipeline, and improves various aspects of the analysis procedure by
-employing computational frameworks such as Nextflow and nf-core. The pipeline
-aims to address three main themes: accessibility and adaptability to different
-research groups and their computing configurations, reproducibility to ensure
-robust analytical standards in the field, and updating the EAGER pipeline to the
-latest routine ancient genomic practises. This new version of EAGER has been
-developed within the nf-core initiative, to ensure high quality software
+entirely redesigned and extended pipeline for the analysis of ancient genomic
+data. This Nextflow pipeline aims to address three main themes: accessibility
+and adaptability to different computing configurations, reproducibility to
+ensure robust analytical standards in the field, and updating the pipeline to
+the latest routine ancient genomic practises. This new version of EAGER has been
+developed within the nf-core initiative, to ensure high-quality software
 development and maintenance support; contributing to a long-term lifecycle for
 the pipeline. nf-core/eager will assist in ensuring that ancient DNA sequencing
 data can be used by a diverse range of research groups and fields.</p>
@@ -321,7 +318,7 @@ heat, moisture, and microbial- and burial-environment processes lead to varying
 rates of degradation <span class="citation" data-cites="NVqMN9QU jz1XHWKM">[<a href="#ref-NVqMN9QU" role="doc-biblioref">34</a>,<a href="#ref-jz1XHWKM" role="doc-biblioref">35</a>]</span>. The original DNA content of a sample
 is therefore increasingly lost over time and supplanted by younger
 ‘environmental’ DNA. Later handling by archaeologists, museum curators, and
-scientists can also contribute ‘modern’ contamination. While these
+other researchers can also contribute ‘modern’ contamination. While these
 characteristics can help provide evidence towards the ‘authenticity’ of true
 aDNA sequences (e.g. aDNA C&gt;T ‘damage’ profiles
 <span class="citation" data-cites="14YGEdSwc">[<a href="#ref-14YGEdSwc" role="doc-biblioref">36</a>]</span>), they also pose specific challenges such
@@ -375,14 +372,14 @@ compatibility with software environments and containers such as Conda
 <span class="citation" data-cites="iU0FZYFP">[<a href="#ref-iU0FZYFP" role="doc-biblioref">46</a>]</span>, Docker <span class="citation" data-cites="rmvJ2O0Q">[<a href="#ref-rmvJ2O0Q" role="doc-biblioref">47</a>]</span> and Singularity
 <span class="citation" data-cites="99QkJBoF">[<a href="#ref-99QkJBoF" role="doc-biblioref">48</a>]</span>. These are isolated sandboxes that include all software
 (with exact versions) required by the pipeline, in a form that is installable
-and runnable by users regardless of the setup of their local software
+and runnable by users regardless of the set up of their local software
 environment. Another major change with nf-core/eager is that the
 graphical-user-interface (GUI) set up of an EAGER run is now replaced with a
 command-line-interface (CLI) as the primary user interaction mode. This is more
 compatible and portable with most HPCs (that may not offer display of a window
 system), and is in line with the vast majority of bioinformatic tools. We
 therefore believe this will not be a hindrance to new researchers from outside
-computational biology. However, a GUI-based pipeline setup is now offered via
+computational biology. However, a GUI-based pipeline set up is now offered via
 the nf-core website (<a href="https://nf-co.re/launch">https://nf-co.re/launch</a>), which
 provides a commmon GUI format across multiple pipelines as well as additional
 robusticity checks of input parameters for those less familiar with CLIs.
@@ -412,7 +409,7 @@ pipeline by replacing the sample-by-sample sequential processing with Nextflow�
 asynchronous job parallelisation, whereby multiple pipeline steps and samples
 are run in parallel (in addition to natively parallelised pipeline steps). This
 is similar to the approach taken by paleomix, however nf-core/eager expands this
-by utilising Nextflow ability to customise resource settings the parameters for
+by utilising Nextflow’s ability to customise resource settings the parameters for
 every job in the pipeline; reducing unnecessary resource allocation that can
 occur with unfamiliar users to each step of an NGS data processing pipeline.
 This is particularly pertinent given the increasing use of centralised HPCs or
@@ -481,7 +478,7 @@ as the GATK HaplotypeCaller performs <em>de novo</em> assembly around possible
 variants, which may not be suitable for low-coverage aDNA data.</p>
 <div id="fig:workflow-schematic" class="fignos">
 <figure>
-<img src="images/Fig1_eager2_workflow.png" style="width:100.0%" alt="" /><figcaption><span>Figure 1:</span> Simplified schematic of the nf-core/eager workflow pipeline. Green filled
+<img src="images/eager2_workflow.png" style="width:100.0%" alt="" /><figcaption><span>Figure 1:</span> Simplified schematic of the nf-core/eager workflow pipeline. Green filled
 bubbles indicate new functionality added over the original EAGER
 pipeline.</figcaption>
 </figure>
@@ -514,13 +511,13 @@ partial functionality cross represents not implemented.
 </thead>
 <tbody>
 <tr class="odd">
-<td>Command line setup</td>
+<td>Command line set up</td>
 <td style="text-align: center;">✗</td>
 <td style="text-align: center;">✓</td>
 <td style="text-align: center;">✓</td>
 </tr>
 <tr class="even">
-<td>GUI Setup</td>
+<td>GUI set up</td>
 <td style="text-align: center;">✓</td>
 <td style="text-align: center;">✗</td>
 <td style="text-align: center;">✓</td>
@@ -742,23 +739,65 @@ stages of the pipeline.</p>
 <p>An overview of the entire pipeline is shown in Fig. <a href="#fig:workflow-schematic">1</a>,
 and a tabular comparison of functionality between EAGER, paleomix and
 nf-core/eager in <a href="#tbl:pipeline-comparison">1</a>.</p>
+<p>To demonstrate the simultaneous genomic analysis of human DNA and metagenomic
+screening for putative pathogen, and improved results reporting, we re-analysed
+data from Barquera et al. <span class="citation" data-cites="wsKrZHpG">[<a href="#ref-wsKrZHpG" role="doc-biblioref">80</a>]</span>, who performed a
+multi-discipline study of three 16th century individuals excavated from a mass
+burial site in Mexico City. The authors reported genetic results showing
+sufficient on-target human DNA (&gt;1%) with typical aDNA damage (&gt;20% C to T
+reference mismatches in the first base of the 5’ ends of reads) for downstream
+population-genetic analysis, Y-chromosome coverage indicative that the three
+individuals were genetically Male, and one individual (Lab ID: SJN003) contained
+DNA suggesting a possible infection by <em>Treponema pallidum</em>, a species with a
+variety of strains that can cause diseases such as syphilis, bejel and yaws, and
+a second individual (Lab ID: SJN001) with the presence of Hepatitis B virus.
+Both results were confirmed via in-solution enrichment approaches.</p>
+<p>We were able to successfully replicate the human and pathogen screening results
+in a single run of nf-core/eager. Mapping to the human reference genome (hs37d5)
+with BWA aln and binning of off-target reads with MALT to the NCBI Nucleotide
+database (2017-10-26) yielded the same results of all individuals having a
+biological sex of Male as well as the same frequency of C -&gt; T miscoding lesions
+and short fragment lengths (characteristic of aDNA). Metagenomic hits to both
+pathogens from the same individuals that yielded complete genomes in the
+original publication were also detected. Both results and other processing
+statistics were identified via a single interactive MultiQC report, excerpts of
+which can be seen in Figure <a href="#fig:dual-human-pathogen">2</a>. The full interactive
+report can be seen in the supplementary information.</p>
+<div id="fig:dual-human-pathogen" class="fignos">
+<figure>
+<img src="images/dualhumanpathogen_exportedmqc_base_edit.png" style="width:70.0%" alt="" /><figcaption><span>Figure 2:</span> Sections of MultiQC report (v1.10dev) from the outcome of simultaneous human
+DNA and microbial pathogen screening with nf-core/eager, including <strong>A</strong>
+Sex.DetERRmine output from Male biological sex assignment with coverages on X
+and Y being half of that of autosomes, and <strong>B</strong> HOPS output with detection on
+of both <em>Treponema pallidum</em> and Hepatitis B virus reads. Other taxa in HOPS
+output represent typical oral commensal microbiota found in teeth. MultiQC v1.10
+will be included in a point release of nf-core/eager, once released by the
+developer, but in the meantime can be manually run to get the same results as
+v1.9 but with the integrate HOPS heatmap. Data was shotgun data from Barquera et
+al. 2020 <span class="citation" data-cites="wsKrZHpG">[<a href="#ref-wsKrZHpG" role="doc-biblioref">80</a>]</span>, and replicated results here were
+originally verified in the publication via enrichment methods. The full
+interactive reports for both MultiQC 1.9 and 1.10 can be seen in the
+supplementary
+information.</figcaption>
+</figure>
+</div>
 <h2 id="accessibility">Accessibility</h2>
 <p>Alongside the interactive MultiQC report, we have written extensive
 documentation on all parts of running and interpreting the output of the
 pipeline. Given that a large fraction of aDNA researchers come from fields
 outside computational biology, and thus may have limited computational training,
-we have written documentation <span class="citation" data-cites="1Gpn4nsE5">[<a href="#ref-1Gpn4nsE5" role="doc-biblioref">80</a>]</span> that also gives
+we have written documentation <span class="citation" data-cites="1Gpn4nsE5">[<a href="#ref-1Gpn4nsE5" role="doc-biblioref">81</a>]</span> that also gives
 guidance on how to interpret each section of the report - specifically in the
 context of NGS and aDNA. This includes best practices or expected output
 schematic images, which are published under CC-BY licenses to allow for use in
 other training material (an example can be seen in Fig.
-<a href="#fig:doc-image-example">2</a>). We hope this open-access resource will make the study
+<a href="#fig:doc-image-example">3</a>). We hope this open-access resource will make the study
 of aDNA more accessible to researchers new to the field, by providing practical
 guidelines on how to evaluate characteristics and effects of aDNA on downstream
 analyses.</p>
 <div id="fig:doc-image-example" class="fignos">
 <figure>
-<img src="images/Fig2_fastqc_adapter_content.png" style="width:70.0%" alt="" /><figcaption><span>Figure 2:</span> Example schematic images of pipeline output documentation that can assist new
+<img src="images/fastqc_adapter_content.png" style="width:70.0%" alt="" /><figcaption><span>Figure 3:</span> Example schematic images of pipeline output documentation that can assist new
 users in the interpretation to next-generation-sequencing aDNA
 processing.</figcaption>
 </figure>
@@ -780,79 +819,121 @@ nf-core pipelines.</p>
 <p>We compared pipeline run-times of the three pipelines to show that the new
 implementation of nf-core/eager is equivalent or more efficient than EAGER or
 paleomix. While similar pipelines designed for aDNA have also been released,
-such as ATLAS <span class="citation" data-cites="ZEaeXPY6">[<a href="#ref-ZEaeXPY6" role="doc-biblioref">81</a>]</span> or HOPS
-<span class="citation" data-cites="doi:https://doi.org/10.1186/s13059-019-1903-0">[<span class="citeproc-not-found" data-reference-id="doi:https://doi.org/10.1186/s13059-019-1903-0"><strong>???</strong></span>]</span>, these generally have been
-designed with specific contexts in mind (e.g. human population genetics or
-pathogen screening) and do not include many of the preprocessing steps required
-for analysing NGS data.</p>
-<p>We ran each pipeline on a subset of Vking-age cod (<em>Gadus morhua</em>) genomic data
+such as ATLAS <span class="citation" data-cites="ZEaeXPY6">[<a href="#ref-ZEaeXPY6" role="doc-biblioref">82</a>]</span> or HOPS <span class="citation" data-cites="cvMiJCKj">[<a href="#ref-cvMiJCKj" role="doc-biblioref">75</a>]</span>,
+these generally have been designed with specific contexts in mind (e.g. human
+population genetics or pathogen screening) and do not include many of the
+preprocessing steps required for analysing NGS data.</p>
+<p>We ran each pipeline on a subset of Viking-age cod (<em>Gadus morhua</em>) genomic data
 from <span class="citation" data-cites="ZMf8LvSn">[<a href="#ref-ZMf8LvSn" role="doc-biblioref">4</a>]</span>. This data was originally run using
 paleomix, and was re-run here as described but with paleomix (v1.2.14), with
 settings for the other two pipelines as close as possible to the original paper
-(EAGER with v1.92.33, and nf-core/EAGER with v2.2.0dev, commit <strong>XXX</strong>).
-Benchmarking environment and exact pipeline run settings can be seen in
-<strong>METHODS</strong> and <strong>SUPPLEMENTARY INFORMATION</strong>. The benchmarking environment was
-set using the Ubuntu 18.04 operating system on a 32 CPU and 256 GB RAM VM
-instance of the cloud service from the GWDG <strong>MORE DEETZ HERE</strong>. Resource
-parameters of each tool were only modified to specify the maximum available on
-the server and otherwise left as default. Two samples with three paired-end
-sequencing runs were analysed, with adapter clipping and merging
-(AdapterRemoval), mapping (bwa aln), duplicate removal (markduplicates) and
-damage profiling (paleomix: mapDamage2, EAGER and nf-core/EAGER: DamageProfiler)
-steps performed. We ran the commands for each tool sequentially, but repeated
-these batch of commands 10 times - to account for variability in the cloud
-service IO connection. Run times were measured using the GNU time tool (v1.7).</p>
-<div id="tbl:benchmarking-results" class="tablenos">
-<table>
-<caption><span>Table 2:</span> Comparison of run times between three ancient DNA pipelines. paleomix has
-an additional run with ‘optimised’ parameters with fairer resources for
-comparison .</caption>
+(EAGER with v1.92.33, and nf-core/EAGER with v2.2.0dev, commit
+830c22d448441e5e19508c198f530a7656c9f25d). Benchmarking environment and exact
+pipeline run settings can be seen in Methods and Supplementary methods. Two samples from
+three Illumina paired-end sequencing runs were analysed, with adapter clipping
+and merging (AdapterRemoval), mapping (bwa aln), duplicate removal
+(markduplicates) and damage profiling (paleomix: mapDamage2, EAGER and
+nf-core/EAGER: DamageProfiler) steps performed. We ran the commands for each
+tool sequentially, but repeated these batch of commands 10 times - to account
+for variability in the cloud service’s IO connection. Run times were measured
+using the GNU time tool (v1.7).</p>
+<div id="tbl:benchmarking-runtimes" class="tablenos">
+<table style="width:100%;">
+<caption><span>Table 2:</span> Comparison of run times in minutes between three ancient DNA pipelines.
+paleomix and nf-core/eager has additional runs with ‘optimised’ parameters with
+fairer computational resources matching modern multi-threading strategies for
+comparison. Values represent mean and standard deviation of run times in minutes
+.</caption>
+<colgroup>
+<col style="width: 30%" />
+<col style="width: 10%" />
+<col style="width: 15%" />
+<col style="width: 14%" />
+<col style="width: 12%" />
+<col style="width: 16%" />
+</colgroup>
 <thead>
 <tr class="header">
-<th style="text-align: center;">Tool</th>
-<th style="text-align: center;">Version</th>
-<th>Environment</th>
-<th style="text-align: right;">Mean Run Time</th>
-<th style="text-align: right;">SD Run Time</th>
+<th style="text-align: left;">Pipeline</th>
+<th style="text-align: left;">Version</th>
+<th style="text-align: left;">Environment</th>
+<th style="text-align: left;">real</th>
+<th style="text-align: left;">sys</th>
+<th style="text-align: left;">user</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td style="text-align: center;">EAGER</td>
-<td style="text-align: center;">1.92.33</td>
-<td>singularity</td>
-<td style="text-align: right;"></td>
-<td style="text-align: right;"></td>
+<td style="text-align: left;">nf-core-eager (optimised)</td>
+<td style="text-align: left;">2.2.0dev</td>
+<td style="text-align: left;">singularity</td>
+<td style="text-align: left;">105.6 ± 4.6</td>
+<td style="text-align: left;">13.6 ± 0.7</td>
+<td style="text-align: left;">1593 ± 79.7</td>
 </tr>
 <tr class="even">
-<td style="text-align: center;">paleomix</td>
-<td style="text-align: center;">1.2.14</td>
-<td>conda</td>
-<td style="text-align: right;"></td>
-<td style="text-align: right;"></td>
+<td style="text-align: left;">paleomix (optimised)</td>
+<td style="text-align: left;">1.2.14</td>
+<td style="text-align: left;">conda</td>
+<td style="text-align: left;">130.6 ± 8.7</td>
+<td style="text-align: left;">12 ± 0.7</td>
+<td style="text-align: left;">1820.2 ± 36.9</td>
 </tr>
 <tr class="odd">
-<td style="text-align: center;">paleomix (optimised)</td>
-<td style="text-align: center;">1.2.14</td>
-<td>conda</td>
-<td style="text-align: right;"></td>
-<td style="text-align: right;"></td>
+<td style="text-align: left;">nf-core-eager</td>
+<td style="text-align: left;">2.2.0dev</td>
+<td style="text-align: left;">singularity</td>
+<td style="text-align: left;">209.2 ± 4.4</td>
+<td style="text-align: left;">11 ± 0.9</td>
+<td style="text-align: left;">1407.7 ± 30.2</td>
 </tr>
 <tr class="even">
-<td style="text-align: center;">nf-core/eager</td>
-<td style="text-align: center;">2.2.0dev</td>
-<td>conda</td>
-<td style="text-align: right;"></td>
-<td style="text-align: right;"></td>
+<td style="text-align: left;">EAGER</td>
+<td style="text-align: left;">1.92.37</td>
+<td style="text-align: left;">singularity</td>
+<td style="text-align: left;">224.2 ± 4.9</td>
+<td style="text-align: left;">22.9 ± 0.3</td>
+<td style="text-align: left;">1736.3 ± 70.2</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">paleomix</td>
+<td style="text-align: left;">1.2.14</td>
+<td style="text-align: left;">conda</td>
+<td style="text-align: left;">314.6 ± 2.9</td>
+<td style="text-align: left;">10.7 ± 1</td>
+<td style="text-align: left;">1506.7 ± 14</td>
 </tr>
 </tbody>
 </table>
 </div>
-<p>The results of the benchmarking tests can be seen in Table
-<a href="#tbl:benchmarking-results">2</a>. Due to ‘unfair’ defaults of paleomix of only
-running mapping with bwa on 1 thread, we also re-ran paleomix with the flag
-–max-bwa-threads set to 4 (listed in Table <a href="#tbl:benchmarking-results">2</a> as
-‘optimised’), which is equivalent to the bwa process of nf-core/eager.</p>
+<p>A summary of runtimes of the benchmarking tests can be seen in Table
+<a href="#tbl:benchmarking-runtimes">2</a>. nf-core/eager showed lowest runtimes across all
+three time metrics (Real: real time, System: cumulative CPU system-task times,
+User: cumulative CPU time of all tasks) when running on default parameters. This
+highlights the improved efficiency of nf-core/eager’s asynchronous processing
+system and per-process resource customisation (here represented by nf-core/eager
+defaults designed for typical HPC set ups).</p>
+<p>As a more realistic demonstration of modern computing multi-threading set ups,
+thread, we also re-ran paleomix with the flag –max-bwa-threads set to 4 (listed
+in Table <a href="#tbl:benchmarking-runtimes">2</a> as ‘optimised’), which is equivalent to a
+single bwa process of nf-core/eager. This resulted in a much faster run-time
+than that of default nf-core/eager, due to the approach of paleomix of mapping
+each lane of a library separately, whereas nf-core/eager will map all lanes of a
+single library merged together. Therefore, given that each library was split
+across three lanes, increasing the threads of bwa to 4 resulted in 12 per
+library, whereas nf-core/eager only gave 4 for a single bwa process of one
+library. While the paleomix approach is valid, we opted to retain the
+per-library mapping as it is often the longest running step of NGS
+genome-mapping pipelines, and it prevents flooding of HPC scheduling systems
+with many long-running jobs. Secondly, if users regularly use multi-lane data,
+due nf-core/eager’s fine-granularity control, they can simply modify
+nf-core/eager’s bwa process resources via config files to account for this. When
+we optimised parameters were used for bwa multi-threading and multiple lanes to
+the same number of bwa threads as the optimised paleomix run, nf-core/eager
+still displayed shorter runtimes. All metrics including mapped reads,
+percentage on-target, mean depth coverage and mean read lengths across all
+pipelines were extremely similar across all pipelines and replicates (see
+methods <a href="#tbl:benchmarking-results">3</a>).</p>
 <h2 id="conclusion">Conclusion</h2>
 <p>nf-core/eager is an efficient, portable, and accessible pipeline for processing
 ancient genomic data. This re-implementation of EAGER into Nextflow and nf-core
@@ -869,11 +950,11 @@ analysis.</p>
 installation <em>or</em> Docker/Singularity container installation. A quick
 installation guide to follow to get started can be found in the <em>Quickstart</em>
 section of the nf-core/eager repository
-<span class="citation" data-cites="NXbAmDI0">[<a href="#ref-NXbAmDI0" role="doc-biblioref">82</a>]</span>.</p>
+<span class="citation" data-cites="NXbAmDI0">[<a href="#ref-NXbAmDI0" role="doc-biblioref">83</a>]</span>.</p>
 <h3 id="running">Running</h3>
 <p>After the installation, users can run the pipeline using standard test data by
 utilising some of the test profiles we provide (e.g. using Docker):</p>
-<div class="sourceCode" id="cb1"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1"></a><span class="ex">nextflow</span> run nf-core/eager -r 2.1.0 -profile test,docker</span></code></pre></div>
+<div class="sourceCode" id="cb1"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1"></a><span class="ex">nextflow</span> run nf-core/eager -r 2.2.0 -profile test,docker</span></code></pre></div>
 <p>This will download test data automatically, run the pipeline locally with all
 software tools containerised in a Docker image and store the output of that run
 in the a ‘./results’ folder of your current directory.</p>
@@ -896,19 +977,20 @@ using different flags at the request of the user, to allow high customisation to
 each user’s needs. For example, to include metagenomic screening of off-target
 reads, and sex determination based on on-target mappings of pre-clipped
 single-end data:</p>
-<div class="sourceCode" id="cb2"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1"></a><span class="ex">nextflow</span> run nf-core/eager -r 2.1.0 \</span>
+<div class="sourceCode" id="cb2"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1"></a><span class="ex">nextflow</span> run nf-core/eager -r 2.2.0 \</span>
 <span id="cb2-2"><a href="#cb2-2"></a>-profile conda \</span>
 <span id="cb2-3"><a href="#cb2-3"></a>--input <span class="st">&#39;/&lt;path&gt;/&lt;to&gt;/*/*R1*.fastq.gz&#39;</span> --single_end \</span>
 <span id="cb2-4"><a href="#cb2-4"></a>--fasta <span class="st">&#39;/&lt;path&gt;/&lt;to&gt;/&lt;reference&gt;.fasta.gz&#39;</span> \</span>
 <span id="cb2-5"><a href="#cb2-5"></a>--skip_fastqc --skip_adapterremoval \</span>
 <span id="cb2-6"><a href="#cb2-6"></a>--run_bam_filtering --bam_discard_unmapped --bam_unmapped_type <span class="st">&#39;fastq&#39;</span> \</span>
-<span id="cb2-7"><a href="#cb2-7"></a>--run_metagenomic_screening --metagenomic_tool <span class="st">&#39;malt&#39;</span> --database <span class="st">&#39;/&lt;path&gt;/&lt;to&gt;/&lt;malt_database&gt;&#39;</span> \</span>
-<span id="cb2-8"><a href="#cb2-8"></a>--run_sexdeterrmine</span></code></pre></div>
+<span id="cb2-7"><a href="#cb2-7"></a>--run_metagenomic_screening \</span>
+<span id="cb2-8"><a href="#cb2-8"></a>--metagenomic_tool <span class="st">&#39;malt&#39;</span> --database <span class="st">&#39;/&lt;path&gt;/&lt;to&gt;/&lt;malt_database&gt;&#39;</span> \</span>
+<span id="cb2-9"><a href="#cb2-9"></a>--run_sexdeterrmine</span></code></pre></div>
 <h4 id="profiles">Profiles</h4>
 <p>In additional to private locally defined profiles, we utilise a central
 configuration repository to enable users from various institutions to use
 pipelines on their particular infrastructure more easily
-<span class="citation" data-cites="13kS0x2y1">[<a href="#ref-13kS0x2y1" role="doc-biblioref">83</a>]</span>. There are multiple resources listed
+<span class="citation" data-cites="13kS0x2y1">[<a href="#ref-13kS0x2y1" role="doc-biblioref">84</a>]</span>. There are multiple resources listed
 in this repository with information on how to add your own configuration profile
 with help from the nf-core community.</p>
 <p>Users can customise this infrastructure profile by themselves, with the nf-core
@@ -917,7 +999,7 @@ pipeline runs successfully, and can then rely on the Nextflow and nf-core
 framework to ensure compatibility upon further infrastructure changes. For
 example, in order to run the nf-core/eager pipeline at the Max Planck Institute
 for the Science of Human History (MPI-SHH) in Jena, users only have to run:</p>
-<div class="sourceCode" id="cb3"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1"></a><span class="ex">nextflow</span> run nf-core/eager -r 2.1.0 -profile shh_cdag,test</span></code></pre></div>
+<div class="sourceCode" id="cb3"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1"></a><span class="ex">nextflow</span> run nf-core/eager -r 2.2.0 -profile shh_cdag,test</span></code></pre></div>
 <p>This runs the testing profile of the nf-core/eager pipeline with parameters
 specifically adapted to the HPC system at the MPI-SHH. In some cases, similar
 institutional configs for other institutions may already exist (originally
@@ -936,10 +1018,10 @@ prior mapping. Libraries with the sample name and with the same UDG treatment,
 will be merged after deduplication. If libraries with the sample name have
 different UDG treatment, these will be merged after the aDNA modification stage
 (i.e. BAM trimming or PMDtools, if turned on), prior to genotyping, as shown in
-Figure <a href="#fig:merging-files">3</a>.</p>
+Figure <a href="#fig:merging-files">4</a>.</p>
 <div id="fig:merging-files" class="fignos">
 <figure>
-<img src="images/Fig3_merging_files.png" style="width:70.0%" alt="" /><figcaption><span>Figure 3:</span> Schematic of different processing and merging points based on the nature of
+<img src="images/Fig3_merging_files.png" style="width:70.0%" alt="" /><figcaption><span>Figure 4:</span> Schematic of different processing and merging points based on the nature of
 different libraries, as specified in metadata of a TSV file. Dashed boxes
 represent optional library-specific
 processes</figcaption>
@@ -963,14 +1045,259 @@ close inspection and further downstream analysis, as well as a MultiQC report.
 If an emailing daemon is set up on the server, the latter can be emailed to
 users automatically, when starting the pipeline with a dedicated option
 (--email you@yourdomain.org).</p>
+<h2 id="benchmarking">Benchmarking</h2>
+<h3 id="dual-screening-of-human-and-microbial-pathogen-dna">Dual Screening of Human and Microbial Pathogen DNA</h3>
+<p>Full step-by-step instructions on the set up of the demonstration (including
+input TSV file) can be seen in the supplementary information. To demonstrate the
+efficiency and conciseness of nf-core/eager pipeline in it’s dual role for both
+human and microbial screening of ancient material, we replicated the results of
+Barquera et al. <span class="citation" data-cites="wsKrZHpG">[<a href="#ref-wsKrZHpG" role="doc-biblioref">80</a>]</span> using using v2.2.0dev (commit:
+e7471a78a3; Nextflow version: 20.04.1).</p>
+<p>The following command was used to run the pipeline on the in-house servers at
+the Max Planck Institute for the Science of Human History, including a 2 TB
+memory node for running MALT against the NCBI Nt database, and therefore the
+centralised custom profile for this cluster was used.</p>
+<div class="sourceCode" id="cb4"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb4-1"><a href="#cb4-1"></a><span class="ex">nextflow</span> run nf-core/eager -r dev \</span>
+<span id="cb4-2"><a href="#cb4-2"></a>-profile microbiome_screening,sdag,shh \</span>
+<span id="cb4-3"><a href="#cb4-3"></a>-with-tower \</span>
+<span id="cb4-4"><a href="#cb4-4"></a>--input <span class="st">&#39;barquera2020_pathogenscreening.tsv&#39;</span> \</span>
+<span id="cb4-5"><a href="#cb4-5"></a>--fasta <span class="st">&#39;ftp://ftp-trace.ncbi.nih.gov/1000genomes/ftp/technical/reference/phase2_reference_assembly_sequence/hs37d5.fa.gz&#39;</span> \</span>
+<span id="cb4-6"><a href="#cb4-6"></a>--bwaalnn 0.01 \</span>
+<span id="cb4-7"><a href="#cb4-7"></a>--bwaalnl 32 \</span>
+<span id="cb4-8"><a href="#cb4-8"></a>--run_bam_filtering \</span>
+<span id="cb4-9"><a href="#cb4-9"></a>--bam_discard_unmapped \</span>
+<span id="cb4-10"><a href="#cb4-10"></a>--bam_unmapped_type fastq \</span>
+<span id="cb4-11"><a href="#cb4-11"></a>--dedupper markduplicates \</span>
+<span id="cb4-12"><a href="#cb4-12"></a>--run_mtnucratio \</span>
+<span id="cb4-13"><a href="#cb4-13"></a>--run_nuclear_contamination \</span>
+<span id="cb4-14"><a href="#cb4-14"></a>--run_sexdeterrmine \</span>
+<span id="cb4-15"><a href="#cb4-15"></a>--sexdeterrmine_bedfile <span class="st">&#39;https://github.com/nf-core/test-datasets/raw/eager/reference/Human/1240K.pos.list_hs37d5.0based.bed.gz&#39;</span> \</span>
+<span id="cb4-16"><a href="#cb4-16"></a>--run_metagenomic_screening \</span>
+<span id="cb4-17"><a href="#cb4-17"></a>--metagenomic_tool malt \</span>
+<span id="cb4-18"><a href="#cb4-18"></a>--run_maltextract \</span>
+<span id="cb4-19"><a href="#cb4-19"></a>--percent_identity 90 \</span>
+<span id="cb4-20"><a href="#cb4-20"></a>--malt_top_percent 1 \</span>
+<span id="cb4-21"><a href="#cb4-21"></a>--malt_min_support_mode <span class="st">&#39;reads&#39;</span> \</span>
+<span id="cb4-22"><a href="#cb4-22"></a>--metagenomic_min_support_reads 1 \</span>
+<span id="cb4-23"><a href="#cb4-23"></a>--malt_max_queries 100 \</span>
+<span id="cb4-24"><a href="#cb4-24"></a>--malt_memory_mode load \</span>
+<span id="cb4-25"><a href="#cb4-25"></a>--maltextract_taxon_list <span class="st">&#39;https://raw.githubusercontent.com/rhuebler/HOPS/external/Resources/default_list.txt&#39;</span> \</span>
+<span id="cb4-26"><a href="#cb4-26"></a>--maltextract_filter def_anc \</span>
+<span id="cb4-27"><a href="#cb4-27"></a>--maltextract_toppercent 0.01 \</span>
+<span id="cb4-28"><a href="#cb4-28"></a>--maltextract_destackingoff \</span>
+<span id="cb4-29"><a href="#cb4-29"></a>--maltextract_downsamplingoff \</span>
+<span id="cb4-30"><a href="#cb4-30"></a>--maltextract_duplicateremovaloff \</span>
+<span id="cb4-31"><a href="#cb4-31"></a>--maltextract_matches \</span>
+<span id="cb4-32"><a href="#cb4-32"></a>--maltextract_megansummary \</span>
+<span id="cb4-33"><a href="#cb4-33"></a>--maltextract_percentidentity 90.0 \</span>
+<span id="cb4-34"><a href="#cb4-34"></a>--maltextract_topalignment \</span>
+<span id="cb4-35"><a href="#cb4-35"></a>--database <span class="st">&#39;malt/databases/indexed/index040/full-nt_2017-10/&#39;</span> \</span>
+<span id="cb4-36"><a href="#cb4-36"></a>--maltextract_ncbifiles <span class="st">&#39;resources/&#39;</span></span></code></pre></div>
+<p>To include the HOPS results from metagenomic screening in the report, we re-ran
+MultiQC with the upcoming version v1.10 (to be integrated into nf-core/eager on
+the former’s release). We then installed the development version of MultiQC
+(commit: 7584e64) as described in the MultiQC documentation
+<span class="citation" data-cites="1Bdq6PHHx">[<a href="#ref-1Bdq6PHHx" role="doc-biblioref">85</a>]</span>, and ran the following command
+in the results directory of the nf-core/eager run, using the same configuration
+file.</p>
+<div class="sourceCode" id="cb5"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb5-1"><a href="#cb5-1"></a><span class="ex">multiqc</span> . -c multiqc_config.yaml -n multiqc1_10.html -o multiqc1_10</span></code></pre></div>
+<p>Both reports can be seen in the supplementary information.</p>
+<h3 id="pipeline-comparison">Pipeline Comparison</h3>
+<p>Full step-by-step instructions on the set up of the benchmarking, including
+versions can be seen in the supplementary information. EAGER (v1.92.37) and
+nf-core/eager (v2.2.0dev, commit: 830c22d; Nextflow v20.04.1) used the provided
+pre-built singularity containers for software environments, whereas for used
+paleomix (v1.2.14) we generated a custom conda environment (see supplementary
+information for the <code>environmental.yaml</code> file). Run time comparisons were
+performed on a 32 CPU (AMD Opteron 23xx) and 256 GB memory Red Hat QEMU Virtual
+Machine running the Ubuntu 18.04 operating system (Kernel 4.15.0-112). Resource
+parameters of each tool were only modified to specify the maximum available on
+the server and otherwise left as default.</p>
+<p>The following commands were used for each pipeline, with the commands run 10
+times each after cleaning up reference and results directories using a for loop.
+Run time was measured using GNU Time.</p>
+<div class="sourceCode" id="cb6"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb6-1"><a href="#cb6-1"></a><span class="co">## EAGER - description of XML files can be seen in supplementary information</span></span>
+<span id="cb6-2"><a href="#cb6-2"></a><span class="ex">singularity</span> exec \</span>
+<span id="cb6-3"><a href="#cb6-3"></a>-B ~/benchmarks/output/EAGER:/data ~/.singularity/cache/EAGER-cache/EAGER-GUI_latest.sif \</span>
+<span id="cb6-4"><a href="#cb6-4"></a>eagercli \</span>
+<span id="cb6-5"><a href="#cb6-5"></a>/data</span>
+<span id="cb6-6"><a href="#cb6-6"></a></span>
+<span id="cb6-7"><a href="#cb6-7"></a><span class="co">## paleomix - description of input YAML files can be seen in supplementary</span></span>
+<span id="cb6-8"><a href="#cb6-8"></a><span class="co">## information</span></span>
+<span id="cb6-9"><a href="#cb6-9"></a><span class="ex">paleomix</span> bam_pipeline run ~/benchmarks/output/paleomix/makefile_paleomix.yaml</span>
+<span id="cb6-10"><a href="#cb6-10"></a></span>
+<span id="cb6-11"><a href="#cb6-11"></a><span class="co">## paleomix optimised - description of input YAML files can be seen in</span></span>
+<span id="cb6-12"><a href="#cb6-12"></a><span class="co">## supplementary information</span></span>
+<span id="cb6-13"><a href="#cb6-13"></a><span class="ex">paleomix</span> bam_pipeline \</span>
+<span id="cb6-14"><a href="#cb6-14"></a>run ~/benchmarks/output/paleomix_optimised/makefile_paleomix.yaml \</span>
+<span id="cb6-15"><a href="#cb6-15"></a>--bwa-max-threads 4</span>
+<span id="cb6-16"><a href="#cb6-16"></a></span>
+<span id="cb6-17"><a href="#cb6-17"></a><span class="co">## nf-core/eager - description of resources configuration file (-c) can be seen</span></span>
+<span id="cb6-18"><a href="#cb6-18"></a><span class="co">## in supplementary information</span></span>
+<span id="cb6-19"><a href="#cb6-19"></a><span class="ex">nextflow</span> run nf-core/eager -r dev \</span>
+<span id="cb6-20"><a href="#cb6-20"></a>--input ~/benchmarks/output/nfcore-eager-optimised/nfcore-eager_tsv.tsv \</span>
+<span id="cb6-21"><a href="#cb6-21"></a>-c ~/.nextflow/pub_eager_vikingfish.conf \</span>
+<span id="cb6-22"><a href="#cb6-22"></a>-profile pub_eager_vikingfish_optimised,pub_eager_vikingfish,singularity \</span>
+<span id="cb6-23"><a href="#cb6-23"></a>--fasta ~/benchmarks/reference/GCF_902167405.1_gadMor3.0_genomic.fasta \</span>
+<span id="cb6-24"><a href="#cb6-24"></a>--outdir ~/benchmarks/output/nfcore-eager-optimised/results/ \</span>
+<span id="cb6-25"><a href="#cb6-25"></a>-w ~/benchmarks/output/nfcore-eager-optimised/work/ \</span>
+<span id="cb6-26"><a href="#cb6-26"></a>--skip_fastqc \</span>
+<span id="cb6-27"><a href="#cb6-27"></a>--skip_preseq \</span>
+<span id="cb6-28"><a href="#cb6-28"></a>--run_bam_filtering \</span>
+<span id="cb6-29"><a href="#cb6-29"></a>--bam_mapping_quality_threshold 25 \</span>
+<span id="cb6-30"><a href="#cb6-30"></a>--bam_discard_unmapped \</span>
+<span id="cb6-31"><a href="#cb6-31"></a>--bam_unmapped_type <span class="st">&#39;discard&#39;</span> \</span>
+<span id="cb6-32"><a href="#cb6-32"></a>--dedupper <span class="st">&#39;markduplicates&#39;</span></span>
+<span id="cb6-33"><a href="#cb6-33"></a></span>
+<span id="cb6-34"><a href="#cb6-34"></a><span class="co">##nf-core/eager optimised - description of resources profile(s) with optimised</span></span>
+<span id="cb6-35"><a href="#cb6-35"></a><span class="co">## bwa threads setting can be seen in supplementary information</span></span>
+<span id="cb6-36"><a href="#cb6-36"></a><span class="ex">nextflow</span> run nf-core/eager -r dev \</span>
+<span id="cb6-37"><a href="#cb6-37"></a>--input ~/benchmarks/output/nfcore-eager-optimised/nfcore-eager_tsv.tsv \</span>
+<span id="cb6-38"><a href="#cb6-38"></a>-c ~/.nextflow/pub_eager_vikingfish.conf \</span>
+<span id="cb6-39"><a href="#cb6-39"></a>-profile pub_eager_vikingfish_optimised,pub_eager_vikingfish,singularity \</span>
+<span id="cb6-40"><a href="#cb6-40"></a>--fasta ~/benchmarks/reference/GCF_902167405.1_gadMor3.0_genomic.fasta \</span>
+<span id="cb6-41"><a href="#cb6-41"></a>--outdir ~/benchmarks/output/nfcore-eager-optimised/results/ \</span>
+<span id="cb6-42"><a href="#cb6-42"></a>-w ~/benchmarks/output/nfcore-eager-optimised/work/ \</span>
+<span id="cb6-43"><a href="#cb6-43"></a>--skip_fastqc \</span>
+<span id="cb6-44"><a href="#cb6-44"></a>--skip_preseq \</span>
+<span id="cb6-45"><a href="#cb6-45"></a>--run_bam_filtering \</span>
+<span id="cb6-46"><a href="#cb6-46"></a>--bam_mapping_quality_threshold 25 \</span>
+<span id="cb6-47"><a href="#cb6-47"></a>--bam_discard_unmapped \</span>
+<span id="cb6-48"><a href="#cb6-48"></a>--bam_unmapped_type <span class="st">&#39;discard&#39;</span> \</span>
+<span id="cb6-49"><a href="#cb6-49"></a>--dedupper <span class="st">&#39;markduplicates&#39;</span></span></code></pre></div>
+<p>Mapping results across all pipelines showed very similar values, with low
+variation across replicates as can be seen in <a href="#tbl:benchmarking-results">3</a>.</p>
+<div id="tbl:benchmarking-results" class="tablenos">
+<table>
+<caption><span>Table 3:</span> Comparison of results values of key NGS data processing and mapping
+steps. All values represent mean and standard deviation across 10 replicates of
+each pipeline. ‘qf’ stands for mapping-quality filtered reads .</caption>
+<colgroup>
+<col style="width: 13%" />
+<col style="width: 24%" />
+<col style="width: 21%" />
+<col style="width: 20%" />
+<col style="width: 20%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">sample_name</th>
+<th style="text-align: left;">category</th>
+<th style="text-align: left;">eager</th>
+<th style="text-align: left;">nf-core-eager</th>
+<th style="text-align: left;">paleomix</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">COD076</td>
+<td style="text-align: left;">processed_reads</td>
+<td style="text-align: left;">71388991 ± 0</td>
+<td style="text-align: left;">71388991 ± 0</td>
+<td style="text-align: left;">72100142 ± 0</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">COD092</td>
+<td style="text-align: left;">processed_reads</td>
+<td style="text-align: left;">69615709 ± 0</td>
+<td style="text-align: left;">69615709 ± 0</td>
+<td style="text-align: left;">70249181 ± 0</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">COD076</td>
+<td style="text-align: left;">mapped_qf_reads</td>
+<td style="text-align: left;">16786467.7 ± 106.5</td>
+<td style="text-align: left;">16786491.1 ± 89.9</td>
+<td style="text-align: left;">16686607.2 ± 91.3</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">COD092</td>
+<td style="text-align: left;">mapped_qf_reads</td>
+<td style="text-align: left;">16283216.3 ± 71.3</td>
+<td style="text-align: left;">16283194.7 ± 37.4</td>
+<td style="text-align: left;">16207986.2 ± 44.4</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">COD076</td>
+<td style="text-align: left;">ontarget_qf</td>
+<td style="text-align: left;">23.5 ± 0</td>
+<td style="text-align: left;">23.5 ± 0</td>
+<td style="text-align: left;">23.1 ± 0</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">COD092</td>
+<td style="text-align: left;">ontarget_qf</td>
+<td style="text-align: left;">23.4 ± 0</td>
+<td style="text-align: left;">23.4 ± 0</td>
+<td style="text-align: left;">23.1 ± 0</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">COD076</td>
+<td style="text-align: left;">dedupped_mapped_reads</td>
+<td style="text-align: left;">12107264.4 ± 87.8</td>
+<td style="text-align: left;">12107293.7 ± 69.7</td>
+<td style="text-align: left;">12193415.8 ± 86.7</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">COD092</td>
+<td style="text-align: left;">dedupped_mapped_reads</td>
+<td style="text-align: left;">13669323.7 ± 87.6</td>
+<td style="text-align: left;">13669328 ± 32.4</td>
+<td style="text-align: left;">13795703.3 ± 47.9</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">COD076</td>
+<td style="text-align: left;">mean_depth_coverage</td>
+<td style="text-align: left;">0.9 ± 0</td>
+<td style="text-align: left;">0.9 ± 0</td>
+<td style="text-align: left;">0.9 ± 0</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">COD092</td>
+<td style="text-align: left;">mean_depth_coverage</td>
+<td style="text-align: left;">1 ± 0</td>
+<td style="text-align: left;">1 ± 0</td>
+<td style="text-align: left;">1 ± 0</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">COD076</td>
+<td style="text-align: left;">mean_read_length</td>
+<td style="text-align: left;">49.4 ± 0</td>
+<td style="text-align: left;">49.4 ± 0</td>
+<td style="text-align: left;">49.4 ± 0</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">COD092</td>
+<td style="text-align: left;">mean_read_length</td>
+<td style="text-align: left;">48.8 ± 0</td>
+<td style="text-align: left;">48.8 ± 0</td>
+<td style="text-align: left;">48.7 ± 0</td>
+</tr>
+</tbody>
+</table>
+</div>
 <h2 id="data-and-software-availability">Data and software availability</h2>
-<p>All code is available on github at
+<p>All pipeline code is available on github at
 <a href="https://github.com/nf-core/eager">https://github.com/nf-core/eager</a> and
 archived with Zenodo under the DOI
 <a href="https://doi.org/10.5281/zenodo.1465061">10.5281/zenodo.1465061</a>. The version of
 nf-core/eager that this preprint is based on is the current ‘dev’ branch of the
-GitHub repository (2.2.0dev), and on publication will be released as 2.2.0.</p>
-<p>This paper was written with Manubot <span class="citation" data-cites="YuJbg3zO">[<a href="#ref-YuJbg3zO" role="doc-biblioref">84</a>]</span>.</p>
+GitHub repository (2.2.0dev), and on publication will be released as v2.2.0.
+Demonstration data for dual ancient human and pathogen screening from
+<span class="citation" data-cites="wsKrZHpG">[<a href="#ref-wsKrZHpG" role="doc-biblioref">80</a>]</span> is publicly available on the European
+Nucleotide Archive (ENA) under project accession PRJEB37490. The human reference
+genome (hs37d5) and screening database (Nucleotide or ‘nt’, October 2017) was
+downloaded from National Center for Biotechnology Information FTP server.
+Ancient Cod genomic data from <span class="citation" data-cites="ZMf8LvSn">[<a href="#ref-ZMf8LvSn" role="doc-biblioref">4</a>]</span> used for
+benchmarking is publicly available on the ENA under project accession
+PRJEB20524. The <em>Gadus morhua</em> reference genome NCBI accession ID is:
+GCF_902167405.1.</p>
+<p>This paper was collaboratively written with Manubot
+<span class="citation" data-cites="YuJbg3zO">[<a href="#ref-YuJbg3zO" role="doc-biblioref">86</a>]</span>, and supplementary information such as
+demonstration and benchmarking environments descriptions and walk-throughs can be
+seen on Github at
+<a href="https://github.com/apeltzer/eager2-paper/">https://github.com/apeltzer/eager2-paper/</a> und
+the <code>supplement/</code> directory.</p>
 <h2 id="competing-interests">Competing Interests</h2>
 <p>No competing interests are declared.</p>
 <h2 id="acknowledgements">Acknowledgements</h2>
@@ -995,480 +1322,489 @@ Munich).</p>
 <!-- Explicitly insert bibliography here -->
 <div id="refs" class="references hanging-indent" role="doc-bibliography">
 <div id="ref-86EfjHO2">
-<p>1. <strong>Complete Genomes Reveal Signatures of Demographic and Genetic Declines in the Woolly Mammoth</strong><br />
+<p>1. <strong>Complete Genomes Reveal Signatures of Demographic and Genetic Declines in the Woolly Mammoth</strong> <br />
 Eleftheria Palkopoulou, Swapan Mallick, Pontus Skoglund, Jacob Enk, Nadin Rohland, Heng Li, Ayça Omrak, Sergey Vartanyan, Hendrik Poinar, Anders Götherström, … Love Dalén<br />
-<em>Current Biology</em> (2015-05) <a href="https://doi.org/34d">https://doi.org/34d</a><br />
+<em>Current Biology</em> (2015-05) <a href="https://doi.org/34d">https://doi.org/34d</a> <br />
 DOI: <a href="https://doi.org/10.1016/j.cub.2015.04.007">10.1016/j.cub.2015.04.007</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/25913407">25913407</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4439331">PMC4439331</a></p>
 </div>
 <div id="ref-1EJZxEzq1">
-<p>2. <strong>Recalibrating Equus evolution using the genome sequence of an early Middle Pleistocene horse</strong><br />
+<p>2. <strong>Recalibrating Equus evolution using the genome sequence of an early Middle Pleistocene horse</strong> <br />
 Ludovic Orlando, Aurélien Ginolhac, Guojie Zhang, Duane Froese, Anders Albrechtsen, Mathias Stiller, Mikkel Schubert, Enrico Cappellini, Bent Petersen, Ida Moltke, … Eske Willerslev<br />
-<em>Nature</em> (2013-06-26) <a href="https://doi.org/q7n">https://doi.org/q7n</a><br />
+<em>Nature</em> (2013-06-26) <a href="https://doi.org/q7n">https://doi.org/q7n</a> <br />
 DOI: <a href="https://doi.org/10.1038/nature12323">10.1038/nature12323</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/23803765">23803765</a></p>
 </div>
 <div id="ref-7nLP30p0">
-<p>3. <strong>Ancient pigs reveal a near-complete genomic turnover following their introduction to Europe</strong><br />
+<p>3. <strong>Ancient pigs reveal a near-complete genomic turnover following their introduction to Europe</strong> <br />
 Laurent A. F. Frantz, James Haile, Audrey T. Lin, Amelie Scheu, Christina Geörg, Norbert Benecke, Michelle Alexander, Anna Linderholm, Victoria E. Mullin, Kevin G. Daly, … Greger Larson<br />
-<em>Proceedings of the National Academy of Sciences</em> (2019-08-27) <a href="https://doi.org/gf9hnf">https://doi.org/gf9hnf</a><br />
+<em>Proceedings of the National Academy of Sciences</em> (2019-08-27) <a href="https://doi.org/gf9hnf">https://doi.org/gf9hnf</a> <br />
 DOI: <a href="https://doi.org/10.1073/pnas.1901169116">10.1073/pnas.1901169116</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/31405970">31405970</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6717267">PMC6717267</a></p>
 </div>
 <div id="ref-ZMf8LvSn">
-<p>4. <strong>Ancient DNA reveals the Arctic origin of Viking Age cod from Haithabu, Germany</strong><br />
+<p>4. <strong>Ancient DNA reveals the Arctic origin of Viking Age cod from Haithabu, Germany</strong> <br />
 Bastiaan Star, Sanne Boessenkool, Agata T. Gondek, Elena A. Nikulina, Anne Karin Hufthammer, Christophe Pampoulie, Halvor Knutsen, Carl André, Heidi M. Nistelberger, Jan Dierking, … James H. Barrett<br />
-<em>Proceedings of the National Academy of Sciences</em> (2017-08-22) <a href="https://doi.org/gbt8b2">https://doi.org/gbt8b2</a><br />
+<em>Proceedings of the National Academy of Sciences</em> (2017-08-22) <a href="https://doi.org/gbt8b2">https://doi.org/gbt8b2</a> <br />
 DOI: <a href="https://doi.org/10.1073/pnas.1710186114">10.1073/pnas.1710186114</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/28784790">28784790</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5576834">PMC5576834</a></p>
 </div>
 <div id="ref-tAnEwrSn">
-<p>5. <strong>137 ancient human genomes from across the Eurasian steppes</strong><br />
+<p>5. <strong>137 ancient human genomes from across the Eurasian steppes</strong> <br />
 Peter de Barros Damgaard, Nina Marchi, Simon Rasmussen, Michaël Peyrot, Gabriel Renaud, Thorfinn Korneliussen, J. Víctor Moreno-Mayar, Mikkel Winther Pedersen, Amy Goldberg, Emma Usmanova, … Eske Willerslev<br />
-<em>Nature</em> (2018-05-09) <a href="https://doi.org/gd8hs5">https://doi.org/gd8hs5</a><br />
+<em>Nature</em> (2018-05-09) <a href="https://doi.org/gd8hs5">https://doi.org/gd8hs5</a> <br />
 DOI: <a href="https://doi.org/10.1038/s41586-018-0094-2">10.1038/s41586-018-0094-2</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/29743675">29743675</a></p>
 </div>
 <div id="ref-Nokd2X7v">
-<p>6. <strong>A Draft Sequence of the Neandertal Genome</strong><br />
+<p>6. <strong>A Draft Sequence of the Neandertal Genome</strong> <br />
 R. E. Green, J. Krause, A. W. Briggs, T. Maricic, U. Stenzel, M. Kircher, N. Patterson, H. Li, W. Zhai, M. H. Y. Fritz, … S. Paabo<br />
-<em>Science</em> (2010-05-06) <a href="https://doi.org/c2x">https://doi.org/c2x</a><br />
+<em>Science</em> (2010-05-06) <a href="https://doi.org/c2x">https://doi.org/c2x</a> <br />
 DOI: <a href="https://doi.org/10.1126/science.1188021">10.1126/science.1188021</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/20448178">20448178</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5100745">PMC5100745</a></p>
 </div>
 <div id="ref-dHnkKsKe">
-<p>7. <strong>A High-Coverage Genome Sequence from an Archaic Denisovan Individual</strong><br />
+<p>7. <strong>A High-Coverage Genome Sequence from an Archaic Denisovan Individual</strong> <br />
 M. Meyer, M. Kircher, M.-T. Gansauge, H. Li, F. Racimo, S. Mallick, J. G. Schraiber, F. Jay, K. Prufer, C. de Filippo, … S. Paabo<br />
-<em>Science</em> (2012-08-30) <a href="https://doi.org/q8p">https://doi.org/q8p</a><br />
+<em>Science</em> (2012-08-30) <a href="https://doi.org/q8p">https://doi.org/q8p</a> <br />
 DOI: <a href="https://doi.org/10.1126/science.1224344">10.1126/science.1224344</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/22936568">22936568</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3617501">PMC3617501</a></p>
 </div>
 <div id="ref-qngWumct">
-<p>8. <strong>The genome of the offspring of a Neanderthal mother and a Denisovan father</strong><br />
+<p>8. <strong>The genome of the offspring of a Neanderthal mother and a Denisovan father</strong> <br />
 Viviane Slon, Fabrizio Mafessoni, Benjamin Vernot, Cesare de Filippo, Steffi Grote, Bence Viola, Mateja Hajdinjak, Stéphane Peyrégne, Sarah Nagel, Samantha Brown, … Svante Pääbo<br />
-<em>Nature</em> (2018-08-22) <a href="https://doi.org/cs64">https://doi.org/cs64</a><br />
+<em>Nature</em> (2018-08-22) <a href="https://doi.org/cs64">https://doi.org/cs64</a> <br />
 DOI: <a href="https://doi.org/10.1038/s41586-018-0455-x">10.1038/s41586-018-0455-x</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/30135579">30135579</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6130845">PMC6130845</a></p>
 </div>
 <div id="ref-oasyTY16">
-<p>9. <strong>Pre-Columbian mycobacterial genomes reveal seals as a source of New World human tuberculosis</strong><br />
+<p>9. <strong>Pre-Columbian mycobacterial genomes reveal seals as a source of New World human tuberculosis</strong> <br />
 Kirsten I. Bos, Kelly M. Harkins, Alexander Herbig, Mireia Coscolla, Nico Weber, Iñaki Comas, Stephen A. Forrest, Josephine M. Bryant, Simon R. Harris, Verena J. Schuenemann, … Johannes Krause<br />
-<em>Nature</em> (2014-08-20) <a href="https://doi.org/f6nk4g">https://doi.org/f6nk4g</a><br />
+<em>Nature</em> (2014-08-20) <a href="https://doi.org/f6nk4g">https://doi.org/f6nk4g</a> <br />
 DOI: <a href="https://doi.org/10.1038/nature13591">10.1038/nature13591</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/25141181">25141181</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4550673">PMC4550673</a></p>
 </div>
 <div id="ref-1APjJqbjj">
-<p>10. <strong>Integrative approach using <em>Yersinia pestis</em> genomes to revisit the historical landscape of plague during the Medieval Period</strong><br />
+<p>10. <strong>Integrative approach using <em>Yersinia pestis</em> genomes to revisit the historical landscape of plague during the Medieval Period</strong> <br />
 Amine Namouchi, Meriam Guellil, Oliver Kersten, Stephanie Hänsch, Claudio Ottoni, Boris V. Schmid, Elsa Pacciani, Luisa Quaglia, Marco Vermunt, Egil L. Bauer, … Barbara Bramanti<br />
-<em>Proceedings of the National Academy of Sciences</em> (2018-12-11) <a href="https://doi.org/ggfn3h">https://doi.org/ggfn3h</a><br />
+<em>Proceedings of the National Academy of Sciences</em> (2018-12-11) <a href="https://doi.org/ggfn3h">https://doi.org/ggfn3h</a> <br />
 DOI: <a href="https://doi.org/10.1073/pnas.1812865115">10.1073/pnas.1812865115</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/30478041">30478041</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6294933">PMC6294933</a></p>
 </div>
 <div id="ref-4YuC8sCQ">
-<p>11. <strong>Ancient genomes reveal a high diversity of Mycobacterium leprae in medieval Europe</strong><br />
+<p>11. <strong>Ancient genomes reveal a high diversity of Mycobacterium leprae in medieval Europe</strong> <br />
 Verena J. Schuenemann, Charlotte Avanzi, Ben Krause-Kyora, Alexander Seitz, Alexander Herbig, Sarah Inskip, Marion Bonazzi, Ella Reiter, Christian Urban, Dorthe Dangvard Pedersen, … Johannes Krause<br />
-<em>PLOS Pathogens</em> (2018-05-10) <a href="https://doi.org/gdrj4v">https://doi.org/gdrj4v</a><br />
+<em>PLOS Pathogens</em> (2018-05-10) <a href="https://doi.org/gdrj4v">https://doi.org/gdrj4v</a> <br />
 DOI: <a href="https://doi.org/10.1371/journal.ppat.1006997">10.1371/journal.ppat.1006997</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/29746563">29746563</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5944922">PMC5944922</a></p>
 </div>
 <div id="ref-CNvvxsK7">
-<p>12. <strong>Ancient hepatitis B viruses from the Bronze Age to the Medieval period</strong><br />
+<p>12. <strong>Ancient hepatitis B viruses from the Bronze Age to the Medieval period</strong> <br />
 Barbara Mühlemann, Terry C. Jones, Peter de Barros Damgaard, Morten E. Allentoft, Irina Shevnina, Andrey Logvin, Emma Usmanova, Irina P. Panyushkina, Bazartseren Boldgiv, Tsevel Bazartseren, … Eske Willerslev<br />
-<em>Nature</em> (2018-05-09) <a href="https://doi.org/gddxvj">https://doi.org/gddxvj</a><br />
+<em>Nature</em> (2018-05-09) <a href="https://doi.org/gddxvj">https://doi.org/gddxvj</a> <br />
 DOI: <a href="https://doi.org/10.1038/s41586-018-0097-z">10.1038/s41586-018-0097-z</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/29743673">29743673</a></p>
 </div>
 <div id="ref-1HEgHFzOs">
-<p>13. <strong>Neolithic and medieval virus genomes reveal complex evolution of hepatitis B</strong><br />
+<p>13. <strong>Neolithic and medieval virus genomes reveal complex evolution of hepatitis B</strong> <br />
 Ben Krause-Kyora, Julian Susat, Felix M Key, Denise Kühnert, Esther Bosse, Alexander Immel, Christoph Rinne, Sabin-Christin Kornell, Diego Yepes, Sören Franzenburg, … Johannes Krause<br />
-<em>eLife</em> (2018-05-10) <a href="https://doi.org/gdhck2">https://doi.org/gdhck2</a><br />
+<em>eLife</em> (2018-05-10) <a href="https://doi.org/gdhck2">https://doi.org/gdhck2</a> <br />
 DOI: <a href="https://doi.org/10.7554/elife.36666">10.7554/elife.36666</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/29745896">29745896</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6008052">PMC6008052</a></p>
 </div>
 <div id="ref-1001q664T">
-<p>14. <strong>Ancient reveals the timing and persistence of organellar genetic bottlenecks over 3,000 years of sunflower domestication and improvement</strong><br />
+<p>14. <strong>Ancient reveals the timing and persistence of organellar genetic bottlenecks over 3,000 years of sunflower domestication and improvement</strong> <br />
 Nathan Wales, Melis Akman, Ray H. B. Watson, Fátima Sánchez Barreiro, Bruce D. Smith, Kristen J. Gremillion, M. Thomas P. Gilbert, Benjamin K. Blackman<br />
-<em>Evolutionary Applications</em> (2018-02-13) <a href="https://doi.org/gf568v">https://doi.org/gf568v</a><br />
+<em>Evolutionary Applications</em> (2018-02-13) <a href="https://doi.org/gf568v">https://doi.org/gf568v</a> <br />
 DOI: <a href="https://doi.org/10.1111/eva.12594">10.1111/eva.12594</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/30622634">30622634</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6304678">PMC6304678</a></p>
 </div>
 <div id="ref-6MKvilVe">
-<p>15. <strong>The origins and adaptation of European potatoes reconstructed from historical genomes</strong><br />
+<p>15. <strong>The origins and adaptation of European potatoes reconstructed from historical genomes</strong> <br />
 Rafal M. Gutaker, Clemens L. Weiß, David Ellis, Noelle L. Anglin, Sandra Knapp, José Luis Fernández-Alonso, Salomé Prat, Hernán A. Burbano<br />
-<em>Nature Ecology &amp; Evolution</em> (2019-06-24) <a href="https://doi.org/ggxkk8">https://doi.org/ggxkk8</a><br />
+<em>Nature Ecology &amp; Evolution</em> (2019-06-24) <a href="https://doi.org/ggxkk8">https://doi.org/ggxkk8</a> <br />
 DOI: <a href="https://doi.org/10.1038/s41559-019-0921-3">10.1038/s41559-019-0921-3</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/31235927">31235927</a></p>
 </div>
 <div id="ref-fK2md3DI">
-<p>16. <strong>The Prevotella copri Complex Comprises Four Distinct Clades Underrepresented in Westernized Populations</strong><br />
+<p>16. <strong>The Prevotella copri Complex Comprises Four Distinct Clades Underrepresented in Westernized Populations</strong> <br />
 Adrian Tett, Kun D. Huang, Francesco Asnicar, Hannah Fehlner-Peach, Edoardo Pasolli, Nicolai Karcher, Federica Armanini, Paolo Manghi, Kevin Bonham, Moreno Zolfo, … Nicola Segata<br />
-<em>Cell Host &amp; Microbe</em> (2019-11) <a href="https://doi.org/ggc9dc">https://doi.org/ggc9dc</a><br />
+<em>Cell Host &amp; Microbe</em> (2019-11) <a href="https://doi.org/ggc9dc">https://doi.org/ggc9dc</a> <br />
 DOI: <a href="https://doi.org/10.1016/j.chom.2019.08.018">10.1016/j.chom.2019.08.018</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/31607556">31607556</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6854460">PMC6854460</a></p>
 </div>
 <div id="ref-h6xmK5cY">
-<p>17. <strong>CoproID predicts the source of coprolites and paleofeces using microbiome composition and host DNA content</strong><br />
+<p>17. <strong>CoproID predicts the source of coprolites and paleofeces using microbiome composition and host DNA content</strong> <br />
 Maxime Borry, Bryan Cordova, Angela Perri, Marsha Wibowo, Tanvi Prasad Honap, Jada Ko, Jie Yu, Kate Britton, Linus Girdland-Flink, Robert C. Power, … Christina Warinner<br />
-<em>PeerJ</em> (2020-04-17) <a href="https://doi.org/dr8x">https://doi.org/dr8x</a><br />
+<em>PeerJ</em> (2020-04-17) <a href="https://doi.org/dr8x">https://doi.org/dr8x</a> <br />
 DOI: <a href="https://doi.org/10.7717/peerj.9001">10.7717/peerj.9001</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/32337106">32337106</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7169968">PMC7169968</a></p>
 </div>
 <div id="ref-10wcktDCE">
-<p>18. <strong>Pathogens and host immunity in the ancient human oral cavity</strong><br />
+<p>18. <strong>Pathogens and host immunity in the ancient human oral cavity</strong> <br />
 Christina Warinner, João F Matias Rodrigues, Rounak Vyas, Christian Trachsel, Natallia Shved, Jonas Grossmann, Anita Radini, Y Hancock, Raul Y Tito, Sarah Fiddyment, … Enrico Cappellini<br />
-<em>Nature Genetics</em> (2014-02-23) <a href="https://doi.org/r4n">https://doi.org/r4n</a><br />
+<em>Nature Genetics</em> (2014-02-23) <a href="https://doi.org/r4n">https://doi.org/r4n</a> <br />
 DOI: <a href="https://doi.org/10.1038/ng.2906">10.1038/ng.2906</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/24562188">24562188</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3969750">PMC3969750</a></p>
 </div>
 <div id="ref-s3l2F2ef">
-<p>19. <strong>Neanderthal behaviour, diet, and disease inferred from ancient DNA in dental calculus</strong><br />
+<p>19. <strong>Neanderthal behaviour, diet, and disease inferred from ancient DNA in dental calculus</strong> <br />
 Laura S. Weyrich, Sebastian Duchene, Julien Soubrier, Luis Arriola, Bastien Llamas, James Breen, Alan G. Morris, Kurt W. Alt, David Caramelli, Veit Dresely, … Alan Cooper<br />
-<em>Nature</em> (2017-03-08) <a href="https://doi.org/f9szrm">https://doi.org/f9szrm</a><br />
+<em>Nature</em> (2017-03-08) <a href="https://doi.org/f9szrm">https://doi.org/f9szrm</a> <br />
 DOI: <a href="https://doi.org/10.1038/nature21674">10.1038/nature21674</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/28273061">28273061</a></p>
 </div>
 <div id="ref-YBHwLDej">
-<p>20. <strong>Fifty thousand years of Arctic vegetation and megafaunal diet</strong><br />
+<p>20. <strong>Fifty thousand years of Arctic vegetation and megafaunal diet</strong> <br />
 Eske Willerslev, John Davison, Mari Moora, Martin Zobel, Eric Coissac, Mary E. Edwards, Eline D. Lorenzen, Mette Vestergård, Galina Gussarova, James Haile, … Pierre Taberlet<br />
-<em>Nature</em> (2014-02-05) <a href="https://doi.org/f2zr4s">https://doi.org/f2zr4s</a><br />
+<em>Nature</em> (2014-02-05) <a href="https://doi.org/f2zr4s">https://doi.org/f2zr4s</a> <br />
 DOI: <a href="https://doi.org/10.1038/nature12921">10.1038/nature12921</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/24499916">24499916</a></p>
 </div>
 <div id="ref-64ZHuA4N">
-<p>21. <strong>Neandertal and Denisovan DNA from Pleistocene sediments</strong><br />
+<p>21. <strong>Neandertal and Denisovan DNA from Pleistocene sediments</strong> <br />
 Viviane Slon, Charlotte Hopfe, Clemens L. Weiß, Fabrizio Mafessoni, Marco de la Rasilla, Carles Lalueza-Fox, Antonio Rosas, Marie Soressi, Monika V. Knul, Rebecca Miller, … Matthias Meyer<br />
-<em>Science</em> (2017-05-12) <a href="https://doi.org/b6jd">https://doi.org/b6jd</a><br />
+<em>Science</em> (2017-05-12) <a href="https://doi.org/b6jd">https://doi.org/b6jd</a> <br />
 DOI: <a href="https://doi.org/10.1126/science.aam9695">10.1126/science.aam9695</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/28450384">28450384</a></p>
 </div>
 <div id="ref-WIkaempF">
-<p>22. <strong>Plasmodium vivax Malaria Viewed through the Lens of an Eradicated European Strain</strong><br />
+<p>22. <strong>Plasmodium vivax Malaria Viewed through the Lens of an Eradicated European Strain</strong> <br />
 Lucy van Dorp, Pere Gelabert, Adrien Rieux, Marc de Manuel, Toni de-Dios, Shyam Gopalakrishnan, Christian Carøe, Marcela Sandoval-Velasco, Rosa Fregel, Iñigo Olalde, … Carles Lalueza-Fox<br />
-<em>Molecular Biology and Evolution</em> (2020-03) <a href="https://doi.org/ggqzq2">https://doi.org/ggqzq2</a><br />
+<em>Molecular Biology and Evolution</em> (2020-03) <a href="https://doi.org/ggqzq2">https://doi.org/ggqzq2</a> <br />
 DOI: <a href="https://doi.org/10.1093/molbev/msz264">10.1093/molbev/msz264</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/31697387">31697387</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7038659">PMC7038659</a></p>
 </div>
 <div id="ref-M0SKmPyu">
-<p>23. <strong>Paging through history: parchment as a reservoir of ancient DNA for next generation sequencing</strong><br />
+<p>23. <strong>Paging through history: parchment as a reservoir of ancient DNA for next generation sequencing</strong> <br />
 M. D. Teasdale, N. L. van Doorn, S. Fiddyment, C. C. Webb, T. O’Connor, M. Hofreiter, M. J. Collins, D. G. Bradley<br />
-<em>Philosophical Transactions of the Royal Society B: Biological Sciences</em> (2015-01-19) <a href="https://doi.org/ggqzq3">https://doi.org/ggqzq3</a><br />
+<em>Philosophical Transactions of the Royal Society B: Biological Sciences</em> (2015-01-19) <a href="https://doi.org/ggqzq3">https://doi.org/ggqzq3</a> <br />
 DOI: <a href="https://doi.org/10.1098/rstb.2013.0379">10.1098/rstb.2013.0379</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/25487331">25487331</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4275887">PMC4275887</a></p>
 </div>
 <div id="ref-NXcxgeob">
-<p>24. <strong>A 5700 year-old human genome and oral microbiome from chewed birch pitch</strong><br />
+<p>24. <strong>A 5700 year-old human genome and oral microbiome from chewed birch pitch</strong> <br />
 Theis Z. T. Jensen, Jonas Niemann, Katrine Højholt Iversen, Anna K. Fotakis, Shyam Gopalakrishnan, Åshild J. Vågene, Mikkel Winther Pedersen, Mikkel-Holger S. Sinding, Martin R. Ellegaard, Morten E. Allentoft, … Hannes Schroeder<br />
-<em>Nature Communications</em> (2019-12-17) <a href="https://doi.org/ggfm6x">https://doi.org/ggfm6x</a><br />
+<em>Nature Communications</em> (2019-12-17) <a href="https://doi.org/ggfm6x">https://doi.org/ggfm6x</a> <br />
 DOI: <a href="https://doi.org/10.1038/s41467-019-13549-9">10.1038/s41467-019-13549-9</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/31848342">31848342</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6917805">PMC6917805</a></p>
 </div>
 <div id="ref-10155v3VM">
-<p>25. <strong>Ancient DNA from mastics solidifies connection between material culture and genetics of mesolithic hunter–gatherers in Scandinavia</strong><br />
+<p>25. <strong>Ancient DNA from mastics solidifies connection between material culture and genetics of mesolithic hunter–gatherers in Scandinavia</strong> <br />
 Natalija Kashuba, Emrah Kırdök, Hege Damlien, Mikael A. Manninen, Bengt Nordqvist, Per Persson, Anders Götherström<br />
-<em>Communications Biology</em> (2019-05-15) <a href="https://doi.org/ggqzqz">https://doi.org/ggqzqz</a><br />
+<em>Communications Biology</em> (2019-05-15) <a href="https://doi.org/ggqzqz">https://doi.org/ggqzqz</a> <br />
 DOI: <a href="https://doi.org/10.1038/s42003-019-0399-1">10.1038/s42003-019-0399-1</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/31123709">31123709</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6520363">PMC6520363</a></p>
 </div>
 <div id="ref-aSy3Srju">
-<p>26. <strong>The Beaker phenomenon and the genomic transformation of northwest Europe</strong><br />
+<p>26. <strong>The Beaker phenomenon and the genomic transformation of northwest Europe</strong> <br />
 Iñigo Olalde, Selina Brace, Morten E. Allentoft, Ian Armit, Kristian Kristiansen, Thomas Booth, Nadin Rohland, Swapan Mallick, Anna Szécsényi-Nagy, Alissa Mittnik, … David Reich<br />
-<em>Nature</em> (2018-02-21) <a href="https://doi.org/gcx74m">https://doi.org/gcx74m</a><br />
+<em>Nature</em> (2018-02-21) <a href="https://doi.org/gcx74m">https://doi.org/gcx74m</a> <br />
 DOI: <a href="https://doi.org/10.1038/nature25738">10.1038/nature25738</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/29466337">29466337</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5973796">PMC5973796</a></p>
 </div>
 <div id="ref-wT5SMjro">
-<p>27. <strong>The genomic history of southeastern Europe</strong><br />
+<p>27. <strong>The genomic history of southeastern Europe</strong> <br />
 Iain Mathieson, Songül Alpaslan-Roodenberg, Cosimo Posth, Anna Szécsényi-Nagy, Nadin Rohland, Swapan Mallick, Iñigo Olalde, Nasreen Broomandkhoshbacht, Francesca Candilio, Olivia Cheronet, … David Reich<br />
-<em>Nature</em> (2018-02-21) <a href="https://doi.org/gc2n9h">https://doi.org/gc2n9h</a><br />
+<em>Nature</em> (2018-02-21) <a href="https://doi.org/gc2n9h">https://doi.org/gc2n9h</a> <br />
 DOI: <a href="https://doi.org/10.1038/nature25778">10.1038/nature25778</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/29466330">29466330</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6091220">PMC6091220</a></p>
 </div>
 <div id="ref-1AkUQBPuG">
-<p>28. <strong>A draft genome of Yersinia pestis from victims of the Black Death</strong><br />
+<p>28. <strong>A draft genome of Yersinia pestis from victims of the Black Death</strong> <br />
 Kirsten I. Bos, Verena J. Schuenemann, G. Brian Golding, Hernán A. Burbano, Nicholas Waglechner, Brian K. Coombes, Joseph B. McPhee, Sharon N. DeWitte, Matthias Meyer, Sarah Schmedes, … Johannes Krause<br />
-<em>Nature</em> (2011-10-12) <a href="https://doi.org/fk87wk">https://doi.org/fk87wk</a><br />
+<em>Nature</em> (2011-10-12) <a href="https://doi.org/fk87wk">https://doi.org/fk87wk</a> <br />
 DOI: <a href="https://doi.org/10.1038/nature10549">10.1038/nature10549</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/21993626">21993626</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3690193">PMC3690193</a></p>
 </div>
 <div id="ref-TwlGYuW7">
-<p>29. <strong>Bioinformatics Education–Perspectives and Challenges out of Africa</strong><br />
+<p>29. <strong>Bioinformatics Education–Perspectives and Challenges out of Africa</strong> <br />
 O. Tastan Bishop, E. F. Adebiyi, A. M. Alzohairy, D. Everett, K. Ghedira, A. Ghouila, J. Kumuthini, N. J. Mulder, S. Panji, H.-G. Patterton, (for the H3ABioNet Consortium, as members of The H3Africa Consortium)<br />
-<em>Briefings in Bioinformatics</em> (2014-07-02) <a href="https://doi.org/f67hjx">https://doi.org/f67hjx</a><br />
+<em>Briefings in Bioinformatics</em> (2014-07-02) <a href="https://doi.org/f67hjx">https://doi.org/f67hjx</a> <br />
 DOI: <a href="https://doi.org/10.1093/bib/bbu022">10.1093/bib/bbu022</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/24990350">24990350</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4364068">PMC4364068</a></p>
 </div>
 <div id="ref-h1qNDSRd">
-<p>30. <strong>Highlights on the Application of Genomics and Bioinformatics in the Fight Against Infectious Diseases: Challenges and Opportunities in Africa</strong><br />
+<p>30. <strong>Highlights on the Application of Genomics and Bioinformatics in the Fight Against Infectious Diseases: Challenges and Opportunities in Africa</strong> <br />
 Saikou Y. Bah, Collins Misita Morang’a, Jonas A. Kengne-Ouafo, Lucas Amenga–Etego, Gordon A. Awandare<br />
-<em>Frontiers in Genetics</em> (2018-11-27) <a href="https://doi.org/gfrxbz">https://doi.org/gfrxbz</a><br />
+<em>Frontiers in Genetics</em> (2018-11-27) <a href="https://doi.org/gfrxbz">https://doi.org/gfrxbz</a> <br />
 DOI: <a href="https://doi.org/10.3389/fgene.2018.00575">10.3389/fgene.2018.00575</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/30538723">30538723</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6277583">PMC6277583</a></p>
 </div>
 <div id="ref-Zp5bQCLJ">
-<p>31. <strong>Instability and decay of the primary structure of DNA</strong><br />
+<p>31. <strong>Instability and decay of the primary structure of DNA</strong> <br />
 Tomas Lindahl<br />
-<em>Nature</em> (1993-04) <a href="https://doi.org/d9c9vq">https://doi.org/d9c9vq</a><br />
+<em>Nature</em> (1993-04) <a href="https://doi.org/d9c9vq">https://doi.org/d9c9vq</a> <br />
 DOI: <a href="https://doi.org/10.1038/362709a0">10.1038/362709a0</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/8469282">8469282</a></p>
 </div>
 <div id="ref-ZeQp0m3j">
-<p>32. <strong>Nuclear DNA sequences from the Middle Pleistocene Sima de los Huesos hominins</strong><br />
+<p>32. <strong>Nuclear DNA sequences from the Middle Pleistocene Sima de los Huesos hominins</strong> <br />
 Matthias Meyer, Juan-Luis Arsuaga, Cesare de Filippo, Sarah Nagel, Ayinuer Aximu-Petri, Birgit Nickel, Ignacio Martínez, Ana Gracia, José María Bermúdez de Castro, Eudald Carbonell, … Svante Pääbo<br />
-<em>Nature</em> (2016-03-14) <a href="https://doi.org/bdcn">https://doi.org/bdcn</a><br />
+<em>Nature</em> (2016-03-14) <a href="https://doi.org/bdcn">https://doi.org/bdcn</a> <br />
 DOI: <a href="https://doi.org/10.1038/nature17405">10.1038/nature17405</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/26976447">26976447</a></p>
 </div>
 <div id="ref-dbfFgAgr">
-<p>33. <strong>Patterns of damage in genomic DNA sequences from a Neandertal</strong><br />
+<p>33. <strong>Patterns of damage in genomic DNA sequences from a Neandertal</strong> <br />
 A. W. Briggs, U. Stenzel, P. L. F. Johnson, R. E. Green, J. Kelso, K. Prufer, M. Meyer, J. Krause, M. T. Ronan, M. Lachmann, S. Paabo<br />
-<em>Proceedings of the National Academy of Sciences</em> (2007-08-21) <a href="https://doi.org/bs4w7h">https://doi.org/bs4w7h</a><br />
+<em>Proceedings of the National Academy of Sciences</em> (2007-08-21) <a href="https://doi.org/bs4w7h">https://doi.org/bs4w7h</a> <br />
 DOI: <a href="https://doi.org/10.1073/pnas.0704665104">10.1073/pnas.0704665104</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/17715061">17715061</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1976210">PMC1976210</a></p>
 </div>
 <div id="ref-NVqMN9QU">
-<p>34. <strong>A new model for ancient DNA decay based on paleogenomic meta-analysis</strong><br />
+<p>34. <strong>A new model for ancient DNA decay based on paleogenomic meta-analysis</strong> <br />
 Logan Kistler, Roselyn Ware, Oliver Smith, Matthew Collins, Robin G. Allaby<br />
-<em>Nucleic Acids Research</em> (2017-06-20) <a href="https://doi.org/gf58ts">https://doi.org/gf58ts</a><br />
+<em>Nucleic Acids Research</em> (2017-06-20) <a href="https://doi.org/gf58ts">https://doi.org/gf58ts</a> <br />
 DOI: <a href="https://doi.org/10.1093/nar/gkx361">10.1093/nar/gkx361</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/28486705">28486705</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5499742">PMC5499742</a></p>
 </div>
 <div id="ref-jz1XHWKM">
-<p>35. <strong>A Robust Framework for Microbial Archaeology</strong><br />
+<p>35. <strong>A Robust Framework for Microbial Archaeology</strong> <br />
 Christina Warinner, Alexander Herbig, Allison Mann, James A. Fellows Yates, Clemens L. Weiß, Hernán A. Burbano, Ludovic Orlando, Johannes Krause<br />
-<em>Annual Review of Genomics and Human Genetics</em> (2017-08-31) <a href="https://doi.org/gf5wqv">https://doi.org/gf5wqv</a><br />
+<em>Annual Review of Genomics and Human Genetics</em> (2017-08-31) <a href="https://doi.org/gf5wqv">https://doi.org/gf5wqv</a> <br />
 DOI: <a href="https://doi.org/10.1146/annurev-genom-091416-035526">10.1146/annurev-genom-091416-035526</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/28460196">28460196</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5581243">PMC5581243</a></p>
 </div>
 <div id="ref-14YGEdSwc">
-<p>36. <strong>mapDamage2.0: fast approximate Bayesian estimates of ancient DNA damage parameters</strong><br />
+<p>36. <strong>mapDamage2.0: fast approximate Bayesian estimates of ancient DNA damage parameters</strong> <br />
 Hákon Jónsson, Aurélien Ginolhac, Mikkel Schubert, Philip L. F. Johnson, Ludovic Orlando<br />
-<em>Bioinformatics</em> (2013-07) <a href="https://doi.org/gb5g2t">https://doi.org/gb5g2t</a><br />
+<em>Bioinformatics</em> (2013-07) <a href="https://doi.org/gb5g2t">https://doi.org/gb5g2t</a> <br />
 DOI: <a href="https://doi.org/10.1093/bioinformatics/btt193">10.1093/bioinformatics/btt193</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/23613487">23613487</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3694634">PMC3694634</a></p>
 </div>
 <div id="ref-1SX8gKlw">
-<p>37. <strong>Early Divergent Strains of Yersinia pestis in Eurasia 5,000 Years Ago</strong><br />
+<p>37. <strong>Early Divergent Strains of Yersinia pestis in Eurasia 5,000 Years Ago</strong> <br />
 Simon Rasmussen, Morten Erik Allentoft, Kasper Nielsen, Ludovic Orlando, Martin Sikora, Karl-Göran Sjögren, Anders Gorm Pedersen, Mikkel Schubert, Alex Van Dam, Christian Moliin Outzen Kapel, … Eske Willerslev<br />
-<em>Cell</em> (2015-10) <a href="https://doi.org/f3mxqd">https://doi.org/f3mxqd</a><br />
+<em>Cell</em> (2015-10) <a href="https://doi.org/f3mxqd">https://doi.org/f3mxqd</a> <br />
 DOI: <a href="https://doi.org/10.1016/j.cell.2015.10.009">10.1016/j.cell.2015.10.009</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/26496604">26496604</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4644222">PMC4644222</a></p>
 </div>
 <div id="ref-1H3banOxK">
-<p>38. <strong>Characterization of ancient and modern genomes by SNP detection and phylogenomic and metagenomic analysis using PALEOMIX</strong><br />
+<p>38. <strong>Characterization of ancient and modern genomes by SNP detection and phylogenomic and metagenomic analysis using PALEOMIX</strong> <br />
 Mikkel Schubert, Luca Ermini, Clio Der Sarkissian, Hákon Jónsson, Aurélien Ginolhac, Robert Schaefer, Michael D Martin, Ruth Fernández, Martin Kircher, Molly McCue, … Ludovic Orlando<br />
-<em>Nature Protocols</em> (2014-04-10) <a href="https://doi.org/f5x3qm">https://doi.org/f5x3qm</a><br />
+<em>Nature Protocols</em> (2014-04-10) <a href="https://doi.org/f5x3qm">https://doi.org/f5x3qm</a> <br />
 DOI: <a href="https://doi.org/10.1038/nprot.2014.063">10.1038/nprot.2014.063</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/24722405">24722405</a></p>
 </div>
 <div id="ref-12TkhsLGD">
-<p>39. <strong>EAGER: efficient ancient genome reconstruction</strong><br />
+<p>39. <strong>EAGER: efficient ancient genome reconstruction</strong> <br />
 Alexander Peltzer, Günter Jäger, Alexander Herbig, Alexander Seitz, Christian Kniep, Johannes Krause, Kay Nieselt<br />
-<em>Genome Biology</em> (2016-03-31) <a href="https://doi.org/ggqzpk">https://doi.org/ggqzpk</a><br />
+<em>Genome Biology</em> (2016-03-31) <a href="https://doi.org/ggqzpk">https://doi.org/ggqzpk</a> <br />
 DOI: <a href="https://doi.org/10.1186/s13059-016-0918-z">10.1186/s13059-016-0918-z</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/27036623">27036623</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4815194">PMC4815194</a></p>
 </div>
 <div id="ref-roi5bwXL">
-<p>40. <strong>Fast and accurate short read alignment with Burrows-Wheeler transform</strong><br />
+<p>40. <strong>Fast and accurate short read alignment with Burrows-Wheeler transform</strong> <br />
 H. Li, R. Durbin<br />
-<em>Bioinformatics</em> (2009-05-18) <a href="https://doi.org/dqt59j">https://doi.org/dqt59j</a><br />
+<em>Bioinformatics</em> (2009-05-18) <a href="https://doi.org/dqt59j">https://doi.org/dqt59j</a> <br />
 DOI: <a href="https://doi.org/10.1093/bioinformatics/btp324">10.1093/bioinformatics/btp324</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/19451168">19451168</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2705234">PMC2705234</a></p>
 </div>
 <div id="ref-Rhiz5BNL">
-<p>41. <strong>mapDamage: testing for damage patterns in ancient DNA sequences</strong><br />
+<p>41. <strong>mapDamage: testing for damage patterns in ancient DNA sequences</strong> <br />
 Aurelien Ginolhac, Morten Rasmussen, M. Thomas P. Gilbert, Eske Willerslev, Ludovic Orlando<br />
-<em>Bioinformatics</em> (2011-08-01) <a href="https://doi.org/cn45v7">https://doi.org/cn45v7</a><br />
+<em>Bioinformatics</em> (2011-08-01) <a href="https://doi.org/cn45v7">https://doi.org/cn45v7</a> <br />
 DOI: <a href="https://doi.org/10.1093/bioinformatics/btr347">10.1093/bioinformatics/btr347</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/21659319">21659319</a></p>
 </div>
 <div id="ref-XFBeyZB9">
-<p>42. <strong>The Stone Age Plague and Its Persistence in Eurasia</strong><br />
+<p>42. <strong>The Stone Age Plague and Its Persistence in Eurasia</strong> <br />
 Aida Andrades Valtueña, Alissa Mittnik, Felix M. Key, Wolfgang Haak, Raili Allmäe, Andrej Belinskij, Mantas Daubaras, Michal Feldman, Rimantas Jankauskas, Ivor Janković, … Johannes Krause<br />
-<em>Current Biology</em> (2017-12) <a href="https://doi.org/cgmv">https://doi.org/cgmv</a><br />
+<em>Current Biology</em> (2017-12) <a href="https://doi.org/cgmv">https://doi.org/cgmv</a> <br />
 DOI: <a href="https://doi.org/10.1016/j.cub.2017.10.025">10.1016/j.cub.2017.10.025</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/29174893">29174893</a></p>
 </div>
 <div id="ref-VYCxWAIv">
-<p>43. <strong>Novel Substrates as Sources of Ancient DNA: Prospects and Hurdles</strong><br />
+<p>43. <strong>Novel Substrates as Sources of Ancient DNA: Prospects and Hurdles</strong> <br />
 Eleanor Green, Camilla Speller<br />
-<em>Genes</em> (2017-07-13) <a href="https://doi.org/gf57tz">https://doi.org/gf57tz</a><br />
+<em>Genes</em> (2017-07-13) <a href="https://doi.org/gf57tz">https://doi.org/gf57tz</a> <br />
 DOI: <a href="https://doi.org/10.3390/genes8070180">10.3390/genes8070180</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/28703741">28703741</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5541313">PMC5541313</a></p>
 </div>
 <div id="ref-4XDvZWxk">
-<p>44. <strong>Nextflow enables reproducible computational workflows</strong><br />
+<p>44. <strong>Nextflow enables reproducible computational workflows</strong> <br />
 Paolo Di Tommaso, Maria Chatzou, Evan W Floden, Pablo Prieto Barja, Emilio Palumbo, Cedric Notredame<br />
-<em>Nature Biotechnology</em> (2017-04-11) <a href="https://doi.org/gfj52z">https://doi.org/gfj52z</a><br />
+<em>Nature Biotechnology</em> (2017-04-11) <a href="https://doi.org/gfj52z">https://doi.org/gfj52z</a> <br />
 DOI: <a href="https://doi.org/10.1038/nbt.3820">10.1038/nbt.3820</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/28398311">28398311</a></p>
 </div>
 <div id="ref-wq4G2CfQ">
-<p>45. <strong>The nf-core framework for community-curated bioinformatics pipelines</strong><br />
+<p>45. <strong>The nf-core framework for community-curated bioinformatics pipelines</strong> <br />
 Philip A. Ewels, Alexander Peltzer, Sven Fillinger, Harshil Patel, Johannes Alneberg, Andreas Wilm, Maxime Ulysse Garcia, Paolo Di Tommaso, Sven Nahnsen<br />
-<em>Nature Biotechnology</em> (2020-02-13) <a href="https://doi.org/ggk3qh">https://doi.org/ggk3qh</a><br />
+<em>Nature Biotechnology</em> (2020-02-13) <a href="https://doi.org/ggk3qh">https://doi.org/ggk3qh</a> <br />
 DOI: <a href="https://doi.org/10.1038/s41587-020-0439-x">10.1038/s41587-020-0439-x</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/32055031">32055031</a></p>
 </div>
 <div id="ref-iU0FZYFP">
-<p>46. <strong>Conda — Conda documentation</strong><a href="https://docs.conda.io/en/latest/">https://docs.conda.io/en/latest/</a></p>
+<p>46. <strong>Conda — Conda documentation</strong> <a href="https://docs.conda.io/en/latest/">https://docs.conda.io/en/latest/</a></p>
 </div>
 <div id="ref-rmvJ2O0Q">
-<p>47. <strong>Empowering App Development for Developers | Docker</strong><a href="https://www.docker.com/">https://www.docker.com/</a></p>
+<p>47. <strong>Empowering App Development for Developers | Docker</strong> <a href="https://www.docker.com/">https://www.docker.com/</a></p>
 </div>
 <div id="ref-99QkJBoF">
-<p>48. <strong>Home</strong><br />
+<p>48. <strong>Home</strong> <br />
 Sylabs.io<br />
 <a href="https://sylabs.io/">https://sylabs.io/</a></p>
 </div>
 <div id="ref-jJzDdoAE">
-<p>49. <strong>Nextflow Tower</strong><a href="https://tower.nf/">https://tower.nf/</a></p>
+<p>49. <strong>Nextflow Tower</strong> <a href="https://tower.nf/">https://tower.nf/</a></p>
 </div>
 <div id="ref-WQbjOgBC">
-<p>50. <strong>Improving ancient DNA read mapping against modern reference genomes</strong><br />
+<p>50. <strong>Improving ancient DNA read mapping against modern reference genomes</strong> <br />
 Mikkel Schubert, Aurelien Ginolhac, Stinus Lindgreen, John F Thompson, Khaled AS AL-Rasheid, Eske Willerslev, Anders Krogh, Ludovic Orlando<br />
-<em>BMC Genomics</em> (2012) <a href="https://doi.org/gb3ff7">https://doi.org/gb3ff7</a><br />
+<em>BMC Genomics</em> (2012) <a href="https://doi.org/gb3ff7">https://doi.org/gb3ff7</a> <br />
 DOI: <a href="https://doi.org/10.1186/1471-2164-13-178">10.1186/1471-2164-13-178</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/22574660">22574660</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3468387">PMC3468387</a></p>
 </div>
 <div id="ref-R2o2aPyA">
-<p>51. <strong>Babraham Bioinformatics - FastQC A Quality Control tool for High Throughput Sequence Data</strong><a href="https://www.bioinformatics.babraham.ac.uk/projects/fastqc/">https://www.bioinformatics.babraham.ac.uk/projects/fastqc/</a></p>
+<p>51. <strong>Babraham Bioinformatics - FastQC A Quality Control tool for High Throughput Sequence Data</strong> <a href="https://www.bioinformatics.babraham.ac.uk/projects/fastqc/">https://www.bioinformatics.babraham.ac.uk/projects/fastqc/</a></p>
 </div>
 <div id="ref-L1GdB71G">
-<p>52. <strong>AdapterRemoval v2: rapid adapter trimming, identification, and read merging</strong><br />
+<p>52. <strong>AdapterRemoval v2: rapid adapter trimming, identification, and read merging</strong> <br />
 Mikkel Schubert, Stinus Lindgreen, Ludovic Orlando<br />
-<em>BMC Research Notes</em> (2016-02-12) <a href="https://doi.org/gfzqhb">https://doi.org/gfzqhb</a><br />
+<em>BMC Research Notes</em> (2016-02-12) <a href="https://doi.org/gfzqhb">https://doi.org/gfzqhb</a> <br />
 DOI: <a href="https://doi.org/10.1186/s13104-016-1900-2">10.1186/s13104-016-1900-2</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/26868221">26868221</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4751634">PMC4751634</a></p>
 </div>
 <div id="ref-1AzMUkwox">
-<p>53. <strong>Fast and accurate long-read alignment with Burrows–Wheeler transform</strong><br />
+<p>53. <strong>Fast and accurate long-read alignment with Burrows–Wheeler transform</strong> <br />
 Heng Li, Richard Durbin<br />
-<em>Bioinformatics</em> (2010-03-01) <a href="https://doi.org/cm27kg">https://doi.org/cm27kg</a><br />
+<em>Bioinformatics</em> (2010-03-01) <a href="https://doi.org/cm27kg">https://doi.org/cm27kg</a> <br />
 DOI: <a href="https://doi.org/10.1093/bioinformatics/btp698">10.1093/bioinformatics/btp698</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/20080505">20080505</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2828108">PMC2828108</a></p>
 </div>
 <div id="ref-gmH6YDca">
-<p>54. <strong>Aligning sequence reads, clone sequences and assembly contigs with BWA-MEM</strong><br />
+<p>54. <strong>Aligning sequence reads, clone sequences and assembly contigs with BWA-MEM</strong> <br />
 Heng Li<br />
 <em>arXiv</em> (2013-05-28) <a href="https://arxiv.org/abs/1303.3997">https://arxiv.org/abs/1303.3997</a></p>
 </div>
 <div id="ref-PiS0h6Mu">
-<p>55. <strong>Fast gapped-read alignment with Bowtie 2</strong><br />
+<p>55. <strong>Fast gapped-read alignment with Bowtie 2</strong> <br />
 Ben Langmead, Steven L Salzberg<br />
-<em>Nature Methods</em> (2012-03-04) <a href="https://doi.org/gd2xzn">https://doi.org/gd2xzn</a><br />
+<em>Nature Methods</em> (2012-03-04) <a href="https://doi.org/gd2xzn">https://doi.org/gd2xzn</a> <br />
 DOI: <a href="https://doi.org/10.1038/nmeth.1923">10.1038/nmeth.1923</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/22388286">22388286</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3322381">PMC3322381</a></p>
 </div>
 <div id="ref-IPc8cy7s">
-<p>56. <strong>The Sequence Alignment/Map format and SAMtools</strong><br />
+<p>56. <strong>The Sequence Alignment/Map format and SAMtools</strong> <br />
 H. Li, B. Handsaker, A. Wysoker, T. Fennell, J. Ruan, N. Homer, G. Marth, G. Abecasis, R. Durbin, 1000 Genome Project Data Processing Subgroup<br />
-<em>Bioinformatics</em> (2009-06-08) <a href="https://doi.org/ff6426">https://doi.org/ff6426</a><br />
+<em>Bioinformatics</em> (2009-06-08) <a href="https://doi.org/ff6426">https://doi.org/ff6426</a> <br />
 DOI: <a href="https://doi.org/10.1093/bioinformatics/btp352">10.1093/bioinformatics/btp352</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/19505943">19505943</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2723002">PMC2723002</a></p>
 </div>
 <div id="ref-14nSa8zB9">
-<p>57. <strong>The Genome Analysis Toolkit: A MapReduce framework for analyzing next-generation DNA sequencing data</strong><br />
+<p>57. <strong>The Genome Analysis Toolkit: A MapReduce framework for analyzing next-generation DNA sequencing data</strong> <br />
 A. McKenna, M. Hanna, E. Banks, A. Sivachenko, K. Cibulskis, A. Kernytsky, K. Garimella, D. Altshuler, S. Gabriel, M. Daly, M. A. DePristo<br />
-<em>Genome Research</em> (2010-07-19) <a href="https://doi.org/bnzbn6">https://doi.org/bnzbn6</a><br />
+<em>Genome Research</em> (2010-07-19) <a href="https://doi.org/bnzbn6">https://doi.org/bnzbn6</a> <br />
 DOI: <a href="https://doi.org/10.1101/gr.107524.110">10.1101/gr.107524.110</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/20644199">20644199</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2928508">PMC2928508</a></p>
 </div>
 <div id="ref-17zUqUTNA">
-<p>58. <strong>Predicting the molecular complexity of sequencing libraries</strong><br />
+<p>58. <strong>Predicting the molecular complexity of sequencing libraries</strong> <br />
 Timothy Daley, Andrew D Smith<br />
-<em>Nature Methods</em> (2013-02-24) <a href="https://doi.org/gfx6f5">https://doi.org/gfx6f5</a><br />
+<em>Nature Methods</em> (2013-02-24) <a href="https://doi.org/gfx6f5">https://doi.org/gfx6f5</a> <br />
 DOI: <a href="https://doi.org/10.1038/nmeth.2375">10.1038/nmeth.2375</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/23435259">23435259</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3612374">PMC3612374</a></p>
 </div>
 <div id="ref-O3E8cbBW">
-<p>59. <strong>Qualimap 2: advanced multi-sample quality control for high-throughput sequencing data</strong><br />
+<p>59. <strong>Qualimap 2: advanced multi-sample quality control for high-throughput sequencing data</strong> <br />
 Konstantin Okonechnikov, Ana Conesa, Fernando García-Alcalde<br />
-<em>Bioinformatics</em> (2015-10-01) <a href="https://doi.org/ggxrmx">https://doi.org/ggxrmx</a><br />
+<em>Bioinformatics</em> (2015-10-01) <a href="https://doi.org/ggxrmx">https://doi.org/ggxrmx</a> <br />
 DOI: <a href="https://doi.org/10.1093/bioinformatics/btv566">10.1093/bioinformatics/btv566</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/26428292">26428292</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4708105">PMC4708105</a></p>
 </div>
 <div id="ref-1Ab7DZE7s">
-<p>60. <strong>Integrative-Transcriptomics/DamageProfiler: DamageProfiler v0.4.9</strong><br />
+<p>60. <strong>Integrative-Transcriptomics/DamageProfiler: DamageProfiler v0.4.9</strong> <br />
 Judith Neukamm, Alexander Peltzer<br />
-<em>Zenodo</em> (2019-11-29) <a href="https://doi.org/ggxrmz">https://doi.org/ggxrmz</a><br />
+<em>Zenodo</em> (2019-11-29) <a href="https://doi.org/ggxrmz">https://doi.org/ggxrmz</a> <br />
 DOI: <a href="https://doi.org/10.5281/zenodo.3557708">10.5281/zenodo.3557708</a></p>
 </div>
 <div id="ref-lh0Dclyl">
-<p>61. <strong>Separating endogenous ancient DNA from modern day contamination in a Siberian Neandertal</strong><br />
+<p>61. <strong>Separating endogenous ancient DNA from modern day contamination in a Siberian Neandertal</strong> <br />
 Pontus Skoglund, Bernd H. Northoff, Michael V. Shunkov, Anatoli P. Derevianko, Svante Pääbo, Johannes Krause, Mattias Jakobsson<br />
-<em>Proceedings of the National Academy of Sciences</em> (2014-02-11) <a href="https://doi.org/f2z5sw">https://doi.org/f2z5sw</a><br />
+<em>Proceedings of the National Academy of Sciences</em> (2014-02-11) <a href="https://doi.org/f2z5sw">https://doi.org/f2z5sw</a> <br />
 DOI: <a href="https://doi.org/10.1073/pnas.1318934111">10.1073/pnas.1318934111</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/24469802">24469802</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3926038">PMC3926038</a></p>
 </div>
 <div id="ref-18bWeJ11I">
-<p>62. <strong>An efficient and scalable analysis framework for variant extraction and refinement from population-scale DNA sequence data</strong><br />
+<p>62. <strong>An efficient and scalable analysis framework for variant extraction and refinement from population-scale DNA sequence data</strong> <br />
 Goo Jun, Mary Kate Wing, Gonçalo R. Abecasis, Hyun Min Kang<br />
-<em>Genome Research</em> (2015-06) <a href="https://doi.org/f7dz2d">https://doi.org/f7dz2d</a><br />
+<em>Genome Research</em> (2015-06) <a href="https://doi.org/f7dz2d">https://doi.org/f7dz2d</a> <br />
 DOI: <a href="https://doi.org/10.1101/gr.176552.114">10.1101/gr.176552.114</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/25883319">25883319</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4448687">PMC4448687</a></p>
 </div>
 <div id="ref-FyiP2I2k">
-<p>63. <strong>ANGSD: Analysis of Next Generation Sequencing Data</strong><br />
+<p>63. <strong>ANGSD: Analysis of Next Generation Sequencing Data</strong> <br />
 Thorfinn Sand Korneliussen, Anders Albrechtsen, Rasmus Nielsen<br />
-<em>BMC Bioinformatics</em> (2014-11-25) <a href="https://doi.org/gb8wpz">https://doi.org/gb8wpz</a><br />
+<em>BMC Bioinformatics</em> (2014-11-25) <a href="https://doi.org/gb8wpz">https://doi.org/gb8wpz</a> <br />
 DOI: <a href="https://doi.org/10.1186/s12859-014-0356-4">10.1186/s12859-014-0356-4</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/25420514">25420514</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4248462">PMC4248462</a></p>
 </div>
 <div id="ref-sYguBb3Q">
-<p>64. <strong>Bioconda: sustainable and comprehensive software distribution for the life sciences</strong><br />
+<p>64. <strong>Bioconda: sustainable and comprehensive software distribution for the life sciences</strong> <br />
 Björn Grüning, Ryan Dale, Andreas Sjödin, Brad A. Chapman, Jillian Rowe, Christopher H. Tomkins-Tinch, Renan Valieris, Johannes Köster, The Bioconda Team<br />
-<em>Nature Methods</em> (2018-07-02) <a href="https://doi.org/gd2xzp">https://doi.org/gd2xzp</a><br />
+<em>Nature Methods</em> (2018-07-02) <a href="https://doi.org/gd2xzp">https://doi.org/gd2xzp</a> <br />
 DOI: <a href="https://doi.org/10.1038/s41592-018-0046-7">10.1038/s41592-018-0046-7</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/29967506">29967506</a></p>
 </div>
 <div id="ref-qj0Rqpq8">
-<p>65. <strong>conda-forge | community driven packaging for conda</strong><a href="https://conda-forge.org/">https://conda-forge.org/</a></p>
+<p>65. <strong>conda-forge | community driven packaging for conda</strong> <a href="https://conda-forge.org/">https://conda-forge.org/</a></p>
 </div>
 <div id="ref-5S7TlWlb">
-<p>66. <strong>Schmutzi: estimation of contamination and endogenous mitochondrial consensus calling for ancient DNA</strong><br />
+<p>66. <strong>Schmutzi: estimation of contamination and endogenous mitochondrial consensus calling for ancient DNA</strong> <br />
 Gabriel Renaud, Viviane Slon, Ana T. Duggan, Janet Kelso<br />
-<em>Genome Biology</em> (2015-10-12) <a href="https://doi.org/f72mvg">https://doi.org/f72mvg</a><br />
+<em>Genome Biology</em> (2015-10-12) <a href="https://doi.org/f72mvg">https://doi.org/f72mvg</a> <br />
 DOI: <a href="https://doi.org/10.1186/s13059-015-0776-0">10.1186/s13059-015-0776-0</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/26458810">26458810</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4601135">PMC4601135</a></p>
 </div>
 <div id="ref-OybQvDuS">
-<p>67. <strong>Assessing DNA Sequence Alignment Methods for Characterizing Ancient Genomes and Methylomes</strong><br />
+<p>67. <strong>Assessing DNA Sequence Alignment Methods for Characterizing Ancient Genomes and Methylomes</strong> <br />
 Marine Poullet, Ludovic Orlando<br />
-<em>Frontiers in Ecology and Evolution</em> (2020-05-06) <a href="https://doi.org/ggzwqr">https://doi.org/ggzwqr</a><br />
+<em>Frontiers in Ecology and Evolution</em> (2020-05-06) <a href="https://doi.org/ggzwqr">https://doi.org/ggzwqr</a> <br />
 DOI: <a href="https://doi.org/10.3389/fevo.2020.00105">10.3389/fevo.2020.00105</a></p>
 </div>
 <div id="ref-pt9vlq4w">
-<p>68. <strong>fastp: an ultra-fast all-in-one FASTQ preprocessor</strong><br />
+<p>68. <strong>fastp: an ultra-fast all-in-one FASTQ preprocessor</strong> <br />
 Shifu Chen, Yanqing Zhou, Yaru Chen, Jia Gu<br />
-<em>Bioinformatics</em> (2018-09-01) <a href="https://doi.org/gd9mrb">https://doi.org/gd9mrb</a><br />
+<em>Bioinformatics</em> (2018-09-01) <a href="https://doi.org/gd9mrb">https://doi.org/gd9mrb</a> <br />
 DOI: <a href="https://doi.org/10.1093/bioinformatics/bty560">10.1093/bioinformatics/bty560</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/30423086">30423086</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6129281">PMC6129281</a></p>
 </div>
 <div id="ref-or1FajUp">
-<p>69. <strong>QC Fail Sequencing » Illumina 2 colour chemistry can overcall high confidence G bases</strong><a href="https://sequencing.qcfail.com/articles/illumina-2-colour-chemistry-can-overcall-high-confidence-g-bases/">https://sequencing.qcfail.com/articles/illumina-2-colour-chemistry-can-overcall-high-confidence-g-bases/</a></p>
+<p>69. <strong>QC Fail Sequencing » Illumina 2 colour chemistry can overcall high confidence G bases</strong> <a href="https://sequencing.qcfail.com/articles/illumina-2-colour-chemistry-can-overcall-high-confidence-g-bases/">https://sequencing.qcfail.com/articles/illumina-2-colour-chemistry-can-overcall-high-confidence-g-bases/</a></p>
 </div>
 <div id="ref-qKTLLip1">
-<p>70. <strong>Haplotype-based variant detection from short-read sequencing</strong><br />
+<p>70. <strong>Haplotype-based variant detection from short-read sequencing</strong> <br />
 Erik Garrison, Gabor Marth<br />
 <em>arXiv</em> (2012-07-24) <a href="https://arxiv.org/abs/1207.3907">https://arxiv.org/abs/1207.3907</a></p>
 </div>
 <div id="ref-p9w4xTdc">
-<p>71. <strong>stschiff/sequenceTools</strong><br />
+<p>71. <strong>stschiff/sequenceTools</strong> <br />
 Stephan Schiffels<br />
-(2020-07-19) <a href="https://github.com/stschiff/sequenceTools">https://github.com/stschiff/sequenceTools</a></p>
+(2020-09-14) <a href="https://github.com/stschiff/sequenceTools">https://github.com/stschiff/sequenceTools</a></p>
 </div>
 <div id="ref-194vI7Tnf">
-<p>72. <strong>MALT: Fast alignment and analysis of metagenomic DNA sequence data applied to the Tyrolean Iceman</strong><br />
+<p>72. <strong>MALT: Fast alignment and analysis of metagenomic DNA sequence data applied to the Tyrolean Iceman</strong> <br />
 Alexander Herbig, Frank Maixner, Kirsten I. Bos, Albert Zink, Johannes Krause, Daniel H. Huson<br />
-<em>bioRxiv</em> (2016-04-27) <a href="https://doi.org/ggxkk9">https://doi.org/ggxkk9</a><br />
+<em>bioRxiv</em> (2016-04-27) <a href="https://doi.org/ggxkk9">https://doi.org/ggxkk9</a> <br />
 DOI: <a href="https://doi.org/10.1101/050559">10.1101/050559</a></p>
 </div>
 <div id="ref-qDQBcgzB">
-<p>73. <strong>Salmonella enterica genomes from victims of a major sixteenth-century epidemic in Mexico</strong><br />
+<p>73. <strong>Salmonella enterica genomes from victims of a major sixteenth-century epidemic in Mexico</strong> <br />
 Åshild J. Vågene, Alexander Herbig, Michael G. Campana, Nelly M. Robles García, Christina Warinner, Susanna Sabin, Maria A. Spyrou, Aida Andrades Valtueña, Daniel Huson, Noreen Tuross, … Johannes Krause<br />
-<em>Nature Ecology &amp; Evolution</em> (2018-01-15) <a href="https://doi.org/ggxkk7">https://doi.org/ggxkk7</a><br />
+<em>Nature Ecology &amp; Evolution</em> (2018-01-15) <a href="https://doi.org/ggxkk7">https://doi.org/ggxkk7</a> <br />
 DOI: <a href="https://doi.org/10.1038/s41559-017-0446-6">10.1038/s41559-017-0446-6</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/29335577">29335577</a></p>
 </div>
 <div id="ref-wfp4mBcT">
-<p>74. <strong>Improved metagenomic analysis with Kraken 2</strong><br />
+<p>74. <strong>Improved metagenomic analysis with Kraken 2</strong> <br />
 Derrick E. Wood, Jennifer Lu, Ben Langmead<br />
-<em>Genome Biology</em> (2019-11-28) <a href="https://doi.org/ggfk55">https://doi.org/ggfk55</a><br />
+<em>Genome Biology</em> (2019-11-28) <a href="https://doi.org/ggfk55">https://doi.org/ggfk55</a> <br />
 DOI: <a href="https://doi.org/10.1186/s13059-019-1891-0">10.1186/s13059-019-1891-0</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/31779668">31779668</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6883579">PMC6883579</a></p>
 </div>
 <div id="ref-cvMiJCKj">
-<p>75. <strong>HOPS: automated detection and authentication of pathogen DNA in archaeological remains</strong><br />
+<p>75. <strong>HOPS: automated detection and authentication of pathogen DNA in archaeological remains</strong> <br />
 Ron Hübler, Felix M. Key, Christina Warinner, Kirsten I. Bos, Johannes Krause, Alexander Herbig<br />
-<em>Genome Biology</em> (2019-12-16) <a href="https://doi.org/ggxkmb">https://doi.org/ggxkmb</a><br />
+<em>Genome Biology</em> (2019-12-16) <a href="https://doi.org/ggxkmb">https://doi.org/ggxkmb</a> <br />
 DOI: <a href="https://doi.org/10.1186/s13059-019-1903-0">10.1186/s13059-019-1903-0</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/31842945">31842945</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6913047">PMC6913047</a></p>
 </div>
 <div id="ref-BF7nFrAi">
-<p>76. <strong>Microbial differences between dental plaque and historic dental calculus are related to oral biofilm maturation stage</strong><br />
+<p>76. <strong>Microbial differences between dental plaque and historic dental calculus are related to oral biofilm maturation stage</strong> <br />
 Irina M. Velsko, James A. Fellows Yates, Franziska Aron, Richard W. Hagan, Laurent A. F. Frantz, Louise Loe, Juan Bautista Rodriguez Martinez, Eros Chaves, Chris Gosden, Greger Larson, Christina Warinner<br />
-<em>Microbiome</em> (2019-07-06) <a href="https://doi.org/ggxkmc">https://doi.org/ggxkmc</a><br />
+<em>Microbiome</em> (2019-07-06) <a href="https://doi.org/ggxkmc">https://doi.org/ggxkmc</a> <br />
 DOI: <a href="https://doi.org/10.1186/s40168-019-0717-3">10.1186/s40168-019-0717-3</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/31279340">31279340</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6612086">PMC6612086</a></p>
 </div>
 <div id="ref-1HWiAHnIw">
-<p>77. <strong>BEDTools: a flexible suite of utilities for comparing genomic features</strong><br />
+<p>77. <strong>BEDTools: a flexible suite of utilities for comparing genomic features</strong> <br />
 Aaron R. Quinlan, Ira M. Hall<br />
-<em>Bioinformatics</em> (2010-03-15) <a href="https://doi.org/cmrms3">https://doi.org/cmrms3</a><br />
+<em>Bioinformatics</em> (2010-03-15) <a href="https://doi.org/cmrms3">https://doi.org/cmrms3</a> <br />
 DOI: <a href="https://doi.org/10.1093/bioinformatics/btq033">10.1093/bioinformatics/btq033</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/20110278">20110278</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2832824">PMC2832824</a></p>
 </div>
 <div id="ref-KlTB2lhf">
-<p>78. <strong>Ancient Fennoscandian genomes reveal origin and spread of Siberian ancestry in Europe</strong><br />
+<p>78. <strong>Ancient Fennoscandian genomes reveal origin and spread of Siberian ancestry in Europe</strong> <br />
 Thiseas C. Lamnidis, Kerttu Majander, Choongwon Jeong, Elina Salmela, Anna Wessman, Vyacheslav Moiseyev, Valery Khartanovich, Oleg Balanovsky, Matthias Ongyerth, Antje Weihmann, … Stephan Schiffels<br />
-<em>Nature Communications</em> (2018-11-27) <a href="https://doi.org/ggxkk6">https://doi.org/ggxkk6</a><br />
+<em>Nature Communications</em> (2018-11-27) <a href="https://doi.org/ggxkk6">https://doi.org/ggxkk6</a> <br />
 DOI: <a href="https://doi.org/10.1038/s41467-018-07483-5">10.1038/s41467-018-07483-5</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/30479341">30479341</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6258758">PMC6258758</a></p>
 </div>
 <div id="ref-U9WbDW7I">
-<p>79. <strong>MultiQC: summarize analysis results for multiple tools and samples in a single report</strong><br />
+<p>79. <strong>MultiQC: summarize analysis results for multiple tools and samples in a single report</strong> <br />
 Philip Ewels, Måns Magnusson, Sverker Lundin, Max Käller<br />
-<em>Bioinformatics</em> (2016-10-01) <a href="https://doi.org/f3s996">https://doi.org/f3s996</a><br />
+<em>Bioinformatics</em> (2016-10-01) <a href="https://doi.org/f3s996">https://doi.org/f3s996</a> <br />
 DOI: <a href="https://doi.org/10.1093/bioinformatics/btw354">10.1093/bioinformatics/btw354</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/27312411">27312411</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5039924">PMC5039924</a></p>
 </div>
+<div id="ref-wsKrZHpG">
+<p>80. <strong>Origin and Health Status of First-Generation Africans from Early Colonial Mexico</strong> <br />
+Rodrigo Barquera, Thiseas C. Lamnidis, Aditya Kumar Lankapalli, Arthur Kocher, Diana I. Hernández-Zaragoza, Elizabeth A. Nelson, Adriana C. Zamora-Herrera, Patxi Ramallo, Natalia Bernal-Felipe, Alexander Immel, … Johannes Krause<br />
+<em>Current Biology</em> (2020-06) <a href="https://doi.org/ggwq88">https://doi.org/ggwq88</a> <br />
+DOI: <a href="https://doi.org/10.1016/j.cub.2020.04.002">10.1016/j.cub.2020.04.002</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/32359431">32359431</a></p>
+</div>
 <div id="ref-1Gpn4nsE5">
-<p>80. <a href="https://nf-co.re/eager/docs">https://nf-co.re/eager/docs</a></p>
+<p>81. <a href="https://nf-co.re/eager/docs">https://nf-co.re/eager/docs</a></p>
 </div>
 <div id="ref-ZEaeXPY6">
-<p>81. <strong>ATLAS: Analysis Tools for Low-depth and Ancient Samples</strong><br />
+<p>82. <strong>ATLAS: Analysis Tools for Low-depth and Ancient Samples</strong> <br />
 Vivian Link, Athanasios Kousathanas, Krishna Veeramah, Christian Sell, Amelie Scheu, Daniel Wegmann<br />
-<em>bioRxiv</em> (2017-03-24) <a href="https://doi.org/gg668z">https://doi.org/gg668z</a><br />
+<em>bioRxiv</em> (2017-03-24) <a href="https://doi.org/gg668z">https://doi.org/gg668z</a> <br />
 DOI: <a href="https://doi.org/10.1101/105346">10.1101/105346</a></p>
 </div>
 <div id="ref-NXbAmDI0">
-<p>82. <strong>nf-core/eager</strong><br />
+<p>83. <strong>nf-core/eager</strong> <br />
 nf-core<br />
-(2020-07-27) <a href="https://github.com/nf-core/eager">https://github.com/nf-core/eager</a></p>
+(2020-09-25) <a href="https://github.com/nf-core/eager">https://github.com/nf-core/eager</a></p>
 </div>
 <div id="ref-13kS0x2y1">
-<p>83. <strong>nf-core/configs</strong><br />
+<p>84. <strong>nf-core/configs</strong> <br />
 nf-core<br />
-(2020-08-03) <a href="https://github.com/nf-core/configs">https://github.com/nf-core/configs</a></p>
+(2020-09-29) <a href="https://github.com/nf-core/configs">https://github.com/nf-core/configs</a></p>
+</div>
+<div id="ref-1Bdq6PHHx">
+<p>85. <strong>MultiQC</strong> <a href="https://multiqc.info/">https://multiqc.info/</a></p>
 </div>
 <div id="ref-YuJbg3zO">
-<p>84. <strong>Open collaborative writing with Manubot</strong><br />
+<p>86. <strong>Open collaborative writing with Manubot</strong> <br />
 Daniel S. Himmelstein, Vincent Rubinetti, David R. Slochower, Dongbo Hu, Venkat S. Malladi, Casey S. Greene, Anthony Gitter<br />
-<em>PLOS Computational Biology</em> (2019-06-24) <a href="https://doi.org/c7np">https://doi.org/c7np</a><br />
+<em>PLOS Computational Biology</em> (2019-06-24) <a href="https://doi.org/c7np">https://doi.org/c7np</a> <br />
 DOI: <a href="https://doi.org/10.1371/journal.pcbi.1007128">10.1371/journal.pcbi.1007128</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/31233491">31233491</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6611653">PMC6611653</a></p>
 </div>
 </div>
@@ -1552,6 +1888,26 @@ DOI: <a href="https://doi.org/10.1371/journal.pcbi.1007128">10.1371/journal.pcbi
         margin-top: 30px;
         padding-bottom: 5px;
         border-bottom: solid 1px #bdbdbd;
+    }
+
+    /* heading font sizes */
+    h1 {
+        font-size: 2em;
+    }
+    h2 {
+        font-size: 1.5em;
+    }
+    h3{
+        font-size: 1.35em;
+    }
+    h4 {
+        font-size: 1.25em;
+    }
+    h5 {
+        font-size: 1.15em;
+    }
+    h6 {
+        font-size: 1em;
     }
 
     /* -------------------------------------------------- */
@@ -1985,22 +2341,6 @@ DOI: <a href="https://doi.org/10.1371/journal.pcbi.1007128">10.1371/journal.pcbi
         h5,
         h6 {
             margin: 15px 0;
-        }
-
-        /* heading 1 */
-        h1 {
-            font-size: 1.75em;
-        }
-
-        /* heading 2 */
-        h2 {
-            font-size: 1.25em;
-            margin-top: 0;
-        }
-
-        /* heading 3 */
-        h3 {
-            font-size: 1.10em;
         }
 
         /* figures and tables */
@@ -2656,10 +2996,39 @@ DOI: <a href="https://doi.org/10.1371/journal.pcbi.1007128">10.1371/journal.pcbi
     /* hypothesis (annotations) plugin */
     /* -------------------------------------------------- */
 
+    /* hypothesis activation button */
+    #hypothesis_button {
+        box-sizing: border-box;
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 60px;
+        height: 60px;
+        background: #ffffff;
+        border-radius: 0;
+        border-left: solid 1px #bdbdbd;
+        border-bottom: solid 1px #bdbdbd;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
+        z-index: 2;
+    }
+
+    /* hypothesis button svg */
+    #hypothesis_button > svg {
+        position: relative;
+        top: -4px;
+    }
+
+    /* hypothesis annotation count */
+    #hypothesis_count {
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 5px;
+    }
+
     /* side panel */
     .annotator-frame {
         width: 280px !important;
-        z-index: 0 !important;
     }
 
     /* match highlight color to rest of theme */
@@ -2677,8 +3046,12 @@ DOI: <a href="https://doi.org/10.1371/journal.pcbi.1007128">10.1371/journal.pcbi
         background: #f5f5f5 !important;
     }
 
-    /* always hide toolbar and tooltip on print */
+    /* always hide button, toolbar, and tooltip on print */
     @media only print {
+        #hypothesis_button {
+            display: none;
+        }
+
         .annotator-frame {
             display: none !important;
         }
@@ -4174,8 +4547,6 @@ DOI: <a href="https://doi.org/10.1371/journal.pcbi.1007128">10.1371/journal.pcbi
             window.addEventListener('load', start);
     })();
 </script>
-<!-- table of contents plugin -->
-
 <script>
     (function() {
         // /////////////////////////
@@ -4198,10 +4569,13 @@ DOI: <a href="https://doi.org/10.1371/journal.pcbi.1007128">10.1371/journal.pcbi
             // which types of elements to add links for, in
             // "document.querySelector" format
             typesQuery: 'h1, h2, h3',
-            // whether default behavior is to be closed ('false'), open
-            // ('true'), or only open when screen wide enough to fit panel
-            // ('auto'). note: still always starts closed when page loads.
-            open: 'auto',
+            // whether toc starts open. use 'true' or 'false', or 'auto' to
+            // use 'true' behavior when screen wide enough and 'false' when not
+            startOpen: 'false',
+            // whether toc closes when clicking on toc link. use 'true' or
+            // 'false', or 'auto' to use 'false' behavior when screen wide
+            // enough and 'true' when not
+            clickClose: 'auto',
             // if list item is more than this many characters, text will be
             // truncated
             charLimit: '50',
@@ -4226,13 +4600,21 @@ DOI: <a href="https://doi.org/10.1371/journal.pcbi.1007128">10.1371/journal.pcbi
             if (!panel)
                 return;
             makeEntries(panel);
+            // attach panel to document after making entries, so 'toc' heading
+            // in panel isn't included in toc
             document.body.insertBefore(panel, document.body.firstChild);
 
-            closePanel();
+            // initial panel state
+            if (
+                options.startOpen === 'true' ||
+                (options.startOpen === 'auto' && !isSmallScreen())
+            )
+                openPanel();
+            else
+                closePanel();
 
             // attach click, scroll, and hash change listeners to window
             window.addEventListener('click', onClick);
-            window.addEventListener('touchstart', onClick);
             window.addEventListener('scroll', onScroll);
             window.addEventListener('hashchange', onScroll);
             window.addEventListener('keyup', onKeyUp);
@@ -4250,25 +4632,10 @@ DOI: <a href="https://doi.org/10.1371/journal.pcbi.1007128">10.1371/journal.pcbi
             return window.innerWidth < 816 + 260 * 2;
         }
 
-        // open/close panel based on option and screen size
-        function openOrClosePanel() {
-            if (
-                options.open === 'true' ||
-                (options.open === 'auto' && !isSmallScreen())
-            )
-                openPanel();
-            else
-                closePanel();
-        }
-
         // when mouse is clicked anywhere in window
         function onClick() {
-            const panel = document.getElementById('toc_panel');
-            if (!panel)
-                return;
-
-            if (panel.dataset.open === 'true')
-                openOrClosePanel();
+            if (isSmallScreen())
+                closePanel();
         }
 
         // when window is scrolled or hash changed
@@ -4345,13 +4712,12 @@ DOI: <a href="https://doi.org/10.1371/journal.pcbi.1007128">10.1371/journal.pcbi
             // create toc button
             const button = document.createElement('button');
             button.id = 'toc_button';
-            button.innerHTML = document.querySelector(
-                '.icon_th_list'
-            ).innerHTML;
+            button.innerHTML = document.querySelector('.icon_th_list').innerHTML;
+            button.title = 'Table of Contents';
             button.classList.add('icon_button');
 
             // create header text
-            const text = document.createElement('h3');
+            const text = document.createElement('h4');
             text.innerHTML = 'Table of Contents';
 
             // create container for toc list
@@ -4429,8 +4795,14 @@ DOI: <a href="https://doi.org/10.1371/journal.pcbi.1007128">10.1371/journal.pcbi
         }
 
         // when link is clicked
-        function onLinkClick() {
-            openOrClosePanel();
+        function onLinkClick(event) {
+            if (
+                options.clickClose === 'true' ||
+                (options.clickClose === 'auto' && isSmallScreen())
+            )
+                closePanel();
+            else
+                openPanel();
         }
 
         // open panel if closed, close if opened
@@ -5263,9 +5635,19 @@ DOI: <a href="https://doi.org/10.1371/journal.pcbi.1007128">10.1371/journal.pcbi
 
     // https://www.mathjax.org/
 </script>
-<!-- annotations plugin configuration -->
+<!-- annotations plugin -->
 
 <script>
+    // /////////////////////////
+    // DESCRIPTION
+    // /////////////////////////
+
+    // This third-party plugin 'Hypothesis' allows public annotation of the
+    // manuscript.
+
+    // https://web.hypothes.is/
+
+    // plugin configuration
     window.hypothesisConfig = function() {
         return {
             branding: {
@@ -5278,20 +5660,85 @@ DOI: <a href="https://doi.org/10.1371/journal.pcbi.1007128">10.1371/journal.pcbi
             }
         };
     };
+
+    // hypothesis client script
+    const embed = 'https://hypothes.is/embed.js';
+    // hypothesis annotation count query url
+    const query = 'https://api.hypothes.is/api/search?limit=0&url='
+
+    
+    // start script
+    function start() {
+        const button = makeButton();
+        document.body.insertBefore(button, document.body.firstChild);
+        insertCount(button);
+    }
+
+    // make button
+    function makeButton() {
+        // create button
+        const button = document.createElement('button');
+        button.id = 'hypothesis_button';
+        button.innerHTML = document.querySelector('.icon_hypothesis').innerHTML;
+        button.title = 'Hypothesis annotations';
+        button.classList.add('icon_button');
+
+        function onClick(event) {
+            onButtonClick(event, button);
+        }
+
+        // attach click listeners
+        button.addEventListener('click', onClick);
+
+        return button;
+    }
+
+    // insert annotations count
+    async function insertCount(button) {
+        // get annotation count from Hypothesis based on url
+        let count = '-';
+        try {
+            const canonical = document.querySelector('link[rel="canonical"]');
+            const location = window.location;
+            const url = encodeURIComponent((canonical || location).href);
+            const response = await fetch(query + url);
+            const json = await response.json();
+            count = json.total || '-';
+        } catch(error) {
+            console.log(error);
+        }
+        
+        // put count into button
+        const counter = document.createElement('span');
+        counter.id = 'hypothesis_count';
+        counter.innerHTML = count;
+        button.title = 'View ' + count + ' Hypothesis annotations';
+        button.append(counter);
+    }
+
+    // when button is clicked
+    function onButtonClick(event, button) {
+        const script = document.createElement('script');
+        script.src = embed;
+        document.body.append(script);
+        button.remove();
+    }
+
+    window.addEventListener('load', start);
 </script>
 
-<!-- annotations plugin -->
+<!-- hypothesis icon -->
 
-<script src='https://hypothes.is/embed.js'>
-    // /////////////////////////
-    // DESCRIPTION
-    // /////////////////////////
-
-    // This third-party plugin 'Hypothesis' allows public annotation of the
-    // manuscript.
-
-    // https://web.hypothes.is/
-</script>
+<template class="icon_hypothesis">
+    <!-- modified from: https://simpleicons.org/icons/hypothesis.svg / https://git.io/Jf1VB -->
+    <svg width="16" height="16" viewBox="0 0 24 24" tabindex="-1">
+        <path
+            fill="currentColor"
+            d="M3.43 0C2.5 0 1.72 .768 1.72 1.72V18.86C1.72 19.8 2.5 20.57 3.43 20.57H9.38L12 24L14.62 20.57H20.57C21.5 20.57 22.29 19.8 22.29 18.86V1.72C22.29 .77 21.5 0 20.57 0H3.43M5.14 3.43H7.72V9.43S8.58 7.72 10.28 7.72C12 7.72 13.74 8.57 13.74 11.24V17.14H11.16V12C11.16 10.61 10.28 10.07 9.43 10.29C8.57 10.5 7.72 11.41 7.72 13.29V17.14H5.14V3.43M18 13.72C18.95 13.72 19.72 14.5 19.72 15.42A1.71 1.71 0 0 1 18 17.13A1.71 1.71 0 0 1 16.29 15.42C16.29 14.5 17.05 13.71 18 13.71Z"
+            tabindex="-1"
+        ></path>
+    </svg>
+</template>
 <!-- analytics plugin -->
 
 <!-- copy and paste code from Google Analytics or similar service here -->
