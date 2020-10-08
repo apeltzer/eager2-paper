@@ -1,4 +1,4 @@
-adapter
+Adapter
 AdapterRemoval
 aDNA
 aidaanva
@@ -20,7 +20,7 @@ Barncancerfonden
 Barquera
 bedtools
 bejel
-benchmarking
+Benchmarking
 Bioconda
 bioinf
 bioinformatic
@@ -71,7 +71,7 @@ GATK
 gau
 GCF
 genomic
-Genotyping
+genotyping
 Günter
 GWDG
 Haak
@@ -98,12 +98,12 @@ Lamnidis
 lifecycle
 Lindenbaum
 Luc
-mapDamage
+MapDamage
 MarkDuplicates
 maxibor
 Maxime
 MaxUlysse
-metagenomic
+Metagenomic
 Microbiome
 microbiomes
 microbiota
@@ -139,7 +139,7 @@ parallelisation
 parallelised
 Pathogenomics
 PCR
-Peltzer
+peltzer
 performant
 pestis
 Philipp
@@ -149,7 +149,7 @@ pileupCaller
 PMDtools
 Pontus
 POSIX
-Pre
+pre
 preprint
 preprocessing
 PreSeq
