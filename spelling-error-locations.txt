@@ -204,7 +204,7 @@ content/03.results-and-discussion.md:311:preprocessing
 content/03.results-and-discussion.md:313:genomic
 content/03.results-and-discussion.md:315:paleomix
 content/03.results-and-discussion.md:315:paleomix
-content/03.results-and-discussion.md:318:Benchmarking
+content/03.results-and-discussion.md:318:benchmarking
 content/03.results-and-discussion.md:320:adapter
 content/03.results-and-discussion.md:320:Illumina
 content/03.results-and-discussion.md:321:AdapterRemoval

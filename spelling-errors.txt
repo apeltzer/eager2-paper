@@ -7,7 +7,7 @@ amplicon
 Andrades
 ANGSD
 apeltzer
-archaeogenetics
+Archaeogenetics
 Archäologie
 Arielle
 arxiv
@@ -57,7 +57,7 @@ ERC
 Fagernäs
 FASTA
 fastp
-fastq
+FASTQ
 FastQC
 FASTQs
 filepaths
@@ -71,7 +71,7 @@ GATK
 gau
 GCF
 genomic
-genotyping
+Genotyping
 Günter
 GWDG
 Haak
@@ -139,7 +139,7 @@ parallelisation
 parallelised
 Pathogenomics
 PCR
-peltzer
+Peltzer
 performant
 pestis
 Philipp
