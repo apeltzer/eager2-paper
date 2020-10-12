@@ -148,13 +148,13 @@
   <meta name="citation_fulltext_html_url" content="https://apeltzer.github.io/eager2-paper/" />
   <meta name="citation_pdf_url" content="https://apeltzer.github.io/eager2-paper/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://apeltzer.github.io/eager2-paper/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://apeltzer.github.io/eager2-paper/v/31c1d20b022de42ce70f22ec8c2402c75a5c97f3/" />
-  <meta name="manubot_html_url_versioned" content="https://apeltzer.github.io/eager2-paper/v/31c1d20b022de42ce70f22ec8c2402c75a5c97f3/" />
-  <meta name="manubot_pdf_url_versioned" content="https://apeltzer.github.io/eager2-paper/v/31c1d20b022de42ce70f22ec8c2402c75a5c97f3/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://apeltzer.github.io/eager2-paper/v/3b0c00a8404653cf80890a9e5abec5d3bf365a2a/" />
+  <meta name="manubot_html_url_versioned" content="https://apeltzer.github.io/eager2-paper/v/3b0c00a8404653cf80890a9e5abec5d3bf365a2a/" />
+  <meta name="manubot_pdf_url_versioned" content="https://apeltzer.github.io/eager2-paper/v/3b0c00a8404653cf80890a9e5abec5d3bf365a2a/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
-  <meta property="og:image" content="https://github.com/apeltzer/eager2-paper/raw/31c1d20b022de42ce70f22ec8c2402c75a5c97f3/content/images/nf-core-eager_social_preview.png" />
-  <meta property="twitter:image" content="https://github.com/apeltzer/eager2-paper/raw/31c1d20b022de42ce70f22ec8c2402c75a5c97f3/content/images/nf-core-eager_social_preview.png" />
+  <meta property="og:image" content="https://github.com/apeltzer/eager2-paper/raw/3b0c00a8404653cf80890a9e5abec5d3bf365a2a/content/images/nf-core-eager_social_preview.png" />
+  <meta property="twitter:image" content="https://github.com/apeltzer/eager2-paper/raw/3b0c00a8404653cf80890a9e5abec5d3bf365a2a/content/images/nf-core-eager_social_preview.png" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
   <link rel="mask-icon" href="https://manubot.org/safari-pinned-tab.svg" color="#ad1457" />
   <meta name="theme-color" content="#ad1457" />
@@ -166,9 +166,9 @@
 </header>
 <p><small><em>
 This manuscript
-(<a href="https://apeltzer.github.io/eager2-paper/v/31c1d20b022de42ce70f22ec8c2402c75a5c97f3/">permalink</a>)
+(<a href="https://apeltzer.github.io/eager2-paper/v/3b0c00a8404653cf80890a9e5abec5d3bf365a2a/">permalink</a>)
 was automatically generated
-from <a href="https://github.com/apeltzer/eager2-paper/tree/31c1d20b022de42ce70f22ec8c2402c75a5c97f3">apeltzer/eager2-paper@31c1d20</a>
+from <a href="https://github.com/apeltzer/eager2-paper/tree/3b0c00a8404653cf80890a9e5abec5d3bf365a2a">apeltzer/eager2-paper@3b0c00a</a>
 on October 12, 2020.
 </em></small></p>
 <h2 id="authors">Authors</h2>
@@ -270,11 +270,11 @@ Quantitative Biology Center (QBiC), Eberhard-Karls-Universität, Tübingen, Germ
 </small></p></li>
 </ul>
 <h2 class="page_break_before" id="abstract">Abstract</h2>
-<p>The broadening utilisation of ancient DNA (aDNA) to address archaeological,
+<p>The broadening utilisation of ancient DNA to address archaeological,
 palaeontological, and biological questions is resulting in a rising diversity in
 the size of laboratories and scale of analyses being performed. In the context
 of this heterogeneous landscape, we present nf-core/eager, an advanced and
-entirely redesigned and extended pipeline for the analysis of ancient genomic
+entirely redesigned and extended version of the EAGER pipeline for the analysis of ancient genomic
 data. This Nextflow pipeline aims to address three main themes: accessibility
 and adaptability to different computing configurations, reproducibility to
 ensure robust analytical standards, and updating the pipeline to
@@ -286,13 +286,13 @@ data can be used by a diverse range of research groups and fields.</p>
 <h2 id="introduction">Introduction</h2>
 <p>Ancient DNA (aDNA) has become a widely accepted source of biological data,
 helping to provide new perspectives for a range of fields including archaeology,
-biology, cultural heritage, ecology, and palaeontology. The utilisation of
+cultural heritage, evolutionary biology, ecology, and palaeontology. The utilisation of
 short-read high-throughput sequencing has allowed the recovery of aDNA from a
 wide variety of sources, including (but not limited to), the skeletal remains of
 animals <span class="citation" data-cites="86EfjHO2 1EJZxEzq1 7nLP30p0 ZMf8LvSn">[<a href="#ref-86EfjHO2" role="doc-biblioref">1</a>,<a href="#ref-1EJZxEzq1" role="doc-biblioref">2</a>,<a href="#ref-7nLP30p0" role="doc-biblioref">3</a>,<a href="#ref-ZMf8LvSn" role="doc-biblioref">4</a>]</span>, modern and archaic
 humans <span class="citation" data-cites="tAnEwrSn Nokd2X7v dHnkKsKe qngWumct">[<a href="#ref-tAnEwrSn" role="doc-biblioref">5</a>,<a href="#ref-Nokd2X7v" role="doc-biblioref">6</a>,<a href="#ref-dHnkKsKe" role="doc-biblioref">7</a>,<a href="#ref-qngWumct" role="doc-biblioref">8</a>]</span>, bacteria
 <span class="citation" data-cites="oasyTY16 1APjJqbjj 4YuC8sCQ">[<a href="#ref-oasyTY16" role="doc-biblioref">9</a>,<a href="#ref-1APjJqbjj" role="doc-biblioref">10</a>,<a href="#ref-4YuC8sCQ" role="doc-biblioref">11</a>]</span>, viruses <span class="citation" data-cites="CNvvxsK7 1HEgHFzOs">[<a href="#ref-CNvvxsK7" role="doc-biblioref">12</a>,<a href="#ref-1HEgHFzOs" role="doc-biblioref">13</a>]</span>, plants <span class="citation" data-cites="1001q664T 6MKvilVe">[<a href="#ref-1001q664T" role="doc-biblioref">14</a>,<a href="#ref-6MKvilVe" role="doc-biblioref">15</a>]</span>, palaeofaeces <span class="citation" data-cites="fK2md3DI h6xmK5cY">[<a href="#ref-fK2md3DI" role="doc-biblioref">16</a>,<a href="#ref-h6xmK5cY" role="doc-biblioref">17</a>]</span>, dental calculus <span class="citation" data-cites="10wcktDCE s3l2F2ef">[<a href="#ref-10wcktDCE" role="doc-biblioref">18</a>,<a href="#ref-s3l2F2ef" role="doc-biblioref">19</a>]</span>, sediments <span class="citation" data-cites="YBHwLDej 64ZHuA4N">[<a href="#ref-YBHwLDej" role="doc-biblioref">20</a>,<a href="#ref-64ZHuA4N" role="doc-biblioref">21</a>]</span>, medical slides <span class="citation" data-cites="WIkaempF">[<a href="#ref-WIkaempF" role="doc-biblioref">22</a>]</span>,
-parchment <span class="citation" data-cites="M0SKmPyu">[<a href="#ref-M0SKmPyu" role="doc-biblioref">23</a>]</span>, and most recently, ancient ‘chewing
+parchment <span class="citation" data-cites="M0SKmPyu">[<a href="#ref-M0SKmPyu" role="doc-biblioref">23</a>]</span>, and recently, ancient ‘chewing
 gum’ <span class="citation" data-cites="NXcxgeob 10155v3VM">[<a href="#ref-NXcxgeob" role="doc-biblioref">24</a>,<a href="#ref-10155v3VM" role="doc-biblioref">25</a>]</span>.
 Improvement in laboratory protocols to increase yields of otherwise trace
 amounts of DNA has at the same time led to studies that can total hundreds of
@@ -321,21 +321,21 @@ is therefore increasingly lost over time and supplanted by younger
 ‘environmental’ DNA. Later handling by archaeologists, museum curators, and
 other researchers can also contribute ‘modern’ contamination. While these
 characteristics can help provide evidence towards the ‘authenticity’ of true
-aDNA sequences (e.g. the aDNA Cytosine to Thymine or ‘C to T’ ‘damage’
+aDNA sequences (e.g. the aDNA cytosine to thymine or ‘C to T’ ‘damage’
 deamination profiles <span class="citation" data-cites="14YGEdSwc">[<a href="#ref-14YGEdSwc" role="doc-biblioref">36</a>]</span>), they also pose
 specific challenges such as unspecific DNA alignment and/or low coverage and
 miscoding lesions that can result in low-confidence genotyping. These factors
 often lead to prohibitive sequencing costs when retrieving enough data for
 modern high-throughput short-read sequencing data pipelines (such as more than 1
 billion reads for a 1X depth coverage <em>Yersinia pestis</em> genome
-<span class="citation" data-cites="1SX8gKlw">[<a href="#ref-1SX8gKlw" role="doc-biblioref">37</a>]</span>), and thus require aDNA-tailored methods and
-techniques to overcome these challenges.</p>
+<span class="citation" data-cites="1SX8gKlw">[<a href="#ref-1SX8gKlw" role="doc-biblioref">37</a>]</span>), and thus aDNA-tailored methods and
+techniques are required to overcome these challenges.</p>
 <p>Two previously published and commonly used pipelines in the field are PALEOMIX
 <span class="citation" data-cites="1H3banOxK">[<a href="#ref-1H3banOxK" role="doc-biblioref">38</a>]</span> and EAGER <span class="citation" data-cites="12TkhsLGD">[<a href="#ref-12TkhsLGD" role="doc-biblioref">39</a>]</span>. These
 two pipelines take a similar approach to link together standard tools used for
 Illumina high-throughput short-read data processing (sequencing quality control,
 sequencing adapter removal/and or paired-end read merging, mapping of reads to a
-reference genome, genotyping, etc.), but with a specific focus on tools that are
+reference genome, genotyping, etc.). However, they have a specific focus on tools that are
 designed for, or well-suited for aDNA (such as the bwa aln algorithm for
 ultra-short molecules <span class="citation" data-cites="roi5bwXL">[<a href="#ref-roi5bwXL" role="doc-biblioref">40</a>]</span> and mapDamage
 <span class="citation" data-cites="Rhiz5BNL">[<a href="#ref-Rhiz5BNL" role="doc-biblioref">41</a>]</span> for evaluation of aDNA characteristics).
@@ -355,10 +355,10 @@ well as economical interests to maximise analytical yield
 version of the EAGER pipeline in Nextflow <span class="citation" data-cites="4XDvZWxk">[<a href="#ref-4XDvZWxk" role="doc-biblioref">44</a>]</span> (a
 domain-specific-language or ‘DSL’, specifically designed for the construction of
 omics analysis pipelines), introduced new features, and more flexible pipeline
-configuration. In addition, the newly named pipeline - nf-core/eager
+configuration. In addition, the renamed pipeline - nf-core/eager
 - has been developed in the context of the nf-core community framework
 <span class="citation" data-cites="wq4G2CfQ">[<a href="#ref-wq4G2CfQ" role="doc-biblioref">45</a>]</span>, which enforces strict guidelines for
-best-practises in software development.</p>
+best-practices in software development.</p>
 <h1 id="results-and-discussion">Results and Discussion</h1>
 <h2 id="scalability-portability-and-efficiency">Scalability, Portability, and Efficiency</h2>
 <p>The re-implementation of EAGER into Nextflow offers a range of benefits over the
@@ -381,13 +381,13 @@ command-line-interface (CLI) as the primary user interaction mode. This is more
 compatible and portable with most HPCs (that may not offer display of a window
 system), and is in line with the vast majority of bioinformatics tools. We
 therefore believe this will not be a hindrance to new researchers from outside
-computational biology. However, a GUI-based pipeline set up is now offered via
+computational biology. However, a GUI-based pipeline set up is offered via
 the nf-core website’s Launch page
 (<a href="https://nf-co.re/launch">https://nf-co.re/launch</a>), which provides a common
-GUI format across multiple pipelines as well as additional robusticity checks of
+GUI format across multiple pipelines as well as additional robustness checks of
 input parameters for those less familiar with CLIs. Typically the output of the
 launch functionality is a JSON file that can be used with a nf-core launch
-command as a single parameter (as with EAGER v1), however integration with
+command as a single parameter (as with the original EAGER), however integration with
 Nextflow’s companion monitoring tool tower.nf <span class="citation" data-cites="jJzDdoAE">[<a href="#ref-jJzDdoAE" role="doc-biblioref">49</a>]</span> also
 allows direct submission of pipelines without any command line usage.</p>
 <p>Secondly, reproducibility is made easier through the use of ‘profiles’ that can
@@ -412,14 +412,14 @@ pipeline by replacing the sample-by-sample sequential processing with Nextflow�
 asynchronous job parallelisation, whereby multiple pipeline steps and samples
 are run in parallel (in addition to natively parallelised pipeline steps). This
 is similar to the approach taken by PALEOMIX, however nf-core/eager expands this
-by utilising Nextflow’s ability to customise resource settings the parameters
+by utilising Nextflow’s ability to customise the resource parameters
 for every job in the pipeline; reducing unnecessary resource allocation that can
 occur with unfamiliar users to each step of an NGS data processing pipeline.
 This is particularly pertinent given the increasing use of centralised HPCs or
 cloud computing that often use per-hour cost calculations.</p>
 <h2 id="updated-workflow">Updated Workflow</h2>
 <p>nf-core/eager follows a similar structural foundation to the original version of
-EAGER and partially with PALEOMIX. Given Illumina short-read FASTQ and/or BAM
+EAGER and partially to PALEOMIX. Given Illumina short-read FASTQ and/or BAM
 files and a reference FASTA file, this can be split into four main stages:</p>
 <ol type="1">
 <li>Pre-processing
@@ -432,7 +432,7 @@ files and a reference FASTA file, this can be split into four main stages:</p>
 </ul></li>
 <li>Mapping and post-processing
 <ul>
-<li>Alignment against reference genome: BWA
+<li>Alignment against reference genome: BWA aln and mem
 <span class="citation" data-cites="roi5bwXL 1AzMUkwox">[<a href="#ref-roi5bwXL" role="doc-biblioref">40</a>,<a href="#ref-1AzMUkwox" role="doc-biblioref">53</a>]</span>, CircularMapper <span class="citation" data-cites="12TkhsLGD">[<a href="#ref-12TkhsLGD" role="doc-biblioref">39</a>]</span>, Bowtie2
 <span class="citation" data-cites="PiS0h6Mu">[<a href="#ref-PiS0h6Mu" role="doc-biblioref">55</a>]</span></li>
 <li>Mapping quality filtering: SAMtools <span class="citation" data-cites="IPc8cy7s">[<a href="#ref-IPc8cy7s" role="doc-biblioref">56</a>]</span></li>
@@ -462,7 +462,7 @@ successor method is now available (DamageProfiler), and the latter because a
 stable release of the method could not be migrated to Bioconda. We anticipate
 that there will be an updated version of Schmutzi in the near future that will
 allow us to integrate the method again in nf-core/eager. As an alternative,
-estimation of human <em>nuclear</em> contamination estimation is now offered through
+estimation of human <em>nuclear</em> contamination is now offered through
 ANGSD <span class="citation" data-cites="FyiP2I2k">[<a href="#ref-FyiP2I2k" role="doc-biblioref">63</a>]</span>. Support for the Bowtie2 aligner
 <span class="citation" data-cites="PiS0h6Mu">[<a href="#ref-PiS0h6Mu" role="doc-biblioref">55</a>]</span> has been updated to have default settings optimised
 for aDNA <span class="citation" data-cites="OybQvDuS">[<a href="#ref-OybQvDuS" role="doc-biblioref">67</a>]</span>.</p>
@@ -497,8 +497,9 @@ annotations (e.g. genes) of an input reference is offered by bedtools
 <span class="citation" data-cites="1HWiAHnIw">[<a href="#ref-1HWiAHnIw" role="doc-biblioref">72</a>]</span>, which can be used in cases such as for
 providing initial indications of functional differences between ancient
 bacterial strains (as in <span class="citation" data-cites="XFBeyZB9">[<a href="#ref-XFBeyZB9" role="doc-biblioref">42</a>]</span>). When using a human
-reference genome, nf-core/eager can now also can give estimates of the
-biological sex of a given individual with Sex.DetERRmine
+reference genome, nf-core/eager can also give estimates of the
+relative coverage on the X and Y chromosomes with Sex.DetERRmine,
+which can be used to infer the biological sex of a given individual.
 <span class="citation" data-cites="KlTB2lhf">[<a href="#ref-KlTB2lhf" role="doc-biblioref">73</a>]</span>. A dedicated ‘endogenous DNA’ calculator
 (endorS.py) is also included, to provide a percentage estimate of the sequenced
 reads matching the reference from the total number of reads sequenced per
@@ -511,8 +512,8 @@ library at a time, and in these contexts required significant manual user input
 in merging different FASTQ or BAM files. A major upgrade in nf-core/eager is
 that the new pipeline supports automated processing of complex sequencing
 strategies for many samples, similar to PALEOMIX. This is facilitated by the
-optional use as input of a simple table in TSV format (a format more commonly
-used in wet-lab stages of data generation than PALEOMIX’s yaml format), which
+optional use of a simple table table (in TSV format, a format more commonly
+used in wet-lab stages of data generation, compared to PALEOMIX’s YAML format), which
 includes file paths and additional metadata such as sample name, library name,
 sequencing lane, colour chemistry, and UDG treatment. This allows simultaneous
 processing and appropriate merging and treatment of heterogeneous data from
@@ -537,7 +538,7 @@ parallel to the mapping to a given reference genome (typically of the host).
 Characterisation of properties of authentic aDNA from metagenomic MALT
 alignments is carried out with the HOPS pipeline
 <span class="citation" data-cites="cvMiJCKj">[<a href="#ref-cvMiJCKj" role="doc-biblioref">78</a>]</span>. This functionality can be used either for
-microbiome screening or putative pathogen detection Ancient metagenomic studies
+microbiome screening or putative pathogen detection. Ancient metagenomic studies
 sometimes include comparative samples from living individuals
 <span class="citation" data-cites="BF7nFrAi">[<a href="#ref-BF7nFrAi" role="doc-biblioref">79</a>]</span>. To support open data, whilst respecting
 personal data privacy, nf-core/eager includes a ‘FASTQ host removal’ script
@@ -547,7 +548,7 @@ sequencing data to public repositories after removal of identifiable (human)
 data, for example for microbiome studies.</p>
 <p>To demonstrate the simultaneous genomic analysis of human DNA and metagenomic
 screening for putative pathogens, as well as improved results reporting, we
-re-analysed data from Barquera et al. <span class="citation" data-cites="wsKrZHpG">[<a href="#ref-wsKrZHpG" role="doc-biblioref">80</a>]</span>, who
+re-analysed data from Barquera et al. 2020 <span class="citation" data-cites="wsKrZHpG">[<a href="#ref-wsKrZHpG" role="doc-biblioref">80</a>]</span>, who
 performed a multi-discipline study of three 16th-century individuals excavated
 from a mass burial site in Mexico City. The authors reported genetic results
 showing sufficient on-target human DNA (&gt;1%) with typical aDNA damage (&gt;20% C to
@@ -556,17 +557,17 @@ population-genetic analysis and Y-chromosome coverage indicative that the three
 individuals were genetically male. In addition, one individual (Lab ID: SJN003)
 contained DNA suggesting a possible infection by <em>Treponema pallidum</em>, a species
 with a variety of strains that can cause diseases such as syphilis, bejel and
-yaws, and a second individual (Lab ID: SJN001) with the presence of the
+yaws, and a second individual (Lab ID: SJN001) displayed reads similar to the
 Hepatitis B virus. Both results were confirmed via in-solution enrichment
 approaches.</p>
 <p>We were able to successfully replicate the human and pathogen screening results
 in a single run of nf-core/eager. Mapping to the human reference genome (hs37d5)
 with BWA aln and binning of off-target reads with MALT to the NCBI Nucleotide
 database (2017-10-26) yielded the same results of all individuals having a
-biological sex of Male, as well as the same frequency of C to T miscoding
+biological sex of male, as well as the same frequency of C to T miscoding
 lesions and short fragment lengths (both characteristic of true aDNA).
-Metagenomic hits to both pathogens from the same individuals that yielded
-complete genomes in the original publication were also detected. Both results
+Metagenomic hits to both pathogens from the same individuals that also yielded
+complete genomes in the original publication, were also detected. Both results
 and other processing statistics were identified via a single interactive MultiQC
 report, excerpts of which can be seen in Figure <a href="#fig:dual-human-pathogen">2</a>. The
 full interactive report can be seen in the supplementary information.</p>
@@ -575,16 +576,13 @@ full interactive report can be seen in the supplementary information.</p>
 <img src="images/dual_humanpathogen_exportedmqc_base_edit.png" style="width:70.0%" alt="" /><figcaption><span>Figure 2:</span> Sections of a MultiQC report (v1.10dev) with the outcome of simultaneous human
 DNA and microbial pathogen screening with nf-core/eager, including <strong>A</strong>
 Sex.DetERRmine output of biological sex assignment with coverages on X and Y
-being half of that of autosomes; indicative of Male individuals, and <strong>B</strong> HOPS
+being half of that of autosomes; indicative of male individuals, and <strong>B</strong> HOPS
 output with positive detection of both <em>Treponema pallidum</em> and Hepatitis B
-virus reads. Other taxa in HOPS output represent typical oral commensal
-microbiota found in teeth. MultiQC v1.10 will be included in a point release of
-nf-core/eager, once released by the developer, but in the meantime can be
-manually run to get the same results as v1.9 including the integrated HOPS
-heatmap. Data was shotgun data from Barquera et al. 2020
+virus reads. Other taxa in HOPS output represent typical environmental contamination and
+oral commensal microbiota found in teeth. Data was shotgun data from Barquera et al. 2020
 <span class="citation" data-cites="wsKrZHpG">[<a href="#ref-wsKrZHpG" role="doc-biblioref">80</a>]</span>, and replicated results here were originally
 verified in the publication via enrichment methods. The full interactive reports
-for both MultiQC 1.9 and 1.10 can be seen in the supplementary
+for both MultiQC v1.9 and v1.10 (see methods) can be seen in the supplementary
 information.</figcaption>
 </figure>
 </div>
@@ -634,7 +632,7 @@ preprocessing steps required for analysing NGS data.</p>
 <table>
 <caption><span>Table 1:</span> Comparison of pipeline functionality of common ancient DNA processing
 pipelines. Tick represents full functionality, tilde represents partial
-functionality, and cross represents not implemented. .</caption>
+functionality, and cross represents not implemented. </caption>
 <thead>
 <tr class="header">
 <th>Category</th>
@@ -859,15 +857,15 @@ functionality, and cross represents not implemented. .</caption>
 </table>
 </div>
 <p>We ran each pipeline on a subset of Viking-age cod (<em>Gadus morhua</em>) genomic data
-from <span class="citation" data-cites="ZMf8LvSn">[<a href="#ref-ZMf8LvSn" role="doc-biblioref">4</a>]</span>. This data was originally run using
-PALEOMIX, and was re-run here as described but with PALEOMIX (v1.2.14), with
+from Star et al. 2017 <span class="citation" data-cites="ZMf8LvSn">[<a href="#ref-ZMf8LvSn" role="doc-biblioref">4</a>]</span>. This data was originally run using
+PALEOMIX, was re-run here as described but with the latest version of PALEOMIX (v1.2.14), and with
 settings for the other two pipelines as close as possible to the original paper
 (EAGER with v1.92.33, and nf-core/EAGER with v2.2.0dev, commit
 830c22d448441e5e19508c198f530a7656c9f25d). The respective benchmarking
 environment and exact pipeline run settings can be seen in the Methods and
 Supplementary Information. Two samples each with three Illumina paired-end
 sequencing runs were analysed, with adapter clipping and merging
-(AdapterRemoval), mapping (bwa aln), duplicate removal (markduplicates) and
+(AdapterRemoval), mapping (BWA aln), duplicate removal (Picard’s MarkDuplicates) and
 damage profiling (PALEOMIX: mapDamage2, EAGER and nf-core/EAGER: DamageProfiler)
 steps being performed. We ran the commands for each tool sequentially, but
 repeated these batches of commands 10 times - to account for variability in the
@@ -876,10 +874,11 @@ cloud service’s IO connection. Run times were measured using the GNU time tool
 <div id="tbl:benchmarking-runtimes" class="tablenos">
 <table style="width:100%;">
 <caption><span>Table 2:</span> Comparison of run times in minutes between three ancient DNA pipelines.
-PALEOMIX and nf-core/eager has additional runs with ‘optimised’ parameters with
+PALEOMIX and nf-core/eager have additional runs with ‘optimised’ parameters with
 fairer computational resources matching modern multi-threading strategies.
 Values represent mean and standard deviation of run times in minutes, calculated
-from the output of the GNU time tool. .</caption>
+from the output of the GNU time tool. .Real: real time, System: cumulative CPU system-task times,
+User: cumulative CPU time of all tasks. .</caption>
 <colgroup>
 <col style="width: 30%" />
 <col style="width: 10%" />
@@ -944,28 +943,27 @@ from the output of the GNU time tool. .</caption>
 </div>
 <p>A summary of runtimes of the benchmarking tests can be seen in Table
 <a href="#tbl:benchmarking-runtimes">2</a>. nf-core/eager showed fastest runtimes across all
-three time metrics (Real: real time, System: cumulative CPU system-task times,
-User: cumulative CPU time of all tasks) when running on default parameters. This
+three time metrics when running on default parameters. This
 highlights the improved efficiency of nf-core/eager’s asynchronous processing
 system and per-process resource customisation (here represented by nf-core/eager
 defaults designed for typical HPC set ups).</p>
 <p>As a more realistic demonstration of modern computing multi-threading set ups,
 we also re-ran PALEOMIX with the flag –max-bwa-threads set to 4 (listed in
 Table <a href="#tbl:benchmarking-runtimes">2</a> as ‘optimised’), which is equivalent to a
-single bwa process of nf-core/eager. This resulted in a much faster run-time
+single BWA aln process of nf-core/eager. This resulted in a much faster run-time
 than that of default nf-core/eager, due to the approach of PALEOMIX of mapping
 each lane of a library separately, whereas nf-core/eager will map all lanes of a
 single library merged together. Therefore, given that each library was split
-across three lanes, increasing the threads of bwa to 4 resulted in 12 per
-library, whereas nf-core/eager only gave 4 (by default) for a single bwa process
+across three lanes, increasing the threads of BWA aln to 4 resulted in 12 per
+library, whereas nf-core/eager only gave 4 (by default) for a single BWA aln process
 of one library. While the PALEOMIX approach is valid, we opted to retain the
 per-library mapping as it is often the longest running step of high-throughput
 sequenced genome-mapping pipelines, and it prevents flooding of HPC scheduling
 systems with many long-running jobs. Secondly, if users regularly use multi-lane
 data, due to nf-core/eager’s fine-granularity control, they can simply modify
-nf-core/eager’s bwa process resources via config files to account for this. When
-we optimised parameters that were used for bwa multi-threading and multiple
-lanes to the same number of bwa threads as the optimised PALEOMIX run,
+nf-core/eager’s BWA aln process resources via config files to account for this. When
+we optimised parameters that were used for BWA aln multi-threading and multiple
+lanes to the same number of BWA aln threads as the optimised PALEOMIX run,
 nf-core/eager again displayed faster runtimes. All metrics including mapped
 reads, percentage on-target, mean depth coverage and mean read lengths across
 all pipelines were extremely similar across all pipelines and replicates (see
@@ -1000,7 +998,7 @@ Docker image. The pipeline will store the output of that run in the default
 <li>FastQC</li>
 <li>AdapterRemoval2 (merging and adapter clipping)</li>
 <li>post-clipping FastQC (for AdapterRemoval2 performance evaluation)</li>
-<li>bwa mapping (with the ‘aln’ algorithm)</li>
+<li>BWA mapping (with the ‘aln’ algorithm)</li>
 <li>samtools flagstat (for mapping statistics)</li>
 <li>endorS.py (for endogenous DNA calculation)</li>
 <li>DeDup (for PCR amplicon deduplication)</li>
@@ -1024,7 +1022,7 @@ of pre-clipped single-end data:</p>
 <span id="cb2-8"><a href="#cb2-8"></a>--metagenomic_tool <span class="st">&#39;malt&#39;</span> --database <span class="st">&#39;/&lt;path&gt;/&lt;to&gt;/&lt;malt_database&gt;&#39;</span> \</span>
 <span id="cb2-9"><a href="#cb2-9"></a>--run_sexdeterrmine</span></code></pre></div>
 <h4 id="profiles">Profiles</h4>
-<p>In additional to private locally defined profiles, we utilise a central
+<p>In addition to private locally defined profiles, we utilise a central
 configuration repository to enable users from various institutions to use
 pipelines on their particular infrastructure more easily
 <span class="citation" data-cites="13kS0x2y1">[<a href="#ref-13kS0x2y1" role="doc-biblioref">84</a>]</span>. There are multiple resources listed
@@ -1054,7 +1052,8 @@ merging of files, the pipeline can be supplied with a tab separated value (TSV)
 file to enable such complex data handling. Both FASTQs and BAMs can be provided
 in this set up. FASTQs with the same library name and sequencing chemistry but
 sequenced across multiple lanes will be concatenated after adapter removal and
-prior mapping. Libraries with the sample name and with the same UDG treatment,
+prior mapping. Libraries with different sequencing sequencing kits (paired- vs.
+single-end) will be merged after mapping. Libraries with the sample name and with the same UDG treatment,
 will be merged after deduplication. If libraries with the sample name have
 different UDG treatment, these will be merged after the aDNA modification stage
 (i.e. BAM trimming or PMDtools, if turned on), prior to genotyping, as shown in
@@ -1064,7 +1063,8 @@ Figure <a href="#fig:merging-files">4</a>.</p>
 <img src="images/merging_files.png" style="width:70.0%" alt="" /><figcaption><span>Figure 4:</span> Schematic of different processing and merging points based on the nature of
 different libraries, as specified by the metadata of a TSV file. Dashed boxes
 represent optional library-specific
-processes</figcaption>
+processes. Colours refer to each merge points, which occur at certain points
+along the pipeline depending on the metadata columns defined in the TSV file.</figcaption>
 </figure>
 </div>
 <p>As Nextflow will automatically download files from URLs, profiles and/or TSV
@@ -1092,7 +1092,7 @@ users automatically, when starting the pipeline with a dedicated option
 demonstration (including input TSV file) can be seen in the supplementary
 information. To demonstrate the efficiency and conciseness of nf-core/eager
 pipeline in it’s dual role for both human and microbial screening of ancient
-material, we replicated the results of Barquera et al.
+material, we replicated the results of Barquera et al. 2020
 <span class="citation" data-cites="wsKrZHpG">[<a href="#ref-wsKrZHpG" role="doc-biblioref">80</a>]</span> using using v2.2.0dev (commit: e7471a78a3 and
 Nextflow version: 20.04.1).</p>
 <p>The following command was used to run the pipeline on the in-house servers at
@@ -1135,7 +1135,7 @@ cluster was used.</p>
 <span id="cb4-34"><a href="#cb4-34"></a>--maltextract_topalignment \</span>
 <span id="cb4-35"><a href="#cb4-35"></a>--database <span class="st">&#39;malt/databases/indexed/index040/full-nt_2017-10/&#39;</span> \</span>
 <span id="cb4-36"><a href="#cb4-36"></a>--maltextract_ncbifiles <span class="st">&#39;resources/&#39;</span></span></code></pre></div>
-<p>To include the HOPS results from metagenomic screening in the report, we re-ran
+<p>To include the HOPS results from metagenomic screening in the report, we also re-ran
 MultiQC with the upcoming version v1.10 (to be integrated into nf-core/eager on
 the former’s release). We then installed the development version of MultiQC
 (commit: 7584e64) as described in the MultiQC documentation
@@ -1143,7 +1143,8 @@ the former’s release). We then installed the development version of MultiQC
 in the results directory of the nf-core/eager run, using the same configuration
 file.</p>
 <div class="sourceCode" id="cb5"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb5-1"><a href="#cb5-1"></a><span class="ex">multiqc</span> . -c multiqc_config.yaml -n multiqc1_10.html -o multiqc1_10</span></code></pre></div>
-<p>Both reports can be seen in the supplementary information.</p>
+<p>Until MultiQC v1.10 is released, the HOPS heatmap is exported by nf-core/eager in
+the corresponding MaltExtract results directory. Reports from both versions (and the standalone HOPS PDF) can be seen in the supplementary information.</p>
 <h3 id="pipeline-comparison">Pipeline Comparison</h3>
 <p>Full step-by-step instructions on the set up of the pipeline run-time
 benchmarking, including environment and tool versions, can be seen in the
@@ -1215,7 +1216,7 @@ variation across replicates as can be seen in Table <a href="#tbl:benchmarking-r
 <caption><span>Table 3:</span> Comparison of results values of key NGS data processing and mapping
 steps. ‘qf’ stands for mapping-quality filtered reads, calculated from the
 output of the GNU time tool. All values represent mean and standard deviation
-across 10 replicates of each pipeline. .</caption>
+across 10 replicates of each pipeline. </caption>
 <colgroup>
 <col style="width: 13%" />
 <col style="width: 24%" />
@@ -1339,7 +1340,7 @@ NCBI accession ID is: GCF_902167405.1.</p>
 <span class="citation" data-cites="YuJbg3zO">[<a href="#ref-YuJbg3zO" role="doc-biblioref">86</a>]</span>, and supplementary information such as
 demonstration and benchmarking environments descriptions and walk-through can be
 seen on Github at
-<a href="https://github.com/apeltzer/eager2-paper/">https://github.com/apeltzer/eager2-paper/</a> und
+<a href="https://github.com/apeltzer/eager2-paper/">https://github.com/apeltzer/eager2-paper/</a> and
 the <code>supplement/</code> directory.</p>
 <h2 id="competing-interests">Competing Interests</h2>
 <p>No competing interests are declared.</p>

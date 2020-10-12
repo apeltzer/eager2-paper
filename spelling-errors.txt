@@ -1,4 +1,4 @@
-adapter
+Adapter
 AdapterRemoval
 aDNA
 aidaanva
@@ -34,7 +34,7 @@ CircularMapper
 CLI
 CLIs
 commensal
-conda
+Conda
 config
 configs
 coverages
@@ -97,11 +97,13 @@ Lamnidis
 lifecycle
 Lindenbaum
 Luc
-MapDamage
+MaltExtract
+mapDamage
 MarkDuplicates
 maxibor
 Maxime
 MaxUlysse
+mem
 metagenomic
 Microbiome
 microbiomes
@@ -146,12 +148,13 @@ pestis
 Philipp
 phylogenetic
 Picard
+Picard’s
 pileupCaller
 PMDtools
 Pontus
 POSIX
 Postprocessing
-pre
+Pre
 preprint
 preprocessing
 PreSeq
@@ -165,11 +168,10 @@ qf
 Qualimap
 reproducibility
 rescaling
-robusticity
 runnable
 runtime
 runtimes
-samtools
+SAMtools
 Scalability
 Schalkwyk
 Schiffels
@@ -187,7 +189,7 @@ TCLamnidis
 Thiseas
 Torsten
 Treponema
-TSV
+tsv
 Tübingen
 UDG
 und
@@ -200,7 +202,7 @@ Velsko
 Venturini
 Vor
 Warinner
-yaml
+YAML
 Yersinia
 Zandra
 ZandraFagernas
