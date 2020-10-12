@@ -11,7 +11,7 @@ twitter community for responding to polls regarding design decisions during
 development.
 
 The GWDG kindly provided computational infrastructure for benchmarking. We also
-want to thank Selina Carlhoff, Alexander Herbig and Wolfgang Haak for providing
+want to thank Selina Carlhoff, Maria Spyrou, Elisabeth Nelson, Alexander Herbig and Wolfgang Haak for providing
 comments and suggestions on this manuscript, and acknowledge Christina Warinner,
 Stephan Schiffels and the Max Planck Society who provided funds for travel to
 nf-core events. This project was also supported by the ERC Starting Grant
