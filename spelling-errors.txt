@@ -1,4 +1,4 @@
-Adapter
+adapter
 AdapterRemoval
 aDNA
 aidaanva
@@ -20,7 +20,7 @@ Barncancerfonden
 Barquera
 bedtools
 bejel
-Benchmarking
+benchmarking
 Bioconda
 bioinf
 bioinformaticians
@@ -34,7 +34,7 @@ CircularMapper
 CLI
 CLIs
 commensal
-Conda
+conda
 config
 configs
 coverages
@@ -105,7 +105,7 @@ Maxime
 MaxUlysse
 mem
 metagenomic
-Microbiome
+microbiome
 microbiomes
 microbiota
 miscoding
@@ -154,7 +154,7 @@ PMDtools
 Pontus
 POSIX
 Postprocessing
-Pre
+pre
 preprint
 preprocessing
 PreSeq
@@ -189,7 +189,7 @@ TCLamnidis
 Thiseas
 Torsten
 Treponema
-tsv
+TSV
 Tübingen
 UDG
 und
