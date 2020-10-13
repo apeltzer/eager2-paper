@@ -13,6 +13,7 @@ Arielle
 arxiv
 Åshild
 autosomes
+avaliable
 BAM
 BAMs
 Bamutils
@@ -34,7 +35,7 @@ CircularMapper
 CLI
 CLIs
 commensal
-conda
+Conda
 config
 configs
 coverages
@@ -83,6 +84,7 @@ HPCs
 Illumina
 installable
 Institut
+Institutes’s
 Institutet
 Irina
 jafellowsyates
@@ -104,8 +106,8 @@ maxibor
 Maxime
 MaxUlysse
 mem
-metagenomic
-microbiome
+Metagenomic
+Microbiome
 microbiomes
 microbiota
 miscoding
@@ -142,7 +144,7 @@ parallelisation
 parallelised
 Pathogenomics
 PCR
-Peltzer
+peltzer
 performant
 pestis
 Philipp
@@ -154,9 +156,9 @@ PMDtools
 Pontus
 POSIX
 Postprocessing
-pre
+Pre
 preprint
-preprocessing
+Preprocessing
 PreSeq
 PRJEB
 profilers
@@ -171,12 +173,13 @@ rescaling
 runnable
 runtime
 runtimes
-SAMtools
+samtools
 Scalability
 Schalkwyk
 Schiffels
 Schmutzi
 Selina
+sequenceTools
 SJN
 Skoglund
 SNP
@@ -189,7 +192,7 @@ TCLamnidis
 Thiseas
 Torsten
 Treponema
-TSV
+tsv
 Tübingen
 UDG
 und
