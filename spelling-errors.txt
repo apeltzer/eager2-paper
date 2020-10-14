@@ -28,7 +28,7 @@ bioinformaticians
 Bioinformatics
 Borry
 Bowtie
-bwa
+BWA
 Carlhoff
 Center
 CircularMapper
@@ -71,7 +71,7 @@ GATK
 gau
 GCF
 genomic
-genotyping
+Genotyping
 Günter
 GWDG
 Haak
@@ -106,7 +106,7 @@ maxibor
 Maxime
 MaxUlysse
 mem
-Metagenomic
+metagenomic
 microbiome
 microbiomes
 microbiota
@@ -173,7 +173,7 @@ rescaling
 runnable
 runtime
 runtimes
-SAMtools
+SAMTools
 Scalability
 Schalkwyk
 Schiffels
@@ -192,7 +192,7 @@ TCLamnidis
 Thiseas
 Torsten
 Treponema
-tsv
+TSV
 Tübingen
 UDG
 und
