@@ -3,6 +3,7 @@ AdapterRemoval
 aDNA
 aidaanva
 aln
+aln’s
 amplicon
 Andrades
 ANGSD
@@ -35,12 +36,13 @@ CircularMapper
 CLI
 CLIs
 commensal
-Conda
+conda
 config
 configs
 coverages
 DamageProfiler
 datasets
+Datenverarbeitung
 deamination
 DeDup
 deduplication
@@ -71,11 +73,13 @@ GATK
 gau
 GCF
 genomic
-Genotyping
+genotyping
+Gesellschaft
+Göttingen
 Günter
 GWDG
 Haak
-HaploTypeCaller
+HaplotypeCaller
 hardcoded
 heatmap
 Herbig
@@ -106,8 +110,8 @@ maxibor
 Maxime
 MaxUlysse
 mem
-metagenomic
-microbiome
+Metagenomic
+Microbiome
 microbiomes
 microbiota
 miscoding
@@ -144,7 +148,7 @@ parallelisation
 parallelised
 Pathogenomics
 PCR
-Peltzer
+peltzer
 performant
 pestis
 Philipp
@@ -156,8 +160,7 @@ PMDtools
 Pontus
 POSIX
 Postprocessing
-pre
-preprint
+Pre
 Preprocessing
 PreSeq
 PRJEB
@@ -173,7 +176,7 @@ rescaling
 runnable
 runtime
 runtimes
-SAMTools
+samtools
 Scalability
 Schalkwyk
 Schiffels
@@ -192,7 +195,7 @@ TCLamnidis
 Thiseas
 Torsten
 Treponema
-TSV
+tsv
 Tübingen
 UDG
 und
@@ -205,6 +208,7 @@ Velsko
 Venturini
 Vor
 Warinner
+wissenschaftliche
 YAML
 Yersinia
 Zandra
