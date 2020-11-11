@@ -1,4 +1,4 @@
-Adapter
+adapter
 AdapterRemoval
 aDNA
 aidaanva
@@ -26,10 +26,10 @@ benchmarking
 Bioconda
 bioinf
 bioinformaticians
-bioinformatics
+Bioinformatics
 Borry
 Bowtie
-bwa
+BWA
 Carlhoff
 Center
 CircularMapper
@@ -73,13 +73,13 @@ GATK
 gau
 GCF
 genomic
-genotyping
+Genotyping
 Gesellschaft
 Göttingen
 Günter
 GWDG
 Haak
-HaplotypeCaller
+HaploTypeCaller
 hardcoded
 heatmap
 Herbig
@@ -110,8 +110,8 @@ maxibor
 Maxime
 MaxUlysse
 mem
-Metagenomic
-Microbiome
+metagenomic
+microbiome
 microbiomes
 microbiota
 miscoding
@@ -148,7 +148,7 @@ parallelisation
 parallelised
 Pathogenomics
 PCR
-peltzer
+Peltzer
 performant
 pestis
 Philipp
@@ -177,7 +177,7 @@ runnable
 runtime
 runtimes
 SAMTools
-scalability
+Scalability
 Schalkwyk
 Schiffels
 Schmutzi
@@ -195,7 +195,7 @@ TCLamnidis
 Thiseas
 Torsten
 Treponema
-TSV
+tsv
 Tübingen
 UDG
 und
